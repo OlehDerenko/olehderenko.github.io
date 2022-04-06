@@ -8,6 +8,10 @@ body {
   
 }
 
+body.active {
+  overflow: hidden;
+}
+
 html, body {
   width: 100%;
   margin: 0;
@@ -51,7 +55,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: space-between; 
-   padding-top: 30px;
+   padding: 20px 0;
   }
 }
 
@@ -605,6 +609,9 @@ b {
   .burger.active {
     
     transform: scale(-1, 1);
+    position: absolute;
+    right: 15px;
+    top: 30px;
 
     .burger__line_top {
       transform: rotate(-45deg) translateY(-50%);

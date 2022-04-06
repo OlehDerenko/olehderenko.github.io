@@ -22,12 +22,16 @@ const menu = document.querySelector('.burger-menu');
 const overlay = document.querySelector('.overlay');
 const header = document.querySelector('.header');
 
+const body = document.querySelector('body')
+
 const toggleMobileNavigation =  () => {
   burger.classList.toggle('active');
   menu.classList.toggle('active');
   overlay.classList.toggle('active');
   header.classList.toggle('active')
+  body.classList.toggle('active')
 }
+
 
 burger.addEventListener('click',toggleMobileNavigation)
 
@@ -35,4 +39,4 @@ const links = document.querySelectorAll('.burger-menu a')
 
 links.forEach((link)=>{
   link.addEventListener('click',toggleMobileNavigation)
-}) 
+})

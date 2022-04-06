@@ -8,6 +8,10 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+body.active {
+  overflow: hidden;
+}
+
 html, body {
   width: 100%;
   margin: 0;
@@ -60,7 +64,7 @@ html, body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 30px;
+  padding: 20px 0;
 }
 
 .header.active {
@@ -612,6 +616,9 @@ html, body {
 .burger.active {
   -webkit-transform: scale(-1, 1);
           transform: scale(-1, 1);
+  position: absolute;
+  right: 15px;
+  top: 30px;
 }
 
 .burger.active .burger__line_top {
