@@ -19,6 +19,7 @@
   color: inherit;
   border: 0;
   background-color: transparent;
+  z-index: 999;
 }
 .hamburger.is-active:hover,
 .hamburger:hover {
@@ -26,7 +27,15 @@
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner:after,
 .hamburger.is-active .hamburger-inner:before {
-  background-color: #fff;
+  background-color: #08fdd8;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger.is-active .hamburger-inner,
+  .hamburger.is-active .hamburger-inner:after,
+  .hamburger.is-active .hamburger-inner:before {
+    background-color: #fff;
+  }
 }
 .hamburger-box {
   position: relative;
@@ -49,7 +58,7 @@
   transition-duration: 0.15s;
   transition-property: transform;
   border-radius: 4px;
-  background-color: #fff;
+  background-color: #08fdd8;
 }
 .hamburger-inner:after,
 .hamburger-inner:before {

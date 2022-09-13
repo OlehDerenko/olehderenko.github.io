@@ -17,12 +17,31 @@ const burger = document.querySelector(".hamburger");
 const burgerMenu = document.querySelector(".burger-menu");
 const range = document.querySelector(".range");
 const rangeThumb = range.querySelector("span");
+const body = document.querySelector("body");
+const links = document.querySelectorAll(".burger-menu nav a");
+
+const toggleNavigation = () => {
+  burgerMenu.classList.toggle("open");
+  body.classList.toggle("active");
+  burger.classList.toggle("is-active");
+};
 
 burger.addEventListener("click", (e) => {
   e.preventDefault();
-  burger.classList.toggle("is-active");
 
-  burgerMenu.classList.toggle("open");
+  toggleNavigation();
+});
+
+links.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    const target = document.querySelector(link.getAttribute("href"));
+    target.scrollIntoView({
+      behavior: "smooth",
+    });
+
+    toggleNavigation();
+  });
 });
 
 const thumbWidth =
