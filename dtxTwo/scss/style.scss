@@ -20,7 +20,8 @@
 
 body {
   margin: 0;
-  background-color: #1e1e1e;
+  background-color: #101717;
+  backdrop-filter: blur(20.5px);
   font-family: "Proxima";
 }
 
@@ -29,18 +30,36 @@ body {
   margin: 0 auto;
 }
 
+.home-container {
+  position: relative;
+
+  &::before {
+    content: url("../img/green-bg.png");
+    position: absolute;
+    left: -200px;
+    width: 300px;
+    height: 500px;
+    bottom: 100px;
+  }
+}
+
 .home {
   position: relative;
-  overflow-x: hidden;
-  padding: 120px 0 20px;
-  overflow-y: hidden;
+
+  padding: 120px 0 160px;
+
+  .orange-bg {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 
   &::after {
     content: url("../img/home-grid.png");
     position: absolute;
-    left: 50%;
+    left: 44%;
     top: 0%;
-    transform: translateX(-50%);
+    transform: translateX(-56%);
     width: 100%;
     height: 100%;
     z-index: -1;
@@ -102,7 +121,7 @@ body {
     position: absolute;
     left: 0;
     width: 260px;
-    bottom: 50px;
+    bottom: 200px;
   }
 }
 
@@ -209,7 +228,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 160px;
 
   &__block {
     display: inline-flex;
@@ -253,7 +271,7 @@ body {
   text-transform: uppercase;
 }
 .raffle {
-  background: linear-gradient(180deg, #172124 0%, #22232c 100%);
+  background: linear-gradient(180deg, #121b1e 0%, #131d1f 100%);
   border-radius: 80px;
   margin-top: 150px;
   padding: 95px 95px 60px 107px;
@@ -318,6 +336,10 @@ body {
       max-width: 140px;
       margin-left: 13px;
     }
+
+    .img {
+      width: 60px;
+    }
   }
 
   .two {
@@ -333,6 +355,10 @@ body {
     span {
       color: #f1f1f1;
     }
+
+    .img {
+      width: 47px;
+    }
   }
 
   .three {
@@ -341,6 +367,10 @@ body {
     p {
       max-width: 248px;
       text-align: right;
+    }
+
+    .img {
+      width: 60px;
     }
   }
 
@@ -353,6 +383,10 @@ body {
       max-width: 125px;
       text-align: right;
     }
+
+    .img {
+      width: 32px;
+    }
   }
 
   .four {
@@ -361,6 +395,10 @@ body {
     p {
       margin-left: 22px;
       max-width: 200px;
+    }
+
+    .img {
+      width: 43px;
     }
   }
 
@@ -440,16 +478,17 @@ body {
   padding: 100px 0;
 
   &::after {
-    content: url(../img/benefits-grid.png);
+    content: url("../img/benefits-grid.png");
     position: absolute;
     left: 50%;
     top: -280px;
     transform: translateX(-50%);
-    /* width: 100%; */
     height: 100%;
     z-index: -1;
+  }
 
-    @media screen and (max-width: 1249) {
+  @media screen and (max-width: 1249px) {
+    &::after {
       top: -53px;
     }
   }
@@ -504,7 +543,7 @@ body {
   }
 
   &__block {
-    background: linear-gradient(180deg, #172124 0%, #22232c 100%);
+    background: linear-gradient(180deg, #191e20 0%, #1c2224 100%);
     border-radius: 80px;
     padding: 95px 95px 130px 107px;
     position: relative;
@@ -574,6 +613,10 @@ body {
     .one {
       position: relative;
       margin: 110px 0 0 15px;
+
+      img {
+        width: 57px;
+      }
     }
 
     .three {
@@ -581,6 +624,10 @@ body {
       z-index: 2;
       right: 100px;
       bottom: 270px;
+
+      img {
+        width: 58px;
+      }
     }
 
     .two {
@@ -589,6 +636,10 @@ body {
       p {
         max-width: 301px;
         margin-left: 10px;
+      }
+
+      img {
+        width: 68px;
       }
     }
 
@@ -675,7 +726,8 @@ body {
 
 .program_two {
   .program__block {
-    background: linear-gradient(180deg, #172124 0%, #22232c 100%);
+    background: linear-gradient(180deg, #191610 0%, #211e16 100%);
+
     height: 817px;
 
     h6 {
@@ -693,6 +745,9 @@ body {
 
     .two {
       margin: 120px 0 0 153px;
+      img {
+        width: 47px;
+      }
     }
   }
 
@@ -944,6 +999,20 @@ body {
     display: none;
   }
 
+  .home-container {
+    position: relative;
+    overflow-x: hidden;
+
+    &::before {
+      content: url("../img/green-bg.png");
+      position: absolute;
+      position: absolute;
+      left: 20%;
+      transform: translateX(-80%);
+      top: -21%;
+    }
+  }
+
   .home-mobile {
     margin: 25px 0 0;
     display: block;
@@ -1121,6 +1190,10 @@ body {
         max-width: 143px;
         margin: 0 0 0 13px;
       }
+
+      img {
+        width: 60px;
+      }
     }
 
     .two {
@@ -1129,6 +1202,10 @@ body {
       p {
         max-width: 190px;
         margin: 0 0 0 10px;
+      }
+
+      img {
+        width: 47px;
       }
     }
 
@@ -1139,6 +1216,10 @@ body {
         max-width: 202px;
         margin: 0 0 0 2px;
       }
+
+      img {
+        width: 66px;
+      }
     }
     .four {
       margin: 20px 0 20px 23px;
@@ -1147,6 +1228,10 @@ body {
         max-width: 202px;
         margin: 0 0 0 19px;
       }
+
+      img {
+        width: 43px;
+      }
     }
     .five {
       margin: 20px 0 20px 23px;
@@ -1154,6 +1239,10 @@ body {
       p {
         max-width: 130px;
         margin: 0 0 0 28px;
+      }
+
+      img {
+        width: 32px;
       }
     }
 
@@ -1258,33 +1347,12 @@ body {
     }
 
     &__block {
-      background: linear-gradient(180deg, #172124 0%, #22232c 100%);
+      background: linear-gradient(180deg, #191e20 0%, #1c2224 100%);
       border-radius: 80px;
       padding: 61px 52px 60px 40px;
       position: relative;
       margin: 50px auto 0;
       width: 379px;
-
-      // .for {
-      //   position: absolute;
-      //   top: -13px;
-      //   left: 50px;
-      //   font-size: 13px;
-      //   padding: 8px 16px;
-      //   border: 1px dashed #f2a23d;
-      // }
-
-      // .level {
-      //   position: absolute;
-      //   top: 0px;
-      //   right: 23px;
-      //   border: 1px dashed #a2a1bd;
-      //   padding: 8px 16px;
-      //   border-radius: 8px;
-      //   color: #e4e4f1;
-      //   font-size: 13px;
-      //   text-transform: uppercase;
-      // }
 
       .for {
         border: 1px dashed #f2a23d;
@@ -1292,23 +1360,22 @@ body {
         left: 30px;
         top: -20px;
         font-size: 13px;
-        padding: 8px 16px;
+        padding: 8px 13px;
       }
 
       .level {
         background: #111a1c;
         border: 1px dashed #a2a1bd;
-        // backdrop-filter: blur(4px);
         border-radius: 8px;
         display: inline-block;
         position: absolute;
-        padding: 8px 16px;
+        padding: 8px 13px;
         color: #e4e4f1;
         font-size: 13px;
         line-height: 24.8px;
         font-weight: 400;
         top: -20px;
-        left: 250px;
+        left: 243px;
         text-transform: uppercase;
       }
 
@@ -1360,6 +1427,10 @@ body {
         p {
           margin: 0 0 0 16px;
         }
+
+        img {
+          width: 57px;
+        }
       }
 
       .two {
@@ -1368,6 +1439,10 @@ body {
         p {
           margin: 0 0 0 6px;
         }
+
+        img {
+          width: 57px;
+        }
       }
 
       .three {
@@ -1375,6 +1450,10 @@ body {
 
         p {
           margin: 0 0 0 15px;
+        }
+
+        img {
+          width: 57px;
         }
       }
 
@@ -1444,7 +1523,7 @@ body {
 
   .program-mobile_two {
     &__block {
-      background: linear-gradient(180deg, #172124 0%, #22232c 100%);
+      background: linear-gradient(180deg, #191610 0%, #211e16 100%);
     }
 
     h6 {
@@ -1488,6 +1567,10 @@ body {
 
       p {
         margin: 0 0 0 20px;
+      }
+
+      img {
+        width: 47px;
       }
     }
 
@@ -1598,7 +1681,6 @@ body {
   }
 
   .program-mobile__block {
-    background: linear-gradient(180deg, #172124 0%, #22232c 100%);
     border-radius: 80px;
     padding: 61px 52px 60px 40px;
     position: relative;
@@ -1615,7 +1697,7 @@ body {
       border-radius: 80px;
       transform: matrix(1, -0.11, 0.01, 0.99, 0, 0);
       width: 356px;
-      height: 1057px;
+      height: 1042px;
       position: absolute;
       z-index: -1;
       left: -6px;
@@ -1624,12 +1706,15 @@ body {
   }
 
   .program-mobile_two {
+    &__block {
+      background: linear-gradient(180deg, #172124 0%, #22232c 100%);
+    }
     .program__block_back {
       background: #f2a23d;
       border-radius: 80px;
       transform: matrix(1, -0.11, 0.01, 0.99, 0, 0);
       width: 356px;
-      height: 1150px;
+      height: 1115px;
       position: absolute;
       z-index: -1;
       left: -6px;
