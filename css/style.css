@@ -19,7 +19,7 @@
 
 body {
   margin: 0;
-  background-color: #1e1e1e;
+  background-color: #101717;
   font-family: "Proxima";
 }
 
@@ -28,18 +28,28 @@ body {
   margin: 0 auto;
 }
 
+.home-container {
+  position: relative;
+}
+.home-container::before {
+  content: url("../img/green-bg.png");
+  position: absolute;
+  left: -200px;
+  width: 300px;
+  height: 500px;
+  bottom: 100px;
+}
+
 .home {
   position: relative;
-  overflow-x: hidden;
-  padding: 120px 0 20px;
-  overflow-y: hidden;
+  padding: 120px 0 160px;
 }
 .home::after {
   content: url("../img/home-grid.png");
   position: absolute;
-  left: 50%;
+  left: 44%;
   top: 0%;
-  transform: translateX(-50%);
+  transform: translateX(-56%);
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -48,7 +58,8 @@ body {
   margin: 0 0 0 60px;
   line-height: 70.4px;
   font-size: 64px;
-  background: radial-gradient(333.9% 5744.86% at -24.46% 129.26%, rgba(228, 228, 241, 0) 0%, #e4e4f1 49.85%, rgba(228, 228, 241, 0) 100%);
+  background: radial-gradient(114.72% 4511.33% at -4.74% 50%, #23242d 0%, #f1f3fb 47.66%, #16171d 100%);
+  /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -87,7 +98,7 @@ body {
   position: absolute;
   left: 0;
   width: 260px;
-  bottom: 50px;
+  bottom: 200px;
 }
 
 .button {
@@ -102,6 +113,7 @@ body {
   color: #e4e4f1;
   cursor: pointer;
   position: relative;
+  font-family: "Proxima";
 }
 .button::after {
   content: "";
@@ -179,7 +191,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 160px;
 }
 .invitation__block {
   display: inline-flex;
@@ -218,7 +229,7 @@ body {
 }
 
 .raffle {
-  background: linear-gradient(180deg, #172124 0%, #22232c 100%);
+  background: linear-gradient(180deg, #121b1e 0%, #131d1f 100%);
   border-radius: 80px;
   margin-top: 150px;
   padding: 95px 95px 60px 107px;
@@ -228,7 +239,7 @@ body {
   background-color: #26a17b;
   border-radius: 80px;
   width: 1217px;
-  height: 1028px;
+  height: 1021px;
   position: absolute;
   z-index: -1;
   left: -18px;
@@ -254,9 +265,6 @@ body {
   display: flex;
   align-items: center;
 }
-.raffle .steps img {
-  width: 60px;
-}
 .raffle .steps p {
   color: #f1f1f1;
   margin: 0;
@@ -275,6 +283,9 @@ body {
   max-width: 140px;
   margin-left: 13px;
 }
+.raffle .one .img {
+  width: 60px;
+}
 .raffle .two {
   position: relative;
   z-index: 2;
@@ -287,6 +298,9 @@ body {
 .raffle .two span {
   color: #f1f1f1;
 }
+.raffle .two .img {
+  width: 47px;
+}
 .raffle .three {
   position: relative;
   margin: 68px 0 0 75px;
@@ -294,6 +308,9 @@ body {
 .raffle .three p {
   max-width: 248px;
   text-align: right;
+}
+.raffle .three .img {
+  width: 60px;
 }
 .raffle .five {
   position: relative;
@@ -305,6 +322,9 @@ body {
   max-width: 125px;
   text-align: right;
 }
+.raffle .five .img {
+  width: 32px;
+}
 .raffle .four {
   position: relative;
   margin: 27px 0 0 11px;
@@ -312,6 +332,9 @@ body {
 .raffle .four p {
   margin-left: 22px;
   max-width: 200px;
+}
+.raffle .four .img {
+  width: 43px;
 }
 .raffle button {
   margin: 48px 0 0 250px;
@@ -381,24 +404,17 @@ body {
   padding: 100px 0;
 }
 .benefits::after {
-  content: url(../img/benefits-grid.png);
+  content: url("../img/benefits-grid.png");
   position: absolute;
   left: 50%;
   top: -280px;
   transform: translateX(-50%);
-  /* width: 100%; */
   height: 100%;
   z-index: -1;
 }
-@media screen and (max-width: 1249) {
+@media screen and (max-width: 1249px) {
   .benefits::after {
-    top: -53px;
-  }
-}
-@media screen and (max-width: 1249) {
-  .benefits {
-    flex-direction: column;
-    margin-top: 120px;
+    top: -122px;
   }
 }
 .benefits__block img {
@@ -432,7 +448,7 @@ body {
   text-fill-color: transparent;
 }
 .program__block {
-  background: linear-gradient(180deg, #172124 0%, #22232c 100%);
+  background: linear-gradient(180deg, #191e20 0%, #1c2224 100%);
   border-radius: 80px;
   padding: 95px 95px 130px 107px;
   position: relative;
@@ -448,7 +464,7 @@ body {
   border-radius: 80px;
   transform: matrix(1, -0.02, 0.05, 1, 0, 0);
   width: 1217px;
-  height: 670px;
+  height: 669px;
   position: absolute;
   z-index: -1;
   left: -20px;
@@ -491,11 +507,17 @@ body {
   position: relative;
   margin: 110px 0 0 15px;
 }
+.program__block .one img {
+  width: 57px;
+}
 .program__block .three {
   position: absolute;
   z-index: 2;
   right: 100px;
   bottom: 270px;
+}
+.program__block .three img {
+  width: 58px;
 }
 .program__block .two {
   position: relative;
@@ -504,6 +526,9 @@ body {
 .program__block .two p {
   max-width: 301px;
   margin-left: 10px;
+}
+.program__block .two img {
+  width: 68px;
 }
 .program__block .btn {
   position: absolute;
@@ -576,7 +601,7 @@ body {
 }
 
 .program_two .program__block {
-  background: linear-gradient(180deg, #172124 0%, #22232c 100%);
+  background: linear-gradient(180deg, #191610 0%, #211e16 100%);
   height: 817px;
 }
 .program_two .program__block h6 {
@@ -591,6 +616,9 @@ body {
 }
 .program_two .program__block .two {
   margin: 120px 0 0 153px;
+}
+.program_two .program__block .two img {
+  width: 47px;
 }
 .program_two .program_top {
   position: absolute;
@@ -794,6 +822,18 @@ body {
   .home {
     display: none;
   }
+  .home-container {
+    position: relative;
+    overflow-x: hidden;
+  }
+  .home-container::before {
+    content: url("../img/green-bg.png");
+    position: absolute;
+    position: absolute;
+    left: 20%;
+    transform: translateX(-80%);
+    top: -21%;
+  }
   .home-mobile {
     margin: 25px 0 0;
     display: block;
@@ -923,12 +963,18 @@ body {
     max-width: 143px;
     margin: 0 0 0 13px;
   }
+  .raffle-mobile .one img {
+    width: 60px;
+  }
   .raffle-mobile .two {
     margin: 20px 0 20px 23px;
   }
   .raffle-mobile .two p {
     max-width: 190px;
     margin: 0 0 0 10px;
+  }
+  .raffle-mobile .two img {
+    width: 47px;
   }
   .raffle-mobile .three {
     margin: 20px 0 20px 13px;
@@ -937,6 +983,9 @@ body {
     max-width: 202px;
     margin: 0 0 0 2px;
   }
+  .raffle-mobile .three img {
+    width: 66px;
+  }
   .raffle-mobile .four {
     margin: 20px 0 20px 23px;
   }
@@ -944,12 +993,18 @@ body {
     max-width: 202px;
     margin: 0 0 0 19px;
   }
+  .raffle-mobile .four img {
+    width: 43px;
+  }
   .raffle-mobile .five {
     margin: 20px 0 20px 23px;
   }
   .raffle-mobile .five p {
     max-width: 130px;
     margin: 0 0 0 28px;
+  }
+  .raffle-mobile .five img {
+    width: 32px;
   }
   .raffle-mobile .img-usdt {
     width: 307px;
@@ -986,9 +1041,10 @@ body {
   }
   .benefits {
     flex-direction: column;
-    margin-top: 120px;
+    margin-top: 110px;
     overflow-y: hidden;
     overflow-x: hidden;
+    padding: 0 0 10px;
   }
   .benefits .benefits::after {
     top: -530px;
@@ -1001,7 +1057,7 @@ body {
     margin-bottom: 30px;
   }
   .benefits .last p {
-    margin-top: 15px3;
+    margin-top: 15px;
   }
   .benefits p {
     font-size: 18px;
@@ -1016,7 +1072,7 @@ body {
   }
   .program-mobile h3 {
     max-width: 345px;
-    margin: 100px auto 0;
+    margin: 100px auto 80px;
     text-align: center;
     line-height: 26.4px;
     font-size: 24px;
@@ -1028,7 +1084,7 @@ body {
     text-fill-color: transparent;
   }
   .program-mobile__block {
-    background: linear-gradient(180deg, #172124 0%, #22232c 100%);
+    background: linear-gradient(180deg, #191e20 0%, #1c2224 100%);
     border-radius: 80px;
     padding: 61px 52px 60px 40px;
     position: relative;
@@ -1041,7 +1097,7 @@ body {
     left: 30px;
     top: -20px;
     font-size: 13px;
-    padding: 8px 16px;
+    padding: 8px 13px;
   }
   .program-mobile__block .level {
     background: #111a1c;
@@ -1049,13 +1105,13 @@ body {
     border-radius: 8px;
     display: inline-block;
     position: absolute;
-    padding: 8px 16px;
+    padding: 8px 13px;
     color: #e4e4f1;
     font-size: 13px;
     line-height: 24.8px;
     font-weight: 400;
     top: -20px;
-    left: 250px;
+    left: 243px;
     text-transform: uppercase;
   }
   .program-mobile__block h6 {
@@ -1096,17 +1152,26 @@ body {
   .program-mobile__block .one p {
     margin: 0 0 0 16px;
   }
+  .program-mobile__block .one img {
+    width: 57px;
+  }
   .program-mobile__block .two {
     margin-top: 48px;
   }
   .program-mobile__block .two p {
     margin: 0 0 0 6px;
   }
+  .program-mobile__block .two img {
+    width: 57px;
+  }
   .program-mobile__block .three {
     margin-top: 58px;
   }
   .program-mobile__block .three p {
     margin: 0 0 0 15px;
+  }
+  .program-mobile__block .three img {
+    width: 57px;
   }
   .program-mobile__block .program_img {
     width: 296px;
@@ -1163,7 +1228,7 @@ body {
     top: 18px;
   }
   .program-mobile_two__block {
-    background: linear-gradient(180deg, #172124 0%, #22232c 100%);
+    background: linear-gradient(180deg, #191610 0%, #211e16 100%);
   }
   .program-mobile_two h6 {
     background: radial-gradient(142.11% 5587.92% at -12.66% 58.33%, #1d1a14 0%, #e7e1d8 15.52%, #1e1b14 100%);
@@ -1192,6 +1257,9 @@ body {
   }
   .program-mobile_two .two p {
     margin: 0 0 0 20px;
+  }
+  .program-mobile_two .two img {
+    width: 47px;
   }
   .program-mobile_two .three {
     margin: 48px 0 0 14px;
@@ -1279,7 +1347,6 @@ body {
     left: 14px;
   }
   .program-mobile__block {
-    background: linear-gradient(180deg, #172124 0%, #22232c 100%);
     border-radius: 80px;
     padding: 61px 52px 60px 40px;
     position: relative;
@@ -1294,18 +1361,21 @@ body {
     border-radius: 80px;
     transform: matrix(1, -0.11, 0.01, 0.99, 0, 0);
     width: 356px;
-    height: 1057px;
+    height: 1042px;
     position: absolute;
     z-index: -1;
     left: -6px;
     top: 18px;
+  }
+  .program-mobile_two__block {
+    background: linear-gradient(180deg, #172124 0%, #22232c 100%);
   }
   .program-mobile_two .program__block_back {
     background: #f2a23d;
     border-radius: 80px;
     transform: matrix(1, -0.11, 0.01, 0.99, 0, 0);
     width: 356px;
-    height: 1150px;
+    height: 1115px;
     position: absolute;
     z-index: -1;
     left: -6px;

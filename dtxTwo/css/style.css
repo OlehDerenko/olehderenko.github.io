@@ -20,7 +20,6 @@
 body {
   margin: 0;
   background-color: #101717;
-  backdrop-filter: blur(20.5px);
   font-family: "Proxima";
 }
 
@@ -45,11 +44,6 @@ body {
   position: relative;
   padding: 120px 0 160px;
 }
-.home .orange-bg {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
 .home::after {
   content: url("../img/home-grid.png");
   position: absolute;
@@ -64,7 +58,8 @@ body {
   margin: 0 0 0 60px;
   line-height: 70.4px;
   font-size: 64px;
-  background: radial-gradient(333.9% 5744.86% at -24.46% 129.26%, rgba(228, 228, 241, 0) 0%, #e4e4f1 49.85%, rgba(228, 228, 241, 0) 100%);
+  background: radial-gradient(114.72% 4511.33% at -4.74% 50%, #23242d 0%, #f1f3fb 47.66%, #16171d 100%);
+  /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -118,6 +113,7 @@ body {
   color: #e4e4f1;
   cursor: pointer;
   position: relative;
+  font-family: "Proxima";
 }
 .button::after {
   content: "";
@@ -243,7 +239,7 @@ body {
   background-color: #26a17b;
   border-radius: 80px;
   width: 1217px;
-  height: 1028px;
+  height: 1021px;
   position: absolute;
   z-index: -1;
   left: -18px;
@@ -418,13 +414,7 @@ body {
 }
 @media screen and (max-width: 1249px) {
   .benefits::after {
-    top: -53px;
-  }
-}
-@media screen and (max-width: 1249) {
-  .benefits {
-    flex-direction: column;
-    margin-top: 120px;
+    top: -122px;
   }
 }
 .benefits__block img {
@@ -474,7 +464,7 @@ body {
   border-radius: 80px;
   transform: matrix(1, -0.02, 0.05, 1, 0, 0);
   width: 1217px;
-  height: 670px;
+  height: 669px;
   position: absolute;
   z-index: -1;
   left: -20px;
@@ -1051,9 +1041,10 @@ body {
   }
   .benefits {
     flex-direction: column;
-    margin-top: 120px;
+    margin-top: 110px;
     overflow-y: hidden;
     overflow-x: hidden;
+    padding: 0 0 10px;
   }
   .benefits .benefits::after {
     top: -530px;
@@ -1066,7 +1057,7 @@ body {
     margin-bottom: 30px;
   }
   .benefits .last p {
-    margin-top: 15px3;
+    margin-top: 15px;
   }
   .benefits p {
     font-size: 18px;
@@ -1081,7 +1072,7 @@ body {
   }
   .program-mobile h3 {
     max-width: 345px;
-    margin: 100px auto 0;
+    margin: 100px auto 80px;
     text-align: center;
     line-height: 26.4px;
     font-size: 24px;
