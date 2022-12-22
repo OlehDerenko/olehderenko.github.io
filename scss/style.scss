@@ -391,6 +391,11 @@ body {
       .img {
         transform: scale(0.7);
         margin-top: -28px;
+        right: 0;
+
+        .quickly {
+          right: 184px;
+        }
       }
     }
 

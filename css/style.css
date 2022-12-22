@@ -330,6 +330,10 @@ body {
   .instruction .instruction__flex .img {
     transform: scale(0.7);
     margin-top: -28px;
+    right: 0;
+  }
+  .instruction .instruction__flex .img .quickly {
+    right: 184px;
   }
   .instruction .content {
     text-align: center;
