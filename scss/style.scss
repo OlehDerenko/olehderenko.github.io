@@ -386,12 +386,16 @@ body {
     .instruction__flex {
       display: flex;
       align-items: center;
+      flex-direction: column;
+
+      .img {
+        transform: scale(0.7);
+        margin-top: -28px;
+      }
     }
 
-    .img {
-      display: none;
-    }
     .content {
+      text-align: center;
       .button-position {
         flex-direction: column;
 
@@ -406,7 +410,7 @@ body {
         }
 
         .button_yellow {
-          margin: 20px 13px 0 0;
+          margin: 20px 0 0;
         }
       }
       .img {
@@ -415,7 +419,7 @@ body {
     }
 
     .instruction__care {
-      margin-top: 200px;
+      margin-top: -44px;
     }
   }
 
@@ -434,9 +438,6 @@ body {
     &__flex {
       display: block;
 
-      .img {
-        display: none;
-      }
       .content {
         max-width: 393px;
         margin: 0;
@@ -480,7 +481,7 @@ body {
   }
 
   .exchange {
-    margin-top: -40px;
+    margin-top: -80px;
 
     h3 {
       font-size: 28px;

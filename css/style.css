@@ -325,9 +325,14 @@ body {
   .instruction .instruction__flex {
     display: flex;
     align-items: center;
+    flex-direction: column;
   }
-  .instruction .img {
-    display: none;
+  .instruction .instruction__flex .img {
+    transform: scale(0.7);
+    margin-top: -28px;
+  }
+  .instruction .content {
+    text-align: center;
   }
   .instruction .content .button-position {
     flex-direction: column;
@@ -341,13 +346,13 @@ body {
     width: 26px;
   }
   .instruction .content .button-position .button_yellow {
-    margin: 20px 13px 0 0;
+    margin: 20px 0 0;
   }
   .instruction .content .img {
     display: none;
   }
   .instruction .instruction__care {
-    margin-top: 200px;
+    margin-top: -44px;
   }
   .exchange__flex {
     flex-wrap: wrap;
@@ -361,9 +366,6 @@ body {
   }
   .instruction__flex {
     display: block;
-  }
-  .instruction__flex .img {
-    display: none;
   }
   .instruction__flex .content {
     max-width: 393px;
@@ -400,7 +402,7 @@ body {
     line-height: 29.7px;
   }
   .exchange {
-    margin-top: -40px;
+    margin-top: -80px;
   }
   .exchange h3 {
     font-size: 28px;
