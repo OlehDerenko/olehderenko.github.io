@@ -33,6 +33,16 @@ body {
   margin-top: 92px;
   position: relative;
 }
+.instruction::after {
+  content: url(../img/grid-home.png);
+  position: absolute;
+  left: 56%;
+  top: -11%;
+  transform: translateX(-56%);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
 .instruction .bg-wrapper-orange {
   position: absolute;
   background: #ffc412;
@@ -226,6 +236,16 @@ body {
   opacity: 1;
 }
 
+.exchange::after {
+  content: url(../img/grid.png);
+  position: absolute;
+  left: 56%;
+  top: 95%;
+  transform: translateX(-56%);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
 .exchange h3 {
   font-weight: 600;
   font-size: 48px;
@@ -322,6 +342,9 @@ body {
   .instruction {
     margin: 0;
   }
+  .instruction::after {
+    display: none;
+  }
   .instruction .instruction__flex {
     display: flex;
     align-items: center;
@@ -330,13 +353,16 @@ body {
   .instruction .instruction__flex .img {
     transform: scale(0.7);
     margin-top: -28px;
-    right: 0;
+  }
+  .instruction .instruction__flex .img .phone {
+    right: -3px;
   }
   .instruction .instruction__flex .img .quickly {
-    right: 184px;
+    right: 174px;
   }
   .instruction .content {
     text-align: center;
+    margin: 0;
   }
   .instruction .content .button-position {
     flex-direction: column;
@@ -358,9 +384,21 @@ body {
   .instruction .instruction__care {
     margin-top: -44px;
   }
+  .exchange::after {
+    display: none;
+  }
+  .exchange .subheader {
+    min-width: 0;
+  }
   .exchange__flex {
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .exchange__flex .exchange__block__middle {
+    right: 0;
+  }
+  .exchange__flex .exchange__block__last {
+    right: 0;
   }
 }
 @media screen and (max-width: 768px) {
@@ -402,7 +440,7 @@ body {
   }
   .instruction .instruction__care p {
     font-size: 22px;
-    max-width: 350px;
+    max-width: 100%;
     line-height: 29.7px;
   }
   .exchange {
@@ -456,5 +494,10 @@ body {
   }
   .exchange .button_exchange svg {
     max-width: 26px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .instruction__care p {
+    max-width: 350px;
   }
 }/*# sourceMappingURL=style.css.map */
