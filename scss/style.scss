@@ -43,28 +43,30 @@ html, body {
   display: block;
 }
 
-  .header {
-   position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    background: #eee;
-    z-index: 2; 
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: #eee;
+  z-index: 2; 
 
-      .header-flex {
+  .header-flex {
     display: flex;
     align-items: center;
     justify-content: space-between; 
-   padding: 20px 0;
+    padding: 20px 0;
   }
 }
 
 .header.active {
   background: transparent;
   z-index: 4;
+  
   .name {
     opacity: 0;
   }
+
   .header-flex {
     justify-content: end;
     
@@ -75,8 +77,8 @@ html, body {
 
 .name {
   font-size: 22px;
-   text-decoration: none;
-   color: #808080;
+  text-decoration: none;
+  color: #808080;
 }
 
 .name b {
@@ -85,20 +87,20 @@ html, body {
 
 .nav a {
   font-size: 22px;
-   text-decoration: none;
-   margin: 10px;
-   color: #808080;
-   text-transform: uppercase;
+  text-decoration: none;
+  margin: 10px;
+  color: #808080;
+  text-transform: uppercase;
 }
 
 .nav a:hover {
   color: #00ADFF;
-   text-decoration: underline;
-   transition: 0.3s;
+  text-decoration: underline;
+  transition: 0.3s;
 }
 
 .nav-links-last {
-margin-right: 0;
+  margin-right: 0;
 }
 
 .home {
@@ -110,8 +112,7 @@ margin-right: 0;
 
   b {
     font-size: 22px;
-    color: white;
-   
+    color: white;  
   }
 
   .home-name {
@@ -175,19 +176,18 @@ margin-right: 0;
     justify-content: space-between;
     padding: 30px 0;
 
-    p {
-      font-size: 30px;
-      color: #808080;
-      margin: 0;
-      padding: 0 32px;
+  p {
+    font-size: 30px;
+    color: #808080;
+    margin: 0;
+    padding: 0 32px;
     
-      b {
-      color: #000;
+  b {
+    color: #000;
     }
   }
    
-
-    img {
+  img {
       height: 280px;
     }
   }
@@ -227,30 +227,32 @@ margin-right: 0;
     transition: .3s;
     
 
-      &:hover {
-        box-shadow: 0 6px 10px 0 rgba(#00ADFF, 0.2);
-        transform: translateY(-10px);
-      }
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(#00ADFF, 0.2);
+    transform: translateY(-10px);
+  }
 
-a {
-  display: flex;
-  justify-content: center;
-}
-p {
-  color: #808080;
-  font-size: 22px;
-  text-align: center;
-}
-b {
-  border: 1px solid #00ADFF;
-  background-color: #00ADFF;
-  color: white;
-  border-radius: 16px;
-  padding: 10px;
-  margin: 5px 0 0;
- }
+  a {
+    display: flex;
+    justify-content: center;
+  }
+
+  p {
+    color: #808080;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  b {
+    border: 1px solid #00ADFF;
+    background-color: #00ADFF;
+    color: white;
+    border-radius: 16px;
+    padding: 10px;
+    margin: 5px 0 0;
+  }
  
- .programming-language {
+  .programming-language {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -258,8 +260,6 @@ b {
     }
   }
 }
-
-
 
 .contact {
   background-color: #00ADFF;
@@ -283,92 +283,99 @@ b {
      text-align: center;
    }
 
-   .home-links {
-     display: flex;
-     justify-content: center;
-     padding: 40px 0 ;
-     a {
-       margin: 0 20px;
-     }
+  .home-links {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0 ;
 
-     .telegram {
-       margin-left: 25px;
+  a {
+    margin: 0 20px;
+    }
+
+  .telegram {
+    margin-left: 25px;
       }
    }
 
-   .form-contact {
-     padding: 50px 0;
-     display: flex;
-     flex-direction: column;
+  .form-contact {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
      
-        input {
-          background-color: #EEE;
-          padding: 20px;
-          margin: 10px 0;
-          border: none;
-          border-radius: 12px;
-          display: block;       
-            font-size: 15px;
-              }
-              textarea {
-          background-color: #EEE;
-          padding: 20px;
-          margin: 10px 0;
-          border: none;
-          border-radius: 12px;
-          display: block;       
-          font-size: 15px;
-              }
-              button {
-                
-                background-color: #EEE;
-                border-radius: 8px;
-                border: none;
-                cursor: pointer;
-                padding: 8px 16px;
-                font-size: 20px;
-                color: #808080;
-                width: 300px;
-              }
-   }
-  }
-
-  .footer {
-    background-color: #eee;
-    color: #000;
-    p{
-      text-transform: uppercase;
-      text-align: center;
-      margin: 0;
-      padding: 10px 0;
-      font-weight: bold;
+    input {
+      background-color: #EEE;
+      padding: 20px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 12px;
+      display: block;       
+      font-size: 15px;
+      
     }
-  } 
+              
+    textarea {
+      background-color: #EEE;
+      padding: 20px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 12px;
+      display: block;       
+      font-size: 15px;
+    }  
 
-  @media (max-width: 1024px){
-    .container {
-    width: 100%;
-    padding: 0 15px;
-    box-sizing: border-box;
-  }  
+    button {            
+      background-color: #EEE;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      padding: 8px 16px;
+      font-size: 20px;
+      color: #808080;
+      width: 300px;    
+    }
   }
+}
 
- @media (max-width: 992px) {
+.footer {
+  background-color: #eee;
+  color: #000;
+  
+  p { 
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+    font-weight: bold;
+  }  
+} 
 
-    .container {
+@media (max-width: 1024px){    
+   
+  .container {
+      width: 100%;
+      padding: 0 15px;
+      box-sizing: border-box;
+  }  
+}
+
+@media (max-width: 992px) {
+
+  .container {
     width: 100%;
     padding: 0 15px;
     box-sizing: border-box;
   }  
 
   .header {
+   
     .burger {
       display: block;
-    }
+  }
+
     nav {
       display: none;
-    }
   }
+}
   
   
 
@@ -391,25 +398,25 @@ b {
 
     .home-photo {
       text-align: center;
-       img {
+      
+    img {
       width: 384px; 
     }
-    }
   }
+}
 
     .about {
 
       .about-flex {
-      display: flex;
-      flex-direction: column;
+        display: flex;
+        flex-direction: column;
         text-align: center;
         
       .about-img {
-        margin-bottom: 80px;
-        
-      }
+        margin-bottom: 80px;       
       }
     }
+  }
 
     .works {
 
@@ -417,21 +424,18 @@ b {
         flex-direction: column;
         }
 
-        .work {
-          width: 60%;
-          min-height: 300px;
-          padding-top: 50px;
-        }
-      
-
+      .work {
+        width: 60%;
+        min-height: 300px;
+        padding-top: 50px;
+      }
     }
-
  }
 
  @media (max-width: 768px) {  
    .header {
-    a {
-      font-size: 14px;
+      a {
+        font-size: 14px;
 
       b {
         font-size: 22px;
@@ -446,39 +450,39 @@ b {
 
    .home {
     
-     .greeting {
+      .greeting {
        padding: 8px 18px;
        font-size: 14px;
      }
 
-     .home-name {
+      .home-name {
        font-size: 24px;
      }
 
-     p {
+      p {
        font-size: 16px;
      }
 
       .home-links {
   
-        svg {
+      svg {
           width: 38px;
           height: 38px;
         }
      }
     
 
-   .home-photo  img {
-       width: 307px;
+      .home-photo  img {
+        width: 307px;
      }
    }
 
-   .about {
-     h1 {
-       font-size: 30px;
+      .about {
+         h1 {
+          font-size: 30px;
      }
 
-    .about-flex {
+      .about-flex {
       
       img {
        height: 200px;
@@ -491,7 +495,7 @@ b {
     }
   }
 
-   .works {
+    .works {
      h2 {
        font-size: 30px;
      }
@@ -564,7 +568,6 @@ b {
    }
  }
   
-
 .burger  {
   width: 30px;
   height: 30px;
@@ -574,7 +577,6 @@ b {
   display: none;
   transition: all .3s;
   z-index: 6;
-
 
   &__line {
     width: 100%;
@@ -589,21 +591,14 @@ b {
     top: 0;
   }
 
- 
-
-
   &__line_middle {
     top: 50%;
     transform: translateY(-50%);
   }
 
- 
-
   &__line_bottom {
     bottom: 0;
-  }
-
-  
+  } 
 }
 
   .burger.active {
@@ -628,10 +623,7 @@ b {
       top: auto;
       bottom: 50%;
     }
-
   }
-
-
 
 .burger-menu {
   padding: 80px 15px 15px 15px;
