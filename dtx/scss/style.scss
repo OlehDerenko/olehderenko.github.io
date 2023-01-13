@@ -1,0 +1,469 @@
+@font-face {
+  font-family: Proxima;
+  font-weight: 400;
+  src: url("../fonts/ProximaNova-Regular.ttf");
+}
+
+@font-face {
+  font-family: Proxima;
+  font-weight: 600;
+  src: url("../fonts/ProximaNova-Semibold.ttf");
+}
+
+@font-face {
+  font-family: Proxima;
+  font-weight: 700;
+  src: url("../fonts/ProximaNova-Bold.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0f1213;
+  font-family: "Proxima";
+}
+
+.container-desktop {
+  width: 1216px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.onboarding {
+  padding: 80px 80px 60px 77px;
+  margin: 40px 0;
+  background: #15191b;
+  border-radius: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  width: 100%;
+  height: 590px;
+
+  .next {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .back {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 60px;
+  }
+
+  .text {
+    margin: 40px 0 0;
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 66px;
+    margin: 0;
+  }
+
+  p {
+    margin: 16px 0 0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    max-width: 330px;
+    line-height: 28px;
+  }
+
+  .navigation {
+    margin-top: 145px;
+    z-index: 1;
+    position: absolute;
+    bottom: 80px;
+
+    .number {
+      margin-left: 280px;
+    }
+
+    .arrow {
+      cursor: pointer;
+    }
+  }
+
+  .img {
+    position: relative;
+    .main {
+      width: 486px;
+      transform: scale(0.9);
+      transition: 0.3s;
+    }
+
+    .etherium {
+      position: absolute;
+      width: 120px;
+      right: -65px;
+      bottom: 0;
+    }
+
+    .etherium_two {
+      position: absolute;
+      left: -70px;
+      top: 45px;
+      width: 120px;
+    }
+  }
+}
+
+.step-two {
+  .pointer {
+    width: 69px;
+    position: absolute;
+    bottom: 61px;
+    right: 32px;
+  }
+}
+
+.step-three {
+  .telegram {
+    width: 69px;
+    position: absolute;
+    bottom: 103px;
+    left: 0;
+  }
+}
+
+.step-four {
+  background: url(../img/step-four-back.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: block;
+  h1 {
+    text-align: center;
+    z-index: 1;
+  }
+
+  .flex-step-four {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .ring {
+      background: #0b0d11f5;
+      padding: 60px 62px 60px 64px;
+      border-radius: 50%;
+      width: 292px;
+      height: 292px;
+      position: relative;
+
+      p {
+        font-size: 24px;
+        color: #ffffff;
+        line-height: 30.36px;
+        font-weight: 600;
+        margin: 0;
+        padding-top: 100px;
+      }
+
+      .arrow {
+        position: absolute;
+        right: 60px;
+      }
+    }
+
+    .sign_up {
+      padding: 46px 45px 43px 48px;
+      width: 223px;
+      height: 223px;
+      background-color: transparent;
+      border: 1px solid #0b0d11;
+
+      p {
+        font-size: 20px;
+        color: #0c0e13;
+        line-height: 25.3px;
+        padding-top: 80px;
+      }
+
+      .arrow {
+        position: absolute;
+        right: 40px;
+      }
+    }
+  }
+}
+
+.onboarding-adaptive {
+  display: none;
+}
+
+.transition,
+.transition-mobile {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.transition--visible,
+.transition-mobile--visible {
+  opacity: 1;
+  visibility: visible;
+  .img {
+    .main {
+      transform: scale(1);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+    position: relative;
+  }
+
+  .main {
+    width: 100%;
+    transform: scale(0.9);
+    transition: 0.3s;
+  }
+
+  .onboarding {
+    display: none;
+  }
+
+  .next {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .step-one-adaptive {
+    margin-top: 0px;
+  }
+
+  .onboarding-adaptive {
+    height: 100vh;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    width: calc(100% - 40px);
+    display: block;
+
+    .logo {
+      background-color: #15181e;
+      padding: 15px 21px 15px 20px;
+      border-radius: 12px;
+      display: inline-block;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%);
+      top: 50px;
+      z-index: 1;
+    }
+
+    .gradient-adaptive {
+      position: absolute;
+      bottom: -20px;
+      right: -20px;
+    }
+
+    .text {
+      margin: 24px 10px 132px;
+
+      h1 {
+        color: #fff;
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 41.8px;
+        margin: 0;
+      }
+
+      p {
+        margin: 16px 0 0;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 400;
+        max-width: 330px;
+        line-height: 28px;
+      }
+    }
+
+    .navigation {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 10px;
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      bottom: 40px;
+    }
+
+    .step-one {
+      width: 352px;
+    }
+
+    .img {
+      position: relative;
+      .etherium {
+        position: absolute;
+        width: 80.35px;
+        right: -4px;
+        bottom: -10px;
+      }
+
+      .etherium-two {
+        position: absolute;
+        width: 63px;
+        left: -23px;
+        bottom: 70px;
+      }
+    }
+  }
+
+  .step-two-adaptive {
+    .pointer {
+      position: absolute;
+      width: 69px;
+      bottom: 50px;
+      right: 0;
+    }
+  }
+
+  .step-three-adaptive {
+    .telegram {
+      position: absolute;
+      width: 64px;
+      bottom: 50px;
+      left: -10px;
+    }
+  }
+
+  .step-four-adaptive {
+    // // background: url(../img/Gradient-adaptive-four.png);
+    // // background-size: 100% 100%;
+    // background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    width: calc(100% + 40px);
+
+    .background {
+      position: absolute;
+      right: -50px;
+      bottom: -50px;
+      width: 100%;
+    }
+
+    .navigation {
+      position: absolute;
+      bottom: 40px;
+      left: 30px;
+    }
+
+    h1 {
+      font-size: 48px;
+      color: #fff;
+      line-height: 52.8px;
+      font-weight: 700;
+      text-align: center;
+      margin: 114px 0 102px;
+    }
+
+    .flex-step-four {
+      .ring_adaptive {
+        position: absolute;
+        left: -19px;
+        bottom: 180px;
+      }
+
+      .to_go_adaptive {
+        position: absolute;
+        bottom: -31px;
+        right: -35px;
+      }
+
+      .ring {
+        background: #0b0d11f5;
+        padding: 60px 62px 60px 64px;
+        border-radius: 50%;
+        width: 292px;
+        height: 292px;
+        position: relative;
+
+        p {
+          font-size: 24px;
+          color: #ffffff;
+          line-height: 30.36px;
+          font-weight: 600;
+          margin: 0;
+          padding-top: 100px;
+        }
+
+        .arrow {
+          position: absolute;
+          right: 60px;
+        }
+      }
+
+      .sign_up {
+        padding: 46px 45px 43px 48px;
+        width: 223px;
+        height: 223px;
+        background-color: transparent;
+        border: 1px solid #0b0d11;
+
+        p {
+          font-size: 20px;
+          color: #0c0e13;
+          line-height: 25.3px;
+          padding-top: 80px;
+        }
+
+        .arrow {
+          position: absolute;
+          right: 40px;
+        }
+      }
+    }
+  }
+
+  .step-four-adaptive.transition-mobile--visible {
+    .background {
+      animation: fade-up 0.3s forwards;
+      animation-delay: 0.3s;
+    }
+  }
+}
+
+@media screen and (max-height: 840px) {
+  .onboarding-adaptive {
+    height: 100%;
+    min-height: 840px;
+
+    .gradient-adaptive {
+      bottom: 0;
+    }
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    right: -50px;
+    bottom: -50px;
+    position: absolute;
+  }
+
+  100% {
+    right: 0;
+    bottom: 0;
+    position: absolute;
+  }
+}
