@@ -233,8 +233,21 @@ body {
 
   .main {
     width: 60%;
-    transform: scale(0.9);
+    transform: scale(0.9) translateX(-50%);
     transition: 0.3s;
+    position: relative;
+    left: 50%;
+  }
+
+  .transition--visible,
+  .transition-mobile--visible {
+    opacity: 1;
+    visibility: visible;
+    .img {
+      .main {
+        transform: scale(1) translateX(-50%);
+      }
+    }
   }
 
   .onboarding {
@@ -283,19 +296,19 @@ body {
 
       h1 {
         color: #fff;
-        font-size: 2.6em;
+        font-size: 3.6vh;
         font-weight: 700;
-        line-height: 41.8px;
+        line-height: 30.8px;
         margin: 0;
       }
 
       p {
         margin: 16px 0 0;
         color: #fff;
-        font-size: 20px;
+        font-size: 2.4vh;
         font-weight: 400;
         max-width: 330px;
-        line-height: 28px;
+        line-height: 25px;
       }
     }
 
@@ -308,6 +321,15 @@ body {
       z-index: 1;
       width: 100%;
       bottom: 40px;
+
+      .number {
+        width: 50px;
+      }
+
+      .arrow {
+        width: 60px;
+        height: 60px;
+      }
     }
 
     .step-one {
@@ -449,122 +471,9 @@ body {
 
 @media screen and (max-width: 550px) {
   .main {
-    width: 100%;
-    transform: scale(0.9);
-    transition: 0.3s;
+    width: 90%;
   }
 }
-
-// @media screen and (max-height: 840px) {
-//   .onboarding-adaptive {
-//     height: 90vh;
-//     min-height: 840px;
-
-//     .gradient-adaptive {
-//       bottom: 0;
-//     }
-//   }
-
-//   .step-four-adaptive {
-//     h1 {
-//       font-size: 42px;
-//       margin: 100px 0 100px;
-//     }
-//   }
-// }
-
-// @media screen and (max-height: 812px) {
-//   .onboarding-adaptive {
-//     min-height: 812px;
-
-//     .navigation {
-//       bottom: 15px;
-//     }
-
-//     .flex-step-four {
-//       .ring_adaptive {
-//         bottom: 195px;
-//       }
-//     }
-//   }
-// }
-
-// @media screen and (max-height: 750px) {
-//   .onboarding-adaptive {
-//     min-height: 667px;
-
-//     .img {
-//       .main {
-//         width: 90%;
-//         transform: scale(0.9) translateX(-50%);
-//         transition: 0.3s;
-//         position: relative;
-//         left: 50%;
-//       }
-//     }
-
-//     .text {
-//       margin: 26px 10px 60px;
-//       h1 {
-//         font-size: 34px;
-//       }
-
-//       p {
-//         font-size: 16px;
-//       }
-//     }
-
-//     .navigation {
-//       bottom: 15px;
-//       .number {
-//         width: 70px;
-//       }
-
-//       .next {
-//         transform: scale(0.9);
-//       }
-//     }
-
-//     .gradient-adaptive {
-//       bottom: 0;
-//     }
-//   }
-
-//   .transition--visible,
-//   .transition-mobile--visible {
-//     opacity: 1;
-//     visibility: visible;
-//     .img {
-//       .main {
-//         transform: scale(1) translateX(-50%);
-//       }
-//     }
-//   }
-// }
-
-// @media screen and (max-height: 736px) {
-//   .onboarding-adaptive {
-//     min-height: 736px;
-//   }
-// }
-
-// @media screen and (max-height: 667px) {
-//   .onboarding-adaptive {
-//     height: 100%;
-//     min-height: 667px;
-
-//     .navigation {
-//       bottom: 15px;
-//     }
-//   }
-
-//   .step-four-adaptive {
-//     h1 {
-//       font-size: 36px;
-//       margin: 55px 0 100px;
-//     }
-//   }
-// }
 
 @keyframes fade-up {
   0% {

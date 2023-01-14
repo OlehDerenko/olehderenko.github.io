@@ -205,8 +205,19 @@ body {
   }
   .main {
     width: 60%;
-    transform: scale(0.9);
+    transform: scale(0.9) translateX(-50%);
     transition: 0.3s;
+    position: relative;
+    left: 50%;
+  }
+  .transition--visible,
+.transition-mobile--visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  .transition--visible .img .main,
+.transition-mobile--visible .img .main {
+    transform: scale(1) translateX(-50%);
   }
   .onboarding {
     display: none;
@@ -249,18 +260,18 @@ body {
   }
   .onboarding-adaptive .text h1 {
     color: #fff;
-    font-size: 2.6em;
+    font-size: 3.6vh;
     font-weight: 700;
-    line-height: 41.8px;
+    line-height: 30.8px;
     margin: 0;
   }
   .onboarding-adaptive .text p {
     margin: 16px 0 0;
     color: #fff;
-    font-size: 20px;
+    font-size: 2.4vh;
     font-weight: 400;
     max-width: 330px;
-    line-height: 28px;
+    line-height: 25px;
   }
   .onboarding-adaptive .navigation {
     display: flex;
@@ -271,6 +282,13 @@ body {
     z-index: 1;
     width: 100%;
     bottom: 40px;
+  }
+  .onboarding-adaptive .navigation .number {
+    width: 50px;
+  }
+  .onboarding-adaptive .navigation .arrow {
+    width: 60px;
+    height: 60px;
   }
   .onboarding-adaptive .step-one {
     width: 352px;
@@ -384,9 +402,7 @@ body {
 }
 @media screen and (max-width: 550px) {
   .main {
-    width: 100%;
-    transform: scale(0.9);
-    transition: 0.3s;
+    width: 90%;
   }
 }
 @keyframes fade-up {
