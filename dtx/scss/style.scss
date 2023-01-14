@@ -232,7 +232,7 @@ body {
   }
 
   .main {
-    width: 100%;
+    width: 60%;
     transform: scale(0.9);
     transition: 0.3s;
   }
@@ -252,7 +252,7 @@ body {
   }
 
   .onboarding-adaptive {
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -351,9 +351,6 @@ body {
   }
 
   .step-four-adaptive {
-    // // background: url(../img/Gradient-adaptive-four.png);
-    // // background-size: 100% 100%;
-    // background-repeat: no-repeat;
     position: relative;
     height: 100vh;
     overflow: hidden;
@@ -450,6 +447,14 @@ body {
   }
 }
 
+@media screen and (max-width: 550px) {
+  .main {
+    width: 100%;
+    transform: scale(0.9);
+    transition: 0.3s;
+  }
+}
+
 @media screen and (max-height: 840px) {
   .onboarding-adaptive {
     height: 90vh;
@@ -468,105 +473,98 @@ body {
   }
 }
 
-@media screen and (max-height: 812px) {
-  .onboarding-adaptive {
-    height: 100%;
-    min-height: 812px;
+// @media screen and (max-height: 812px) {
+//   .onboarding-adaptive {
+//     min-height: 812px;
 
-    .navigation {
-      bottom: 15px;
-    }
+//     .navigation {
+//       bottom: 15px;
+//     }
 
-    .flex-step-four {
-      .ring_adaptive {
-        bottom: 195px;
-      }
-    }
-  }
-}
+//     .flex-step-four {
+//       .ring_adaptive {
+//         bottom: 195px;
+//       }
+//     }
+//   }
+// }
 
-@media screen and (max-height: 750px) {
-  .onboarding-adaptive {
-    height: 100%;
-    min-height: 667px;
+// @media screen and (max-height: 750px) {
+//   .onboarding-adaptive {
+//     min-height: 667px;
 
-    .img {
-      .main {
-        width: 90%;
-        transform: scale(0.9) translateX(-50%);
-        transition: 0.3s;
-        position: relative;
-        left: 50%;
-      }
-    }
+//     .img {
+//       .main {
+//         width: 90%;
+//         transform: scale(0.9) translateX(-50%);
+//         transition: 0.3s;
+//         position: relative;
+//         left: 50%;
+//       }
+//     }
 
-    .text {
-      margin: 26px 10px 60px;
-      h1 {
-        font-size: 34px;
-      }
+//     .text {
+//       margin: 26px 10px 60px;
+//       h1 {
+//         font-size: 34px;
+//       }
 
-      p {
-        font-size: 16px;
-      }
-    }
+//       p {
+//         font-size: 16px;
+//       }
+//     }
 
-    .navigation {
-      bottom: 15px;
-      .number {
-        width: 70px;
-      }
+//     .navigation {
+//       bottom: 15px;
+//       .number {
+//         width: 70px;
+//       }
 
-      .next {
-        transform: scale(0.9);
-      }
-    }
+//       .next {
+//         transform: scale(0.9);
+//       }
+//     }
 
-    .gradient-adaptive {
-      bottom: 0;
-    }
-  }
+//     .gradient-adaptive {
+//       bottom: 0;
+//     }
+//   }
 
-  .transition--visible,
-  .transition-mobile--visible {
-    opacity: 1;
-    visibility: visible;
-    .img {
-      .main {
-        transform: scale(1) translateX(-50%);
-      }
-    }
-  }
-}
+//   .transition--visible,
+//   .transition-mobile--visible {
+//     opacity: 1;
+//     visibility: visible;
+//     .img {
+//       .main {
+//         transform: scale(1) translateX(-50%);
+//       }
+//     }
+//   }
+// }
 
-@media screen and (max-height: 736px) {
-  .onboarding-adaptive {
-    height: 100%;
-    min-height: 736px;
+// @media screen and (max-height: 736px) {
+//   .onboarding-adaptive {
+//     min-height: 736px;
+//   }
+// }
 
-    .navigation {
-      bottom: 15px;
-    }
-  }
-}
+// @media screen and (max-height: 667px) {
+//   .onboarding-adaptive {
+//     height: 100%;
+//     min-height: 667px;
 
-@media screen and (max-height: 667px) {
-  .onboarding-adaptive {
-    height: 100%;
-    min-height: 667px;
+//     .navigation {
+//       bottom: 15px;
+//     }
+//   }
 
-    .navigation {
-      bottom: 15px;
-    }
-  }
-
-  .step-four-adaptive {
-    h1 {
-      font-size: 36px;
-      margin: 55px 0 100px;
-    }
-  }
-}
+//   .step-four-adaptive {
+//     h1 {
+//       font-size: 36px;
+//       margin: 55px 0 100px;
+//     }
+//   }
+// }
 
 @keyframes fade-up {
   0% {
