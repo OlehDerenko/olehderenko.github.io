@@ -452,11 +452,18 @@ body {
 
 @media screen and (max-height: 840px) {
   .onboarding-adaptive {
-    height: 100%;
+    height: 90vh;
     min-height: 840px;
 
     .gradient-adaptive {
       bottom: 0;
+    }
+  }
+
+  .step-four-adaptive {
+    h1 {
+      font-size: 42px;
+      margin: 100px 0 100px;
     }
   }
 }
@@ -468,6 +475,12 @@ body {
 
     .navigation {
       bottom: 15px;
+    }
+
+    .flex-step-four {
+      .ring_adaptive {
+        bottom: 195px;
+      }
     }
   }
 }
@@ -533,6 +546,24 @@ body {
 
     .navigation {
       bottom: 15px;
+    }
+  }
+}
+
+@media screen and (max-height: 667px) {
+  .onboarding-adaptive {
+    height: 100%;
+    min-height: 667px;
+
+    .navigation {
+      bottom: 15px;
+    }
+  }
+
+  .step-four-adaptive {
+    h1 {
+      font-size: 36px;
+      margin: 55px 0 100px;
     }
   }
 }
