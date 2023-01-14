@@ -230,6 +230,10 @@ body {
   .step-one-adaptive {
     margin-top: 0px;
   }
+  .top-block {
+    height: 70%;
+    grid-template-columns: 1fr;
+  }
   .onboarding-adaptive {
     height: 100%;
     position: absolute;
@@ -262,7 +266,7 @@ body {
     color: #fff;
     font-size: 3.6vh;
     font-weight: 700;
-    line-height: 30.8px;
+    line-height: 3.6vh;
     margin: 0;
   }
   .onboarding-adaptive .text p {
@@ -271,7 +275,7 @@ body {
     font-size: 2.4vh;
     font-weight: 400;
     max-width: 330px;
-    line-height: 25px;
+    line-height: 2.4vh;
   }
   .onboarding-adaptive .navigation {
     display: flex;
@@ -284,7 +288,7 @@ body {
     bottom: 40px;
   }
   .onboarding-adaptive .navigation .number {
-    width: 50px;
+    width: 8vh;
   }
   .onboarding-adaptive .navigation .arrow {
     width: 60px;
@@ -338,9 +342,9 @@ body {
     left: 30px;
   }
   .step-four-adaptive h1 {
-    font-size: 48px;
+    font-size: 4.6vh;
     color: #fff;
-    line-height: 52.8px;
+    line-height: 4.6vh;
     font-weight: 700;
     text-align: center;
     margin: 114px 0 102px;
@@ -348,19 +352,19 @@ body {
   .step-four-adaptive .flex-step-four .ring_adaptive {
     position: absolute;
     left: -19px;
-    bottom: 180px;
+    bottom: 145px;
   }
   .step-four-adaptive .flex-step-four .to_go_adaptive {
     position: absolute;
-    bottom: -31px;
+    bottom: -20px;
     right: -35px;
   }
   .step-four-adaptive .flex-step-four .ring {
     background: rgba(11, 13, 17, 0.9607843137);
     padding: 60px 62px 60px 64px;
     border-radius: 50%;
-    width: 292px;
-    height: 292px;
+    width: 40vh;
+    height: 40vh;
     position: relative;
     display: block;
     text-decoration: none;
@@ -380,8 +384,8 @@ body {
   }
   .step-four-adaptive .flex-step-four .sign_up {
     padding: 46px 45px 43px 48px;
-    width: 223px;
-    height: 223px;
+    width: 31vh;
+    height: 31vh;
     background-color: transparent;
     border: 1px solid #0b0d11;
   }
