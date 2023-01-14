@@ -332,8 +332,8 @@ body {
       }
 
       .arrow {
-        width: 60px;
-        height: 60px;
+        width: 65px;
+        height: 65px;
       }
     }
 
@@ -412,19 +412,13 @@ body {
         bottom: 145px;
       }
 
-      .to_go_adaptive {
-        position: absolute;
-        bottom: 0px;
-        right: -35px;
-      }
-
       .ring {
         background: #0b0d11f5;
         padding: 60px 62px 60px 64px;
         border-radius: 50%;
         width: 245px;
         height: 245px;
-        position: relative;
+        position: absolute;
         display: block;
         text-decoration: none;
         border: 1px solid #000000;
@@ -444,12 +438,18 @@ body {
         }
       }
 
+      .to_go {
+        bottom: 0px;
+        right: -35px;
+      }
       .sign_up {
         padding: 46px 45px 43px 48px;
         width: 203px;
         height: 203px;
         background-color: transparent;
         border: 1px solid #0b0d11;
+        left: -19px;
+        bottom: 145px;
 
         p {
           font-size: 2.4vh;
