@@ -43,6 +43,7 @@ body {
 
   width: 100%;
   height: 590px;
+  overflow: hidden;
 
   .next {
     border: none;
@@ -52,9 +53,11 @@ body {
 
   .back {
     position: absolute;
-    left: 0;
-    bottom: 0;
+    position: absolute;
+    left: -100px;
+    bottom: -100px;
     border-radius: 60px;
+    width: 434px;
   }
 
   .text {
@@ -157,6 +160,7 @@ body {
       width: 292px;
       height: 292px;
       position: relative;
+      text-decoration: none;
 
       p {
         font-size: 24px;
@@ -357,8 +361,8 @@ body {
 
     .background {
       position: absolute;
-      right: -50px;
-      bottom: -50px;
+      right: 50px;
+      bottom: 50px;
       width: 100%;
     }
 
@@ -397,6 +401,9 @@ body {
         width: 292px;
         height: 292px;
         position: relative;
+        display: block;
+        text-decoration: none;
+        border: 1px solid #000000;
 
         p {
           font-size: 24px;
@@ -447,6 +454,38 @@ body {
   .onboarding-adaptive {
     height: 100%;
     min-height: 840px;
+
+    .gradient-adaptive {
+      bottom: 0;
+    }
+  }
+}
+
+@media screen and (max-height: 750px) {
+  .onboarding-adaptive {
+    height: 100%;
+    min-height: 750px;
+
+    .img {
+      .main {
+        width: 100%;
+      }
+    }
+
+    .text {
+      margin: 26px 10px 60px;
+      h1 {
+        font-size: 34px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+
+    .navigation {
+      bottom: 50px;
+    }
 
     .gradient-adaptive {
       bottom: 0;
