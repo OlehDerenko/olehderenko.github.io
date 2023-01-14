@@ -283,7 +283,7 @@ body {
 
       h1 {
         color: #fff;
-        font-size: 38px;
+        font-size: 2.6em;
         font-weight: 700;
         line-height: 41.8px;
         margin: 0;
@@ -455,23 +455,23 @@ body {
   }
 }
 
-@media screen and (max-height: 840px) {
-  .onboarding-adaptive {
-    height: 90vh;
-    min-height: 840px;
+// @media screen and (max-height: 840px) {
+//   .onboarding-adaptive {
+//     height: 90vh;
+//     min-height: 840px;
 
-    .gradient-adaptive {
-      bottom: 0;
-    }
-  }
+//     .gradient-adaptive {
+//       bottom: 0;
+//     }
+//   }
 
-  .step-four-adaptive {
-    h1 {
-      font-size: 42px;
-      margin: 100px 0 100px;
-    }
-  }
-}
+//   .step-four-adaptive {
+//     h1 {
+//       font-size: 42px;
+//       margin: 100px 0 100px;
+//     }
+//   }
+// }
 
 // @media screen and (max-height: 812px) {
 //   .onboarding-adaptive {
