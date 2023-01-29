@@ -1193,6 +1193,11 @@ ul li {
   line-height: 28px;
   color: #fff;
 }
+ul li::marker {
+  color: #904ff3;
+  width: 8px;
+  height: 8px;
+}
 
 .pop-up-bot {
   background: #0e1111;
