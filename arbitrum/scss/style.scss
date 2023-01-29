@@ -8,6 +8,10 @@ body {
   color: #0e1111;
 }
 
+body.active {
+  overflow: hidden;
+}
+
 .container {
   width: 1300px;
   margin: 0 auto;
@@ -37,6 +41,68 @@ body {
   position: relative;
   z-index: 999;
   transition: 0.3s;
+}
+
+.burger {
+  width: 35px;
+  height: 25px;
+  position: relative;
+  background: transparent;
+  border: none;
+  display: none;
+  transition: all 0.3s;
+  z-index: 6;
+
+  &__line {
+    width: 100%;
+    height: 4px;
+    background: #0e1111;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s;
+    border-radius: 30px;
+  }
+
+  &__line_top {
+    top: 0;
+  }
+
+  &__line_middle {
+    top: 50%;
+    transform: translateY(-50%);
+    left: -10px;
+    width: 30px;
+  }
+
+  &__line_bottom {
+    bottom: 0;
+  }
+}
+
+.burger.is-active {
+  transform: scale(-1, 1);
+
+  .burger__line_top {
+    transform: rotate(-45deg) translateY(-50%);
+    top: auto;
+    bottom: 50%;
+    background: #fff;
+    z-index: 999;
+    position: relative;
+  }
+
+  .burger__line_middle {
+    display: none;
+  }
+
+  .burger__line_bottom {
+    transform: rotate(45deg) translateY(-50%);
+    top: auto;
+    bottom: 50%;
+    background: #fff;
+    z-index: 999;
+    position: relative;
+  }
 }
 
 .header {
@@ -1587,6 +1653,15 @@ ul {
     background: #0e1111;
     padding: 25px;
     display: block;
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999;
+
     .mobile-top {
       border-bottom: 0.5px solid #ffffff;
       padding-bottom: 20px;
@@ -1631,6 +1706,14 @@ ul {
         margin-right: 25px;
       }
     }
+  }
+
+  .mobile-menu.open {
+    transform: translateX(0);
+  }
+
+  .burger {
+    display: block;
   }
 
   .header {
@@ -1721,7 +1804,9 @@ ul {
       display: block;
       position: absolute;
       bottom: -232px;
-      left: 0;
+      right: 0;
+      width: 100%;
+      height: 75%;
     }
 
     .button-join {
@@ -1763,6 +1848,12 @@ ul {
       bottom: -110px;
       left: 0;
       z-index: 999;
+    }
+
+    .history-mobile-blurred {
+      position: absolute;
+      right: 0;
+      top: -50px;
     }
 
     h2 {
@@ -1937,10 +2028,10 @@ ul {
       flex-direction: column;
       margin: 0;
       padding-top: 40px;
-      align-items: inherit;
 
       .programs-block {
         padding: 50px 36px 40px;
+        width: 325px;
         h6 {
           margin: 30px 0 0;
           font-weight: 800;

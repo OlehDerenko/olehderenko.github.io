@@ -8,6 +8,10 @@ body {
   color: #0e1111;
 }
 
+body.active {
+  overflow: hidden;
+}
+
 .container {
   width: 1300px;
   margin: 0 auto;
@@ -37,6 +41,61 @@ body {
   position: relative;
   z-index: 999;
   transition: 0.3s;
+}
+
+.burger {
+  width: 35px;
+  height: 25px;
+  position: relative;
+  background: transparent;
+  border: none;
+  display: none;
+  transition: all 0.3s;
+  z-index: 6;
+}
+.burger__line {
+  width: 100%;
+  height: 4px;
+  background: #0e1111;
+  position: absolute;
+  left: 0;
+  transition: all 0.3s;
+  border-radius: 30px;
+}
+.burger__line_top {
+  top: 0;
+}
+.burger__line_middle {
+  top: 50%;
+  transform: translateY(-50%);
+  left: -10px;
+  width: 30px;
+}
+.burger__line_bottom {
+  bottom: 0;
+}
+
+.burger.is-active {
+  transform: scale(-1, 1);
+}
+.burger.is-active .burger__line_top {
+  transform: rotate(-45deg) translateY(-50%);
+  top: auto;
+  bottom: 50%;
+  background: #fff;
+  z-index: 999;
+  position: relative;
+}
+.burger.is-active .burger__line_middle {
+  display: none;
+}
+.burger.is-active .burger__line_bottom {
+  transform: rotate(45deg) translateY(-50%);
+  top: auto;
+  bottom: 50%;
+  background: #fff;
+  z-index: 999;
+  position: relative;
 }
 
 .header {
@@ -1364,6 +1423,14 @@ ul li {
     background: #0e1111;
     padding: 25px;
     display: block;
+    transform: translateX(-100%);
+    transition: transform 0.5s;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999;
   }
   .mobile-menu .mobile-top {
     border-bottom: 0.5px solid #ffffff;
@@ -1402,6 +1469,12 @@ ul li {
   }
   .mobile-menu .links .instagram {
     margin-right: 25px;
+  }
+  .mobile-menu.open {
+    transform: translateX(0);
+  }
+  .burger {
+    display: block;
   }
   .header .nav {
     display: none;
@@ -1470,7 +1543,9 @@ ul li {
     display: block;
     position: absolute;
     bottom: -232px;
-    left: 0;
+    right: 0;
+    width: 100%;
+    height: 75%;
   }
   .main .button-join {
     display: block;
@@ -1505,6 +1580,11 @@ ul li {
     bottom: -110px;
     left: 0;
     z-index: 999;
+  }
+  .history-mobile .history-mobile-blurred {
+    position: absolute;
+    right: 0;
+    top: -50px;
   }
   .history-mobile h2 {
     font-weight: 800;
@@ -1650,10 +1730,10 @@ ul li {
     flex-direction: column;
     margin: 0;
     padding-top: 40px;
-    align-items: inherit;
   }
   .programs .programs-flex .programs-block {
     padding: 50px 36px 40px;
+    width: 325px;
   }
   .programs .programs-flex .programs-block h6 {
     margin: 30px 0 0;

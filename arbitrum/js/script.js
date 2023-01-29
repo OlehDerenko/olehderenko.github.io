@@ -86,3 +86,31 @@ closeModalButtons.forEach((button) => {
     document.body.style.overflow = "visible";
   });
 });
+
+const burger = document.querySelector(".burger");
+const burgerMenu = document.querySelector(".mobile-menu");
+const body = document.querySelector("body");
+
+const toggleNavigation = () => {
+  burgerMenu.classList.toggle("open");
+  body.classList.toggle("active");
+  burger.classList.toggle("is-active");
+};
+
+burger.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  toggleNavigation();
+});
+
+// links.forEach((link) => {
+//   link.addEventListener("click", (e) => {
+//     e.preventDefault();
+//     const target = document.querySelector(link.getAttribute("href"));
+//     target.scrollIntoView({
+//       behavior: "smooth",
+//     });
+
+//     toggleNavigation();
+//   });
+// });
