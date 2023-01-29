@@ -1,4 +1,41 @@
+const $body = document.body;
+let scrollPosition = 0;
+const burgerMenu = document.querySelector(".mobile-menu");
+const burgers = document.querySelectorAll(".burger");
+
+const scrollLock = {
+  enable() {
+    scrollPosition = window.pageYOffset;
+    $body.style.overflow = "hidden";
+    $body.style.position = "fixed";
+    $body.style.top = `-${scrollPosition}px`;
+    $body.style.width = "100%";
+  },
+  disable() {
+    $body.style.removeProperty("overflow");
+    $body.style.removeProperty("position");
+    $body.style.removeProperty("top");
+    $body.style.removeProperty("width");
+    window.scrollTo(0, scrollPosition);
+  },
+};
+
 const accordions = document.querySelectorAll(".faq-item");
+
+const animateHeightTransition = (elem, height, duration = 300) => {
+  const start = performance.now();
+
+  const step = function () {
+    const now = performance.now();
+    const delta = Math.min((now - start) / duration, 1);
+    elem.style.height = delta * height + "px";
+    if (delta < 1) {
+      requestAnimationFrame(step);
+    }
+  };
+
+  step();
+};
 
 document.addEventListener("DOMContentLoaded", () => {
   accordions.forEach((accordion) => {
@@ -14,7 +51,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     accordion.setAttribute("data-expanded-height", expandedHeight);
     accordion.setAttribute("data-height", closedHeight);
-    accordion.style.height = `${closedHeight}px`;
+
+    animateHeightTransition(accordion, closedHeight);
 
     accordion.addEventListener("click", (e) => {
       if (accordion.classList.contains("open")) {
@@ -22,9 +60,10 @@ document.addEventListener("DOMContentLoaded", () => {
         accordion.style.height = `${accordion.getAttribute("data-height")}px`;
       } else {
         accordion.classList.add("open");
-        accordion.style.height = `${accordion.getAttribute(
-          "data-expanded-height"
-        )}px`;
+        animateHeightTransition(
+          accordion,
+          parseFloat(accordion.getAttribute("data-expanded-height"))
+        );
       }
     });
   });
@@ -57,12 +96,13 @@ const links = document.querySelectorAll(".nav a");
 links.forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
+    burgerMenu.classList.remove("open");
+    scrollLock.disable();
+
     const target = document.querySelector(link.getAttribute("href"));
     target.scrollIntoView({
       behavior: "smooth",
     });
-
-    toggleNavigation();
   });
 });
 
@@ -79,7 +119,7 @@ openModalButtons.forEach((button) => {
     );
 
     modal.classList.add("visible");
-    document.body.style.overflow = "hidden";
+    scrollLock.enable();
   });
 });
 
@@ -90,22 +130,20 @@ closeModalButtons.forEach((button) => {
       `[data-modal-name=${button.getAttribute("data-close-modal")}]`
     );
     modal.classList.remove("visible");
-    document.body.style.overflow = "visible";
+    scrollLock.disable();
   });
 });
 
-const burger = document.querySelector(".burger");
-const burgerMenu = document.querySelector(".mobile-menu");
-const body = document.querySelector("body");
+burgers.forEach((burger) => {
+  burger.addEventListener("click", (e) => {
+    e.preventDefault();
 
-const toggleNavigation = () => {
-  burgerMenu.classList.toggle("open");
-  body.classList.toggle("active");
-  burger.classList.toggle("is-active");
-};
-
-burger.addEventListener("click", (e) => {
-  e.preventDefault();
-
-  toggleNavigation();
+    if (burger.classList.contains("is-active")) {
+      burgerMenu.classList.remove("open");
+      scrollLock.disable();
+    } else {
+      burgerMenu.classList.add("open");
+      scrollLock.enable();
+    }
+  });
 });

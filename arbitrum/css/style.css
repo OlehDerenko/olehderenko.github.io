@@ -77,6 +77,9 @@ body.active {
 
 .burger.is-active {
   z-index: 999;
+  position: relative;
+  top: 10px;
+  left: 0;
 }
 .burger.is-active .burger__line_top {
   transform: rotate(-45deg);
@@ -170,7 +173,7 @@ body.active {
   position: absolute;
   top: -200px;
   right: 30px;
-  animation: float 6s ease-in-out infinite;
+  animation: float 4s ease-in-out infinite;
 }
 .main .history-secondary-img {
   position: absolute;
@@ -805,7 +808,7 @@ body.active {
   transform: rotate(6deg) translate(-50%);
   position: relative;
   left: 50%;
-  animation: float-three 6s ease-in-out infinite;
+  animation: float-three 4s ease-in-out infinite;
 }
 .proposal .proposal-flex .proposal-block .dollars h6 {
   margin: 0;
@@ -834,7 +837,7 @@ body.active {
   transform: rotate(-6deg) translate(-50%);
   position: relative;
   left: 50%;
-  animation: float-two 6s ease-in-out infinite;
+  animation: float-two 4s ease-in-out infinite;
 }
 .proposal .proposal-flex .proposal-block-one .dollars h6 {
   margin: 0;
@@ -957,7 +960,7 @@ body.active {
   width: 5px;
 }
 .faq .faq-container .faq-item {
-  transition: 0.3s;
+  will-change: height;
   overflow-y: hidden;
   position: relative;
   padding: 36px 0 36px;
@@ -1461,6 +1464,7 @@ ul li {
     transition: transform 0.5s;
     position: fixed;
     width: 100%;
+    overflow: auto;
     height: 100%;
     left: 0;
     top: 0;
@@ -1469,9 +1473,9 @@ ul li {
   .mobile-menu .mobile-top {
     border-bottom: 0.5px solid #ffffff;
     padding-bottom: 20px;
-  }
-  .mobile-menu .mobile-top img {
-    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   .mobile-menu .nav {
     display: flex;
@@ -1549,7 +1553,7 @@ ul li {
     display: block;
     right: 0;
     top: -109px;
-    animation: float 6s ease-in-out infinite;
+    animation: float 4s ease-in-out infinite;
   }
   .main .blurre-img-adaptive {
     width: 150px;
@@ -2149,7 +2153,7 @@ ul li {
     width: 30%;
   }
   .pop-up-p2p .payment-flex .block p {
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 600;
     text-transform: uppercase;
     line-height: 40px;
@@ -2400,4 +2404,8 @@ ul li {
   100% {
     box-shadow: 0 0 0 5px rgba(144, 79, 243, 0.2), 0 0 0 5px rgba(144, 79, 243, 0.2), 0 0 0 8px rgba(144, 79, 243, 0.2), 0 0 0 8px rgba(144, 79, 243, 0);
   }
+}
+.mobile-scroll-container {
+  padding: 20px 0;
+  overflow: scroll;
 }/*# sourceMappingURL=style.css.map */

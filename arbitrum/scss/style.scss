@@ -81,6 +81,9 @@ body.active {
 
 .burger.is-active {
   z-index: 999;
+  position: relative;
+  top: 10px;
+  left: 0;
   .burger__line_top {
     transform: rotate(-45deg);
     top: 0;
@@ -183,7 +186,7 @@ body.active {
     position: absolute;
     top: -200px;
     right: 30px;
-    animation: float 6s ease-in-out infinite;
+    animation: float 4s ease-in-out infinite;
   }
 
   .history-secondary-img {
@@ -922,7 +925,7 @@ body.active {
         transform: rotate(6deg) translate(-50%);
         position: relative;
         left: 50%;
-        animation: float-three 6s ease-in-out infinite;
+        animation: float-three 4s ease-in-out infinite;
 
         h6 {
           margin: 0;
@@ -955,7 +958,7 @@ body.active {
         transform: rotate(-6deg) translate(-50%);
         position: relative;
         left: 50%;
-        animation: float-two 6s ease-in-out infinite;
+        animation: float-two 4s ease-in-out infinite;
 
         h6 {
           margin: 0;
@@ -1098,7 +1101,7 @@ body.active {
     }
 
     .faq-item {
-      transition: 0.3s;
+      will-change: height;
       overflow-y: hidden;
       position: relative;
       padding: 36px 0 36px;
@@ -1701,7 +1704,9 @@ ul {
     transition: transform 0.5s;
     position: fixed;
     width: 100%;
+    overflow: auto;
     height: 100%;
+
     left: 0;
     top: 0;
     z-index: 998;
@@ -1709,10 +1714,9 @@ ul {
     .mobile-top {
       border-bottom: 0.5px solid #ffffff;
       padding-bottom: 20px;
-
-      img {
-        padding-top: 10px;
-      }
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
 
     .nav {
@@ -1810,7 +1814,7 @@ ul {
       display: block;
       right: 0;
       top: -109px;
-      animation: float 6s ease-in-out infinite;
+      animation: float 4s ease-in-out infinite;
     }
 
     .blurre-img-adaptive {
@@ -2469,7 +2473,7 @@ ul {
         width: 30%;
 
         p {
-          font-size: 11px;
+          font-size: 10px;
           font-weight: 600;
           text-transform: uppercase;
           line-height: 40px;
@@ -2782,4 +2786,9 @@ $ripple-color: #904ff3;
       0 0 0 5px rgba($ripple-color, 0.2), 0 0 0 8px rgba($ripple-color, 0.2),
       0 0 0 8px rgba($ripple-color, 0);
   }
+}
+
+.mobile-scroll-container {
+  padding: 20px 0;
+  overflow: scroll;
 }
