@@ -3,7 +3,14 @@ const accordions = document.querySelectorAll(".faq-item");
 document.addEventListener("DOMContentLoaded", () => {
   accordions.forEach((accordion) => {
     const expandedHeight = accordion.offsetHeight;
-    const closedHeight = accordion.querySelector(".answer").offsetHeight + 46;
+    const margin = parseFloat(
+      window
+        .getComputedStyle(accordion.querySelector(".faq-top"))
+        .getPropertyValue("margin-bottom")
+    );
+
+    const closedHeight =
+      accordion.querySelector(".faq-top").offsetHeight + margin + margin;
 
     accordion.setAttribute("data-expanded-height", expandedHeight);
     accordion.setAttribute("data-height", closedHeight);
@@ -102,15 +109,3 @@ burger.addEventListener("click", (e) => {
 
   toggleNavigation();
 });
-
-// links.forEach((link) => {
-//   link.addEventListener("click", (e) => {
-//     e.preventDefault();
-//     const target = document.querySelector(link.getAttribute("href"));
-//     target.scrollIntoView({
-//       behavior: "smooth",
-//     });
-
-//     toggleNavigation();
-//   });
-// });
