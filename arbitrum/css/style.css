@@ -792,6 +792,9 @@ body {
   padding-bottom: 100px;
   position: relative;
 }
+.faq .title-adaptive {
+  display: none;
+}
 .faq .filter-bg-blue {
   position: absolute;
   background: linear-gradient(90deg, #00d49e 0.61%, #00cefe 99.99%);
@@ -917,6 +920,9 @@ body {
 .footer {
   background: #0e1111;
   border-top: 1px solid #fff;
+}
+.footer .blurred-faq-footer {
+  display: none;
 }
 .footer .footer-flex {
   padding: 50px 0;
@@ -1133,6 +1139,9 @@ ul li {
   right: -85px;
   z-index: 0;
 }
+.pop-up-bot .blurred-two-mobile {
+  display: none;
+}
 .pop-up-bot .play {
   width: 105px;
   height: 105px;
@@ -1179,9 +1188,15 @@ ul li {
   font-size: 55px;
   line-height: 28px;
 }
+.pop-up-bot .phone-mobile {
+  display: none;
+}
 .pop-up-bot .bottom-text {
   width: 586.9px;
   padding-top: 100px;
+}
+.pop-up-bot .bottom-text-mobile {
+  display: none;
 }
 .pop-up-bot .buttons {
   padding-top: 120px;
@@ -1218,6 +1233,9 @@ ul li {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.pop-up-offer .pop-up-offer-top .title-adaptive {
+  display: none;
 }
 .pop-up-offer .pop-up-offer-top a {
   text-decoration: none;
@@ -1299,6 +1317,7 @@ ul li {
   background: #0e1111;
   position: relative;
   padding: 70px 0;
+  height: 100%;
 }
 .pop-up-video a {
   text-decoration: none;
@@ -1481,6 +1500,12 @@ ul li {
     position: relative;
     padding-top: 95px;
   }
+  .history-mobile .above {
+    position: absolute;
+    bottom: -110px;
+    left: 0;
+    z-index: 999;
+  }
   .history-mobile h2 {
     font-weight: 800;
     font-size: 38px;
@@ -1546,11 +1571,10 @@ ul li {
   }
   .about-us {
     background-image: none;
+    overflow: hidden;
   }
   .about-us .above {
-    width: 140px;
-    left: -50px;
-    top: -50px;
+    display: none;
   }
   .about-us .circle {
     position: absolute;
@@ -1586,6 +1610,7 @@ ul li {
   }
   .reviews {
     padding: 80px 0 80px;
+    overflow: hidden;
   }
   .reviews .reviews-top {
     justify-content: center;
@@ -1715,6 +1740,9 @@ ul li {
   .faq {
     margin-top: 80px;
   }
+  .faq .blurred {
+    display: none;
+  }
   .faq .right-img {
     position: absolute;
     right: 0;
@@ -1748,6 +1776,12 @@ ul li {
     border-top: 1.5px solid #fff;
     position: relative;
   }
+  .footer .blurred-faq-footer {
+    display: block;
+    position: absolute;
+    top: -90px;
+    left: 0;
+  }
   .footer .footer-flex {
     flex-direction: column;
   }
@@ -1780,31 +1814,199 @@ ul li {
   .pop-up-p2p .payment-flex {
     flex-wrap: wrap;
   }
+  .pop-up-p2p .payment-flex .mobile-none-span {
+    display: none;
+  }
+  .pop-up-p2p .payment-flex span {
+    width: 39px;
+  }
   .pop-up-p2p .payment-flex .block {
     width: 30%;
+  }
+  .pop-up-p2p .payment-flex .block p {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 40px;
+  }
+  .pop-up-p2p .payment-flex .block-two p {
+    line-height: 20px;
+    text-align: center;
+  }
+  .pop-up-p2p .payment-flex .block-three {
+    padding-top: 40px;
+  }
+  .pop-up-p2p .payment-flex .block-four {
+    padding-top: 40px;
   }
   .pop-up-p2p .pop-questions {
     flex-direction: column;
   }
+  .pop-up-p2p .pop-questions .block ul {
+    padding: 0 0 0 25px;
+  }
   .pop-up-p2p .pop-questions .practical {
     margin: 0;
+  }
+  .pop-up-p2p .example {
+    padding: 30px 10px;
   }
   .pop-up-p2p .example h6 {
     text-align: center;
   }
-  .pop-up-p2p .example-flex {
+  .pop-up-p2p .example .example-flex {
     flex-direction: column;
   }
-  .pop-up-p2p .example-flex .buy img {
-    width: 305px;
+  .pop-up-p2p .example .example-flex .buy img {
+    width: 100%;
   }
-  .pop-up-p2p .example-flex .buy {
+  .pop-up-p2p .example .example-flex .buy {
     margin: 0;
+  }
+  .pop-up-p2p .example .example-flex .sell {
+    padding-top: 40px;
+  }
+  .pop-up-p2p .example .example-flex .sell img {
+    width: 100%;
   }
   .pop-up-p2p .button-join {
     width: 100%;
     text-align: center;
     display: block;
+  }
+  .pop-up-bot {
+    padding: 0;
+  }
+  .pop-up-bot .phone {
+    display: none;
+  }
+  .pop-up-bot .blurred-one {
+    position: absolute;
+    left: 25px;
+    bottom: 31%;
+    z-index: 3;
+    width: 111px;
+  }
+  .pop-up-bot .blurred-two {
+    display: none;
+  }
+  .pop-up-bot .blurred-two-mobile {
+    display: block;
+    position: absolute;
+    bottom: 9%;
+    right: 0;
+  }
+  .pop-up-bot .phone-mobile {
+    width: 100%;
+    display: block;
+  }
+  .pop-up-bot .play {
+    bottom: 22.5%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .pop-up-bot .bg-shapes {
+    display: none;
+  }
+  .pop-up-bot .pop-top {
+    text-align: center;
+  }
+  .pop-up-bot ul {
+    padding-left: 25px;
+  }
+  .pop-up-bot .boat {
+    padding: 40px 0 0;
+  }
+  .pop-up-bot .boat .block {
+    align-items: flex-start;
+    padding-top: 40px;
+  }
+  .pop-up-bot .bottom-text {
+    display: none;
+  }
+  .pop-up-bot .bottom-text-mobile {
+    display: block;
+  }
+  .pop-up-bot .buttons {
+    padding-top: 40px;
+    flex-direction: column;
+    align-items: inherit;
+  }
+  .pop-up-bot .buttons .buttons-block .button-join {
+    width: 100%;
+    text-align: center;
+  }
+  .pop-up-bot .buttons .one {
+    margin: 0 0 20px 0;
+  }
+  .pop-up-bot .buttons .one .button-join {
+    box-shadow: 0px 14px 35px rgba(255, 189, 62, 0.25);
+  }
+  .pop-up-offer .pop-up-offer-top {
+    flex-direction: column-reverse;
+  }
+  .pop-up-offer .pop-up-offer-top .title-adaptive {
+    display: block;
+  }
+  .pop-up-offer .pop-up-offer-top .title-adaptive h5 {
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 62px;
+    color: #fff;
+    margin: 0;
+    padding-top: 20px;
+  }
+  .pop-up-offer .pop-up-offer-top .title-adaptive h5 b {
+    font-weight: 800;
+  }
+  .pop-up-offer .pop-up-offer-top .emoji-top {
+    padding-top: 40px;
+  }
+  .pop-up-offer .pop-up-offer-top .title {
+    display: none;
+  }
+  .pop-up-offer .text {
+    padding: 40px 0 0;
+    margin: 0;
+  }
+  .pop-up-offer ul {
+    padding: 40px 0 0 25px;
+  }
+  .pop-up-offer .price {
+    flex-wrap: wrap;
+    padding: 40px 0 0;
+    justify-content: center;
+  }
+  .pop-up-offer .price .price-block {
+    width: 45%;
+    padding: 0 25px 0 0;
+  }
+  .pop-up-offer .price .price-block-bottom {
+    margin-top: 45px;
+  }
+  .pop-up-offer .price .two {
+    border: none;
+    padding: 0 0 0 25px;
+  }
+  .pop-up-offer .price .last {
+    padding: 0 0 0 25px;
+  }
+  .pop-up-offer .button-pop {
+    padding: 40px 0 0;
+  }
+  .pop-up-offer .button-pop .button-join {
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
+  .pop-up-video {
+    padding: 0;
+  }
+  .pop-up-video .pop-top {
+    text-align: center;
+  }
+  .pop-up-video .bg-video {
+    display: none;
   }
 }
 .modal {

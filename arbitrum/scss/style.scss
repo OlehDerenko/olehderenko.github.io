@@ -907,6 +907,10 @@ body {
   padding-bottom: 100px;
   position: relative;
 
+  .title-adaptive {
+    display: none;
+  }
+
   .filter-bg-blue {
     position: absolute;
     background: linear-gradient(90deg, #00d49e 0.61%, #00cefe 99.99%);
@@ -1054,6 +1058,10 @@ body {
 .footer {
   background: #0e1111;
   border-top: 1px solid #fff;
+
+  .blurred-faq-footer {
+    display: none;
+  }
 
   .footer-flex {
     padding: 50px 0;
@@ -1315,6 +1323,10 @@ ul {
     z-index: 0;
   }
 
+  .blurred-two-mobile {
+    display: none;
+  }
+
   .play {
     width: 105px;
     height: 105px;
@@ -1367,9 +1379,17 @@ ul {
     }
   }
 
+  .phone-mobile {
+    display: none;
+  }
+
   .bottom-text {
     width: 586.9px;
     padding-top: 100px;
+  }
+
+  .bottom-text-mobile {
+    display: none;
   }
 
   .buttons {
@@ -1413,6 +1433,10 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    .title-adaptive {
+      display: none;
+    }
 
     a {
       text-decoration: none;
@@ -1508,6 +1532,7 @@ ul {
   background: #0e1111;
   position: relative;
   padding: 70px 0;
+  height: 100%;
 
   a {
     text-decoration: none;
@@ -1733,6 +1758,13 @@ ul {
     position: relative;
     padding-top: 95px;
 
+    .above {
+      position: absolute;
+      bottom: -110px;
+      left: 0;
+      z-index: 999;
+    }
+
     h2 {
       font-weight: 800;
       font-size: 38px;
@@ -1810,10 +1842,9 @@ ul {
 
   .about-us {
     background-image: none;
+    overflow: hidden;
     .above {
-      width: 140px;
-      left: -50px;
-      top: -50px;
+      display: none;
     }
 
     .circle {
@@ -1859,6 +1890,7 @@ ul {
 
   .reviews {
     padding: 80px 0 80px;
+    overflow: hidden;
     .reviews-top {
       justify-content: center;
       align-items: center;
@@ -2014,6 +2046,10 @@ ul {
 
   .faq {
     margin-top: 80px;
+
+    .blurred {
+      display: none;
+    }
     .right-img {
       position: absolute;
       right: 0;
@@ -2057,6 +2093,13 @@ ul {
   .footer {
     border-top: 1.5px solid #fff;
     position: relative;
+
+    .blurred-faq-footer {
+      display: block;
+      position: absolute;
+      top: -90px;
+      left: 0;
+    }
     .footer-flex {
       flex-direction: column;
 
@@ -2095,13 +2138,49 @@ ul {
     .payment-flex {
       flex-wrap: wrap;
 
+      .mobile-none-span {
+        display: none;
+      }
+
+      span {
+        width: 39px;
+      }
+
       .block {
         width: 30%;
+
+        p {
+          font-size: 11px;
+          font-weight: 600;
+          text-transform: uppercase;
+          line-height: 40px;
+        }
+      }
+
+      .block-two {
+        p {
+          line-height: 20px;
+          text-align: center;
+        }
+      }
+
+      .block-three {
+        padding-top: 40px;
+      }
+
+      .block-four {
+        padding-top: 40px;
       }
     }
 
     .pop-questions {
       flex-direction: column;
+
+      .block {
+        ul {
+          padding: 0 0 0 25px;
+        }
+      }
 
       .practical {
         margin: 0;
@@ -2109,22 +2188,30 @@ ul {
     }
 
     .example {
+      padding: 30px 10px;
       h6 {
         text-align: center;
       }
-    }
 
-    .example-flex {
-      flex-direction: column;
+      .example-flex {
+        flex-direction: column;
 
-      .buy {
-        img {
-          width: 305px;
+        .buy {
+          img {
+            width: 100%;
+          }
         }
-      }
 
-      .buy {
-        margin: 0;
+        .buy {
+          margin: 0;
+        }
+
+        .sell {
+          padding-top: 40px;
+          img {
+            width: 100%;
+          }
+        }
       }
     }
 
@@ -2132,6 +2219,177 @@ ul {
       width: 100%;
       text-align: center;
       display: block;
+    }
+  }
+
+  .pop-up-bot {
+    padding: 0;
+
+    .phone {
+      display: none;
+    }
+
+    .blurred-one {
+      position: absolute;
+      left: 25px;
+      bottom: 31%;
+      z-index: 3;
+      width: 111px;
+    }
+
+    .blurred-two {
+      display: none;
+    }
+
+    .blurred-two-mobile {
+      display: block;
+      position: absolute;
+      bottom: 9%;
+      right: 0;
+    }
+
+    .phone-mobile {
+      width: 100%;
+      display: block;
+    }
+
+    .play {
+      bottom: 22.5%;
+      left: 50%;
+      transform: translate(-50%);
+    }
+
+    .bg-shapes {
+      display: none;
+    }
+
+    .pop-top {
+      text-align: center;
+    }
+
+    ul {
+      padding-left: 25px;
+    }
+
+    .boat {
+      padding: 40px 0 0;
+
+      .block {
+        align-items: flex-start;
+        padding-top: 40px;
+      }
+    }
+
+    .bottom-text {
+      display: none;
+    }
+
+    .bottom-text-mobile {
+      display: block;
+    }
+
+    .buttons {
+      padding-top: 40px;
+      flex-direction: column;
+      align-items: inherit;
+
+      .buttons-block {
+        .button-join {
+          width: 100%;
+          text-align: center;
+        }
+      }
+
+      .one {
+        margin: 0 0 20px 0;
+
+        .button-join {
+          box-shadow: 0px 14px 35px rgba(255, 189, 62, 0.25);
+        }
+      }
+    }
+  }
+
+  .pop-up-offer {
+    .pop-up-offer-top {
+      flex-direction: column-reverse;
+      .title-adaptive {
+        display: block;
+
+        h5 {
+          font-weight: 500;
+          font-size: 38px;
+          line-height: 62px;
+          color: #fff;
+          margin: 0;
+          padding-top: 20px;
+
+          b {
+            font-weight: 800;
+          }
+        }
+      }
+
+      .emoji-top {
+        padding-top: 40px;
+      }
+
+      .title {
+        display: none;
+      }
+    }
+
+    .text {
+      padding: 40px 0 0;
+      margin: 0;
+    }
+
+    ul {
+      padding: 40px 0 0 25px;
+    }
+
+    .price {
+      flex-wrap: wrap;
+      padding: 40px 0 0;
+      justify-content: center;
+
+      .price-block {
+        width: 45%;
+        padding: 0 25px 0 0;
+      }
+
+      .price-block-bottom {
+        margin-top: 45px;
+      }
+
+      .two {
+        border: none;
+        padding: 0 0 0 25px;
+      }
+
+      .last {
+        padding: 0 0 0 25px;
+      }
+    }
+    .button-pop {
+      padding: 40px 0 0;
+
+      .button-join {
+        width: 100%;
+        text-align: center;
+        display: block;
+      }
+    }
+  }
+
+  .pop-up-video {
+    padding: 0;
+    .pop-top {
+      text-align: center;
+    }
+
+    .bg-video {
+      display: none;
     }
   }
 }
