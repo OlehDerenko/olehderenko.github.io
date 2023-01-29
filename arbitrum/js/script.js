@@ -22,21 +22,6 @@ const scrollLock = {
 
 const accordions = document.querySelectorAll(".faq-item");
 
-const animateHeightTransition = (elem, height, duration = 300) => {
-  const start = performance.now();
-
-  const step = function () {
-    const now = performance.now();
-    const delta = Math.min((now - start) / duration, 1);
-    elem.style.height = delta * height + "px";
-    if (delta < 1) {
-      requestAnimationFrame(step);
-    }
-  };
-
-  step();
-};
-
 document.addEventListener("DOMContentLoaded", () => {
   accordions.forEach((accordion) => {
     const expandedHeight = accordion.offsetHeight;
@@ -52,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     accordion.setAttribute("data-expanded-height", expandedHeight);
     accordion.setAttribute("data-height", closedHeight);
 
-    animateHeightTransition(accordion, closedHeight);
+    accordion.style.height = `${closedHeight}px`;
 
     accordion.addEventListener("click", (e) => {
       if (accordion.classList.contains("open")) {
@@ -60,10 +45,9 @@ document.addEventListener("DOMContentLoaded", () => {
         accordion.style.height = `${accordion.getAttribute("data-height")}px`;
       } else {
         accordion.classList.add("open");
-        animateHeightTransition(
-          accordion,
-          parseFloat(accordion.getAttribute("data-expanded-height"))
-        );
+        accordion.style.height = `${accordion.getAttribute(
+          "data-expanded-height"
+        )}px`;
       }
     });
   });
