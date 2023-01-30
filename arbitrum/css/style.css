@@ -1984,7 +1984,7 @@ ul li::marker {
   .programs .programs-flex .programs-block h6 {
     margin: 30px 0 0;
     font-weight: 800;
-    font-size: 32px;
+    font-size: 30px;
     line-height: 40px;
   }
   .programs .programs-flex .programs-block h6 b {
@@ -2413,4 +2413,111 @@ ul li::marker {
 .mobile-scroll-container {
   padding: 20px 0;
   overflow: scroll;
+}
+
+.fixed-btn-block {
+  z-index: 11;
+  position: fixed;
+  right: 65px;
+  bottom: 50px;
+}
+@media screen and (max-width: 768px) {
+  .fixed-btn-block {
+    right: 20px;
+  }
+}
+.fixed-btn-block .fixed-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.fixed-btn-block .fixed-btn .fixed-btn-inner {
+  max-width: 55px;
+  max-height: 55px;
+  animation: telegram-icon-animation 1.5s ease 0s 1 normal none running;
+  animation-iteration-count: infinite;
+}
+.fixed-btn-block .fixed-btn .fixed-btn-inner::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  border: 1px solid rgba(255, 196, 18, 0.15);
+  left: -20px;
+  right: -20px;
+  top: -20px;
+  bottom: -20px;
+  border-radius: 50%;
+  animation: animate 1.5s linear infinite;
+  opacity: 0;
+  background: rgba(255, 196, 18, 0.15);
+  z-index: -1;
+}
+.fixed-btn-block .fixed-btn .fixed-btn-inner::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  border: 1px solid rgba(255, 196, 18, 0.15);
+  left: -20px;
+  right: -20px;
+  top: -20px;
+  bottom: -20px;
+  border-radius: 50%;
+  animation: animate 1.5s linear infinite;
+  opacity: 0;
+  background: rgba(255, 196, 18, 0.15);
+  z-index: -1;
+}
+.fixed-btn-block .fixed-btn .fixed-btn-inner img {
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes telegram-icon-animation {
+  0% {
+    transform: rotate(0);
+  }
+  10% {
+    transform: rotate(-30deg);
+  }
+  20% {
+    transform: rotate(15deg);
+  }
+  30% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(7.5deg);
+  }
+  50% {
+    transform: rotate(-6deg);
+  }
+  60% {
+    transform: rotate(5deg);
+  }
+  70% {
+    transform: rotate(-4.28571deg);
+  }
+  80% {
+    transform: rotate(3.75deg);
+  }
+  90% {
+    transform: rotate(-3.33333deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+@keyframes animate {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
