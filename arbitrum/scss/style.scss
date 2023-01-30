@@ -230,11 +230,32 @@ body.active {
     }
   }
 
-  .line-main {
+  .line-main-start {
+    display: block;
     position: absolute;
     right: -140px;
     z-index: -1;
-    top: -14px;
+    top: -20px;
+    width: 1200px;
+    height: 850px;
+  }
+
+  .line-main {
+    display: none;
+  }
+
+  @media screen and (max-width: 1440px) {
+    .line-main {
+      display: block;
+      position: absolute;
+      right: -140px;
+      z-index: -1;
+      top: -14px;
+    }
+
+    .line-main-start {
+      display: none;
+    }
   }
 
   .line-main-mobile {
@@ -365,6 +386,8 @@ body.active {
       font-size: 50px;
       line-height: 40px;
       font-weight: 800;
+      position: absolute;
+      top: -20px;
     }
 
     .history-block {
@@ -1684,7 +1707,7 @@ ul {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1300px) {
   .container-mobile {
     width: 100%;
     padding: 20px;
@@ -1808,10 +1831,14 @@ ul {
     }
 
     .main-line-mobile {
-      display: block;
+      display: none;
       position: absolute;
       right: 0;
       top: -15px;
+
+      @media screen and (max-width: 500px) {
+        display: block;
+      }
     }
 
     .right-img-adaptive {
@@ -1864,12 +1891,20 @@ ul {
     }
 
     .line-main-mobile {
-      display: block;
+      display: none;
       position: absolute;
       bottom: -232px;
       right: 0;
       width: 100%;
       height: 75%;
+
+      @media screen and (max-width: 500px) {
+        display: block;
+      }
+
+      @media screen and (max-width: 400px) {
+        width: 400px;
+      }
     }
 
     .button-join {
@@ -1979,8 +2014,10 @@ ul {
       position: absolute;
       z-index: -1;
       left: 40px;
+      display: none;
 
       @media screen and (max-width: 500px) {
+        display: block;
         width: 305px;
         height: 450px;
         left: 75px;
@@ -2023,6 +2060,10 @@ ul {
         left: 20px;
         height: 485px;
       }
+
+      @media screen and (max-width: 385px) {
+        left: 10px;
+      }
     }
 
     .two {
@@ -2045,6 +2086,10 @@ ul {
       @media screen and (max-width: 395px) {
         left: 20px;
         height: 480px;
+      }
+
+      @media screen and (max-width: 385px) {
+        left: 10px;
       }
     }
 
@@ -2069,6 +2114,10 @@ ul {
         left: 20px;
         height: 480px;
       }
+
+      @media screen and (max-width: 385px) {
+        left: 10px;
+      }
     }
 
     .four {
@@ -2092,6 +2141,9 @@ ul {
       @media screen and (max-width: 395px) {
         left: 20px;
       }
+      @media screen and (max-width: 385px) {
+        left: 10px;
+      }
     }
 
     .five {
@@ -2114,6 +2166,10 @@ ul {
         left: 20px;
         height: 510px;
       }
+
+      @media screen and (max-width: 385px) {
+        left: 10px;
+      }
     }
 
     .six {
@@ -2134,6 +2190,10 @@ ul {
 
       @media screen and (max-width: 395px) {
         left: 20px;
+      }
+
+      @media screen and (max-width: 385px) {
+        left: 10px;
       }
     }
   }
