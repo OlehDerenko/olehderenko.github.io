@@ -77,7 +77,7 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-const links = document.querySelectorAll(".nav a");
+const links = document.querySelectorAll(".nav a[data-inner-navigation]");
 
 links.forEach((link) => {
   link.addEventListener("click", (e) => {
