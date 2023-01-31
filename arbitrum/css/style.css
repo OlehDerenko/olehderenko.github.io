@@ -41,9 +41,6 @@ body.active {
   position: relative;
   z-index: 5;
   transition: 0.3s;
-  display: block;
-  text-align: center;
-  width: 214px;
 }
 
 .burger {
