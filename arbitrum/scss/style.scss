@@ -41,6 +41,9 @@ body.active {
   position: relative;
   z-index: 5;
   transition: 0.3s;
+  display: block;
+  text-align: center;
+  width: 214px;
 }
 
 .burger {
@@ -185,7 +188,7 @@ body.active {
   .history-main-img {
     position: absolute;
     top: -200px;
-    right: 30px;
+    right: 40px;
     animation: float 4s ease-in-out infinite;
   }
 
@@ -650,13 +653,16 @@ body.active {
   }
 
   .button-position {
-    text-align: center;
     padding: 70px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .button-join {
       background: #ffbd3e;
       color: #0e1111;
       font-weight: 900;
       border: none;
+      box-shadow: 0px 14px 35px 0px #ffbd3e26;
     }
 
     .button-join:hover {
@@ -1387,6 +1393,7 @@ body.active {
     font-weight: 800;
     margin-top: 40px;
     border: none;
+    box-shadow: 0px 14px 35px 0px #ffbd3e26;
   }
 
   .button-join:hover {
@@ -1561,6 +1568,7 @@ ul {
         background: #ffbd3e;
         color: #0e1111;
         border: none;
+        box-shadow: 0px 14px 35px 0px #ffbd3e40;
       }
 
       .button-join:hover {
@@ -1666,6 +1674,7 @@ ul {
     .button-join {
       background: #ffbd3e;
       border: none;
+      box-shadow: 0px 14px 35px 0px #ffbd3e40;
     }
 
     .button-join:hover {
@@ -1839,11 +1848,14 @@ ul {
 
   .button-pop {
     padding: 65px 0 0 235px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     .button-join {
       background: #ffbd3e;
       border: none;
+      box-shadow: 0px 14px 35px 0px #ffbd3e40;
     }
 
     .button-join:hover {

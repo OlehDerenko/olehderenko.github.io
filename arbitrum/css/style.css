@@ -41,6 +41,9 @@ body.active {
   position: relative;
   z-index: 5;
   transition: 0.3s;
+  display: block;
+  text-align: center;
+  width: 214px;
 }
 
 .burger {
@@ -172,7 +175,7 @@ body.active {
 .main .history-main-img {
   position: absolute;
   top: -200px;
-  right: 30px;
+  right: 40px;
   animation: float 4s ease-in-out infinite;
 }
 .main .history-secondary-img {
@@ -571,14 +574,17 @@ body.active {
   min-width: 513px;
 }
 .about-us .button-position {
-  text-align: center;
   padding: 70px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .about-us .button-position .button-join {
   background: #ffbd3e;
   color: #0e1111;
   font-weight: 900;
   border: none;
+  box-shadow: 0px 14px 35px 0px rgba(255, 189, 62, 0.1490196078);
 }
 .about-us .button-position .button-join:hover {
   background-color: #ff8b2f;
@@ -1193,6 +1199,7 @@ body.active {
   font-weight: 800;
   margin-top: 40px;
   border: none;
+  box-shadow: 0px 14px 35px 0px rgba(255, 189, 62, 0.1490196078);
 }
 .pop-up-p2p .button-join:hover {
   background: #ff8b2f;
@@ -1343,6 +1350,7 @@ ul li::marker {
   background: #ffbd3e;
   color: #0e1111;
   border: none;
+  box-shadow: 0px 14px 35px 0px rgba(255, 189, 62, 0.2509803922);
 }
 .pop-up-bot .buttons .one .button-join:hover {
   background: #ff8b2f;
@@ -1432,6 +1440,7 @@ ul li::marker {
 .pop-up-offer .button-pop .button-join {
   background: #ffbd3e;
   border: none;
+  box-shadow: 0px 14px 35px 0px rgba(255, 189, 62, 0.2509803922);
 }
 .pop-up-offer .button-pop .button-join:hover {
   background: #ff8b2f;
@@ -1576,11 +1585,14 @@ ul li::marker {
 }
 .pop-up-pro .button-pop {
   padding: 65px 0 0 235px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .pop-up-pro .button-pop .button-join {
   background: #ffbd3e;
   border: none;
+  box-shadow: 0px 14px 35px 0px rgba(255, 189, 62, 0.2509803922);
 }
 .pop-up-pro .button-pop .button-join:hover {
   background: #ff8b2f;
