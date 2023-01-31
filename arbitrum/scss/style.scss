@@ -3094,10 +3094,29 @@ ul {
   overflow-y: scroll;
 }
 
+// .modal-close {
+//   right: 0;
+//   position: absolute;
+//   z-index: 1000;
+//   top: 5px;
+//   border-radius: 50%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   padding: 5px;
+//   cursor: pointer;
+
+//   svg {
+//     path {
+//       fill: #0e1111;
+//     }
+//   }
+// }
+
 .modal.visible {
   visibility: visible;
   opacity: 1;
-  transform: scale(0.9);
+  transform: scale(0.8);
 }
 
 @keyframes float {
@@ -3271,8 +3290,8 @@ $ripple-color: #904ff3;
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 30px;
-  right: 150px;
+  bottom: 120px;
+  right: 55px;
   z-index: 99;
   font-size: 18px;
   border: none;
@@ -3284,6 +3303,6 @@ $ripple-color: #904ff3;
   transition: 0.5s;
 
   @media screen and (max-width: 768px) {
-    right: 80px;
+    right: 8px;
   }
 }

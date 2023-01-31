@@ -114,6 +114,7 @@ closeModalButtons.forEach((button) => {
     e.preventDefault();
     const modal = document.querySelector(
       `[data-modal-name=${button.getAttribute("data-close-modal")}]`
+      // `[data-modal-name=${button.getAttribute("#close-form")}]`
     );
     modal.classList.remove("visible");
     scrollLock.disable();

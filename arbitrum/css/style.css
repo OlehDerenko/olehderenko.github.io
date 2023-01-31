@@ -2749,7 +2749,7 @@ ul li::marker {
 .modal.visible {
   visibility: visible;
   opacity: 1;
-  transform: scale(0.9);
+  transform: scale(0.8);
 }
 
 @keyframes float {
@@ -2907,8 +2907,8 @@ ul li::marker {
 #myBtn {
   display: none;
   position: fixed;
-  bottom: 30px;
-  right: 150px;
+  bottom: 120px;
+  right: 55px;
   z-index: 99;
   font-size: 18px;
   border: none;
@@ -2921,6 +2921,6 @@ ul li::marker {
 }
 @media screen and (max-width: 768px) {
   #myBtn {
-    right: 80px;
+    right: 8px;
   }
 }/*# sourceMappingURL=style.css.map */
