@@ -2609,6 +2609,7 @@ ul li::marker {
 @media screen and (max-width: 1300px) {
   .pop-up-offer .pop-up-offer-top {
     flex-direction: column-reverse;
+    padding: 0;
   }
   .pop-up-offer .pop-up-offer-top .title-adaptive {
     display: block;
@@ -2671,6 +2672,7 @@ ul li::marker {
   }
   .pop-up-pro .pop-up-pro-top {
     flex-direction: column-reverse;
+    padding: 0;
   }
   .pop-up-pro .pop-up-pro-top .title-adaptive {
     display: block;
