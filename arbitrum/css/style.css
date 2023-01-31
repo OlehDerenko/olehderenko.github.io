@@ -2379,6 +2379,7 @@ ul li::marker {
 @media screen and (max-width: 1300px) {
   .pop-up-p2p {
     width: 100%;
+    padding-bottom: 0;
   }
   .pop-up-p2p .pop-top {
     flex-direction: column-reverse;
@@ -2607,6 +2608,9 @@ ul li::marker {
   }
 }
 @media screen and (max-width: 1300px) {
+  .pop-up-offer {
+    padding-bottom: 0;
+  }
   .pop-up-offer .pop-up-offer-top {
     flex-direction: column-reverse;
     padding: 0;
@@ -2667,6 +2671,9 @@ ul li::marker {
   }
 }
 @media screen and (max-width: 1300px) {
+  .pop-up-pro {
+    padding-bottom: 0;
+  }
   .pop-up-pro .above-pop-up-pro {
     display: none;
   }

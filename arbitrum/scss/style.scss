@@ -2697,6 +2697,7 @@ ul {
 
   .pop-up-p2p {
     width: 100%;
+    padding-bottom: 0;
     .pop-top {
       flex-direction: column-reverse;
       justify-content: center;
@@ -2926,6 +2927,7 @@ ul {
   }
 
   .pop-up-offer {
+    padding-bottom: 0;
     .pop-up-offer-top {
       flex-direction: column-reverse;
       padding: 0;
@@ -2999,6 +3001,7 @@ ul {
   }
 
   .pop-up-pro {
+    padding-bottom: 0;
     .above-pop-up-pro {
       display: none;
     }
