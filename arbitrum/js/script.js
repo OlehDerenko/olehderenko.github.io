@@ -95,6 +95,24 @@ links.forEach((link) => {
 const openModalButtons = document.querySelectorAll("[data-open-modal]");
 const closeModalButtons = document.querySelectorAll("[data-close-modal]");
 const modals = document.querySelectorAll("[data-modal-name]");
+const modalsContainers = document.querySelectorAll(
+  "[data-modal-name] .modal-container"
+);
+
+modalsContainers.forEach((c) => {
+  c.addEventListener("click", (e) => {
+    e.stopPropagation();
+    e.stopImmediatePropagation();
+  });
+});
+
+modals.forEach((modal) => {
+  modal.addEventListener("click", (e) => {
+    e.stopPropagation();
+    modal.classList.remove("visible");
+    scrollLock.disable();
+  });
+});
 
 openModalButtons.forEach((button) => {
   button.addEventListener("click", (e) => {
@@ -112,6 +130,7 @@ openModalButtons.forEach((button) => {
 closeModalButtons.forEach((button) => {
   button.addEventListener("click", (e) => {
     e.preventDefault();
+
     const modal = document.querySelector(
       `[data-modal-name=${button.getAttribute("data-close-modal")}]`
       // `[data-modal-name=${button.getAttribute("#close-form")}]`
