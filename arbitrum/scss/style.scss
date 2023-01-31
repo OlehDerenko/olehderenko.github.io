@@ -1293,6 +1293,10 @@ body.active {
       flex-direction: column;
       align-items: center;
 
+      .br-mobile {
+        display: none;
+      }
+
       img {
         width: 80px;
       }
@@ -1575,6 +1579,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 50px;
 
     .title-adaptive {
       display: none;
@@ -1670,6 +1675,184 @@ ul {
   }
 }
 
+.pop-up-pro {
+  background: #0e1111;
+  padding-bottom: 85px;
+  position: relative;
+
+  .above-pop-up-pro {
+    position: absolute;
+    left: -350px;
+    bottom: 200px;
+    width: 400px;
+  }
+
+  .pop-up-pro-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+
+    .title-adaptive {
+      display: none;
+    }
+
+    a {
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 40px;
+      color: #fff;
+      text-transform: uppercase;
+
+      svg {
+        margin-right: 10px;
+      }
+    }
+
+    h6 {
+      font-weight: 800;
+      font-size: 50px;
+      line-height: 62px;
+      color: #fff;
+      margin: 0 300px 0 0;
+    }
+  }
+
+  .text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff;
+    margin: 35px 0 0;
+    padding-left: 240px;
+  }
+
+  .faq-container {
+    position: relative;
+    margin-top: 20px;
+    padding-left: 240px;
+
+    .faq-top {
+      position: relative;
+      margin: 0 0 30px;
+
+      .br-mobile {
+        display: none;
+      }
+
+      .br-desktop {
+        display: block;
+      }
+    }
+
+    .close {
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+
+      .first {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 5px;
+        height: 25px;
+        background: #904ff3;
+        transition: 0.3s;
+      }
+
+      .second {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(90deg);
+        height: 25px;
+        background: #904ff3;
+        width: 5px;
+      }
+    }
+
+    .faq-item {
+      will-change: height;
+      overflow-y: hidden;
+      position: relative;
+      padding: 36px 0 36px;
+      cursor: pointer;
+      border-bottom: 2.5px dashed #904ff3;
+
+      .title {
+        font-weight: 600;
+        font-size: 24px;
+        color: #fff;
+        line-height: 40px;
+        margin: 0;
+        padding-left: 30px;
+      }
+
+      .answer {
+        color: #fff;
+        width: 100%;
+        padding: 0 170px 0 80px;
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 400;
+
+        b {
+          font-weight: 700;
+        }
+      }
+    }
+
+    .faq-item.open {
+      .title {
+        color: #904ff3;
+      }
+      .answer {
+        color: #fff;
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 400;
+
+        b {
+          font-weight: 700;
+        }
+      }
+      .minus {
+        display: none;
+      }
+
+      .close {
+        .second {
+          background: #904ff3;
+        }
+
+        .first {
+          transform: translate(-50%, -50%) rotate(90deg);
+        }
+      }
+    }
+  }
+
+  .button-pop {
+    padding: 65px 0 0 235px;
+    text-align: center;
+
+    .button-join {
+      background: #ffbd3e;
+      border: none;
+    }
+
+    .button-join:hover {
+      background: #ff8b2f;
+      box-shadow: 0px 15.6666px 39.1664px rgba(255, 189, 62, 0.25);
+    }
+  }
+}
+
 .pop-up-video {
   background: #0e1111;
   position: relative;
@@ -1710,7 +1893,7 @@ ul {
 @media screen and (max-width: 1300px) {
   .container-mobile {
     width: 100%;
-    padding: 20px;
+    padding: 25px;
   }
 
   .container {
@@ -2356,7 +2539,7 @@ ul {
 
         h6 {
           font-weight: 800;
-          margin: 8px auto 0;
+          margin: 30px auto 0;
         }
       }
     }
@@ -2536,7 +2719,11 @@ ul {
       }
 
       .block {
-        width: 30%;
+        width: 45%;
+
+        @media screen and (max-width: 500px) {
+          width: 30%;
+        }
 
         p {
           font-size: 10px;
@@ -2550,6 +2737,10 @@ ul {
         p {
           line-height: 20px;
           text-align: center;
+        }
+
+        .br-mobile {
+          display: block;
         }
       }
 
@@ -2620,10 +2811,23 @@ ul {
 
     .blurred-one {
       position: absolute;
-      left: 25px;
-      bottom: 31%;
+      left: 160px;
+      bottom: 1500px;
       z-index: 3;
       width: 111px;
+
+      @media screen and (max-width: 500px) {
+        left: 25px;
+        bottom: 1075px;
+      }
+
+      @media screen and (max-width: 400px) {
+        bottom: 1070px;
+      }
+
+      @media screen and (max-width: 385px) {
+        bottom: 1045px;
+      }
     }
 
     .blurred-two {
@@ -2640,12 +2844,25 @@ ul {
     .phone-mobile {
       width: 100%;
       display: block;
+      transform: scale(0.7);
+
+      @media screen and (max-width: 500px) {
+        transform: scale(1);
+      }
     }
 
     .play {
-      bottom: 22.5%;
+      bottom: 1100px;
       left: 50%;
       transform: translate(-50%);
+
+      @media screen and (max-width: 500px) {
+        bottom: 780px;
+      }
+
+      @media screen and (max-width: 385px) {
+        bottom: 765px;
+      }
     }
 
     .bg-shapes {
@@ -2767,6 +2984,75 @@ ul {
         width: 100%;
         text-align: center;
         display: block;
+      }
+    }
+  }
+
+  .pop-up-pro {
+    .above-pop-up-pro {
+      display: none;
+    }
+    .pop-up-pro-top {
+      flex-direction: column-reverse;
+      .title-adaptive {
+        display: block;
+
+        h5 {
+          font-weight: 800;
+          font-size: 38px;
+          line-height: 62px;
+          color: #fff;
+          margin: 0;
+          padding-top: 20px;
+        }
+      }
+
+      .emoji-top {
+        padding-top: 40px;
+      }
+
+      .title {
+        display: none;
+      }
+    }
+
+    .text {
+      padding: 40px 0 0;
+      margin: 0;
+    }
+
+    .faq-container {
+      padding: 0;
+
+      .faq-top {
+        .br-mobile {
+          display: block;
+        }
+
+        .br-desktop {
+          display: none;
+        }
+      }
+      .faq-item {
+        .title {
+          width: 280px;
+          padding-left: 0;
+        }
+
+        .answer {
+          padding: 0 0 0 40px;
+        }
+      }
+    }
+
+    .button-pop {
+      padding: 40px 0 0;
+
+      .button-join {
+        width: 100%;
+        display: block;
+        text-align: center;
+        box-shadow: 0px 14px 35px 0px #ffbd3e40;
       }
     }
   }
