@@ -2749,7 +2749,7 @@ ul li::marker {
 .modal.visible {
   visibility: visible;
   opacity: 1;
-  transform: scale(1);
+  transform: scale(0.9);
 }
 
 @keyframes float {
@@ -2902,5 +2902,25 @@ ul li::marker {
   100% {
     transform: scale(1.2);
     opacity: 0;
+  }
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 150px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+@media screen and (max-width: 768px) {
+  #myBtn {
+    right: 80px;
   }
 }/*# sourceMappingURL=style.css.map */
