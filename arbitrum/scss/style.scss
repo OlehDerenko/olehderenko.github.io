@@ -2698,6 +2698,7 @@ ul {
   .pop-up-p2p {
     width: 100%;
     padding-bottom: 0;
+    border-radius: 50px;
     .pop-top {
       flex-direction: column-reverse;
       justify-content: center;
@@ -3110,10 +3111,10 @@ ul {
 }
 
 .modal-close {
-  right: 20px;
+  right: 150px;
   position: absolute;
   z-index: 1000;
-  top: 20px;
+  top: 50px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -3121,6 +3122,13 @@ ul {
   padding: 5px;
   cursor: pointer;
   border: none;
+
+  @media screen and (max-width: 1780px) {
+  }
+
+  @media screen and (max-width: 500px) {
+    right: 10px;
+  }
 
   svg {
     path {

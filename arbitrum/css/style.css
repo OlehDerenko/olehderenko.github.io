@@ -2380,6 +2380,7 @@ ul li::marker {
   .pop-up-p2p {
     width: 100%;
     padding-bottom: 0;
+    border-radius: 50px;
   }
   .pop-up-p2p .pop-top {
     flex-direction: column-reverse;
@@ -2764,10 +2765,10 @@ ul li::marker {
 }
 
 .modal-close {
-  right: 20px;
+  right: 150px;
   position: absolute;
   z-index: 1000;
-  top: 20px;
+  top: 50px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -2775,6 +2776,11 @@ ul li::marker {
   padding: 5px;
   cursor: pointer;
   border: none;
+}
+@media screen and (max-width: 500px) {
+  .modal-close {
+    right: 10px;
+  }
 }
 .modal-close svg path {
   fill: #0e1111;
