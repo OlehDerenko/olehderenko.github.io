@@ -1817,6 +1817,7 @@ ul li::marker {
     flex-direction: column;
     margin-top: 80px;
     padding: 80px 30px;
+    transform: translate(-50%) scale(0.9);
   }
   .main .main-earn p {
     margin: 0 0 70px;
@@ -1880,6 +1881,7 @@ ul li::marker {
     text-align: center;
     flex-direction: column;
     margin: 45px 0;
+    transform: scale(0.9);
   }
   .history-mobile .history-block h6 {
     font-weight: 800;
@@ -1934,9 +1936,9 @@ ul li::marker {
 }
 @media screen and (max-width: 1300px) and (max-width: 500px) {
   .history-mobile .one {
-    width: 290px;
+    width: 300px;
     height: 415px;
-    left: 60px;
+    left: 65px;
     top: 40px;
   }
 }
@@ -2080,7 +2082,7 @@ ul li::marker {
 }
 @media screen and (max-width: 1300px) {
   .history-mobile .six {
-    height: 375px;
+    height: 320px;
   }
 }
 @media screen and (max-width: 1300px) and (max-width: 500px) {
@@ -2097,6 +2099,7 @@ ul li::marker {
 @media screen and (max-width: 1300px) and (max-width: 414px) {
   .history-mobile .six {
     left: 30px;
+    width: 280px;
   }
 }
 @media screen and (max-width: 1300px) and (max-width: 395px) {
@@ -2175,6 +2178,9 @@ ul li::marker {
     padding: 20px 0 20px;
     overflow: hidden;
   }
+  .reviews .slide {
+    transform: scale(0.9);
+  }
   .reviews .filter-bg-pink {
     filter: blur(312px);
     top: 0;
@@ -2204,6 +2210,9 @@ ul li::marker {
   }
 }
 @media screen and (max-width: 1300px) {
+  .programs {
+    padding-bottom: 15px;
+  }
   .programs .filter-bg-blue {
     display: none;
   }
@@ -2229,19 +2238,13 @@ ul li::marker {
   .programs .programs-flex {
     flex-direction: column;
     margin: 0;
-    padding-top: 40px;
+    padding-top: 0;
   }
   .programs .programs-flex .programs-block {
     padding: 50px 36px 40px;
     width: 325px;
+    transform: scale(0.8);
   }
-}
-@media screen and (max-width: 1300px) and (max-width: 500px) {
-  .programs .programs-flex .programs-block {
-    width: 300px;
-  }
-}
-@media screen and (max-width: 1300px) {
   .programs .programs-flex .programs-block h6 {
     margin: 30px 0 0;
     font-weight: 800;
@@ -2251,26 +2254,18 @@ ul li::marker {
   .programs .programs-flex .programs-block h6 b {
     font-weight: 400;
   }
-}
-@media screen and (max-width: 1300px) {
   .programs .programs-flex .programs-block p {
     font-size: 32px;
     line-height: 40px;
   }
-}
-@media screen and (max-width: 1300px) {
   .programs .programs-flex .programs-block .button-join {
     font-weight: 800;
   }
-}
-@media screen and (max-width: 1300px) {
   .programs .programs-flex .programs-block-vip {
     margin: 0;
   }
-}
-@media screen and (max-width: 1300px) {
   .programs .programs-flex .programs-block-professional {
-    margin-top: 40px;
+    margin-top: -50px;
     padding: 50px 36px 40px;
   }
   .programs .programs-flex .programs-block-professional h6 {
@@ -2366,7 +2361,7 @@ ul li::marker {
   .faq .right-img {
     position: absolute;
     right: 0;
-    top: -120px;
+    top: -100px;
     width: 200px;
   }
   .faq .blurred {
