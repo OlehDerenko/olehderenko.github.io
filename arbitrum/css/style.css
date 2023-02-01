@@ -1007,6 +1007,9 @@ body.active {
   margin: 0;
   padding-left: 10px;
 }
+.faq .faq-container .faq-item .title .br-mobile {
+  display: none;
+}
 .faq .faq-container .faq-item .answer {
   color: #fff;
   width: 100%;
@@ -2385,6 +2388,9 @@ ul li::marker {
     padding-left: 0;
     font-size: 18px;
     line-height: 28px;
+  }
+  .faq .faq-container .faq-item .title .br-mobile {
+    display: block;
   }
   .faq .faq-container .faq-item .answer {
     padding: 0;

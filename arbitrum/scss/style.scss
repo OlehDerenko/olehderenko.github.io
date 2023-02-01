@@ -1159,6 +1159,10 @@ body.active {
         line-height: 40px;
         margin: 0;
         padding-left: 10px;
+
+        .br-mobile {
+          display: none;
+        }
       }
 
       .answer {
@@ -2693,6 +2697,10 @@ ul {
           padding-left: 0;
           font-size: 18px;
           line-height: 28px;
+
+          .br-mobile {
+            display: block;
+          }
         }
 
         .answer {
