@@ -1,6 +1,6 @@
 $text-size-1: 70px;
 $text-size-2: 50px;
-$font-size-3: 36px;
+$font-size-3: 32px;
 $text-size-p: 16px;
 $text-size-p-2: 14px;
 $line-height-1: 40px;
@@ -227,7 +227,7 @@ body.active {
       p {
         margin: 20px 0 50px;
         font-size: 21px;
-        line-height: $line-height-2;
+        line-height: 36px;
         font-weight: 600;
       }
 
@@ -1905,6 +1905,7 @@ ul {
 
   .button-join {
     font-weight: 900;
+    font-size: 10px;
   }
 
   .mobile-menu {
@@ -2092,7 +2093,8 @@ ul {
     .button-join {
       display: block;
       text-align: center;
-      width: 100%;
+      width: 90%;
+      margin: 0 auto;
     }
 
     .main-earn {
@@ -2173,7 +2175,7 @@ ul {
 
       h6 {
         font-weight: 800;
-        font-size: 28px;
+        font-size: 24px;
         line-height: 36px;
         margin: 20px 0 0;
       }
@@ -2225,24 +2227,23 @@ ul {
 
     .one {
       @media screen and (max-width: 500px) {
-        width: 305px;
-        height: 465px;
-        left: 65px;
+        width: 290px;
+        height: 415px;
+        left: 60px;
+        top: 40px;
       }
 
       @media screen and (max-width: 460px) {
-        left: 55px;
-        top: 45px;
-        height: 455px;
+        left: 40px;
       }
 
       @media screen and (max-width: 414px) {
-        left: 35px;
+        left: 30px;
+        height: 435px;
       }
 
       @media screen and (max-width: 395px) {
         left: 20px;
-        height: 485px;
       }
 
       @media screen and (max-width: 385px) {
@@ -2252,24 +2253,23 @@ ul {
 
     .two {
       @media screen and (max-width: 500px) {
-        width: 305px;
-        height: 450px;
+        width: 290px;
+        height: 430px;
         left: 75px;
         top: 25px;
       }
 
       @media screen and (max-width: 460px) {
-        left: 55px;
+        left: 50px;
       }
 
       @media screen and (max-width: 414px) {
-        left: 30px;
-        top: 20px;
+        left: 25px;
+        top: 25px;
       }
 
       @media screen and (max-width: 395px) {
         left: 20px;
-        height: 480px;
       }
 
       @media screen and (max-width: 385px) {
@@ -2279,24 +2279,23 @@ ul {
 
     .three {
       @media screen and (max-width: 500px) {
-        width: 305px;
-        height: 450px;
-        left: 75px;
+        width: 290px;
+        height: 425px;
+        left: 80px;
         top: 25px;
       }
 
       @media screen and (max-width: 460px) {
-        left: 55px;
+        left: 50px;
       }
 
       @media screen and (max-width: 414px) {
         left: 30px;
-        top: 20px;
+        top: 25px;
       }
 
       @media screen and (max-width: 395px) {
         left: 20px;
-        height: 480px;
       }
 
       @media screen and (max-width: 385px) {
@@ -2307,34 +2306,9 @@ ul {
     .four {
       @media screen and (max-width: 500px) {
         width: 305px;
-        height: 440px;
+        height: 425px;
         left: 75px;
         top: 25px;
-      }
-
-      @media screen and (max-width: 460px) {
-        left: 55px;
-      }
-
-      @media screen and (max-width: 414px) {
-        left: 30px;
-        top: 20px;
-        height: 475px;
-      }
-
-      @media screen and (max-width: 395px) {
-        left: 20px;
-      }
-      @media screen and (max-width: 385px) {
-        left: 10px;
-      }
-    }
-
-    .five {
-      @media screen and (max-width: 500px) {
-        width: 305px;
-        height: 480px;
-        left: 65px;
       }
 
       @media screen and (max-width: 460px) {
@@ -2343,16 +2317,41 @@ ul {
 
       @media screen and (max-width: 414px) {
         left: 30px;
-        height: 480px;
+        top: 25px;
       }
 
       @media screen and (max-width: 395px) {
         left: 20px;
-        height: 510px;
+      }
+      @media screen and (max-width: 385px) {
+        left: 10px;
+        height: 445px;
+      }
+    }
+
+    .five {
+      @media screen and (max-width: 500px) {
+        width: 305px;
+        height: 430px;
+        left: 65px;
+      }
+
+      @media screen and (max-width: 460px) {
+        left: 50px;
+      }
+
+      @media screen and (max-width: 414px) {
+        left: 20px;
+        height: 455px;
+        top: 25px;
+      }
+
+      @media screen and (max-width: 395px) {
+        left: 10px;
       }
 
       @media screen and (max-width: 385px) {
-        left: 10px;
+        left: 5px;
       }
     }
 
@@ -2671,10 +2670,14 @@ ul {
         .title {
           width: 280px;
           padding-left: 0;
+          font-size: 18px;
+          line-height: 28px;
         }
 
         .answer {
           padding: 0;
+          font-size: 18px;
+          line-height: 28px;
         }
       }
     }

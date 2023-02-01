@@ -205,7 +205,7 @@ body.active {
 .main .main-section .main-content p {
   margin: 20px 0 50px;
   font-size: 21px;
-  line-height: 24px;
+  line-height: 36px;
   font-weight: 600;
 }
 .main .main-section .main-content .button-join {
@@ -1632,6 +1632,7 @@ ul li::marker {
   }
   .button-join {
     font-weight: 900;
+    font-size: 10px;
   }
   .mobile-menu {
     background: #0e1111;
@@ -1766,7 +1767,7 @@ ul li::marker {
 @media screen and (max-width: 1300px) {
   .main .main-section .main-content h1 {
     font-weight: 800;
-    font-size: 36px;
+    font-size: 32px;
     line-height: 40px;
   }
   .main .main-section .main-content p {
@@ -1801,7 +1802,8 @@ ul li::marker {
   .main .button-join {
     display: block;
     text-align: center;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 1300px) {
@@ -1847,7 +1849,7 @@ ul li::marker {
   }
   .history-mobile h2 {
     font-weight: 800;
-    font-size: 36px;
+    font-size: 32px;
     line-height: 40px;
     margin: 0;
     text-align: center;
@@ -1877,7 +1879,7 @@ ul li::marker {
   }
   .history-mobile .history-block h6 {
     font-weight: 800;
-    font-size: 28px;
+    font-size: 24px;
     line-height: 36px;
     margin: 20px 0 0;
   }
@@ -1928,27 +1930,26 @@ ul li::marker {
 }
 @media screen and (max-width: 1300px) and (max-width: 500px) {
   .history-mobile .one {
-    width: 305px;
-    height: 465px;
-    left: 65px;
+    width: 290px;
+    height: 415px;
+    left: 60px;
+    top: 40px;
   }
 }
 @media screen and (max-width: 1300px) and (max-width: 460px) {
   .history-mobile .one {
-    left: 55px;
-    top: 45px;
-    height: 455px;
+    left: 40px;
   }
 }
 @media screen and (max-width: 1300px) and (max-width: 414px) {
   .history-mobile .one {
-    left: 35px;
+    left: 30px;
+    height: 435px;
   }
 }
 @media screen and (max-width: 1300px) and (max-width: 395px) {
   .history-mobile .one {
     left: 20px;
-    height: 485px;
   }
 }
 @media screen and (max-width: 1300px) and (max-width: 385px) {
@@ -1958,27 +1959,26 @@ ul li::marker {
 }
 @media screen and (max-width: 1300px) and (max-width: 500px) {
   .history-mobile .two {
-    width: 305px;
-    height: 450px;
+    width: 290px;
+    height: 430px;
     left: 75px;
     top: 25px;
   }
 }
 @media screen and (max-width: 1300px) and (max-width: 460px) {
   .history-mobile .two {
-    left: 55px;
+    left: 50px;
   }
 }
 @media screen and (max-width: 1300px) and (max-width: 414px) {
   .history-mobile .two {
-    left: 30px;
-    top: 20px;
+    left: 25px;
+    top: 25px;
   }
 }
 @media screen and (max-width: 1300px) and (max-width: 395px) {
   .history-mobile .two {
     left: 20px;
-    height: 480px;
   }
 }
 @media screen and (max-width: 1300px) and (max-width: 385px) {
@@ -1988,27 +1988,26 @@ ul li::marker {
 }
 @media screen and (max-width: 1300px) and (max-width: 500px) {
   .history-mobile .three {
-    width: 305px;
-    height: 450px;
-    left: 75px;
+    width: 290px;
+    height: 425px;
+    left: 80px;
     top: 25px;
   }
 }
 @media screen and (max-width: 1300px) and (max-width: 460px) {
   .history-mobile .three {
-    left: 55px;
+    left: 50px;
   }
 }
 @media screen and (max-width: 1300px) and (max-width: 414px) {
   .history-mobile .three {
     left: 30px;
-    top: 20px;
+    top: 25px;
   }
 }
 @media screen and (max-width: 1300px) and (max-width: 395px) {
   .history-mobile .three {
     left: 20px;
-    height: 480px;
   }
 }
 @media screen and (max-width: 1300px) and (max-width: 385px) {
@@ -2019,21 +2018,20 @@ ul li::marker {
 @media screen and (max-width: 1300px) and (max-width: 500px) {
   .history-mobile .four {
     width: 305px;
-    height: 440px;
+    height: 425px;
     left: 75px;
     top: 25px;
   }
 }
 @media screen and (max-width: 1300px) and (max-width: 460px) {
   .history-mobile .four {
-    left: 55px;
+    left: 50px;
   }
 }
 @media screen and (max-width: 1300px) and (max-width: 414px) {
   .history-mobile .four {
     left: 30px;
-    top: 20px;
-    height: 475px;
+    top: 25px;
   }
 }
 @media screen and (max-width: 1300px) and (max-width: 395px) {
@@ -2044,12 +2042,13 @@ ul li::marker {
 @media screen and (max-width: 1300px) and (max-width: 385px) {
   .history-mobile .four {
     left: 10px;
+    height: 445px;
   }
 }
 @media screen and (max-width: 1300px) and (max-width: 500px) {
   .history-mobile .five {
     width: 305px;
-    height: 480px;
+    height: 430px;
     left: 65px;
   }
 }
@@ -2060,19 +2059,19 @@ ul li::marker {
 }
 @media screen and (max-width: 1300px) and (max-width: 414px) {
   .history-mobile .five {
-    left: 30px;
-    height: 480px;
+    left: 20px;
+    height: 455px;
+    top: 25px;
   }
 }
 @media screen and (max-width: 1300px) and (max-width: 395px) {
   .history-mobile .five {
-    left: 20px;
-    height: 510px;
+    left: 10px;
   }
 }
 @media screen and (max-width: 1300px) and (max-width: 385px) {
   .history-mobile .five {
-    left: 10px;
+    left: 5px;
   }
 }
 @media screen and (max-width: 1300px) {
@@ -2138,7 +2137,7 @@ ul li::marker {
     padding: 70px 0 45px;
   }
   .about-us h3 {
-    font-size: 36px;
+    font-size: 32px;
     line-height: 40px;
     padding: 45px 0 0;
   }
@@ -2185,7 +2184,7 @@ ul li::marker {
   }
   .reviews .reviews-top h4 {
     font-weight: 800;
-    font-size: 36px;
+    font-size: 32px;
     line-height: 40px;
     margin: 0;
     max-width: 325px;
@@ -2278,7 +2277,7 @@ ul li::marker {
   }
   .proposal h4 {
     font-weight: 800;
-    font-size: 36px;
+    font-size: 32px;
     line-height: 40px;
   }
   .proposal p {
@@ -2346,7 +2345,7 @@ ul li::marker {
   .faq .title-adaptive {
     display: block;
     font-weight: 800;
-    font-size: 36px;
+    font-size: 32px;
     line-height: 40px;
     text-align: start;
     color: #fff;
@@ -2354,9 +2353,13 @@ ul li::marker {
   .faq .faq-container .faq-item .title {
     width: 280px;
     padding-left: 0;
+    font-size: 18px;
+    line-height: 28px;
   }
   .faq .faq-container .faq-item .answer {
     padding: 0;
+    font-size: 18px;
+    line-height: 28px;
   }
 }
 @media screen and (max-width: 1300px) {
