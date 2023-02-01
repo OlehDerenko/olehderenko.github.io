@@ -2321,7 +2321,7 @@ ul li::marker {
     width: 145px;
   }
   .proposal .proposal-flex .proposal-block .dollars h6 {
-    font-size: 60px;
+    font-size: 50px;
     line-height: 60px;
   }
   .proposal .proposal-flex .proposal-block .dollars p {
@@ -2350,6 +2350,9 @@ ul li::marker {
   }
   .proposal .proposal-flex .proposal-block-two .dollars {
     transform: rotate(6deg) translate(-50%) scale(0.9);
+  }
+  .proposal .proposal-flex .proposal-block-two .circle-two {
+    left: 5px;
   }
 }
 @media screen and (max-width: 1300px) {

@@ -2615,7 +2615,7 @@ ul {
           width: 145px;
 
           h6 {
-            font-size: 60px;
+            font-size: 50px;
             line-height: 60px;
           }
 
@@ -2651,6 +2651,10 @@ ul {
         padding-top: 80px;
         .dollars {
           transform: rotate(6deg) translate(-50%) scale(0.9);
+        }
+
+        .circle-two {
+          left: 5px;
         }
       }
     }
