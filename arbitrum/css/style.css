@@ -1660,16 +1660,16 @@ ul li::marker {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 30px;
+    padding-top: 20px;
   }
   .mobile-menu .nav a {
     color: #fff;
-    padding-top: 30px;
+    padding-top: 20px;
     font-weight: 600;
     font-size: 14px;
   }
   .mobile-menu .button {
-    padding-top: 70px;
+    padding-top: 40px;
     text-align: center;
   }
   .mobile-menu .button .button-join {
@@ -1680,7 +1680,7 @@ ul li::marker {
     font-weight: 900;
   }
   .mobile-menu .links {
-    padding: 60px 0 0;
+    padding: 40px 0 0;
     display: flex;
     align-items: center;
     justify-content: center;
