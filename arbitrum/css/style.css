@@ -23,6 +23,12 @@ body.active {
   margin: 0 auto;
 }
 
+.container-pop-up {
+  position: relative;
+  width: 1360px;
+  margin: 0 auto;
+}
+
 .button-join {
   padding: 10px 40px;
   border: 1px solid #ffbd3e;
@@ -199,7 +205,7 @@ body.active {
 .main .main-section .main-content p {
   margin: 20px 0 50px;
   font-size: 21px;
-  line-height: 36px;
+  line-height: 24px;
   font-weight: 600;
 }
 .main .main-section .main-content .button-join {
@@ -502,6 +508,9 @@ body.active {
   background-size: 104% 100%;
   background-repeat: no-repeat;
   position: relative;
+}
+.about-us br {
+  display: none;
 }
 .about-us .filter-bg-blue {
   position: absolute;
@@ -1059,6 +1068,7 @@ body.active {
   background: #0e1111;
   padding-bottom: 80px;
   position: relative;
+  border-radius: 50px;
 }
 .pop-up-p2p .filter-bg-blue {
   position: absolute;
@@ -1082,16 +1092,16 @@ body.active {
 .pop-up-p2p .pop-top {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding-top: 70px;
 }
 .pop-up-p2p .pop-top h5 {
   font-weight: 400;
-  font-size: 50px;
+  font-size: 65px;
   line-height: 62px;
   color: #fff;
   margin: 0;
-  max-width: 900px;
+  text-align: start;
 }
 .pop-up-p2p .pop-top svg {
   cursor: pointer;
@@ -1108,7 +1118,7 @@ body.active {
 }
 .pop-up-p2p p {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 22px;
   line-height: 28px;
   color: #fff;
   margin: 40px 0 0;
@@ -1146,7 +1156,7 @@ body.active {
 }
 .pop-up-p2p .example h6 {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 28px;
   color: #0e1111;
   margin: 0;
@@ -1176,20 +1186,9 @@ body.active {
 }
 .pop-up-p2p .pop-questions .block h6 {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 22px;
   line-height: 28px;
   color: #fff;
-}
-.pop-up-p2p .pop-questions .block ul li {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
-  color: #fff;
-}
-.pop-up-p2p .pop-questions .block ul li::marker {
-  color: #904ff3;
-  width: 8px;
-  height: 8px;
 }
 .pop-up-p2p .button-join {
   background: #ffbd3e;
@@ -1197,6 +1196,8 @@ body.active {
   margin-top: 40px;
   border: none;
   box-shadow: 0px 14px 35px 0px rgba(255, 189, 62, 0.1490196078);
+  padding: 20px 60px;
+  font-size: 16px;
 }
 .pop-up-p2p .button-join:hover {
   background: #ff8b2f;
@@ -1216,7 +1217,7 @@ body.active {
 
 ul li {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 22px;
   line-height: 28px;
   color: #fff;
 }
@@ -1224,6 +1225,11 @@ ul li::marker {
   color: #904ff3;
   width: 8px;
   height: 8px;
+}
+@media screen and (max-width: 768px) {
+  ul li {
+    font-size: 16px;
+  }
 }
 
 .pop-up-bot {
@@ -1257,8 +1263,8 @@ ul li::marker {
 }
 .pop-up-bot .blurred-one {
   position: absolute;
-  right: 180px;
-  bottom: 40%;
+  right: 250px;
+  bottom: 52%;
   z-index: 3;
 }
 .pop-up-bot .blurred-two {
@@ -1281,13 +1287,13 @@ ul li::marker {
   align-items: center;
   justify-content: center;
   position: absolute;
-  bottom: 280px;
-  right: 150px;
+  bottom: 400px;
+  right: 210px;
   z-index: 3;
 }
 .pop-up-bot p {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 22px;
   line-height: 28px;
   color: #fff;
   margin: 40px 0 0;
@@ -1308,7 +1314,7 @@ ul li::marker {
   color: #fff;
   margin-left: 40px;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 22px;
   line-height: 28px;
 }
 .pop-up-bot .boat .block .emoji {
@@ -1335,6 +1341,8 @@ ul li::marker {
   font-weight: 800;
   color: #ffbd3e;
   transition: 0.3s;
+  font-size: 16px;
+  padding: 20px 40px;
 }
 .pop-up-bot .buttons .button-join:hover {
   background: #ffbd3e;
@@ -1367,27 +1375,16 @@ ul li::marker {
 .pop-up-offer .pop-up-offer-top .title-adaptive {
   display: none;
 }
-.pop-up-offer .pop-up-offer-top a {
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 40px;
-  color: #fff;
-  text-transform: uppercase;
-}
-.pop-up-offer .pop-up-offer-top a svg {
-  margin-right: 10px;
-}
 .pop-up-offer .pop-up-offer-top h6 {
   font-weight: 500;
-  font-size: 50px;
+  font-size: 65px;
   line-height: 62px;
   color: #fff;
-  margin: 0 300px 0 0;
+  margin: 0 680px 0 0;
 }
 .pop-up-offer .text {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 22px;
   line-height: 28px;
   color: #fff;
   margin: 35px 0 0;
@@ -1416,13 +1413,13 @@ ul li::marker {
 .pop-up-offer .price .price-block h6 {
   color: #904ff3;
   font-weight: 800;
-  font-size: 32px;
-  line-height: 30px;
+  font-size: 40px;
+  line-height: 40px;
   margin: 0;
 }
 .pop-up-offer .price .price-block p {
   font-weight: 600;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 40px;
   color: #fff;
   margin: 0;
@@ -1438,6 +1435,8 @@ ul li::marker {
   background: #ffbd3e;
   border: none;
   box-shadow: 0px 14px 35px 0px rgba(255, 189, 62, 0.2509803922);
+  padding: 20px 60px;
+  font-size: 16px;
 }
 .pop-up-offer .button-pop .button-join:hover {
   background: #ff8b2f;
@@ -1464,27 +1463,16 @@ ul li::marker {
 .pop-up-pro .pop-up-pro-top .title-adaptive {
   display: none;
 }
-.pop-up-pro .pop-up-pro-top a {
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 40px;
-  color: #fff;
-  text-transform: uppercase;
-}
-.pop-up-pro .pop-up-pro-top a svg {
-  margin-right: 10px;
-}
 .pop-up-pro .pop-up-pro-top h6 {
   font-weight: 800;
-  font-size: 50px;
+  font-size: 60px;
   line-height: 62px;
   color: #fff;
-  margin: 0 300px 0 0;
+  margin: 0 680px 0 0;
 }
 .pop-up-pro .text {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 22px;
   line-height: 28px;
   color: #fff;
   margin: 35px 0 0;
@@ -1590,6 +1578,8 @@ ul li::marker {
   background: #ffbd3e;
   border: none;
   box-shadow: 0px 14px 35px 0px rgba(255, 189, 62, 0.2509803922);
+  font-size: 16px;
+  padding: 20px 60px;
 }
 .pop-up-pro .button-pop .button-join:hover {
   background: #ff8b2f;
@@ -1675,8 +1665,7 @@ ul li::marker {
     color: #fff;
     padding-top: 30px;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 40px;
+    font-size: 14px;
   }
   .mobile-menu .button {
     padding-top: 70px;
@@ -1777,13 +1766,12 @@ ul li::marker {
 @media screen and (max-width: 1300px) {
   .main .main-section .main-content h1 {
     font-weight: 800;
-    font-size: 50px;
+    font-size: 36px;
     line-height: 40px;
   }
   .main .main-section .main-content p {
     font-weight: 400;
-    font-size: 18px;
-    line-height: 36px;
+    font-size: 14px;
   }
   .main .main-section .main-content p b {
     font-weight: 600;
@@ -1822,12 +1810,14 @@ ul li::marker {
     width: 100%;
     flex-direction: column;
     margin-top: 80px;
-    padding: 110px 30px;
+    padding: 80px 30px;
   }
   .main .main-earn p {
     margin: 0 0 70px;
     max-width: 245px;
     text-align: center;
+    font-size: 30px;
+    line-height: 40px;
   }
   .main .main-earn .button-join {
     width: auto;
@@ -1857,8 +1847,8 @@ ul li::marker {
   }
   .history-mobile h2 {
     font-weight: 800;
-    font-size: 38px;
-    line-height: 50px;
+    font-size: 36px;
+    line-height: 40px;
     margin: 0;
     text-align: center;
     position: absolute;
@@ -1887,14 +1877,14 @@ ul li::marker {
   }
   .history-mobile .history-block h6 {
     font-weight: 800;
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 28px;
+    line-height: 36px;
     margin: 20px 0 0;
   }
   .history-mobile .history-block p {
     font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 14px;
+    line-height: 24px;
     margin: 20px 0 0;
   }
   .history-mobile .history-block p b {
@@ -2121,6 +2111,9 @@ ul li::marker {
     background-image: none;
     overflow: hidden;
   }
+  .about-us br {
+    display: block;
+  }
   .about-us .above {
     display: none;
   }
@@ -2145,8 +2138,8 @@ ul li::marker {
     padding: 70px 0 45px;
   }
   .about-us h3 {
-    font-size: 38px;
-    line-height: 50px;
+    font-size: 36px;
+    line-height: 40px;
     padding: 45px 0 0;
   }
   .about-us .about-us-flex {
@@ -2163,9 +2156,13 @@ ul li::marker {
   }
   .about-us .about-us-flex .about-block h6 {
     padding-top: 30px;
+    font-size: 24px;
+    line-height: 34px;
   }
   .about-us .about-us-flex .about-block p {
     min-width: 0;
+    font-size: 14px;
+    line-height: 24px;
   }
 }
 @media screen and (max-width: 1300px) {
@@ -2188,8 +2185,8 @@ ul li::marker {
   }
   .reviews .reviews-top h4 {
     font-weight: 800;
-    font-size: 38px;
-    line-height: 50px;
+    font-size: 36px;
+    line-height: 40px;
     margin: 0;
     max-width: 325px;
     text-align: center;
@@ -2219,8 +2216,8 @@ ul li::marker {
   }
   .programs h4 {
     font-weight: 800;
-    font-size: 32px;
-    line-height: 44px;
+    font-size: 28px;
+    line-height: 40px;
     padding-top: 50px;
   }
   .programs .programs-flex {
@@ -2235,11 +2232,15 @@ ul li::marker {
   .programs .programs-flex .programs-block h6 {
     margin: 30px 0 0;
     font-weight: 800;
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 34px;
   }
   .programs .programs-flex .programs-block h6 b {
     font-weight: 400;
+  }
+  .programs .programs-flex .programs-block p {
+    font-size: 32px;
+    line-height: 40px;
   }
   .programs .programs-flex .programs-block .button-join {
     font-weight: 800;
@@ -2277,11 +2278,13 @@ ul li::marker {
   }
   .proposal h4 {
     font-weight: 800;
-    font-size: 38px;
-    line-height: 50px;
+    font-size: 36px;
+    line-height: 40px;
   }
   .proposal p {
     margin: 40px 0 0;
+    font-size: 14px;
+    line-height: 24px;
   }
   .proposal .proposal-flex {
     margin: 0;
@@ -2303,6 +2306,8 @@ ul li::marker {
   .proposal .proposal-flex .proposal-block .participant {
     width: 100%;
     padding: 45px 0 35px;
+    line-height: 24px;
+    font-size: 16px;
   }
   .proposal .proposal-flex .proposal-block-one {
     margin: 0 auto 40px;
@@ -2341,8 +2346,8 @@ ul li::marker {
   .faq .title-adaptive {
     display: block;
     font-weight: 800;
-    font-size: 38px;
-    line-height: 50px;
+    font-size: 36px;
+    line-height: 40px;
     text-align: start;
     color: #fff;
   }
@@ -2398,6 +2403,9 @@ ul li::marker {
   .pop-up-p2p .pop-top h5 b {
     font-weight: 700;
   }
+  .pop-up-p2p p {
+    font-size: 16px;
+  }
   .pop-up-p2p .payment-flex {
     flex-wrap: wrap;
   }
@@ -2450,6 +2458,11 @@ ul li::marker {
   .pop-up-p2p .pop-questions .block ul {
     padding: 0 0 0 25px;
   }
+  .pop-up-p2p .pop-questions .block h6 {
+    font-size: 16px;
+    padding: 40px 0 20px;
+    margin: 0;
+  }
   .pop-up-p2p .pop-questions .practical {
     margin: 0;
   }
@@ -2482,11 +2495,15 @@ ul li::marker {
     width: 100%;
     text-align: center;
     display: block;
+    font-size: 12px;
+    padding: 10px 40px;
   }
 }
 @media screen and (max-width: 1300px) {
   .pop-up-bot {
     padding: 0;
+    border-radius: 50px;
+    border-radius: 50px;
   }
   .pop-up-bot .phone {
     display: none;
@@ -2573,12 +2590,20 @@ ul li::marker {
   }
 }
 @media screen and (max-width: 1300px) {
+  .pop-up-bot p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1300px) {
   .pop-up-bot .boat {
     padding: 40px 0 0;
   }
   .pop-up-bot .boat .block {
     align-items: flex-start;
     padding-top: 40px;
+  }
+  .pop-up-bot .boat .block .text {
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 1300px) {
@@ -2600,6 +2625,8 @@ ul li::marker {
   .pop-up-bot .buttons .buttons-block .button-join {
     width: 100%;
     text-align: center;
+    font-size: 12px;
+    padding: 10px 40px;
   }
   .pop-up-bot .buttons .one {
     margin: 0 0 20px 0;
@@ -2611,6 +2638,8 @@ ul li::marker {
 @media screen and (max-width: 1300px) {
   .pop-up-offer {
     padding-bottom: 0;
+    border-radius: 50px;
+    border-radius: 50px;
   }
   .pop-up-offer .pop-up-offer-top {
     flex-direction: column-reverse;
@@ -2639,6 +2668,7 @@ ul li::marker {
   .pop-up-offer .text {
     padding: 40px 0 0;
     margin: 0;
+    font-size: 16px;
   }
   .pop-up-offer ul {
     padding: 40px 0 0 25px;
@@ -2651,6 +2681,14 @@ ul li::marker {
   .pop-up-offer .price .price-block {
     width: 45%;
     padding: 0 25px 0 0;
+  }
+  .pop-up-offer .price .price-block h6 {
+    font-size: 32px;
+    line-height: 30px;
+  }
+  .pop-up-offer .price .price-block p {
+    font-size: 12px;
+    line-height: 40px;
   }
   .pop-up-offer .price .price-block-bottom {
     margin-top: 45px;
@@ -2669,11 +2707,15 @@ ul li::marker {
     width: 100%;
     text-align: center;
     display: block;
+    font-size: 12px;
+    padding: 10px 40px;
   }
 }
 @media screen and (max-width: 1300px) {
   .pop-up-pro {
     padding-bottom: 0;
+    border-radius: 50px;
+    border-radius: 50px;
   }
   .pop-up-pro .above-pop-up-pro {
     display: none;
@@ -2702,6 +2744,7 @@ ul li::marker {
   .pop-up-pro .text {
     padding: 40px 0 0;
     margin: 0;
+    font-size: 16px;
   }
   .pop-up-pro .faq-container {
     padding: 0;
@@ -2727,11 +2770,15 @@ ul li::marker {
     display: block;
     text-align: center;
     box-shadow: 0px 14px 35px 0px rgba(255, 189, 62, 0.2509803922);
+    font-size: 12px;
+    padding: 10px 40px;
   }
 }
 @media screen and (max-width: 1300px) {
   .pop-up-video {
     padding: 0;
+    border-radius: 50px;
+    border-radius: 50px;
   }
   .pop-up-video .pop-top {
     text-align: center;
@@ -2762,6 +2809,11 @@ ul li::marker {
   overflow-y: scroll;
   border-radius: 50px;
   position: absolute;
+}
+@media screen and (max-width: 768px) {
+  .modal .modal-container {
+    width: 100%;
+  }
 }
 
 .modal-close {

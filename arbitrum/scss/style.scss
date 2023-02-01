@@ -1,3 +1,11 @@
+$text-size-1: 70px;
+$text-size-2: 50px;
+$font-size-3: 36px;
+$text-size-p: 16px;
+$text-size-p-2: 14px;
+$line-height-1: 40px;
+$line-height-2: 24px;
+
 * {
   box-sizing: border-box;
 }
@@ -20,6 +28,12 @@ body.active {
 .container-content {
   position: relative;
   width: 1160px;
+  margin: 0 auto;
+}
+
+.container-pop-up {
+  position: relative;
+  width: 1360px;
   margin: 0 auto;
 }
 
@@ -206,14 +220,14 @@ body.active {
         font-weight: 800;
         margin: 0;
         line-height: 40px;
-        font-size: 70px;
+        font-size: $text-size-1;
         display: inline-block;
       }
 
       p {
         margin: 20px 0 50px;
         font-size: 21px;
-        line-height: 36px;
+        line-height: $line-height-2;
         font-weight: 600;
       }
 
@@ -383,7 +397,7 @@ body.active {
 
     h2 {
       margin: 0 0 0 81px;
-      font-size: 50px;
+      font-size: $text-size-2;
       line-height: 40px;
       font-weight: 800;
       position: absolute;
@@ -572,6 +586,10 @@ body.active {
   background-repeat: no-repeat;
   position: relative;
 
+  br {
+    display: none;
+  }
+
   .filter-bg-blue {
     position: absolute;
     background: linear-gradient(90deg, #00d49e 0.61%, #00cefe 99.99%);
@@ -605,7 +623,7 @@ body.active {
   }
 
   h3 {
-    font-size: 50px;
+    font-size: $text-size-2;
     line-height: 40px;
     font-weight: 800;
     color: #fff;
@@ -701,7 +719,7 @@ body.active {
 
     h4 {
       font-weight: 800;
-      font-size: 50px;
+      font-size: $text-size-2;
       line-height: 40px;
     }
 
@@ -784,7 +802,7 @@ body.active {
   }
 
   h4 {
-    font-size: 50px;
+    font-size: $text-size-2;
     line-height: 62px;
     font-weight: 800;
     padding: 70px 0 0;
@@ -903,7 +921,7 @@ body.active {
   }
 
   h4 {
-    font-size: 50px;
+    font-size: $text-size-2;
     line-height: 65px;
     font-weight: 800;
     max-width: 670px;
@@ -1082,7 +1100,7 @@ body.active {
     text-align: center;
     margin: 0;
     padding-top: 70px;
-    font-size: 50px;
+    font-size: $text-size-2;
     line-height: 62px;
     font-weight: 800;
   }
@@ -1224,6 +1242,7 @@ body.active {
   background: #0e1111;
   padding-bottom: 80px;
   position: relative;
+  border-radius: 50px;
 
   .filter-bg-blue {
     position: absolute;
@@ -1249,16 +1268,16 @@ body.active {
   .pop-top {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding-top: 70px;
 
     h5 {
       font-weight: 400;
-      font-size: 50px;
+      font-size: 65px;
       line-height: 62px;
       color: #fff;
       margin: 0;
-      max-width: 900px;
+      text-align: start;
     }
 
     svg {
@@ -1279,7 +1298,7 @@ body.active {
 
   p {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 22px;
     line-height: 28px;
     color: #fff;
     margin: 40px 0 0;
@@ -1324,7 +1343,7 @@ body.active {
 
     h6 {
       font-weight: 700;
-      font-size: 16px;
+      font-size: 20px;
       line-height: 28px;
       color: #0e1111;
       margin: 0;
@@ -1363,24 +1382,9 @@ body.active {
     .block {
       h6 {
         font-weight: 700;
-        font-size: 16px;
+        font-size: 22px;
         line-height: 28px;
         color: #fff;
-      }
-
-      ul {
-        li {
-          font-weight: 400;
-          font-size: 16px;
-          line-height: 28px;
-          color: #fff;
-
-          &::marker {
-            color: #904ff3;
-            width: 8px;
-            height: 8px;
-          }
-        }
       }
     }
   }
@@ -1391,6 +1395,8 @@ body.active {
     margin-top: 40px;
     border: none;
     box-shadow: 0px 14px 35px 0px #ffbd3e26;
+    padding: 20px 60px;
+    font-size: 16px;
   }
 
   .button-join:hover {
@@ -1414,7 +1420,7 @@ body.active {
 ul {
   li {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 22px;
     line-height: 28px;
     color: #fff;
 
@@ -1422,6 +1428,10 @@ ul {
       color: #904ff3;
       width: 8px;
       height: 8px;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
     }
   }
 }
@@ -1461,8 +1471,8 @@ ul {
 
   .blurred-one {
     position: absolute;
-    right: 180px;
-    bottom: 40%;
+    right: 250px;
+    bottom: 52%;
     z-index: 3;
   }
 
@@ -1488,14 +1498,14 @@ ul {
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 280px;
-    right: 150px;
+    bottom: 400px;
+    right: 210px;
     z-index: 3;
   }
 
   p {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 22px;
     line-height: 28px;
     color: #fff;
     margin: 40px 0 0;
@@ -1517,7 +1527,7 @@ ul {
         color: #fff;
         margin-left: 40px;
         font-weight: 700;
-        font-size: 16px;
+        font-size: 22px;
         line-height: 28px;
       }
 
@@ -1551,6 +1561,8 @@ ul {
       font-weight: 800;
       color: #ffbd3e;
       transition: 0.3s;
+      font-size: 16px;
+      padding: 20px 40px;
     }
 
     .button-join:hover {
@@ -1590,31 +1602,18 @@ ul {
       display: none;
     }
 
-    a {
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 12px;
-      line-height: 40px;
-      color: #fff;
-      text-transform: uppercase;
-
-      svg {
-        margin-right: 10px;
-      }
-    }
-
     h6 {
       font-weight: 500;
-      font-size: 50px;
+      font-size: 65px;
       line-height: 62px;
       color: #fff;
-      margin: 0 300px 0 0;
+      margin: 0 680px 0 0;
     }
   }
 
   .text {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 22px;
     line-height: 28px;
     color: #fff;
     margin: 35px 0 0;
@@ -1645,15 +1644,15 @@ ul {
       h6 {
         color: #904ff3;
         font-weight: 800;
-        font-size: 32px;
-        line-height: 30px;
+        font-size: 40px;
+        line-height: 40px;
         margin: 0;
       }
 
       p {
         font-weight: 600;
-        font-size: 12px;
-        line-height: 40px;
+        font-size: 16px;
+        line-height: $line-height-1;
         color: #fff;
         margin: 0;
       }
@@ -1672,6 +1671,8 @@ ul {
       background: #ffbd3e;
       border: none;
       box-shadow: 0px 14px 35px 0px #ffbd3e40;
+      padding: 20px 60px;
+      font-size: 16px;
     }
 
     .button-join:hover {
@@ -1703,31 +1704,18 @@ ul {
       display: none;
     }
 
-    a {
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 12px;
-      line-height: 40px;
-      color: #fff;
-      text-transform: uppercase;
-
-      svg {
-        margin-right: 10px;
-      }
-    }
-
     h6 {
       font-weight: 800;
-      font-size: 50px;
+      font-size: 60px;
       line-height: 62px;
       color: #fff;
-      margin: 0 300px 0 0;
+      margin: 0 680px 0 0;
     }
   }
 
   .text {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 22px;
     line-height: 28px;
     color: #fff;
     margin: 35px 0 0;
@@ -1853,6 +1841,8 @@ ul {
       background: #ffbd3e;
       border: none;
       box-shadow: 0px 14px 35px 0px #ffbd3e40;
+      font-size: 16px;
+      padding: 20px 60px;
     }
 
     .button-join:hover {
@@ -1951,8 +1941,8 @@ ul {
         color: #fff;
         padding-top: 30px;
         font-weight: 600;
-        font-size: 18px;
-        line-height: 40px;
+        font-size: $text-size-p-2;
+        $line-height-2: 24px;
       }
     }
 
@@ -2066,14 +2056,14 @@ ul {
       .main-content {
         h1 {
           font-weight: 800;
-          font-size: 50px;
+          font-size: $font-size-3;
           line-height: 40px;
         }
 
         p {
           font-weight: 400;
-          font-size: 18px;
-          line-height: 36px;
+          font-size: $text-size-p-2;
+          $line-height-2: 24px;
 
           b {
             font-weight: 600;
@@ -2110,12 +2100,14 @@ ul {
       width: 100%;
       flex-direction: column;
       margin-top: 80px;
-      padding: 110px 30px;
+      padding: 80px 30px;
 
       p {
         margin: 0 0 70px;
         max-width: 245px;
         text-align: center;
+        font-size: 30px;
+        line-height: 40px;
       }
 
       .button-join {
@@ -2148,8 +2140,8 @@ ul {
 
     h2 {
       font-weight: 800;
-      font-size: 38px;
-      line-height: 50px;
+      font-size: $font-size-3;
+      line-height: $line-height-1;
       margin: 0;
       text-align: center;
       position: absolute;
@@ -2181,15 +2173,15 @@ ul {
 
       h6 {
         font-weight: 800;
-        font-size: 32px;
-        line-height: 40px;
+        font-size: 28px;
+        line-height: 36px;
         margin: 20px 0 0;
       }
 
       p {
         font-weight: 400;
-        font-size: 18px;
-        line-height: 30px;
+        font-size: $text-size-p-2;
+        line-height: $line-height-2;
         margin: 20px 0 0;
 
         b {
@@ -2393,6 +2385,10 @@ ul {
   .about-us {
     background-image: none;
     overflow: hidden;
+
+    br {
+      display: block;
+    }
     .above {
       display: none;
     }
@@ -2422,8 +2418,8 @@ ul {
     }
 
     h3 {
-      font-size: 38px;
-      line-height: 50px;
+      font-size: $font-size-3;
+      line-height: $line-height-1;
       padding: 45px 0 0;
     }
 
@@ -2442,10 +2438,14 @@ ul {
 
         h6 {
           padding-top: 30px;
+          font-size: 24px;
+          line-height: 34px;
         }
 
         p {
           min-width: 0;
+          font-size: $text-size-p-2;
+          line-height: $line-height-2;
         }
       }
     }
@@ -2471,8 +2471,8 @@ ul {
       display: flex;
       h4 {
         font-weight: 800;
-        font-size: 38px;
-        line-height: 50px;
+        font-size: $font-size-3;
+        line-height: $line-height-1;
         margin: 0;
         max-width: 325px;
         text-align: center;
@@ -2509,8 +2509,8 @@ ul {
 
     h4 {
       font-weight: 800;
-      font-size: 32px;
-      line-height: 44px;
+      font-size: 28px;
+      line-height: $line-height-1;
       padding-top: 50px;
     }
 
@@ -2525,12 +2525,17 @@ ul {
         h6 {
           margin: 30px 0 0;
           font-weight: 800;
-          font-size: 30px;
-          line-height: 40px;
+          font-size: 24px;
+          line-height: 34px;
 
           b {
             font-weight: 400;
           }
+        }
+
+        p {
+          font-size: 32px;
+          line-height: $line-height-1;
         }
 
         .button-join {
@@ -2576,12 +2581,14 @@ ul {
 
     h4 {
       font-weight: 800;
-      font-size: 38px;
-      line-height: 50px;
+      font-size: $font-size-3;
+      line-height: $line-height-1;
     }
 
     p {
       margin: 40px 0 0;
+      font-size: $text-size-p-2;
+      line-height: $line-height-2;
     }
 
     .proposal-flex {
@@ -2604,6 +2611,8 @@ ul {
         .participant {
           width: 100%;
           padding: 45px 0 35px;
+          line-height: $line-height-2;
+          font-size: $text-size-p;
         }
 
         margin: 0 auto;
@@ -2651,8 +2660,8 @@ ul {
     .title-adaptive {
       display: block;
       font-weight: 800;
-      font-size: 38px;
-      line-height: 50px;
+      font-size: $font-size-3;
+      line-height: $line-height-1;
       text-align: start;
       color: #fff;
     }
@@ -2718,6 +2727,10 @@ ul {
       }
     }
 
+    p {
+      font-size: 16px;
+    }
+
     .payment-flex {
       flex-wrap: wrap;
 
@@ -2771,6 +2784,12 @@ ul {
         ul {
           padding: 0 0 0 25px;
         }
+
+        h6 {
+          font-size: 16px;
+          padding: 40px 0 20px;
+          margin: 0;
+        }
       }
 
       .practical {
@@ -2810,11 +2829,14 @@ ul {
       width: 100%;
       text-align: center;
       display: block;
+      font-size: 12px;
+      padding: 10px 40px;
     }
   }
 
   .pop-up-bot {
     padding: 0;
+    border-radius: 50px;
     border-radius: 50px;
 
     .phone {
@@ -2889,12 +2911,20 @@ ul {
       padding-left: 25px;
     }
 
+    p {
+      font-size: 16px;
+    }
+
     .boat {
       padding: 40px 0 0;
 
       .block {
         align-items: flex-start;
         padding-top: 40px;
+
+        .text {
+          font-size: 16px;
+        }
       }
     }
 
@@ -2915,6 +2945,8 @@ ul {
         .button-join {
           width: 100%;
           text-align: center;
+          font-size: 12px;
+          padding: 10px 40px;
         }
       }
 
@@ -2930,6 +2962,7 @@ ul {
 
   .pop-up-offer {
     padding-bottom: 0;
+    border-radius: 50px;
     border-radius: 50px;
     .pop-up-offer-top {
       flex-direction: column-reverse;
@@ -2963,6 +2996,7 @@ ul {
     .text {
       padding: 40px 0 0;
       margin: 0;
+      font-size: 16px;
     }
 
     ul {
@@ -2977,6 +3011,16 @@ ul {
       .price-block {
         width: 45%;
         padding: 0 25px 0 0;
+
+        h6 {
+          font-size: 32px;
+          line-height: 30px;
+        }
+
+        p {
+          font-size: 12px;
+          line-height: 40px;
+        }
       }
 
       .price-block-bottom {
@@ -2999,12 +3043,15 @@ ul {
         width: 100%;
         text-align: center;
         display: block;
+        font-size: 12px;
+        padding: 10px 40px;
       }
     }
   }
 
   .pop-up-pro {
     padding-bottom: 0;
+    border-radius: 50px;
     border-radius: 50px;
     .above-pop-up-pro {
       display: none;
@@ -3037,6 +3084,7 @@ ul {
     .text {
       padding: 40px 0 0;
       margin: 0;
+      font-size: 16px;
     }
 
     .faq-container {
@@ -3071,12 +3119,15 @@ ul {
         display: block;
         text-align: center;
         box-shadow: 0px 14px 35px 0px #ffbd3e40;
+        font-size: 12px;
+        padding: 10px 40px;
       }
     }
   }
 
   .pop-up-video {
     padding: 0;
+    border-radius: 50px;
     border-radius: 50px;
     .pop-top {
       text-align: center;
@@ -3111,6 +3162,10 @@ ul {
     overflow-y: scroll;
     border-radius: 50px;
     position: absolute;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
   }
 }
 
