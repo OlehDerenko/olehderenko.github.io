@@ -1773,6 +1773,7 @@ ul li::marker {
   .main .main-section .main-content p {
     font-weight: 400;
     font-size: 14px;
+    line-height: 24px;
   }
   .main .main-section .main-content p b {
     font-weight: 600;
@@ -2132,29 +2133,31 @@ ul li::marker {
     bottom: -50px;
     right: -40px;
     width: 111px;
+    display: none;
   }
   .about-us .button-position {
-    padding: 70px 0 45px;
+    padding: 50px 0 5px;
   }
   .about-us h3 {
     font-size: 32px;
     line-height: 40px;
-    padding: 45px 0 0;
+    padding: 25px 0 0;
   }
   .about-us .about-us-flex {
     flex-direction: column;
     padding: 0 20px;
-    margin: 30px 0 0;
+    margin: 15px 0 0;
   }
   .about-us .about-us-flex .about-block {
     flex-direction: column;
     width: 100%;
+    margin-top: 30px;
   }
   .about-us .about-us-flex .about-block img {
     margin: 0;
   }
   .about-us .about-us-flex .about-block h6 {
-    padding-top: 30px;
+    padding-top: 20px;
     font-size: 24px;
     line-height: 34px;
   }
@@ -2166,7 +2169,7 @@ ul li::marker {
 }
 @media screen and (max-width: 1300px) {
   .reviews {
-    padding: 80px 0 80px;
+    padding: 20px 0 20px;
     overflow: hidden;
   }
   .reviews .filter-bg-pink {
@@ -2205,12 +2208,13 @@ ul li::marker {
     display: none;
   }
   .programs .programs-top-img {
-    width: 200px;
+    width: 150px;
+    top: -120px;
   }
   .programs .programs-bottom-img {
     position: absolute;
     right: 0px;
-    width: 180px;
+    width: 160px;
     bottom: -85px;
   }
   .programs h4 {
@@ -2228,6 +2232,13 @@ ul li::marker {
     padding: 50px 36px 40px;
     width: 325px;
   }
+}
+@media screen and (max-width: 1300px) and (max-width: 500px) {
+  .programs .programs-flex .programs-block {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 1300px) {
   .programs .programs-flex .programs-block h6 {
     margin: 30px 0 0;
     font-weight: 800;
@@ -2237,16 +2248,24 @@ ul li::marker {
   .programs .programs-flex .programs-block h6 b {
     font-weight: 400;
   }
+}
+@media screen and (max-width: 1300px) {
   .programs .programs-flex .programs-block p {
     font-size: 32px;
     line-height: 40px;
   }
+}
+@media screen and (max-width: 1300px) {
   .programs .programs-flex .programs-block .button-join {
     font-weight: 800;
   }
+}
+@media screen and (max-width: 1300px) {
   .programs .programs-flex .programs-block-vip {
     margin: 0;
   }
+}
+@media screen and (max-width: 1300px) {
   .programs .programs-flex .programs-block-professional {
     margin-top: 40px;
     padding: 50px 36px 40px;
@@ -2291,11 +2310,20 @@ ul li::marker {
     flex-direction: column;
   }
   .proposal .proposal-flex .proposal-block {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
   }
   .proposal .proposal-flex .proposal-block .dollars {
     transform: rotate(-6deg) translate(-50%) scale(0.9);
+    width: 145px;
+  }
+  .proposal .proposal-flex .proposal-block .dollars h6 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .proposal .proposal-flex .proposal-block .dollars p {
+    font-size: 18px;
+    line-height: 30px;
   }
   .proposal .proposal-flex .proposal-block .button-join {
     width: 100%;
@@ -2323,7 +2351,8 @@ ul li::marker {
 }
 @media screen and (max-width: 1300px) {
   .faq {
-    margin-top: 80px;
+    margin-top: 50px;
+    padding-bottom: 50px;
   }
   .faq .blurred {
     display: none;
@@ -2332,7 +2361,7 @@ ul li::marker {
     position: absolute;
     right: 0;
     top: -120px;
-    width: 250px;
+    width: 200px;
   }
   .faq .blurred {
     position: absolute;
@@ -2349,6 +2378,7 @@ ul li::marker {
     line-height: 40px;
     text-align: start;
     color: #fff;
+    padding-top: 30px;
   }
   .faq .faq-container .faq-item .title {
     width: 280px;

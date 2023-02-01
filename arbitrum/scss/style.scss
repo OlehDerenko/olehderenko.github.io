@@ -2064,7 +2064,7 @@ ul {
         p {
           font-weight: 400;
           font-size: $text-size-p-2;
-          $line-height-2: 24px;
+          line-height: $line-height-2;
 
           b {
             font-weight: 600;
@@ -2410,33 +2410,35 @@ ul {
       bottom: -50px;
       right: -40px;
       width: 111px;
+      display: none;
     }
 
     .button-position {
-      padding: 70px 0 45px;
+      padding: 50px 0 5px;
     }
 
     h3 {
       font-size: $font-size-3;
       line-height: $line-height-1;
-      padding: 45px 0 0;
+      padding: 25px 0 0;
     }
 
     .about-us-flex {
       flex-direction: column;
       padding: 0 20px;
-      margin: 30px 0 0;
+      margin: 15px 0 0;
 
       .about-block {
         flex-direction: column;
         width: 100%;
+        margin-top: 30px;
 
         img {
           margin: 0;
         }
 
         h6 {
-          padding-top: 30px;
+          padding-top: 20px;
           font-size: 24px;
           line-height: 34px;
         }
@@ -2451,7 +2453,7 @@ ul {
   }
 
   .reviews {
-    padding: 80px 0 80px;
+    padding: 20px 0 20px;
     overflow: hidden;
 
     .filter-bg-pink {
@@ -2496,13 +2498,14 @@ ul {
       display: none;
     }
     .programs-top-img {
-      width: 200px;
+      width: 150px;
+      top: -120px;
     }
 
     .programs-bottom-img {
       position: absolute;
       right: 0px;
-      width: 180px;
+      width: 160px;
       bottom: -85px;
     }
 
@@ -2521,6 +2524,11 @@ ul {
       .programs-block {
         padding: 50px 36px 40px;
         width: 325px;
+
+        @media screen and (max-width: 500px) {
+          width: 300px;
+        }
+
         h6 {
           margin: 30px 0 0;
           font-weight: 800;
@@ -2596,10 +2604,21 @@ ul {
       flex-direction: column;
 
       .proposal-block {
-        width: 100%;
+        width: 90%;
 
         .dollars {
           transform: rotate(-6deg) translate(-50%) scale(0.9);
+          width: 145px;
+
+          h6 {
+            font-size: 60px;
+            line-height: 60px;
+          }
+
+          p {
+            font-size: 18px;
+            line-height: 30px;
+          }
         }
 
         .button-join {
@@ -2634,7 +2653,8 @@ ul {
   }
 
   .faq {
-    margin-top: 80px;
+    margin-top: 50px;
+    padding-bottom: 50px;
 
     .blurred {
       display: none;
@@ -2643,7 +2663,7 @@ ul {
       position: absolute;
       right: 0;
       top: -120px;
-      width: 250px;
+      width: 200px;
     }
 
     .blurred {
@@ -2663,6 +2683,7 @@ ul {
       line-height: $line-height-1;
       text-align: start;
       color: #fff;
+      padding-top: 30px;
     }
 
     .faq-container {
