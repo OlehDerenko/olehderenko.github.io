@@ -1813,18 +1813,18 @@ ul li::marker {
 @media screen and (max-width: 1300px) {
   .main .main-earn {
     max-height: none;
-    width: 100%;
+    width: 90%;
     flex-direction: column;
     margin-top: 80px;
     padding: 80px 30px;
-    transform: translate(-50%) scale(0.9);
+    transform: translate(-50%);
   }
   .main .main-earn p {
     margin: 0 0 70px;
     max-width: 245px;
     text-align: center;
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 25px;
+    line-height: 24px;
   }
   .main .main-earn .button-join {
     width: auto;
@@ -2179,7 +2179,9 @@ ul li::marker {
     overflow: hidden;
   }
   .reviews .slide {
-    transform: scale(0.9);
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px 25px 20px 25px;
   }
   .reviews .filter-bg-pink {
     filter: blur(312px);
