@@ -2177,7 +2177,7 @@ ul {
       text-align: center;
       flex-direction: column;
       margin: 45px 0;
-      transform: scale(0.9);
+      // transform: scale(0.9);
 
       h6 {
         font-weight: 800;
@@ -2539,7 +2539,7 @@ ul {
         padding: 50px 36px 40px;
         width: 325px;
 
-        transform: scale(0.8);
+        // transform: scale(0.8);
 
         h6 {
           margin: 30px 0 0;
@@ -2752,6 +2752,7 @@ ul {
     width: 100%;
     padding-bottom: 0;
     border-radius: 50px;
+
     .pop-top {
       flex-direction: column-reverse;
       justify-content: center;
@@ -2763,7 +2764,6 @@ ul {
         font-weight: 500;
         font-size: 31px;
         line-height: 45px;
-        padding-top: 40px;
 
         b {
           font-weight: 700;
@@ -2955,6 +2955,10 @@ ul {
       padding-left: 25px;
     }
 
+    .text-head {
+      margin: 0;
+    }
+
     p {
       font-size: 16px;
     }
@@ -3026,10 +3030,6 @@ ul {
             font-weight: 800;
           }
         }
-      }
-
-      .emoji-top {
-        padding-top: 40px;
       }
 
       .title {
@@ -3114,10 +3114,6 @@ ul {
           margin: 0;
           padding-top: 20px;
         }
-      }
-
-      .emoji-top {
-        padding-top: 40px;
       }
 
       .title {

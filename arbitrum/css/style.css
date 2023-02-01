@@ -1881,7 +1881,6 @@ ul li::marker {
     text-align: center;
     flex-direction: column;
     margin: 45px 0;
-    transform: scale(0.9);
   }
   .history-mobile .history-block h6 {
     font-weight: 800;
@@ -2245,7 +2244,6 @@ ul li::marker {
   .programs .programs-flex .programs-block {
     padding: 50px 36px 40px;
     width: 325px;
-    transform: scale(0.8);
   }
   .programs .programs-flex .programs-block h6 {
     margin: 30px 0 0;
@@ -2437,7 +2435,6 @@ ul li::marker {
     font-weight: 500;
     font-size: 31px;
     line-height: 45px;
-    padding-top: 40px;
   }
   .pop-up-p2p .pop-top h5 b {
     font-weight: 700;
@@ -2629,6 +2626,11 @@ ul li::marker {
   }
 }
 @media screen and (max-width: 1300px) {
+  .pop-up-bot .text-head {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1300px) {
   .pop-up-bot p {
     font-size: 16px;
   }
@@ -2697,9 +2699,6 @@ ul li::marker {
   }
   .pop-up-offer .pop-up-offer-top .title-adaptive h5 b {
     font-weight: 800;
-  }
-  .pop-up-offer .pop-up-offer-top .emoji-top {
-    padding-top: 40px;
   }
   .pop-up-offer .pop-up-offer-top .title {
     display: none;
@@ -2773,9 +2772,6 @@ ul li::marker {
     color: #fff;
     margin: 0;
     padding-top: 20px;
-  }
-  .pop-up-pro .pop-up-pro-top .emoji-top {
-    padding-top: 40px;
   }
   .pop-up-pro .pop-up-pro-top .title {
     display: none;
