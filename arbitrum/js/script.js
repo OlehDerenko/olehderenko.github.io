@@ -1,4 +1,11 @@
 const accordions = document.querySelectorAll(".faq-item");
+const scrollTopGlobalButton = document.querySelector(
+  "#global-scroll-top-button"
+);
+const $body = document.body;
+const burgerMenu = document.querySelector(".mobile-menu");
+const burgers = document.querySelectorAll(".burger");
+let scrollPosition = 0;
 
 document.addEventListener("DOMContentLoaded", () => {
   accordions.forEach((accordion) => {
@@ -32,11 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 1000);
   });
 });
-
-const $body = document.body;
-let scrollPosition = 0;
-const burgerMenu = document.querySelector(".mobile-menu");
-const burgers = document.querySelectorAll(".burger");
 
 const scrollLock = {
   enable() {
@@ -95,24 +97,6 @@ links.forEach((link) => {
 const openModalButtons = document.querySelectorAll("[data-open-modal]");
 const closeModalButtons = document.querySelectorAll("[data-close-modal]");
 const modals = document.querySelectorAll("[data-modal-name]");
-const modalsContainers = document.querySelectorAll(
-  "[data-modal-name] .modal-container"
-);
-
-modalsContainers.forEach((c) => {
-  c.addEventListener("click", (e) => {
-    e.stopPropagation();
-    e.stopImmediatePropagation();
-  });
-});
-
-modals.forEach((modal) => {
-  modal.addEventListener("click", (e) => {
-    e.stopPropagation();
-    modal.classList.remove("visible");
-    scrollLock.disable();
-  });
-});
 
 openModalButtons.forEach((button) => {
   button.addEventListener("click", (e) => {
@@ -154,28 +138,41 @@ burgers.forEach((burger) => {
   });
 });
 
-let mybutton = document.getElementById("myBtn");
+modals.forEach((modal) => {
+  const toTopButton = modal.querySelector(".button-to-top");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () {
-  scrollFunction();
-};
+  modal.addEventListener("scroll", () => {
+    if (toTopButton) {
+      if (modal.scrollTop > 100) {
+        toTopButton.style.display = "block";
+      } else {
+        toTopButton.style.display = "none";
+      }
+    }
+  });
 
-function scrollFunction() {
-  if (
-    document.body.scrollTop > 695 ||
-    document.documentElement.scrollTop > 695
-  ) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
+  if (toTopButton) {
+    toTopButton.addEventListener("click", () => {
+      modal.scrollTo({ top: 0, behavior: "smooth" });
+    });
   }
-}
+});
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
+window.addEventListener("scroll", () => {
+  const TOP = 695;
+  if (
+    document.body.scrollTop > TOP ||
+    document.documentElement.scrollTop > TOP
+  ) {
+    scrollTopGlobalButton.style.display = "block";
+  } else {
+    scrollTopGlobalButton.style.display = "none";
+  }
+});
+
+scrollTopGlobalButton.addEventListener("click", () => {
   window.scrollTo({
     top: 0,
     behavior: "smooth",
   });
-}
+});

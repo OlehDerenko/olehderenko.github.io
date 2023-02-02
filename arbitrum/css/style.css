@@ -1071,7 +1071,6 @@ body.active {
   background: #0e1111;
   padding-bottom: 80px;
   position: relative;
-  border-radius: 50px;
 }
 .pop-up-p2p .filter-bg-blue {
   position: absolute;
@@ -1095,15 +1094,16 @@ body.active {
 .pop-up-p2p .pop-top {
   display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: space-between;
   padding-top: 70px;
 }
 .pop-up-p2p .pop-top h5 {
   font-weight: 400;
-  font-size: 65px;
+  font-size: 50px;
   line-height: 62px;
   color: #fff;
   margin: 0;
+  max-width: 900px;
   text-align: start;
 }
 .pop-up-p2p .pop-top svg {
@@ -1267,7 +1267,7 @@ ul li::marker {
 .pop-up-bot .blurred-one {
   position: absolute;
   right: 250px;
-  bottom: 52%;
+  bottom: 50%;
   z-index: 3;
 }
 .pop-up-bot .blurred-two {
@@ -1383,7 +1383,18 @@ ul li::marker {
   font-size: 65px;
   line-height: 62px;
   color: #fff;
-  margin: 0 680px 0 0;
+  margin: 0 400px 0 0;
+}
+.pop-up-offer .pop-up-offer-top a {
+  font-size: 12px;
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+.pop-up-offer .pop-up-offer-top a .svg {
+  margin-right: 10px;
 }
 .pop-up-offer .text {
   font-weight: 400;
@@ -1471,7 +1482,18 @@ ul li::marker {
   font-size: 60px;
   line-height: 62px;
   color: #fff;
-  margin: 0 680px 0 0;
+  margin: 0 400px 0 0;
+}
+.pop-up-pro .pop-up-pro-top a {
+  font-size: 12px;
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+.pop-up-pro .pop-up-pro-top a .svg {
+  margin-right: 10px;
 }
 .pop-up-pro .text {
   font-weight: 400;
@@ -2424,7 +2446,6 @@ ul li::marker {
   .pop-up-p2p {
     width: 100%;
     padding-bottom: 0;
-    border-radius: 50px;
   }
   .pop-up-p2p .pop-top {
     flex-direction: column-reverse;
@@ -2437,6 +2458,7 @@ ul li::marker {
     font-weight: 500;
     font-size: 31px;
     line-height: 45px;
+    padding-top: 20px;
   }
   .pop-up-p2p .pop-top h5 b {
     font-weight: 700;
@@ -2540,8 +2562,9 @@ ul li::marker {
 @media screen and (max-width: 1300px) {
   .pop-up-bot {
     padding: 0;
-    border-radius: 50px;
-    border-radius: 50px;
+  }
+  .pop-up-bot a {
+    text-align: center;
   }
   .pop-up-bot .phone {
     display: none;
@@ -2630,6 +2653,7 @@ ul li::marker {
 @media screen and (max-width: 1300px) {
   .pop-up-bot .text-head {
     margin: 0;
+    padding-top: 40px;
   }
 }
 @media screen and (max-width: 1300px) {
@@ -2681,8 +2705,6 @@ ul li::marker {
 @media screen and (max-width: 1300px) {
   .pop-up-offer {
     padding-bottom: 0;
-    border-radius: 50px;
-    border-radius: 50px;
   }
   .pop-up-offer .pop-up-offer-top {
     flex-direction: column-reverse;
@@ -2701,6 +2723,9 @@ ul li::marker {
   }
   .pop-up-offer .pop-up-offer-top .title-adaptive h5 b {
     font-weight: 800;
+  }
+  .pop-up-offer .pop-up-offer-top .emoji-top {
+    padding-top: 40px;
   }
   .pop-up-offer .pop-up-offer-top .title {
     display: none;
@@ -2754,8 +2779,6 @@ ul li::marker {
 @media screen and (max-width: 1300px) {
   .pop-up-pro {
     padding-bottom: 0;
-    border-radius: 50px;
-    border-radius: 50px;
   }
   .pop-up-pro .above-pop-up-pro {
     display: none;
@@ -2774,6 +2797,9 @@ ul li::marker {
     color: #fff;
     margin: 0;
     padding-top: 20px;
+  }
+  .pop-up-pro .pop-up-pro-top .emoji-top {
+    padding-top: 40px;
   }
   .pop-up-pro .pop-up-pro-top .title {
     display: none;
@@ -2814,8 +2840,6 @@ ul li::marker {
 @media screen and (max-width: 1300px) {
   .pop-up-video {
     padding: 0;
-    border-radius: 50px;
-    border-radius: 50px;
   }
   .pop-up-video .pop-top {
     text-align: center;
@@ -2836,21 +2860,7 @@ ul li::marker {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(1px);
-}
-.modal .modal-container {
-  width: 100%;
-  height: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0.8);
   overflow-y: scroll;
-  border-radius: 50px;
-  position: absolute;
-}
-@media screen and (max-width: 768px) {
-  .modal .modal-container {
-    width: 100%;
-  }
 }
 
 .modal-close {
@@ -3032,7 +3042,7 @@ ul li::marker {
     opacity: 0;
   }
 }
-#myBtn {
+.button-to-top {
   display: none;
   position: fixed;
   bottom: 120px;
@@ -3048,7 +3058,13 @@ ul li::marker {
   transition: 0.5s;
 }
 @media screen and (max-width: 768px) {
-  #myBtn {
+  .button-to-top {
     right: 8px;
   }
+}
+
+.button-to-top.modal-button {
+  position: sticky;
+  top: 90%;
+  left: 90%;
 }/*# sourceMappingURL=style.css.map */
