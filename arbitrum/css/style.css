@@ -556,6 +556,21 @@ body.active {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.about-us .about-us-flex .button-position-bot {
+  margin: 20px 0 0px -45px;
+}
+.about-us .about-us-flex .button-position-bot .button-arbitum-bot {
+  color: #0e1111;
+  background: #d78d00;
+  box-shadow: 0px 14px 35px 0px rgba(255, 189, 62, 0.25);
+  border: none;
+  padding: 10px 40px;
+  transform: scale(0.6);
+}
+.about-us .about-us-flex .button-position-bot .button-arbitum-bot:hover {
+  box-shadow: 0px 15px 38px 0px rgba(255, 189, 62, 0.2509803922);
+  background: #c85800;
+}
 .about-us .about-us-flex .about-block {
   width: 45%;
   color: #fff;
