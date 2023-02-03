@@ -1082,6 +1082,33 @@ body.active {
   margin-right: 25px;
 }
 
+.back-fixed {
+  position: sticky;
+  z-index: 1001;
+  top: 13%;
+  background: #0e1111;
+  padding: 20px;
+  left: 75%;
+  display: inline-block;
+  border-radius: 10px;
+}
+@media screen and (max-width: 500px) {
+  .back-fixed {
+    padding: 10px;
+  }
+}
+.back-fixed a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+.back-fixed a svg {
+  margin-right: 10px;
+}
+
 .pop-up-p2p {
   background: #0e1111;
   padding-bottom: 80px;
@@ -1125,14 +1152,8 @@ body.active {
   cursor: pointer;
   margin-right: 10px;
 }
-.pop-up-p2p .pop-top a {
-  text-decoration: none;
-  color: #fff;
-  margin-left: 10px;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 40px;
-  text-transform: uppercase;
+.pop-up-p2p .pop-top .back-fixed {
+  display: block;
 }
 .pop-up-p2p p {
   font-weight: 400;
@@ -2461,6 +2482,7 @@ ul li::marker {
   .pop-up-p2p {
     width: 100%;
     padding-bottom: 0;
+    padding-top: 100px;
   }
   .pop-up-p2p .pop-top {
     flex-direction: column-reverse;
@@ -2868,11 +2890,11 @@ ul li::marker {
   opacity: 0;
   transition: 0.3s;
   position: fixed;
-  top: 0;
+  top: -11%;
   left: 0;
   width: 100%;
   z-index: 999;
-  height: 100%;
+  height: 111%;
   background-color: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(1px);
   overflow-y: scroll;
