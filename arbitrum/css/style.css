@@ -1087,10 +1087,25 @@ body.active {
   z-index: 1001;
   top: 13%;
   background: #0e1111;
-  padding: 20px;
-  left: 75%;
+  padding: 10px 20px;
+  left: 77%;
   display: inline-block;
   border-radius: 10px;
+}
+@media screen and (max-width: 1800px) {
+  .back-fixed {
+    left: 79%;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .back-fixed {
+    left: 82%;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .back-fixed {
+    left: 85%;
+  }
 }
 @media screen and (max-width: 500px) {
   .back-fixed {
@@ -1107,6 +1122,15 @@ body.active {
 }
 .back-fixed a svg {
   margin-right: 10px;
+}
+
+.back-fixed-two {
+  top: 17%;
+}
+@media screen and (max-width: 500px) {
+  .back-fixed-two {
+    top: 13%;
+  }
 }
 
 .pop-up-p2p {
@@ -1151,9 +1175,6 @@ body.active {
 .pop-up-p2p .pop-top svg {
   cursor: pointer;
   margin-right: 10px;
-}
-.pop-up-p2p .pop-top .back-fixed {
-  display: block;
 }
 .pop-up-p2p p {
   font-weight: 400;
@@ -1276,7 +1297,7 @@ ul li::marker {
   padding-bottom: 150px;
   position: relative;
   overflow-x: hidden;
-  padding-top: 70px;
+  padding-top: 100px;
 }
 .pop-up-bot a {
   font-size: 12px;
@@ -1409,7 +1430,7 @@ ul li::marker {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 50px;
+  padding-top: 70px;
 }
 .pop-up-offer .pop-up-offer-top .title-adaptive {
   display: none;
@@ -1419,7 +1440,7 @@ ul li::marker {
   font-size: 65px;
   line-height: 62px;
   color: #fff;
-  margin: 0 400px 0 0;
+  margin: 0 680px 0 0;
 }
 .pop-up-offer .pop-up-offer-top a {
   font-size: 12px;
@@ -1508,7 +1529,7 @@ ul li::marker {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 50px;
+  padding-top: 70px;
 }
 .pop-up-pro .pop-up-pro-top .title-adaptive {
   display: none;
@@ -1518,7 +1539,7 @@ ul li::marker {
   font-size: 60px;
   line-height: 62px;
   color: #fff;
-  margin: 0 400px 0 0;
+  margin: 0 680px 0 0;
 }
 .pop-up-pro .pop-up-pro-top a {
   font-size: 12px;
@@ -2598,7 +2619,7 @@ ul li::marker {
 }
 @media screen and (max-width: 1300px) {
   .pop-up-bot {
-    padding: 0;
+    padding: 70px 0 0;
   }
   .pop-up-bot a {
     text-align: center;
@@ -2745,7 +2766,7 @@ ul li::marker {
   }
   .pop-up-offer .pop-up-offer-top {
     flex-direction: column-reverse;
-    padding: 0;
+    padding: 50px 0 0;
   }
   .pop-up-offer .pop-up-offer-top .title-adaptive {
     display: block;
@@ -2815,7 +2836,7 @@ ul li::marker {
 }
 @media screen and (max-width: 1300px) {
   .pop-up-pro {
-    padding-bottom: 0;
+    padding: 50px 0 0;
   }
   .pop-up-pro .above-pop-up-pro {
     display: none;
