@@ -1268,6 +1268,7 @@ body.active {
   left: 77%;
   display: inline-block;
   border-radius: 10px;
+  cursor: pointer;
 
   @media screen and (max-width: 1800px) {
     left: 79%;
@@ -1302,6 +1303,7 @@ body.active {
 
 .back-fixed-two {
   top: 17%;
+  cursor: pointer;
 
   @media screen and (max-width: 500px) {
     top: 13%;
@@ -1532,7 +1534,7 @@ ul {
   .blurred-one {
     position: absolute;
     right: 250px;
-    bottom: 50%;
+    bottom: 48%;
     z-index: 3;
   }
 
@@ -1595,6 +1597,7 @@ ul {
         font-weight: 700;
         font-size: 55px;
         line-height: 28px;
+        width: 56px;
       }
     }
   }
@@ -1941,7 +1944,7 @@ ul {
 .pop-up-video {
   background: #0e1111;
   position: relative;
-  padding: 70px 0;
+  padding: 140px 0 70px;
   height: 100%;
 
   a {
@@ -3257,8 +3260,6 @@ ul {
   }
 
   .pop-up-video {
-    padding: 0;
-
     .pop-top {
       text-align: center;
     }

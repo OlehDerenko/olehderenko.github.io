@@ -1091,6 +1091,7 @@ body.active {
   left: 77%;
   display: inline-block;
   border-radius: 10px;
+  cursor: pointer;
 }
 @media screen and (max-width: 1800px) {
   .back-fixed {
@@ -1126,6 +1127,7 @@ body.active {
 
 .back-fixed-two {
   top: 17%;
+  cursor: pointer;
 }
 @media screen and (max-width: 500px) {
   .back-fixed-two {
@@ -1324,7 +1326,7 @@ ul li::marker {
 .pop-up-bot .blurred-one {
   position: absolute;
   right: 250px;
-  bottom: 50%;
+  bottom: 48%;
   z-index: 3;
 }
 .pop-up-bot .blurred-two {
@@ -1381,6 +1383,7 @@ ul li::marker {
   font-weight: 700;
   font-size: 55px;
   line-height: 28px;
+  width: 56px;
 }
 .pop-up-bot .phone-mobile {
   display: none;
@@ -1671,7 +1674,7 @@ ul li::marker {
 .pop-up-video {
   background: #0e1111;
   position: relative;
-  padding: 70px 0;
+  padding: 140px 0 70px;
   height: 100%;
 }
 .pop-up-video a {
@@ -2896,9 +2899,6 @@ ul li::marker {
   }
 }
 @media screen and (max-width: 1300px) {
-  .pop-up-video {
-    padding: 0;
-  }
   .pop-up-video .pop-top {
     text-align: center;
   }
