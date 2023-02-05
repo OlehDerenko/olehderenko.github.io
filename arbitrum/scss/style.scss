@@ -2510,8 +2510,8 @@ ul {
     }
 
     h3 {
-      font-size: $font-size-3;
-      line-height: $line-height-1;
+      font-size: 22px;
+      line-height: 32px;
       padding: 25px 0 0;
     }
 
@@ -2531,8 +2531,8 @@ ul {
 
         h6 {
           padding-top: 20px;
-          font-size: 24px;
-          line-height: 34px;
+          font-size: 20px;
+          line-height: 30px;
         }
 
         p {
@@ -2610,8 +2610,8 @@ ul {
 
     h4 {
       font-weight: 800;
-      font-size: 28px;
-      line-height: $line-height-1;
+      font-size: 22px;
+      line-height: 32px;
       padding-top: 50px;
     }
 
@@ -2684,8 +2684,8 @@ ul {
 
     h4 {
       font-weight: 800;
-      font-size: $font-size-3;
-      line-height: $line-height-1;
+      font-size: 24px;
+      line-height: 34px;
     }
 
     p {
@@ -2779,8 +2779,8 @@ ul {
     .title-adaptive {
       display: block;
       font-weight: 800;
-      font-size: $font-size-3;
-      line-height: $line-height-1;
+      font-size: 24px;
+      line-height: 34px;
       text-align: start;
       color: #fff;
       padding-top: 30px;
@@ -2846,8 +2846,8 @@ ul {
       h5 {
         text-align: start;
         font-weight: 500;
-        font-size: 31px;
-        line-height: 45px;
+        font-size: 22px;
+        line-height: 32px;
         padding-top: 20px;
 
         b {
@@ -3059,7 +3059,15 @@ ul {
         padding-top: 40px;
 
         .text {
-          font-size: 16px;
+          font-size: 14px;
+        }
+
+        .emoji {
+          font-size: 46px;
+          width: 40px;
+          img {
+            width: 46px;
+          }
         }
       }
     }
@@ -3107,8 +3115,8 @@ ul {
 
         h5 {
           font-weight: 500;
-          font-size: 38px;
-          line-height: 62px;
+          font-size: 34px;
+          line-height: 44px;
           color: #fff;
           margin: 0;
           padding-top: 20px;
@@ -3198,8 +3206,8 @@ ul {
 
         h5 {
           font-weight: 800;
-          font-size: 38px;
-          line-height: 62px;
+          font-size: 34px;
+          line-height: 44px;
           color: #fff;
           margin: 0;
           padding-top: 20px;
@@ -3237,6 +3245,8 @@ ul {
         .title {
           width: 280px;
           padding-left: 0;
+          font-size: 20px;
+          line-height: 30px;
         }
 
         .answer {

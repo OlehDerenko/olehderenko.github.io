@@ -2227,8 +2227,8 @@ ul li::marker {
     padding: 50px 0 5px;
   }
   .about-us h3 {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 22px;
+    line-height: 32px;
     padding: 25px 0 0;
   }
   .about-us .about-us-flex {
@@ -2246,8 +2246,8 @@ ul li::marker {
   }
   .about-us .about-us-flex .about-block h6 {
     padding-top: 20px;
-    font-size: 24px;
-    line-height: 34px;
+    font-size: 20px;
+    line-height: 30px;
   }
   .about-us .about-us-flex .about-block p {
     min-width: 0;
@@ -2315,8 +2315,8 @@ ul li::marker {
   }
   .programs h4 {
     font-weight: 800;
-    font-size: 28px;
-    line-height: 40px;
+    font-size: 22px;
+    line-height: 32px;
     padding-top: 50px;
   }
   .programs .programs-flex {
@@ -2378,8 +2378,8 @@ ul li::marker {
   }
   .proposal h4 {
     font-weight: 800;
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 34px;
   }
   .proposal p {
     margin: 40px 0 0;
@@ -2459,8 +2459,8 @@ ul li::marker {
   .faq .title-adaptive {
     display: block;
     font-weight: 800;
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 34px;
     text-align: start;
     color: #fff;
     padding-top: 30px;
@@ -2517,8 +2517,8 @@ ul li::marker {
   .pop-up-p2p .pop-top h5 {
     text-align: start;
     font-weight: 500;
-    font-size: 31px;
-    line-height: 45px;
+    font-size: 22px;
+    line-height: 32px;
     padding-top: 20px;
   }
   .pop-up-p2p .pop-top h5 b {
@@ -2731,7 +2731,14 @@ ul li::marker {
     padding-top: 40px;
   }
   .pop-up-bot .boat .block .text {
-    font-size: 16px;
+    font-size: 14px;
+  }
+  .pop-up-bot .boat .block .emoji {
+    font-size: 46px;
+    width: 40px;
+  }
+  .pop-up-bot .boat .block .emoji img {
+    width: 46px;
   }
 }
 @media screen and (max-width: 1300px) {
@@ -2776,8 +2783,8 @@ ul li::marker {
   }
   .pop-up-offer .pop-up-offer-top .title-adaptive h5 {
     font-weight: 500;
-    font-size: 38px;
-    line-height: 62px;
+    font-size: 34px;
+    line-height: 44px;
     color: #fff;
     margin: 0;
     padding-top: 20px;
@@ -2853,8 +2860,8 @@ ul li::marker {
   }
   .pop-up-pro .pop-up-pro-top .title-adaptive h5 {
     font-weight: 800;
-    font-size: 38px;
-    line-height: 62px;
+    font-size: 34px;
+    line-height: 44px;
     color: #fff;
     margin: 0;
     padding-top: 20px;
@@ -2882,6 +2889,8 @@ ul li::marker {
   .pop-up-pro .faq-container .faq-item .title {
     width: 280px;
     padding-left: 0;
+    font-size: 20px;
+    line-height: 30px;
   }
   .pop-up-pro .faq-container .faq-item .answer {
     padding: 0 0 0 40px;
