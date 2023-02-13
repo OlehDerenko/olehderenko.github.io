@@ -1318,15 +1318,15 @@ ul li::marker {
 }
 .pop-up-bot .phone {
   position: absolute;
-  width: 100%;
-  bottom: -150px;
-  right: -130px;
+  width: 500px;
+  bottom: 0;
+  right: 0;
   z-index: 2;
 }
 .pop-up-bot .blurred-one {
   position: absolute;
-  right: 250px;
-  bottom: 48%;
+  right: 350px;
+  bottom: 40%;
   z-index: 3;
 }
 .pop-up-bot .blurred-two {
@@ -1350,7 +1350,7 @@ ul li::marker {
   justify-content: center;
   position: absolute;
   bottom: 400px;
-  right: 210px;
+  right: 195px;
   z-index: 3;
 }
 .pop-up-bot p {
@@ -1687,7 +1687,7 @@ ul li::marker {
 }
 @media screen and (max-width: 540px) {
   .pop-up-video {
-    padding: 70px 0 70px;
+    padding: 70px 0 100px;
   }
 }
 @media screen and (max-width: 389px) {
@@ -2647,26 +2647,26 @@ ul li::marker {
   }
   .pop-up-bot .blurred-one {
     position: absolute;
-    left: 160px;
-    bottom: 1500px;
+    left: 180px;
+    bottom: 920px;
     z-index: 3;
     width: 111px;
   }
 }
 @media screen and (max-width: 1300px) and (max-width: 500px) {
   .pop-up-bot .blurred-one {
-    left: 25px;
-    bottom: 1075px;
+    left: 10px;
+    bottom: 925px;
   }
 }
 @media screen and (max-width: 1300px) and (max-width: 400px) {
   .pop-up-bot .blurred-one {
-    bottom: 1070px;
+    bottom: 915px;
   }
 }
 @media screen and (max-width: 1300px) and (max-width: 385px) {
   .pop-up-bot .blurred-one {
-    bottom: 1045px;
+    bottom: 895px;
   }
 }
 @media screen and (max-width: 1300px) {
@@ -2684,31 +2684,33 @@ ul li::marker {
 }
 @media screen and (max-width: 1300px) {
   .pop-up-bot .phone-mobile {
-    width: 100%;
+    width: 500px;
     display: block;
     transform: scale(0.7);
+    margin: 70px auto 0;
   }
 }
 @media screen and (max-width: 1300px) and (max-width: 500px) {
   .pop-up-bot .phone-mobile {
     transform: scale(1);
+    width: 100%;
   }
 }
 @media screen and (max-width: 1300px) {
   .pop-up-bot .play {
-    bottom: 1100px;
+    bottom: 700px;
     left: 50%;
     transform: translate(-50%);
   }
 }
 @media screen and (max-width: 1300px) and (max-width: 500px) {
   .pop-up-bot .play {
-    bottom: 780px;
+    bottom: 690px;
   }
 }
 @media screen and (max-width: 1300px) and (max-width: 385px) {
   .pop-up-bot .play {
-    bottom: 765px;
+    bottom: 690px;
   }
 }
 @media screen and (max-width: 1300px) {
