@@ -1687,7 +1687,7 @@ ul li::marker {
 }
 @media screen and (max-width: 540px) {
   .pop-up-video {
-    padding: 70px 0 100px;
+    padding: 70px 0 70px;
   }
 }
 @media screen and (max-width: 389px) {
@@ -1710,9 +1710,10 @@ ul li::marker {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
-  top: 150px;
+  top: 120px;
   width: 100%;
   height: 550px;
+  margin-bottom: 20px;
 }
 
 .mobile-menu {
