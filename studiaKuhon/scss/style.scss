@@ -891,16 +891,20 @@ body {
           margin-top: 32px;
 
           @media screen and (max-width: $media-max-width-768px) {
-            margin-top: 20px;
+            margin-top: 0;
           }
 
           a {
             font-size: 24px;
             line-height: 29.98px;
             color: #f7f9fb;
-
             font-size: 18px;
             line-height: 28px;
+
+            @media screen and (max-width: $media-max-width-768px) {
+              margin-top: 20px;
+              display: block;
+            }
           }
 
           .number-left {
@@ -908,6 +912,10 @@ body {
 
             @media screen and (max-width: $media-max-width-768px) {
               padding-right: 30px;
+            }
+
+            @media screen and (max-width: 395px) {
+              padding: 0;
             }
           }
         }
@@ -924,6 +932,251 @@ body {
             font-size: 20px;
             line-height: 30px;
           }
+        }
+      }
+    }
+  }
+}
+
+.about {
+  .about-flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 30px;
+
+    @media screen and (max-width: $media-max-width-768px) {
+      flex-direction: column;
+    }
+
+    .text {
+      padding-right: 100px;
+
+      @media screen and (max-width: $media-max-width-768px) {
+        padding: 0;
+      }
+
+      h6 {
+        font-size: 60px;
+        line-height: 75px;
+        margin: 0;
+        color: $color-1;
+        text-transform: uppercase;
+        font-weight: 400;
+
+        @media screen and (max-width: $media-max-width-768px) {
+          font-size: 30px;
+          line-height: 45px;
+        }
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 36px;
+        margin: 0;
+        color: #232323bf;
+        font-weight: 400;
+        padding-top: 60px;
+
+        @media screen and (max-width: $media-max-width-768px) {
+          font-size: 16px;
+          line-height: 26px;
+          padding-top: 30px;
+        }
+      }
+    }
+
+    .img {
+      @media screen and (max-width: $media-max-width-768px) {
+        padding-top: 30px;
+      }
+
+      img {
+        width: 570px;
+
+        @media screen and (max-width: $media-max-width-768px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 36px;
+    margin: 0;
+    color: #232323bf;
+    font-weight: 400;
+    padding-top: 60px;
+
+    @media screen and (max-width: $media-max-width-768px) {
+      font-size: 16px;
+      line-height: 26px;
+      padding-top: 30px;
+    }
+  }
+}
+
+.achievement {
+  background: #ff6700;
+  margin-top: 90px;
+
+  &__flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 0;
+
+    @media screen and (max-width: $media-max-width-768px) {
+      flex-direction: column;
+      padding: 20px 0 50px;
+      justify-content: center;
+    }
+
+    &_block {
+      background-color: #fff;
+      padding: 100px 25px;
+      width: 270px;
+      height: 367px;
+      box-shadow: 5px 5px 23px 0px #e0afa040;
+      border-radius: 20px;
+      text-align: center;
+
+      @media screen and (max-width: $media-max-width-768px) {
+        margin-top: 30px;
+      }
+
+      h6 {
+        font-size: 60px;
+        line-height: 75px;
+        margin: 0;
+        color: #ff6700;
+        text-transform: uppercase;
+        font-weight: 750;
+      }
+
+      p {
+        margin: 50px 0 0;
+        color: $color-1;
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.designs {
+  padding: 30px 0 100px;
+
+  @media screen and (max-width: $media-max-width-768px) {
+    padding: 15px 0 100px;
+  }
+
+  h6 {
+    font-size: 60px;
+    color: #111111;
+    line-height: 75px;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+
+    @media screen and (max-width: $media-max-width-768px) {
+      font-size: 30px;
+      line-height: 45px;
+    }
+  }
+  .faq-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 40px;
+
+    @media screen and (max-width: $media-max-width-768px) {
+      flex-direction: column;
+    }
+
+    .faq-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .close {
+      width: 20px;
+      height: 20px;
+
+      .first {
+        position: absolute;
+        right: 15px;
+        width: 2px;
+        height: 20px;
+        background: #ff6700;
+        transition: 0.3s;
+      }
+
+      .second {
+        position: absolute;
+        right: 15px;
+        transform: rotate(90deg);
+        height: 20px;
+        background: #ff6700;
+        width: 2px;
+      }
+    }
+
+    .faq-item {
+      will-change: height;
+      overflow-y: hidden;
+      position: relative;
+      padding: 36px 0 36px;
+      cursor: pointer;
+      width: 210px;
+
+      .title {
+        font-weight: 400;
+        font-size: 24px;
+        color: $color-1;
+        line-height: 30px;
+        margin: 0;
+
+        .br-mobile {
+          display: none;
+        }
+      }
+
+      .answer {
+        color: $color-1;
+        width: 100%;
+
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 400;
+      }
+    }
+
+    .faq-item.open {
+      .answer {
+        color: $color-1;
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 400;
+
+        b {
+          font-weight: 700;
+        }
+      }
+      .minus {
+        display: none;
+      }
+
+      .close {
+        .second {
+          background: #ff6700;
+        }
+
+        .first {
+          transform: translate(0) rotate(90deg);
         }
       }
     }

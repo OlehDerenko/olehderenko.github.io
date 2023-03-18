@@ -28,7 +28,7 @@ const swiperReviews = new Swiper("#swiper-reviews", {
   breakpoints: {
     768: {
       slidesPerView: 2.5,
-      spaceBetween: 40,
+      spaceBetween: 30,
     },
   },
 
@@ -41,4 +41,39 @@ const swiperReviews = new Swiper("#swiper-reviews", {
     el: ".swiper-scrollbar",
     draggable: true,
   },
+});
+
+const accordions = document.querySelectorAll(".faq-item");
+
+document.addEventListener("DOMContentLoaded", () => {
+  accordions.forEach((accordion) => {
+    setTimeout(() => {
+      const expandedHeight = accordion.offsetHeight;
+      const margin = parseFloat(
+        window
+          .getComputedStyle(accordion.querySelector(".faq-top"))
+          .getPropertyValue("margin-bottom")
+      );
+
+      const closedHeight =
+        accordion.querySelector(".faq-top").offsetHeight + margin + margin;
+
+      accordion.setAttribute("data-expanded-height", expandedHeight);
+      accordion.setAttribute("data-height", closedHeight);
+
+      accordion.style.height = `${closedHeight}px`;
+
+      accordion.addEventListener("click", (e) => {
+        if (accordion.classList.contains("open")) {
+          accordion.classList.remove("open");
+          accordion.style.height = `${accordion.getAttribute("data-height")}px`;
+        } else {
+          accordion.classList.add("open");
+          accordion.style.height = `${accordion.getAttribute(
+            "data-expanded-height"
+          )}px`;
+        }
+      });
+    }, 1000);
+  });
 });
