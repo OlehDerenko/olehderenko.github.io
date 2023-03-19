@@ -213,6 +213,10 @@ body {
       @media screen and (max-width: $media-max-width-768px) {
         width: 250px;
       }
+
+      @media screen and (max-width: 400px) {
+        width: 200px;
+      }
     }
 
     .swiper-scrollbar-drag {
@@ -778,7 +782,7 @@ body {
   padding-bottom: 100px;
 
   @media screen and (max-width: $media-max-width-768px) {
-    padding-bottom: 50px;
+    padding-bottom: 20px;
   }
 
   &__content {
@@ -788,8 +792,14 @@ body {
       display: block;
       padding-top: 90px;
 
+      img {
+        @media screen and (max-width: $media-max-width-768px) {
+          width: 60%;
+        }
+      }
+
       @media screen and (max-width: $media-max-width-768px) {
-        padding-top: 50px;
+        padding-top: 30px;
       }
     }
 
@@ -803,6 +813,7 @@ body {
       @media screen and (max-width: $media-max-width-768px) {
         flex-direction: column;
         align-items: flex-start;
+        padding-top: 10px;
       }
 
       .nav {
@@ -819,8 +830,8 @@ body {
           font-weight: 400;
 
           @media screen and (max-width: $media-max-width-768px) {
-            font-size: 20px;
-            line-height: 30px;
+            font-size: 18px;
+            line-height: 28px;
             margin-top: 20px;
           }
         }
@@ -832,7 +843,7 @@ body {
         flex-direction: column;
 
         @media screen and (max-width: $media-max-width-768px) {
-          padding-top: 50px;
+          padding-top: 30px;
         }
 
         h6 {
@@ -842,8 +853,8 @@ body {
           line-height: 37.47px;
 
           @media screen and (max-width: $media-max-width-768px) {
-            font-size: 20px;
-            line-height: 30px;
+            font-size: 18px;
+            line-height: 28px;
           }
         }
 
@@ -869,7 +880,7 @@ body {
         flex-direction: column;
 
         @media screen and (max-width: $media-max-width-768px) {
-          padding-top: 50px;
+          padding-top: 30px;
         }
 
         a {
@@ -881,8 +892,8 @@ body {
           font-weight: 400;
 
           @media screen and (max-width: $media-max-width-768px) {
-            font-size: 20px;
-            line-height: 30px;
+            font-size: 18px;
+            line-height: 28px;
             margin-top: 20px;
           }
         }
@@ -904,6 +915,8 @@ body {
             @media screen and (max-width: $media-max-width-768px) {
               margin-top: 20px;
               display: block;
+              font-size: 18px;
+              line-height: 28px;
             }
           }
 
@@ -929,8 +942,8 @@ body {
 
           @media screen and (max-width: $media-max-width-768px) {
             margin-top: 20px;
-            font-size: 20px;
-            line-height: 30px;
+            font-size: 18px;
+            line-height: 28px;
           }
         }
       }
@@ -1044,6 +1057,8 @@ body {
 
       @media screen and (max-width: $media-max-width-768px) {
         margin-top: 30px;
+        height: 267px;
+        padding: 50px 25px;
       }
 
       h6 {
@@ -1053,6 +1068,11 @@ body {
         color: #ff6700;
         text-transform: uppercase;
         font-weight: 750;
+
+        @media screen and (max-width: $media-max-width-768px) {
+          font-size: 40px;
+          line-height: 55px;
+        }
       }
 
       p {
@@ -1067,10 +1087,10 @@ body {
 }
 
 .designs {
-  padding: 30px 0 100px;
+  padding: 30px 0 40px;
 
   @media screen and (max-width: $media-max-width-768px) {
-    padding: 15px 0 100px;
+    padding: 15px 0 40px;
   }
 
   h6 {
@@ -1090,7 +1110,7 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding-top: 40px;
+    padding-top: 30px;
 
     @media screen and (max-width: $media-max-width-768px) {
       flex-direction: column;
@@ -1133,6 +1153,10 @@ body {
       cursor: pointer;
       width: 210px;
 
+      @media screen and (max-width: $media-max-width-768px) {
+        width: 100%;
+      }
+
       .title {
         font-weight: 400;
         font-size: 24px;
@@ -1155,15 +1179,37 @@ body {
       }
     }
 
+    .faq-item-two {
+      width: 270px;
+
+      @media screen and (max-width: $media-max-width-768px) {
+        width: 100%;
+      }
+    }
+
+    .faq-item-three {
+      width: 300px;
+
+      @media screen and (max-width: $media-max-width-768px) {
+        width: 100%;
+      }
+    }
+
     .faq-item.open {
       .answer {
-        color: $color-1;
-        font-size: 18px;
-        line-height: 30px;
+        font-size: 22px;
+        line-height: 28px;
         font-weight: 400;
+        padding: 0;
 
-        b {
-          font-weight: 700;
+        li {
+          margin-top: 16px;
+          list-style: none;
+
+          a {
+            text-decoration: none;
+            color: #11111180;
+          }
         }
       }
       .minus {
@@ -1177,6 +1223,92 @@ body {
 
         .first {
           transform: translate(0) rotate(90deg);
+        }
+      }
+    }
+  }
+}
+
+.designs-img {
+  padding: 60px 0 70px;
+  background: #f5f5f5;
+
+  @media screen and (max-width: $media-max-width-768px) {
+    padding: 30px 0 40px;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 4px;
+
+    .column {
+      flex: 25%;
+      max-width: 100%;
+      padding: 0;
+
+      @media screen and (max-width: 800px) {
+        flex: 25%;
+        max-width: 50%;
+      }
+
+      @media screen and (max-width: 600px) {
+        flex: 100%;
+        max-width: 100%;
+      }
+
+      img {
+        margin-top: 70px;
+        vertical-align: middle;
+        width: 550px;
+
+        @media screen and (max-width: $media-max-width-768px) {
+          width: 325px;
+          margin-top: 35px;
+        }
+
+        @media screen and (max-width: 600px) {
+          width: 100%;
+        }
+      }
+    }
+
+    .column-right {
+      padding-left: 50px;
+
+      @media screen and (max-width: $media-max-width-768px) {
+        padding: 0;
+      }
+    }
+
+    .button-more {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      margin: 100px auto 0;
+      cursor: pointer;
+      background: transparent;
+      border: none;
+      font-size: 20px;
+      line-height: 25px;
+      color: #000;
+      text-transform: uppercase;
+      font-family: "Muller Next Wide Trial", sans-serif;
+      font-weight: 400;
+
+      @media screen and (max-width: $media-max-width-768px) {
+        margin: 50px auto 0;
+        font-size: 16px;
+      }
+
+      img {
+        padding-top: 20px;
+        width: 81px;
+
+        @media screen and (max-width: $media-max-width-768px) {
+          width: 50px;
         }
       }
     }

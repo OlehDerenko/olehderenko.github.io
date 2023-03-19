@@ -204,6 +204,11 @@ body {
     width: 250px;
   }
 }
+@media screen and (max-width: 400px) {
+  .project__content .swiper-scrollbar.swiper-scrollbar-horizontal {
+    width: 200px;
+  }
+}
 .project__content .swiper-scrollbar-drag {
   background: #c00021;
 }
@@ -741,7 +746,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   .footer {
-    padding-bottom: 50px;
+    padding-bottom: 20px;
   }
 }
 .footer__content .logo {
@@ -751,8 +756,13 @@ body {
   padding-top: 90px;
 }
 @media screen and (max-width: 768px) {
+  .footer__content .logo img {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 768px) {
   .footer__content .logo {
-    padding-top: 50px;
+    padding-top: 30px;
   }
 }
 .footer__content .footer-flex {
@@ -766,6 +776,7 @@ body {
   .footer__content .footer-flex {
     flex-direction: column;
     align-items: flex-start;
+    padding-top: 10px;
   }
 }
 .footer__content .footer-flex .nav {
@@ -783,8 +794,8 @@ body {
 }
 @media screen and (max-width: 768px) {
   .footer__content .footer-flex .nav a {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 28px;
     margin-top: 20px;
   }
 }
@@ -795,7 +806,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   .footer__content .footer-flex .socials {
-    padding-top: 50px;
+    padding-top: 30px;
   }
 }
 .footer__content .footer-flex .socials h6 {
@@ -806,8 +817,8 @@ body {
 }
 @media screen and (max-width: 768px) {
   .footer__content .footer-flex .socials h6 {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 28px;
   }
 }
 .footer__content .footer-flex .socials a {
@@ -832,7 +843,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   .footer__content .footer-flex .contacts {
-    padding-top: 50px;
+    padding-top: 30px;
   }
 }
 .footer__content .footer-flex .contacts a {
@@ -845,8 +856,8 @@ body {
 }
 @media screen and (max-width: 768px) {
   .footer__content .footer-flex .contacts a {
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 28px;
     margin-top: 20px;
   }
 }
@@ -869,6 +880,8 @@ body {
   .footer__content .footer-flex .contacts .phone a {
     margin-top: 20px;
     display: block;
+    font-size: 18px;
+    line-height: 28px;
   }
 }
 .footer__content .footer-flex .contacts .phone .number-left {
@@ -894,8 +907,8 @@ body {
 @media screen and (max-width: 768px) {
   .footer__content .footer-flex .contacts span {
     margin-top: 20px;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 28px;
   }
 }
 
@@ -1005,6 +1018,8 @@ body {
 @media screen and (max-width: 768px) {
   .achievement__flex_block {
     margin-top: 30px;
+    height: 267px;
+    padding: 50px 25px;
   }
 }
 .achievement__flex_block h6 {
@@ -1015,6 +1030,12 @@ body {
   text-transform: uppercase;
   font-weight: 750;
 }
+@media screen and (max-width: 768px) {
+  .achievement__flex_block h6 {
+    font-size: 40px;
+    line-height: 55px;
+  }
+}
 .achievement__flex_block p {
   margin: 50px 0 0;
   color: #232323;
@@ -1024,11 +1045,11 @@ body {
 }
 
 .designs {
-  padding: 30px 0 100px;
+  padding: 30px 0 40px;
 }
 @media screen and (max-width: 768px) {
   .designs {
-    padding: 15px 0 100px;
+    padding: 15px 0 40px;
   }
 }
 .designs h6 {
@@ -1049,7 +1070,12 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  padding-top: 40px;
+  padding-top: 30px;
+}
+@media screen and (max-width: 768px) {
+  .designs .faq-container {
+    flex-direction: column;
+  }
 }
 .designs .faq-container .faq-top {
   display: flex;
@@ -1084,6 +1110,11 @@ body {
   cursor: pointer;
   width: 210px;
 }
+@media screen and (max-width: 768px) {
+  .designs .faq-container .faq-item {
+    width: 100%;
+  }
+}
 .designs .faq-container .faq-item .title {
   font-weight: 400;
   font-size: 24px;
@@ -1101,14 +1132,35 @@ body {
   line-height: 30px;
   font-weight: 400;
 }
-.designs .faq-container .faq-item.open .answer {
-  color: #232323;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 400;
+.designs .faq-container .faq-item-two {
+  width: 270px;
 }
-.designs .faq-container .faq-item.open .answer b {
-  font-weight: 700;
+@media screen and (max-width: 768px) {
+  .designs .faq-container .faq-item-two {
+    width: 100%;
+  }
+}
+.designs .faq-container .faq-item-three {
+  width: 300px;
+}
+@media screen and (max-width: 768px) {
+  .designs .faq-container .faq-item-three {
+    width: 100%;
+  }
+}
+.designs .faq-container .faq-item.open .answer {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 400;
+  padding: 0;
+}
+.designs .faq-container .faq-item.open .answer li {
+  margin-top: 16px;
+  list-style: none;
+}
+.designs .faq-container .faq-item.open .answer li a {
+  text-decoration: none;
+  color: rgba(17, 17, 17, 0.5019607843);
 }
 .designs .faq-container .faq-item.open .minus {
   display: none;
@@ -1118,6 +1170,94 @@ body {
 }
 .designs .faq-container .faq-item.open .close .first {
   transform: translate(0) rotate(90deg);
+}
+
+.designs-img {
+  padding: 60px 0 70px;
+  background: #f5f5f5;
+}
+@media screen and (max-width: 768px) {
+  .designs-img {
+    padding: 30px 0 40px;
+  }
+}
+.designs-img .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.designs-img .row .column {
+  flex: 25%;
+  max-width: 100%;
+  padding: 0;
+}
+@media screen and (max-width: 800px) {
+  .designs-img .row .column {
+    flex: 25%;
+    max-width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .designs-img .row .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.designs-img .row .column img {
+  margin-top: 70px;
+  vertical-align: middle;
+  width: 550px;
+}
+@media screen and (max-width: 768px) {
+  .designs-img .row .column img {
+    width: 325px;
+    margin-top: 35px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .designs-img .row .column img {
+    width: 100%;
+  }
+}
+.designs-img .row .column-right {
+  padding-left: 50px;
+}
+@media screen and (max-width: 768px) {
+  .designs-img .row .column-right {
+    padding: 0;
+  }
+}
+.designs-img .row .button-more {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 100px auto 0;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  line-height: 25px;
+  color: #000;
+  text-transform: uppercase;
+  font-family: "Muller Next Wide Trial", sans-serif;
+  font-weight: 400;
+}
+@media screen and (max-width: 768px) {
+  .designs-img .row .button-more {
+    margin: 50px auto 0;
+    font-size: 16px;
+  }
+}
+.designs-img .row .button-more img {
+  padding-top: 20px;
+  width: 81px;
+}
+@media screen and (max-width: 768px) {
+  .designs-img .row .button-more img {
+    width: 50px;
+  }
 }
 
 .burger {
