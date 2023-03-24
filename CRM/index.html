@@ -15,13 +15,13 @@
     <title>Document</title>
   </head>
   <body>
-    <section class="dashboard">
-      <header class="dashboard__header">
+    <section class="sidebar">
+      <header class="sidebar__header">
         <img src="./img/setting.svg" alt="" />
         <h1>Dashboard <span>v.01</span></h1>
       </header>
-      <div class="dashboard__main">
-        <div class="dashboard__main_block">
+      <div class="sidebar__navigation">
+        <div class="sidebar__navigation_item">
           <div class="name">
             <svg
               class="svg-hover name-dashboard"
@@ -66,7 +66,7 @@
             <a href="#">Dashboard</a>
           </div>
         </div>
-        <div class="dashboard__main_block">
+        <div class="sidebar__navigation_item">
           <div class="name">
             <svg
               class="svg-hover"
@@ -93,7 +93,6 @@
                 fill="#9197B3"
               />
             </svg>
-
             <a href="#">Product</a>
           </div>
           <div>
@@ -115,7 +114,7 @@
             </svg>
           </div>
         </div>
-        <div class="dashboard__main_block active">
+        <div class="sidebar__navigation_item active">
           <div class="name">
             <svg
               width="24"
@@ -162,7 +161,7 @@
             </svg>
           </div>
         </div>
-        <div class="dashboard__main_block">
+        <div class="sidebar__navigation_item">
           <div class="name">
             <svg
               class="svg-hover name-dashboard"
@@ -230,7 +229,7 @@
             </svg>
           </div>
         </div>
-        <div class="dashboard__main_block">
+        <div class="sidebar__navigation_item">
           <div class="name">
             <svg
               class="svg-hover"
@@ -279,7 +278,7 @@
             </svg>
           </div>
         </div>
-        <div class="dashboard__main_block">
+        <div class="sidebar__navigation_item">
           <div class="name">
             <svg
               class="svg-hover"
@@ -325,11 +324,11 @@
           </div>
         </div>
       </div>
-      <div class="dashboard__project-manager">
+      <div class="sidebar__profile-badge">
         <div>
           <img src="./img/project-manager.svg" alt="" />
         </div>
-        <div class="dashboard__project-manager_name">
+        <div class="sidebar__profile-badge_name">
           <h6>Evano</h6>
           <p>Project Manager</p>
         </div>
@@ -342,13 +341,13 @@
       <span class="burger__line burger__line_bottom"></span>
     </div>
 
-    <div class="dashboard-mobile">
-      <header class="dashboard__header">
+    <div class="sidebar-mobile">
+      <header class="sidebar__header">
         <img src="./img/setting.svg" alt="" />
         <h1>Dashboard <span>v.01</span></h1>
       </header>
-      <div class="dashboard__main">
-        <div class="dashboard__main_block">
+      <div class="sidebar__navigation">
+        <div class="sidebar__navigation_item">
           <div class="name">
             <svg
               width="24"
@@ -392,7 +391,7 @@
             <a href="#">Dashboard</a>
           </div>
         </div>
-        <div class="dashboard__main_block">
+        <div class="sidebar__navigation_item">
           <div class="name">
             <svg
               width="24"
@@ -440,7 +439,7 @@
             </svg>
           </div>
         </div>
-        <div class="dashboard__main_block">
+        <div class="sidebar__navigation_item">
           <div class="name">
             <svg
               class="name-customers"
@@ -488,7 +487,7 @@
             </svg>
           </div>
         </div>
-        <div class="dashboard__main_block">
+        <div class="sidebar__navigation_item">
           <div class="name">
             <svg
               width="24"
@@ -555,7 +554,7 @@
             </svg>
           </div>
         </div>
-        <div class="dashboard__main_block">
+        <div class="sidebar__navigation_item">
           <div class="name">
             <svg
               width="24"
@@ -603,7 +602,7 @@
             </svg>
           </div>
         </div>
-        <div class="dashboard__main_block">
+        <div class="sidebar__navigation_item">
           <div class="name">
             <svg
               width="24"
@@ -648,11 +647,11 @@
           </div>
         </div>
       </div>
-      <div class="dashboard__project-manager">
+      <div class="sidebar__profile-badge">
         <div>
           <img src="./img/project-manager.svg" alt="" />
         </div>
-        <div class="dashboard__project-manager_name">
+        <div class="sidebar__profile-badge_name">
           <h6>Evano</h6>
           <p>Project Manager</p>
         </div>
@@ -662,13 +661,13 @@
     <section class="main">
       <h2>Hello Evano 👋🏼</h2>
 
-      <div class="main__block">
-        <div class="main__block_top">
-          <div class="main__block_text">
+      <div class="main__content">
+        <div class="main__content_top">
+          <div class="main__content_text">
             <h6>All Customers</h6>
             <p>Active Members</p>
           </div>
-          <div class="main__block_input">
+          <div class="main__content_input">
             <button class="button-input">
               <svg
                 width="24"
@@ -701,7 +700,7 @@
           <thead>
             <tr class="table-header">
               <th>Customer Name</th>
-              <th class="name">Company</th>
+              <th>Company</th>
               <th>Phone Number</th>
               <th>Email</th>
               <th>Country</th>
@@ -711,72 +710,72 @@
 
           <tbody>
             <tr class="table-style table-style-1">
-              <td class="number">Jane Cooper</td>
-              <td class="name">Microsoft</td>
-              <td class="value">(225) 555-0118</td>
-              <td class="value">jane@microsoft.com</td>
-              <td class="value">United States</td>
-              <td class="value last"><span class="active">Active</span></td>
+              <td>Jane Cooper</td>
+              <td>Microsoft</td>
+              <td>(225) 555-0118</td>
+              <td>jane@microsoft.com</td>
+              <td>United States</td>
+              <td class="last"><span class="active">Active</span></td>
             </tr>
             <tr class="table-style table-style-2">
-              <td class="number">Floyd Miles</td>
-              <td class="name">Yahoo</td>
-              <td class="value">(205) 555-0100</td>
-              <td class="value">floyd@yahoo.com</td>
-              <td class="value">Kiribati</td>
-              <td class="value last">
+              <td>Floyd Miles</td>
+              <td>Yahoo</td>
+              <td>(205) 555-0100</td>
+              <td>floyd@yahoo.com</td>
+              <td>Kiribati</td>
+              <td class="last">
                 <span class="active inactive">Inactive</span>
               </td>
             </tr>
             <tr class="table-style table-style-3">
-              <td class="number">Ronald Richards</td>
-              <td class="name">Adobe</td>
-              <td class="value">(302) 555-0107</td>
-              <td class="value">ronald@adobe.com</td>
-              <td class="value">Israel</td>
-              <td class="value last">
+              <td>Ronald Richards</td>
+              <td>Adobe</td>
+              <td>(302) 555-0107</td>
+              <td>ronald@adobe.com</td>
+              <td>Israel</td>
+              <td class="last">
                 <span class="active inactive">Inactive</span>
               </td>
             </tr>
             <tr class="table-style table-style-4">
-              <td class="number">Marvin McKinney</td>
-              <td class="name">Tesla</td>
-              <td class="value">(252) 555-0126</td>
-              <td class="value">marvin@tesla.com</td>
-              <td class="value">Iran</td>
-              <td class="value last"><span class="active">Active</span></td>
+              <td>Marvin McKinney</td>
+              <td>Tesla</td>
+              <td>(252) 555-0126</td>
+              <td>marvin@tesla.com</td>
+              <td>Iran</td>
+              <td class="last"><span class="active">Active</span></td>
             </tr>
             <tr class="table-style table-style-5">
-              <td class="number">Jerome Bell</td>
-              <td class="name">Google</td>
-              <td class="value">(629) 555-0129</td>
-              <td class="value">jerome@google.com</td>
-              <td class="value">Réunion</td>
-              <td class="value last"><span class="active">Active</span></td>
+              <td>Jerome Bell</td>
+              <td>Google</td>
+              <td>(629) 555-0129</td>
+              <td>jerome@google.com</td>
+              <td>Réunion</td>
+              <td class="last"><span class="active">Active</span></td>
             </tr>
             <tr class="table-style table-style-6">
-              <td class="number">Kathryn Murphy</td>
-              <td class="name">Microsoft</td>
-              <td class="value">(406) 555-0120</td>
-              <td class="value">kathryn@microsoft.com</td>
-              <td class="value">Curaçao</td>
-              <td class="value last"><span class="active">Active</span></td>
+              <td>Kathryn Murphy</td>
+              <td>Microsoft</td>
+              <td>(406) 555-0120</td>
+              <td>kathryn@microsoft.com</td>
+              <td>Curaçao</td>
+              <td class="last"><span class="active">Active</span></td>
             </tr>
             <tr class="table-style table-style-7">
-              <td class="number">Jacob Jones</td>
-              <td class="name">Yahoo</td>
-              <td class="value">(208) 555-0112</td>
-              <td class="value">jacob@yahoo.com</td>
-              <td class="value">Brazil</td>
-              <td class="value last"><span class="active">Active</span></td>
+              <td>Jacob Jones</td>
+              <td>Yahoo</td>
+              <td>(208) 555-0112</td>
+              <td>jacob@yahoo.com</td>
+              <td>Brazil</td>
+              <td class="last"><span class="active">Active</span></td>
             </tr>
             <tr class="table-style">
-              <td class="number">Kristin Watson</td>
-              <td class="name">Facebook</td>
-              <td class="value">(704) 555-0127</td>
-              <td class="value">kristin@facebook.com</td>
-              <td class="value">Åland Islands</td>
-              <td class="value last">
+              <td>Kristin Watson</td>
+              <td>Facebook</td>
+              <td>(704) 555-0127</td>
+              <td>kristin@facebook.com</td>
+              <td>Åland Islands</td>
+              <td class="last">
                 <span class="active inactive">Inactive</span>
               </td>
             </tr>
@@ -930,13 +929,13 @@
           </div>
         </div>
 
-        <div class="main__block_bottom">
+        <div class="main__content_bottom">
           <div class="text">
             <p>Showing data 1 to 8 of 256K entries</p>
           </div>
 
           <div class="pagination">
-            <div class="pagination__navigation-prev">
+            <div class="pagination__prev">
               <span class="page prev"><</span>
             </div>
             <div class="pagination__pages">
@@ -945,7 +944,7 @@
               <span class="more">...</span>
               <span class="page">40</span>
             </div>
-            <div class="pagination__navigation-next">
+            <div class="pagination__next">
               <span class="page next">></span>
             </div>
           </div>

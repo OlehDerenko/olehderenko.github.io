@@ -20,7 +20,7 @@ body.active {
   }
 }
 
-.dashboard {
+.sidebar {
   width: 306px;
   position: fixed;
   left: 0;
@@ -28,7 +28,7 @@ body.active {
   height: 100%;
   background: #fff;
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1400px) {
     display: none;
   }
 
@@ -54,10 +54,10 @@ body.active {
     }
   }
 
-  &__main {
+  &__navigation {
     padding: 29px 42px 0 40px;
 
-    &_block {
+    &_item {
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -82,7 +82,7 @@ body.active {
       }
     }
 
-    &_block.active {
+    &_item.active {
       background: #5932ea;
       border-radius: 8px;
 
@@ -110,7 +110,7 @@ body.active {
       }
     }
 
-    &_block:hover {
+    &_item:hover {
       background: #5932ea;
       border-radius: 8px;
 
@@ -141,7 +141,7 @@ body.active {
     }
   }
 
-  &__project-manager {
+  &__profile-badge {
     display: flex;
     align-items: flex-start;
     position: absolute;
@@ -174,28 +174,49 @@ body.active {
   margin: 41px 0 0 377px;
 
   @media screen and (max-width: 1400px) {
-    margin: 41px 90px 0 377px;
-  }
-
-  @media screen and (max-width: 1000px) {
     margin: 0;
   }
 
   h2 {
     margin: 0;
+    padding-left: 280px;
+
+    @media screen and (max-width: 1800px) {
+      padding-left: 210px;
+    }
+
+    @media screen and (max-width: 1700px) {
+      padding-left: 150px;
+    }
+
+    @media screen and (max-width: 1550px) {
+      padding-left: 80px;
+    }
+
+    @media screen and (max-width: 1440px) {
+      padding: 0;
+    }
 
     @media screen and (max-width: 1400px) {
       text-align: center;
     }
   }
 
-  &__block {
+  &__content {
     background: #ffffff;
     box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
     border-radius: 30px;
-    padding: 30px 40px 41px 38px;
-    margin-top: 21px;
-    max-width: 1020px;
+    padding: 30px 40px 31px 38px;
+    margin: 31px auto 0;
+    max-width: 968px;
+
+    @media screen and (max-width: 1440px) {
+      margin: 31px 0 0;
+    }
+
+    @media screen and (max-width: 1400px) {
+      margin: 51px auto 0;
+    }
 
     &_top {
       display: flex;
@@ -264,22 +285,8 @@ body.active {
     .table {
       width: 100%;
 
-      @media screen and (max-width: 1400px) {
-        width: 100%;
-        display: block;
+      @media screen and (max-width: 1020px) {
         display: none;
-      }
-
-      thead {
-        @media screen and (max-width: 1400px) {
-          display: block;
-        }
-
-        tr {
-          @media screen and (max-width: 1400px) {
-            display: block;
-          }
-        }
       }
 
       .table-header {
@@ -287,30 +294,17 @@ body.active {
         position: relative;
         padding-bottom: 14px;
 
-        @media screen and (max-width: 1400px) {
-          text-align: center;
-        }
-
         th {
-          padding: 40px 57px 14px 0;
+          padding: 30px 40px 14px 0;
           font-size: 14px;
           line-height: 21px;
+          font-weight: 500;
           color: #b5b7c0;
-
-          @media screen and (max-width: 1400px) {
-            display: block;
-            padding: 20px 0 14px;
-          }
         }
 
         .last {
           padding: 40px 0 14px 0;
           text-align: center;
-
-          @media screen and (max-width: 1400px) {
-            display: block;
-            padding: 20px 0 14px 0;
-          }
         }
       }
 
@@ -330,45 +324,19 @@ body.active {
         }
       }
 
-      tbody {
-        @media screen and (max-width: 1400px) {
-          display: block;
-        }
-
-        tr {
-          @media screen and (max-width: 1400px) {
-            display: block;
-          }
-        }
-      }
-
       .table-style {
         position: relative;
 
-        @media screen and (max-width: 1400px) {
-          margin: 0 auto;
-        }
-
         td {
-          padding: 24px 50px 24px 0;
+          padding: 24px 40px 24px 0;
           font-size: 14px;
           line-height: 21px;
           color: #292d32;
           font-weight: 500;
-
-          @media screen and (max-width: 1400px) {
-            display: block;
-            text-align: center;
-            padding: 20px 0 14px;
-          }
         }
 
         .last {
           padding: 0;
-
-          @media screen and (max-width: 1400px) {
-            padding: 20px 0 24px;
-          }
         }
 
         .active {
@@ -403,26 +371,33 @@ body.active {
     .table-mobile {
       display: none;
 
-      @media screen and (max-width: 1400px) {
+      @media screen and (max-width: 1020px) {
         display: block;
       }
 
       .table-mobile-block {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         border-bottom: 1px solid #eee;
         padding: 25px 0;
 
         .left {
           span {
-            border-right: 1px solid #b5b7c0;
             padding-right: 10px;
+            color: gray;
           }
         }
 
         .right {
-          text-align: left;
+          text-align: right;
+          position: relative;
+
+          span {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 150px;
+          }
         }
 
         span {
@@ -444,7 +419,9 @@ body.active {
           border: 1px solid #00b087;
           border-radius: 4px;
           padding: 4px 18px;
-          max-width: 80px;
+          position: absolute;
+          right: 0;
+          max-width: 83px;
         }
 
         .inactive {
@@ -535,8 +512,9 @@ body.active {
   transition: 0.3s;
   left: 20px;
   top: 30px;
+  cursor: pointer;
 
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 1400px) {
     display: block;
   }
 
@@ -595,7 +573,7 @@ body.active {
   }
 }
 
-.dashboard-mobile {
+.sidebar-mobile {
   background: #fff;
   display: flex;
   align-items: flex-start;
@@ -611,11 +589,11 @@ body.active {
   position: fixed;
   z-index: 998;
 
-  .dashboard__main_block {
+  .sidebar__navigation_item {
     width: 200px;
   }
 
-  .dashboard__project-manager {
+  .sidebar__profile-badge {
     display: flex;
     align-items: flex-start;
     position: absolute;
@@ -639,6 +617,6 @@ body.active {
   }
 }
 
-.dashboard-mobile.active {
+.sidebar-mobile.active {
   transform: translateX(0);
 }
