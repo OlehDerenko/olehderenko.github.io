@@ -8,11 +8,8 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-html,
 body.active {
   overflow: hidden;
-  position: relative;
-  height: 100%;
 }
 
 .container {
