@@ -338,6 +338,14 @@ body.active {
           line-height: 21px;
           color: #292d32;
           font-weight: 500;
+
+          a {
+            font-size: 14px;
+            line-height: 21px;
+            color: #292d32;
+            font-weight: 500;
+            text-decoration: none;
+          }
         }
 
         .last {
@@ -415,6 +423,19 @@ body.active {
           @media screen and (max-width: 400px) {
             font-size: 12px;
             line-height: 20px;
+          }
+
+          a {
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: 500;
+            text-decoration: none;
+            color: #000;
+
+            @media screen and (max-width: 400px) {
+              font-size: 12px;
+              line-height: 20px;
+            }
           }
         }
 
