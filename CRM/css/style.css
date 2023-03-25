@@ -251,6 +251,10 @@ body.active {
   left: 11px;
   cursor: pointer;
 }
+.main__content_input .button-input svg {
+  z-index: 10;
+  position: relative;
+}
 .main__content .table {
   width: 100%;
 }
@@ -378,6 +382,7 @@ body.active {
   position: absolute;
   right: 0;
   max-width: 83px;
+  text-align: center;
 }
 .main__content .table-mobile .table-mobile-block .inactive {
   color: #df0404;
@@ -429,6 +434,11 @@ body.active {
   font-weight: 500;
   color: #404b52;
   transition: 0.3s;
+}
+@media screen and (max-width: 1000px) {
+  .main__content_bottom .pagination__prev .prev {
+    margin: 0;
+  }
 }
 @media screen and (max-width: 1000px) {
   .main__content_bottom .pagination .page-four {

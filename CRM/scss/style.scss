@@ -279,6 +279,11 @@ body.active {
         position: absolute;
         left: 11px;
         cursor: pointer;
+
+        svg {
+          z-index: 10;
+          position: relative;
+        }
       }
     }
 
@@ -422,6 +427,7 @@ body.active {
           position: absolute;
           right: 0;
           max-width: 83px;
+          text-align: center;
         }
 
         .inactive {
@@ -479,6 +485,14 @@ body.active {
           font-weight: 500;
           color: #404b52;
           transition: 0.3s;
+        }
+
+        &__prev {
+          .prev {
+            @media screen and (max-width: 1000px) {
+              margin: 0;
+            }
+          }
         }
 
         .page-four {
