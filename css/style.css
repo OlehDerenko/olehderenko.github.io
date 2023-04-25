@@ -109,6 +109,10 @@ body.scroll-lock {
 .header .language__item svg {
   margin-left: 5px;
 }
+.header .language__item a {
+  display: block;
+  width: 100%;
+}
 .header .language__item:hover {
   color: #dc0c1c;
 }

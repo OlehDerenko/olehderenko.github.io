@@ -113,6 +113,11 @@ body.scroll-lock {
         margin-left: 5px;
       }
 
+      a {
+        display: block;
+        width: 100%;
+      }
+
       &:hover {
         color: $color-1-red;
 
