@@ -52,6 +52,12 @@ body {
   background: #fff;
 }
 
+body.scroll-lock {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
 .container {
   width: 1140px;
   margin: 0 auto;
@@ -74,6 +80,53 @@ body {
 
   .logo {
     display: block;
+  }
+
+  .language {
+    position: relative;
+    z-index: 2;
+
+    &__items {
+      display: none;
+      list-style: none;
+      position: absolute;
+      top: 35px;
+      left: 0;
+      width: 100%;
+    }
+
+    &__items_active {
+      opacity: 1;
+      display: block;
+    }
+
+    &__item {
+      opacity: 1;
+      height: auto;
+      min-width: 40px;
+      padding: 10px;
+      background-color: #f1f1f1;
+      border-radius: 10px;
+      cursor: pointer;
+
+      svg {
+        margin-left: 5px;
+      }
+
+      &:hover {
+        color: $color-1-red;
+
+        a {
+          color: $color-1-red;
+        }
+      }
+    }
+
+    &__item_active {
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+    }
   }
 }
 
@@ -1385,6 +1438,12 @@ body {
         min-height: 90px;
         margin-top: 20px;
       }
+
+      @media screen and (max-width: 389px) {
+        width: 100%;
+        max-width: auto;
+        min-height: 110px;
+      }
     }
   }
 }
@@ -1826,6 +1885,10 @@ body {
       font-weight: 400;
 
       width: 44%;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
     }
 
     a {
@@ -1847,6 +1910,7 @@ body {
 
       @media screen and (max-width: 768px) {
         margin: 7px 0 0;
+        width: 100%;
       }
     }
 
@@ -1865,7 +1929,6 @@ body {
   }
 
   .button-up {
-    display: none;
     position: absolute;
     bottom: 50px;
     left: 50%;
@@ -1879,6 +1942,7 @@ body {
     font-weight: 600;
     color: #fff;
     cursor: pointer;
+    display: none;
 
     @media screen and (max-width: 1180px) {
       display: flex;
@@ -1893,6 +1957,13 @@ body {
 .form-wrapper {
   background: #f6f6f6;
   padding: 100px 0;
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
 
   @media screen and (max-width: 1180px) {
     padding: 46px 0;
@@ -1900,6 +1971,59 @@ body {
 
   @media screen and (max-width: 768px) {
     padding: 38px 0;
+    overflow-y: scroll;
+  }
+
+  .close {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    background-color: $color-1-red;
+
+    @media screen and (max-width: 1180px) {
+      width: 35px;
+      height: 35px;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 25px;
+      height: 25px;
+    }
+
+    .first,
+    .second {
+      position: absolute;
+      width: 4px;
+      height: 25px;
+      background: #fff;
+      display: block;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      transition: 0.3s;
+
+      @media screen and (max-width: 1180px) {
+        width: 3px;
+        height: 20px;
+      }
+
+      @media screen and (max-width: 768px) {
+        width: 2px;
+        height: 15px;
+      }
+    }
+
+    .first {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .second {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
   }
 
   .form-wrapper-top {
@@ -1956,6 +2080,10 @@ body {
         flex-direction: column;
         margin-right: 40px;
 
+        @media screen and (max-width: 500px) {
+          margin: 0;
+        }
+
         .input-wrapper {
           position: relative;
 
@@ -1982,17 +2110,20 @@ body {
         }
       }
     }
+    .form-textarea {
+      width: 100%;
 
-    .textarea {
-      border: 1px solid #333333;
-      padding: 17px 25px;
-      width: 355px;
-      max-height: 110px;
+      .textarea {
+        border: 1px solid #333333;
+        padding: 17px 25px;
+        width: 355px;
+        max-height: 110px;
 
-      @media screen and (max-width: 500px) {
-        padding: 17px 22px 17px 25px;
-        max-width: 355px;
-        width: 100%;
+        @media screen and (max-width: 500px) {
+          padding: 17px 22px 17px 25px;
+          max-width: 355px;
+          width: 100%;
+        }
       }
     }
 
@@ -2054,9 +2185,9 @@ body {
         svg {
           opacity: 0;
           position: absolute;
-          left: 50%;
-          top: 50%;
-          transform: translate(-50%, -50%);
+          left: 53%;
+          top: 53%;
+          transform: translate(-50%, -47%);
         }
       }
 
@@ -2086,6 +2217,10 @@ body {
       margin-top: 35px;
     }
   }
+}
+
+.form-wrapper.visible {
+  display: block;
 }
 
 .section-title {

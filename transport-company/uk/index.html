@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="../" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,6 +26,28 @@
     <div class="container">
       <header class="header">
         <a class="logo" href="#"><img src="./img/logo.svg" alt="" /></a>
+
+        <div class="language">
+          <span class="language__item language__item_active"
+            >UK
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chevron-down"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+              ></path>
+            </svg>
+          </span>
+          <ul class="language__items">
+            <li class="language__item"><a href="./index.html">RU</a></li>
+          </ul>
+        </div>
       </header>
     </div>
 
@@ -37,22 +60,26 @@
             /></a>
 
             <div class="language">
-              <a class="item active" href="./index.html">RU</a>
-              <a class="item" href="./uk/index.html">UK</a>
+              <a class="item" href="./index.html">RU</a>
+              <a class="item active" href="./uk/index.html">UK</a>
             </div>
           </div>
-          <h1 class="title">Автомобільні перевезення</h1>
-          <span class="subtitle">Перевозка грузов автотранспортом</span>
+          <h1 class="title">
+            Автомобільні<br />
+            перевезення
+          </h1>
+          <span class="subtitle">Перевезення вантажів автотранспортом</span>
           <p class="paragraph">
-            Транспортировка на грузовых автомобилях — один из самых удобных и
-            доступных способов перемещения грузов на небольшие и средние
-            расстояния. Поэтому автоперевозки остаются стабильно популярными у
-            наших клиентов.
+            Транспортування на вантажних автомобілях — один із найзручніших та
+            найдоступніших способів переміщення вантажів на невеликі та середні
+            відстані. Тому автоперевезення залишаються стабільно популярними у
+            наших клієнтів.
           </p>
           <p class="paragraph">
-            Компания BAGAT наработала многолетний опыт организации международных
-            перевозок. Мы гарантируем безопасную доставку тяжеловесных,
-            негабаритных, опасных, требующих особых условий грузов.
+            Компанія BAGAT напрацювала багаторічний досвід організації
+            міжнародних перевезень. Ми гарантуємо безпечну доставку
+            великовагових, негабаритних, небезпечних вантажів, що вимагають
+            особливих умов.
           </p>
 
           <div class="button-position">
@@ -162,7 +189,9 @@
             </p>
           </div>
         </div>
-        <button class="button button-red">Оставить заявку</button>
+        <button class="button button-red" data-modal-name=".form-wrapper">
+          Оставить заявку
+        </button>
       </section>
     </div>
 
@@ -297,7 +326,9 @@
               </p>
             </div>
           </div>
-          <button class="button button-red">Оставить заявку</button>
+          <button class="button button-red" data-modal-name=".form-wrapper">
+            Оставить заявку
+          </button>
         </div>
       </div>
     </section>
@@ -353,7 +384,7 @@
             /></a>
           </div>
           <div class="item">
-            <img src="./img/kazakhstan.svg" alt="" />
+            <img src="./img/uzb.svg" alt="" />
             <h6 class="text">
               Грузоперевозки <br />
               в Узбекистан
@@ -363,7 +394,7 @@
             /></a>
           </div>
           <div class="item">
-            <img src="./img/kazakhstan.svg" alt="" />
+            <img src="./img/krg.svg" alt="" />
             <h6 class="text">
               Грузоперевозки <br />
               в Кыргызстан
@@ -373,7 +404,7 @@
             /></a>
           </div>
           <div class="item">
-            <img src="./img/kazakhstan.svg" alt="" />
+            <img src="./img/mng.svg" alt="" />
             <h6 class="text">
               Грузоперевозки <br />
               в Монголию
@@ -383,7 +414,7 @@
             /></a>
           </div>
           <div class="item">
-            <img src="./img/kazakhstan.svg" alt="" />
+            <img src="./img/trk.svg" alt="" />
             <h6 class="text">
               Грузоперевозки <br />
               в Туркменистан
@@ -393,7 +424,7 @@
             /></a>
           </div>
           <div class="item">
-            <img src="./img/kazakhstan.svg" alt="" />
+            <img src="./img/tag.svg" alt="" />
             <h6 class="text">
               Грузоперевозки <br />
               в Таджикистан
@@ -403,7 +434,7 @@
             /></a>
           </div>
           <div class="item">
-            <img src="./img/kazakhstan.svg" alt="" />
+            <img src="./img/az.svg" alt="" />
             <h6 class="text">
               Грузоперевозки <br />
               в Азербайджан
@@ -413,7 +444,7 @@
             /></a>
           </div>
           <div class="item">
-            <img src="./img/kazakhstan.svg" alt="" />
+            <img src="./img/gru.svg" alt="" />
             <h6 class="text">
               Грузоперевозки <br />
               в Грузию
@@ -504,32 +535,32 @@
               <p class="text">Доставляем грузы безопасно и в полном объёме</p>
             </div>
             <div class="item">
-              <img src="./img/why-us-bottom-1.svg" alt="" />
+              <img src="./img/why-us-bottom-2.svg" alt="" />
               <p class="text">
                 BAGAT — компания со страхованием ответственности экспедитора и
                 собственным перегрузочным комплексом
               </p>
             </div>
             <div class="item">
-              <img src="./img/why-us-bottom-1.svg" alt="" />
+              <img src="./img/why-us-bottom-3.svg" alt="" />
               <p class="text">
                 Без опозданий — вы получаете товар точно в оговоренные сроки
               </p>
             </div>
             <div class="item">
-              <img src="./img/why-us-bottom-1.svg" alt="" />
+              <img src="./img/why-us-bottom-4.svg" alt="" />
               <p class="text">
                 Все субподрядчики проходят многоступенчатую проверку
               </p>
             </div>
             <div class="item">
-              <img src="./img/why-us-bottom-1.svg" alt="" />
+              <img src="./img/why-us-bottom-5.svg" alt="" />
               <p class="text">
                 Персональный менеджер — на связи с вами в режиме 24/7
               </p>
             </div>
             <div class="item">
-              <img src="./img/why-us-bottom-1.svg" alt="" />
+              <img src="./img/why-us-bottom-6.svg" alt="" />
               <p class="text">
                 Помощь от профессионалов в любой ситуации и информирование о
                 продвижении груза каждый день
@@ -1117,7 +1148,10 @@
           </div>
           <div class="faq-item ac">
             <div class="faq-top ac-header">
-              <p class="title">Finance relationship management</p>
+              <p class="title">
+                Finance relationship <br />
+                management
+              </p>
               <div class="close">
                 <span class="first"></span>
                 <span class="second"></span>
@@ -1140,24 +1174,28 @@
 
         <div class="blog-wrapper">
           <div class="item">
-            <h6 class="title">
+            <a href="#" class="title">
               Открытие нашего нового офиса в Оттаве. Поздравьте с открытием!
-            </h6>
+            </a>
             <div class="item-block">
               <span>14.03.2021</span>
               <img src="./img/arrow.svg" alt="" />
             </div>
-            <img class="img-blog" src="./img/img-blog.png" alt="" />
+            <a href="#">
+              <img class="img-blog" src="./img/img-blog.png" alt=""
+            /></a>
           </div>
           <div class="item">
-            <h6 class="title">
+            <a href="#" class="title">
               Открытие нашего нового офиса в Оттаве. Поздравьте с открытием!
-            </h6>
+            </a>
             <div class="item-block">
               <span>14.03.2021</span>
               <img src="./img/arrow.svg" alt="" />
             </div>
-            <img class="img-blog" src="./img/img-blog.png" alt="" />
+            <a href="#">
+              <img class="img-blog" src="./img/img-blog.png" alt=""
+            /></a>
           </div>
         </div>
 
@@ -1177,7 +1215,9 @@
           <a href="#"> электронной почте </a>
         </p>
 
-        <button class="button button-red">Оставить заявку</button>
+        <button class="button button-red" data-modal-name=".form-wrapper">
+          Оставить заявку
+        </button>
       </div>
     </section>
 
@@ -1258,7 +1298,7 @@
               </div>
 
               <div class="badges">
-                <img src="/img/trustpilot.png" alt="" />
+                <img src="./img/trustpilot.png" alt="" />
                 <img src="./img/google.png" alt="" />
               </div>
             </div>
@@ -1269,9 +1309,106 @@
             <a class="middle" href="#">Политика конфиденциальности</a>
             <a class="right" href="#">Карта сайта</a>
           </div>
+
+          <button class="button-up">
+            Наверх
+            <svg
+              width="8"
+              height="11"
+              viewBox="0 0 8 11"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.35349 0.158517C4.15826 -0.033164 3.84174 -0.027358 3.64651 0.171485L0.465061 3.41182C0.269831 3.61067 0.269831 3.92725 0.465061 4.11893C0.66029 4.31061 0.976819 4.3048 1.17205 4.10596L4 1.22566L6.82795 4.00222C7.02318 4.1939 7.33971 4.18809 7.53494 3.98925C7.73017 3.79041 7.73017 3.47382 7.53494 3.28214L4.35349 0.158517ZM4.49992 10.5094L4.49992 0.509385L3.50008 0.527724L3.50008 10.5277L4.49992 10.5094Z"
+                fill="white"
+              />
+            </svg>
+          </button>
         </div>
       </div>
     </footer>
+
+    <div class="form-wrapper">
+      <div class="container">
+        <h6 class="section-title">Предложение</h6>
+
+        <div id="close-modal" class="close">
+          <span class="first"></span>
+          <span class="second"></span>
+        </div>
+
+        <div class="form-wrapper-top">
+          <p class="section-subtitle">
+            Закажите перевозку вашего груза по выгодной цене прямо сейчас
+          </p>
+          <p class="touch">
+            Оставьте заявку, либо свяжитесь с нами по
+            <a href="#">электронной почте </a>
+          </p>
+        </div>
+        <form action="" class="form">
+          <div class="form-top">
+            <div class="form-input">
+              <div class="input-wrapper">
+                <span class="star">*</span>
+                <input class="input" type="text" placeholder="Ваше имя" />
+              </div>
+              <div class="input-wrapper">
+                <span class="star">*</span>
+                <input class="input" type="tel" placeholder="Ваш телефон" />
+              </div>
+              <div class="input-wrapper">
+                <span class="star">*</span>
+                <input class="input" type="email" placeholder="Ваш e-mail" />
+              </div>
+            </div>
+            <div class="form-textarea">
+              <textarea
+                class="textarea"
+                name=""
+                placeholder="Здравствуйте, хотелось бы узнать подробнее об условиях доставки из Латвии в Россию"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+          </div>
+          <div class="input-checkbox">
+            <label class="checkbox-label">
+              <input type="checkbox" name="example-checkbox" />
+              <span class="checkbox-custom"
+                ><svg
+                  width="16"
+                  height="12"
+                  viewBox="0 0 16 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 5.46429L6.35714 9.92857L14.3929 1"
+                    stroke="#B0B0B0"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
+              <div class="text">
+                <p>
+                  Я согласен на
+                  <b> обработку моих персональных данных</b>
+                </p>
+
+                <p>
+                  и ознакомился с
+                  <b> политикой обработки персональных данных</b>
+                </p>
+              </div>
+            </label>
+          </div>
+
+          <button class="button button-red">Оставить заявку</button>
+        </form>
+      </div>
+    </div>
 
     <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>

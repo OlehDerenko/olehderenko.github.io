@@ -43,3 +43,51 @@ new Swiper(".license-swiper", {
     },
   },
 });
+
+const scrollTopGlobalButton = document.querySelector(".button-up");
+
+scrollTopGlobalButton.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+
+const openModalButtons = document.querySelectorAll("[data-modal-name]");
+
+const scroll = {
+  lock: () => {
+    document.body.classList.add("scroll-lock");
+  },
+  unlock: () => {
+    document.body.classList.remove("scroll-lock");
+  },
+};
+
+openModalButtons.forEach((button) => {
+  button.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const modal = document.querySelector(
+      button.getAttribute("data-modal-name")
+    );
+
+    modal.classList.add("visible");
+    scroll.lock();
+  });
+});
+
+const closeModal = document.querySelector("#close-modal");
+
+closeModal.addEventListener("click", () => {
+  const modal = document.querySelector(".form-wrapper");
+  modal.classList.remove("visible");
+  scroll.unlock();
+});
+
+const language = document.querySelector(".language__item_active");
+const list = document.querySelector(".language__items");
+
+language.addEventListener("click", () => {
+  list.classList.toggle("language__items_active");
+});
