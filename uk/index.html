@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -1352,21 +1352,43 @@
             <div class="form-input">
               <div class="input-wrapper">
                 <span class="star">*</span>
-                <input class="input" type="text" placeholder="Ваше имя" />
+                <input
+                  class="input"
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Ваше имя"
+                />
               </div>
+              <span data-error-name="name" class="error"></span>
               <div class="input-wrapper">
                 <span class="star">*</span>
-                <input class="input" type="tel" placeholder="Ваш телефон" />
+                <input
+                  class="input"
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="Ваш телефон"
+                />
               </div>
+              <span data-error-name="phone" class="error"></span>
               <div class="input-wrapper">
                 <span class="star">*</span>
-                <input class="input" type="email" placeholder="Ваш e-mail" />
+                <input
+                  class="input"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Ваш e-mail"
+                />
               </div>
+              <span data-error-name="email" class="error"></span>
             </div>
             <div class="form-textarea">
               <textarea
                 class="textarea"
-                name=""
+                name="message"
+                id="message"
                 placeholder="Здравствуйте, хотелось бы узнать подробнее об условиях доставки из Латвии в Россию"
                 cols="30"
                 rows="10"
@@ -1375,7 +1397,7 @@
           </div>
           <div class="input-checkbox">
             <label class="checkbox-label">
-              <input type="checkbox" name="example-checkbox" />
+              <input type="checkbox" name="agreement" />
               <span class="checkbox-custom"
                 ><svg
                   width="16"
@@ -1403,6 +1425,7 @@
                 </p>
               </div>
             </label>
+            <span data-error-name="agreement" class="error"></span>
           </div>
 
           <button class="button button-red">Оставить заявку</button>
@@ -1410,6 +1433,8 @@
       </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
     <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>

@@ -2107,6 +2107,10 @@ body.scroll-lock {
               width: 100%;
             }
           }
+
+          .input.has-error {
+            border: 1px solid #dc0c1c;
+          }
         }
       }
     }
@@ -2125,6 +2129,13 @@ body.scroll-lock {
           width: 100%;
         }
       }
+    }
+
+    .has-error {
+      display: block;
+      margin: 5px 0 10px;
+      color: $color-1-red;
+      font-size: 14px;
     }
 
     .input-checkbox {
@@ -2210,6 +2221,11 @@ body.scroll-lock {
       .checkbox-label input[type="checkbox"] ~ .checkbox-custom {
         background-color: transparent;
         border: 2px solid #b0b0b0;
+      }
+
+      .checkbox-label input[type="checkbox"].has-error ~ .checkbox-custom {
+        background-color: transparent;
+        border: 2px solid $color-1-red;
       }
     }
 

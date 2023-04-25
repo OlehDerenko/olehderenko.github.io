@@ -2068,6 +2068,9 @@ body.scroll-lock {
     width: 100%;
   }
 }
+.form-wrapper .form .form-top .form-input .input-wrapper .input.has-error {
+  border: 1px solid #dc0c1c;
+}
 .form-wrapper .form .form-textarea {
   width: 100%;
 }
@@ -2083,6 +2086,12 @@ body.scroll-lock {
     max-width: 355px;
     width: 100%;
   }
+}
+.form-wrapper .form .has-error {
+  display: block;
+  margin: 5px 0 10px;
+  color: #dc0c1c;
+  font-size: 14px;
 }
 .form-wrapper .form .input-checkbox {
   margin-top: 48px;
@@ -2162,6 +2171,10 @@ body.scroll-lock {
 .form-wrapper .form .input-checkbox .checkbox-label input[type=checkbox] ~ .checkbox-custom {
   background-color: transparent;
   border: 2px solid #b0b0b0;
+}
+.form-wrapper .form .input-checkbox .checkbox-label input[type=checkbox].has-error ~ .checkbox-custom {
+  background-color: transparent;
+  border: 2px solid #dc0c1c;
 }
 .form-wrapper .form .button {
   margin-top: 35px;
