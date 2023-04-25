@@ -1,77 +1,93 @@
-new Blobity({ color: "rgb(255, 255, 255)", fontSize: 14, zIndex: -1 });
-
-document.addEventListener("DOMContentLoaded", () => {
-  TagCanvas.Start("skills", "", {
-    textColour: "#fff",
-    textHeight: 20,
-    depth: 0.99,
-    zoom: 1,
-    zoomMax: 1,
-    zoomMin: 1,
-    outlineColour: "#08fdd8",
-    initial: [0.3, -0.1],
-  });
-});
-
-const burger = document.querySelector(".hamburger");
-const burgerMenu = document.querySelector(".burger-menu");
-const range = document.querySelector(".range");
-const rangeThumb = range.querySelector("span");
-const body = document.querySelector("body");
-const links = document.querySelectorAll(".burger-menu nav a");
-
-const toggleNavigation = () => {
-  burgerMenu.classList.toggle("open");
-  body.classList.toggle("active");
-  burger.classList.toggle("is-active");
-};
-
-burger.addEventListener("click", (e) => {
-  e.preventDefault();
-
-  toggleNavigation();
-});
-
-links.forEach((link) => {
-  link.addEventListener("click", (e) => {
-    e.preventDefault();
-    const target = document.querySelector(link.getAttribute("href"));
-    target.scrollIntoView({
-      behavior: "smooth",
-    });
-
-    toggleNavigation();
-  });
-});
-
-const thumbWidth =
-  range.clientWidth / document.querySelectorAll(".portfolio__block").length;
-
-rangeThumb.style.width = `${thumbWidth}px`;
-let slidesLength;
-
-const swiper = new Swiper(".swiper", {
+const swiperSlider = new Swiper(".cases-swiper", {
   direction: "horizontal",
-  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 45,
+
+  breakpoints: {
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 45,
+    },
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+  },
+});
+
+new Accordion(".accordion-container", {
+  triggerClass: "ac-header",
+  duration: 300,
+  activeClass: "is-active",
+});
+
+new Swiper(".license-swiper", {
+  direction: "horizontal",
+  slidesPerView: 1,
+  spaceBetween: 45,
+
   navigation: {
-    nextEl: ".arrow-next",
-    prevEl: ".arrow-back",
+    nextEl: ".license-swiper .swiper-button-next",
+    prevEl: ".license-swiper .swiper-button-prev",
   },
 
   breakpoints: {
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 20,
-    },
     768: {
       slidesPerView: 3,
-      spaceBetween: 30,
+      spaceBetween: 45,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      type: "bullets",
     },
   },
 });
 
-swiper.on("slideChange", (swiper) => {
-  const { realIndex } = swiper;
+const scrollTopGlobalButton = document.querySelector(".button-up");
 
-  rangeThumb.style.left = `${thumbWidth * realIndex}px`;
+scrollTopGlobalButton.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+
+const openModalButtons = document.querySelectorAll("[data-modal-name]");
+
+const scroll = {
+  lock: () => {
+    document.body.classList.add("scroll-lock");
+  },
+  unlock: () => {
+    document.body.classList.remove("scroll-lock");
+  },
+};
+
+openModalButtons.forEach((button) => {
+  button.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const modal = document.querySelector(
+      button.getAttribute("data-modal-name")
+    );
+
+    modal.classList.add("visible");
+    scroll.lock();
+  });
+});
+
+const closeModal = document.querySelector("#close-modal");
+
+closeModal.addEventListener("click", () => {
+  const modal = document.querySelector(".form-wrapper");
+  modal.classList.remove("visible");
+  scroll.unlock();
+});
+
+const language = document.querySelector(".language__item_active");
+const list = document.querySelector(".language__items");
+
+language.addEventListener("click", () => {
+  list.classList.toggle("language__items_active");
 });
