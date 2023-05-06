@@ -1,178 +1,77 @@
-const lang = document.querySelector("html").getAttribute("lang");
-const message =
-  lang === "ru" ? "Это обязательное поле." : "Це обов'язкове поле.";
+new Blobity({ color: "rgb(255, 255, 255)", fontSize: 14, zIndex: -1 });
 
-const sendMessageToTelegram = async () => {
-  const token = "5659885385:AAEvn4_q8enkKy907djlkDn113FPsJ6nfmU";
-  const chatId = "-855281779";
-  const API_URL = `https://api.telegram.org/bot${token}/sendMessage`;
-
-  const name = document.querySelector("#name").value;
-  const phone = document.querySelector("#phone").value;
-  const email = document.querySelector("#email").value;
-  const message = document.querySelector("#message").value;
-
-  const text = `
-    <b>Заявка з сайту.</b>
-  Ім'я: ${name} .
-  Телефон: ${phone} .
-  Імейл: ${email} .
-  Повідомлення: ${message ? message : "Немає"}.
-  `;
-
-  await fetch(API_URL, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      chat_id: chatId,
-      parse_mode: "html",
-      text,
-    }),
+document.addEventListener("DOMContentLoaded", () => {
+  TagCanvas.Start("skills", "", {
+    textColour: "#fff",
+    textHeight: 20,
+    depth: 0.99,
+    zoom: 1,
+    zoomMax: 1,
+    zoomMin: 1,
+    outlineColour: "#08fdd8",
+    initial: [0.3, -0.1],
   });
+});
 
-  console.log({
-    name,
-    phone,
-    email,
-    message,
-  });
+const burger = document.querySelector(".hamburger");
+const burgerMenu = document.querySelector(".burger-menu");
+const range = document.querySelector(".range");
+const rangeThumb = range.querySelector("span");
+const body = document.querySelector("body");
+const links = document.querySelectorAll(".burger-menu nav a");
+
+const toggleNavigation = () => {
+  burgerMenu.classList.toggle("open");
+  body.classList.toggle("active");
+  burger.classList.toggle("is-active");
 };
 
-$(document).ready(function () {
-  $(".form-wrapper .form").validate({
-    errorElement: "span",
-    rules: {
-      name: {
-        required: true,
-      },
-      phone: {
-        required: true,
-      },
-      email: {
-        required: true,
-      },
-      agreement: {
-        required: true,
-      },
-    },
-    messages: {
-      name: {
-        required: message,
-      },
-      phone: {
-        required: message,
-      },
-      email: {
-        required: message,
-      },
-      agreement: {
-        required: message,
-      },
-    },
-    errorPlacement: function (error, element) {
-      error.insertAfter(`[data-error-name="${element.attr("name")}"]`);
-    },
-    errorClass: "has-error",
-    submitHandler: (form) => {
-      sendMessageToTelegram();
-    },
+burger.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  toggleNavigation();
+});
+
+links.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    const target = document.querySelector(link.getAttribute("href"));
+    target.scrollIntoView({
+      behavior: "smooth",
+    });
+
+    toggleNavigation();
   });
 });
 
-const swiperSlider = new Swiper(".cases-swiper", {
+const thumbWidth =
+  range.clientWidth / document.querySelectorAll(".portfolio__block").length;
+
+rangeThumb.style.width = `${thumbWidth}px`;
+let slidesLength;
+
+const swiper = new Swiper(".swiper", {
   direction: "horizontal",
-  slidesPerView: 1,
-  spaceBetween: 45,
-
-  breakpoints: {
-    768: {
-      slidesPerView: 1,
-      spaceBetween: 45,
-    },
-  },
-
-  pagination: {
-    el: ".swiper-pagination",
-    type: "bullets",
-  },
-});
-
-new Accordion(".accordion-container", {
-  triggerClass: "ac-header",
-  duration: 300,
-  activeClass: "is-active",
-});
-
-new Swiper(".license-swiper", {
-  direction: "horizontal",
-  slidesPerView: 1,
-  spaceBetween: 45,
-
+  loop: true,
   navigation: {
-    nextEl: ".license-swiper .swiper-button-next",
-    prevEl: ".license-swiper .swiper-button-prev",
+    nextEl: ".arrow-next",
+    prevEl: ".arrow-back",
   },
 
   breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
     768: {
       slidesPerView: 3,
-      spaceBetween: 45,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      type: "bullets",
+      spaceBetween: 30,
     },
   },
 });
 
-const scrollTopGlobalButton = document.querySelector(".button-up");
+swiper.on("slideChange", (swiper) => {
+  const { realIndex } = swiper;
 
-scrollTopGlobalButton.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
+  rangeThumb.style.left = `${thumbWidth * realIndex}px`;
 });
-
-const openModalButtons = document.querySelectorAll("[data-modal-name]");
-
-const scroll = {
-  lock: () => {
-    document.body.classList.add("scroll-lock");
-  },
-  unlock: () => {
-    document.body.classList.remove("scroll-lock");
-  },
-};
-
-openModalButtons.forEach((button) => {
-  button.addEventListener("click", (e) => {
-    e.preventDefault();
-
-    const modal = document.querySelector(
-      button.getAttribute("data-modal-name")
-    );
-
-    modal.classList.add("visible");
-    scroll.lock();
-  });
-});
-
-const closeModal = document.querySelector("#close-modal");
-
-closeModal.addEventListener("click", () => {
-  const modal = document.querySelector(".form-wrapper");
-  modal.classList.remove("visible");
-  scroll.unlock();
-});
-
-const language = document.querySelector(".language__item_active");
-const list = document.querySelector(".language__items");
-
-language.addEventListener("click", () => {
-  list.classList.toggle("language__items_active");
-});
-
-const form = document.querySelector(".form-wrapper .form");
