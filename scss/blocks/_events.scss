@@ -93,18 +93,18 @@
                 line-height: 16px;
                 display: none;
               }
+            }
 
-              .title-mobile {
-                display: none;
-                font-size: 16px;
-                line-height: 16px;
-                color: #000;
-                font-weight: 400;
-                max-width: 158px;
+            .title-mobile {
+              font-size: 16px;
+              line-height: 16px;
+              color: #000;
+              font-weight: 400;
+              max-width: 158px;
+              display: none;
 
-                @media screen and (max-width: $media-1100) {
-                  display: block;
-                }
+              @media screen and (max-width: $media-1100) {
+                display: block;
               }
             }
           }

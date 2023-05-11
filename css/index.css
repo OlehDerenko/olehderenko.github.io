@@ -2137,7 +2137,7 @@ button {
 }
 
 .last-records.last-records_grid-3 .last-records-top {
-  margin-top: 120px;
+  margin-top: 60px;
 }
 @media screen and (max-width: 1100px) {
   .last-records.last-records_grid-3 .last-records-top {
@@ -2298,16 +2298,16 @@ button {
     display: none;
   }
 }
-.events .events-wrapper__main_item-content .top-flex .title .title-desktop .title-mobile {
-  display: none;
+.events .events-wrapper__main_item-content .top-flex .title .title-mobile {
   font-size: 16px;
   line-height: 16px;
   color: #000;
   font-weight: 400;
   max-width: 158px;
+  display: none;
 }
 @media screen and (max-width: 1100px) {
-  .events .events-wrapper__main_item-content .top-flex .title .title-desktop .title-mobile {
+  .events .events-wrapper__main_item-content .top-flex .title .title-mobile {
     display: block;
   }
 }
