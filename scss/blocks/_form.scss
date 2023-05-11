@@ -10,6 +10,10 @@
   &__title {
     .title-white {
       max-width: 350px;
+
+      @media screen and (max-width: $media-1100) {
+        max-width: 210px;
+      }
     }
   }
 

@@ -2614,6 +2614,11 @@ button {
 .form-wrapper__title .title-white {
   max-width: 350px;
 }
+@media screen and (max-width: 1100px) {
+  .form-wrapper__title .title-white {
+    max-width: 210px;
+  }
+}
 .form-wrapper__form {
   margin-top: 60px;
 }
