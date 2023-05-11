@@ -1,0 +1,140 @@
+.footer {
+  background: $color-gray;
+  padding: 120px 0 60px;
+
+  @media screen and (max-width: $media-500) {
+    padding: 30px 0;
+  }
+
+  .footer-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @media screen and (max-width: $media-1100) {
+      flex-direction: column;
+    }
+
+    &__left {
+      &_logo {
+        color: $color-green;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 58px;
+
+        @media screen and (max-width: $media-1100) {
+          font-size: 44px;
+          line-height: 54px;
+        }
+      }
+
+      &_paragraph {
+        color: #646464;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        margin-top: 30px;
+        max-width: 350px;
+
+        @media screen and (max-width: $media-1100) {
+          margin-top: 20px;
+        }
+      }
+
+      &_paragraph:last-of-type {
+        margin: 20px 0 0;
+      }
+
+      &_law {
+        display: block;
+        padding-top: 160px;
+
+        @media screen and (max-width: $media-1100) {
+          display: none;
+        }
+      }
+    }
+
+    .name {
+      color: #646464;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 400;
+    }
+
+    .contact {
+      color: #000000;
+      font-size: 18px;
+      line-height: 21px;
+      font-weight: 400;
+    }
+
+    span {
+      color: #646464;
+      font-size: 14px;
+      line-height: 17px;
+      font-weight: 400;
+    }
+
+    &__middle {
+      @media screen and (max-width: $media-1100) {
+        margin-top: 40px;
+      }
+
+      &_info {
+        margin-top: 20px;
+        max-width: 252px;
+      }
+
+      &_info:first-of-type {
+        margin: 0;
+      }
+    }
+
+    &__right {
+      max-width: 255px;
+
+      @media screen and (max-width: $media-1100) {
+        margin-top: 40px;
+      }
+
+      &_info {
+        margin-bottom: 20px;
+      }
+
+      &_links {
+        margin: 40px 0 0;
+
+        @media screen and (max-width: $media-1100) {
+          margin-top: 30px;
+        }
+
+        a {
+          margin-right: 30px;
+        }
+
+        a:last-of-type {
+          margin: 0;
+        }
+      }
+
+      &_development {
+        padding-top: 165px;
+        display: block;
+
+        @media screen and (max-width: $media-1100) {
+          display: none;
+        }
+      }
+    }
+
+    .law-mobile,
+    .development-mobile {
+      display: none;
+      @media screen and (max-width: $media-1100) {
+        display: block;
+        margin-top: 40px;
+      }
+    }
+  }
+}

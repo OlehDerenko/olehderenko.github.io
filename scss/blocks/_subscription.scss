@@ -1,0 +1,105 @@
+.subscription {
+  background: $color-green;
+
+  .subscription-content {
+    padding: 60px 0;
+
+    @media screen and (max-width: $media-1100) {
+      padding: 30px 0;
+    }
+
+    .title-white {
+      max-width: 568px;
+
+      @media screen and (max-width: $media-1100) {
+        max-width: 200px;
+      }
+    }
+
+    &__box {
+      margin-top: 60px;
+      display: flex;
+      align-items: center;
+
+      @media screen and (max-width: $media-1100) {
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      &_input {
+        position: relative;
+        display: flex;
+        align-items: center;
+        background: #ffffff;
+        border: 1px solid #f0f0f0;
+        border-radius: 5px;
+        width: 540px;
+
+        @media screen and (max-width: $media-1100) {
+          width: 100%;
+        }
+
+        input {
+          border: none;
+          background: transparent;
+          padding: 26px 13px 26px 15px;
+          outline: none;
+
+          @media screen and (max-width: $media-1100) {
+            padding: 21px 13px 21px 15px;
+          }
+        }
+
+        input::placeholder {
+          color: #000000;
+          font-size: 14px;
+          line-height: 17px;
+          font-weight: 400;
+        }
+
+        .button {
+          position: absolute;
+          right: 13px;
+
+          @media screen and (max-width: $media-1100) {
+            display: none;
+          }
+        }
+      }
+
+      .button-mobile {
+        display: none;
+        border: 1px solid #ffffff;
+        margin-top: 15px;
+        align-items: center;
+        justify-content: center;
+
+        @media screen and (max-width: $media-1100) {
+          display: flex;
+        }
+      }
+
+      &_links {
+        margin-left: 125px;
+
+        @media screen and (max-width: $media-1100) {
+          margin: 30px 0 0;
+        }
+
+        a {
+          margin-left: 30px;
+        }
+
+        a:first-of-type {
+          margin: 0;
+        }
+
+        img {
+          width: 36px;
+          height: 36px;
+        }
+      }
+    }
+  }
+}
