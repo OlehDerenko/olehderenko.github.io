@@ -80,6 +80,18 @@
 
       .button {
         border: 1px solid #ffffff;
+        transition: 0.5s;
+
+        &::after {
+          border: 1px solid #ffffff;
+        }
+
+        &:hover {
+          background: transparent;
+
+          transition: 0.4s;
+          border: none;
+        }
       }
 
       .links {
