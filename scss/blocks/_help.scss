@@ -57,6 +57,10 @@
     &_content {
       margin-top: 60px;
 
+      @media screen and (max-width: $media-1100) {
+        margin-top: 30px;
+      }
+
       .item-top {
         display: flex;
         align-items: flex-start;
