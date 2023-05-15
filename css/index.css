@@ -343,6 +343,7 @@ table {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
 }
 .advertising-blocks .advertising span {
   font-size: 13px;
@@ -1114,6 +1115,7 @@ table {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
 }
 .blog-entries .blog-block .advertising span {
   font-size: 13px;
@@ -1284,6 +1286,11 @@ table {
   width: 540px;
   height: 265px;
   position: relative;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.blog-entries__wrapper-middle .blog-block-img:hover {
+  transform: scale(1.1);
 }
 .blog-entries__wrapper-middle .blog-block-img .advertising {
   background: #904384;
@@ -1373,6 +1380,7 @@ table {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
 }
 .blog-entries__wrapper-bottom .blog-block-botom .advertising span {
   font-size: 13px;
@@ -1977,6 +1985,7 @@ table {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
 }
 .last-records .block .advertising span {
   font-size: 13px;
@@ -1991,6 +2000,12 @@ table {
   top: 0;
   right: 0;
   max-height: 24px;
+}
+.last-records .block a img {
+  transition: 0.3s;
+}
+.last-records .block a img:hover {
+  transform: scale(1.1);
 }
 .last-records .block .text {
   margin-top: 20px;
@@ -2073,6 +2088,7 @@ table {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
 }
 .last-records .block-big .left .advertising span {
   font-size: 13px;
@@ -2087,6 +2103,12 @@ table {
   top: 0;
   right: 0;
   max-height: 24px;
+}
+.last-records .block-big a img {
+  transition: 0.3s;
+}
+.last-records .block-big a img:hover {
+  transform: scale(1.1);
 }
 .last-records .block-big .text {
   margin-left: 30px;
@@ -2200,6 +2222,11 @@ table {
 .last-records.last-records_grid-2 .block-img {
   max-width: 255px;
   position: relative;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.last-records.last-records_grid-2 .block-img:hover {
+  transform: scale(1.1);
 }
 .last-records.last-records_grid-2 .block-img .advertising {
   background: #f56476;
@@ -2241,6 +2268,11 @@ table {
 }
 .last-records.last-records_grid-2 .block-img-two {
   position: relative;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.last-records.last-records_grid-2 .block-img-two:hover {
+  transform: scale(1.1);
 }
 .last-records.last-records_grid-2 .block-img-two .advertising {
   background: #f56476;
@@ -2631,6 +2663,10 @@ table {
   line-height: 16px;
   color: #000;
   font-weight: 400;
+  transition: 0.3s;
+}
+.reviews__bottom_item .item-text .text-top-title:hover {
+  color: #8ba529;
 }
 .reviews__bottom_item .item-text .text-paragraph {
   margin-top: 20px;
@@ -2973,6 +3009,7 @@ table {
 .help__wrapper_content .item-bottom .left-block {
   position: relative;
   margin-top: 30px;
+  cursor: pointer;
 }
 .help__wrapper_content .item-bottom .left-block .advertising {
   background: #f56476;

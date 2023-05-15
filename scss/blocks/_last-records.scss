@@ -39,6 +39,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      z-index: 1;
 
       span {
         font-size: 13px;
@@ -55,6 +56,15 @@
       top: 0;
       right: 0;
       max-height: 24px;
+    }
+
+    a {
+      img {
+        transition: 0.3s;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
     }
 
     .text {
@@ -149,6 +159,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        z-index: 1;
 
         span {
           font-size: 13px;
@@ -165,6 +176,15 @@
         top: 0;
         right: 0;
         max-height: 24px;
+      }
+    }
+
+    a {
+      img {
+        transition: 0.3s;
+        &:hover {
+          transform: scale(1.1);
+        }
       }
     }
 
@@ -296,6 +316,13 @@
     max-width: 255px;
     position: relative;
 
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
     .advertising {
       background: #f56476;
       padding: 8px 12px;
@@ -343,6 +370,13 @@
 
   .block-img-two {
     position: relative;
+
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+      transform: scale(1.1);
+    }
 
     .advertising {
       background: #f56476;
