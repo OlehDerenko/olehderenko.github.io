@@ -228,6 +228,15 @@
     max-height: 24px;
   }
 
+  a {
+    img {
+      transition: 0.3s;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
   .text {
     margin-top: 20px;
     .text-top {

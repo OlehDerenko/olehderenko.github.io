@@ -358,6 +358,12 @@ table {
   right: 0;
   max-height: 24px;
 }
+.advertising-blocks a img {
+  transition: 0.3s;
+}
+.advertising-blocks a img:hover {
+  transform: scale(1.1);
+}
 .advertising-blocks .text {
   margin-top: 20px;
 }
@@ -603,7 +609,7 @@ table {
   display: none;
   position: fixed;
   bottom: 25px;
-  right: 150px;
+  right: 10px;
   height: 40px;
   width: 40px;
   z-index: 99;
@@ -1123,6 +1129,12 @@ table {
   right: 0;
   max-height: 24px;
 }
+.blog-entries .blog-block a img {
+  transition: 0.3s;
+}
+.blog-entries .blog-block a img:hover {
+  transform: scale(1.1);
+}
 .blog-entries .blog-block .text {
   margin-top: 20px;
 }
@@ -1375,6 +1387,12 @@ table {
   top: 0;
   right: 0;
   max-height: 24px;
+}
+.blog-entries__wrapper-bottom .blog-block-botom a img {
+  transition: 0.3s;
+}
+.blog-entries__wrapper-bottom .blog-block-botom a img:hover {
+  transform: scale(1.1);
 }
 .blog-entries__wrapper-bottom .text {
   margin-left: 30px;
