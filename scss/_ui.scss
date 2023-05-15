@@ -252,8 +252,8 @@
 
         .text-top-title {
           display: block;
-          font-size: 16px;
-          line-height: 16px;
+          font-size: 18px;
+          line-height: 18px;
           color: #000;
           font-weight: 400;
 
@@ -261,6 +261,10 @@
 
           &:hover {
             color: $color-green;
+          }
+
+          @media screen and (max-width: $media-1100) {
+            font-size: 16px;
           }
         }
       }
