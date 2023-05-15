@@ -122,7 +122,7 @@
 }
 
 .button-gray:hover {
-  background-color: #f0f0f0;
+  background-color: #779020;
   color: #16171d;
   transition: 0.4s;
 
@@ -142,7 +142,7 @@
 }
 
 .button-transparent:hover {
-  background: transparent;
+  background: #779020;
   color: #16171d;
   transition: 0.4s;
   border: none;
@@ -248,6 +248,12 @@
           line-height: 16px;
           color: #000;
           font-weight: 400;
+
+          transition: 0.3s;
+
+          &:hover {
+            color: $color-green;
+          }
         }
       }
     }
@@ -341,6 +347,12 @@
       line-height: 16px;
       font-weight: 400;
       color: #000;
+
+      transition: 0.3s;
+
+      &:hover {
+        color: $color-green;
+      }
     }
   }
 
@@ -400,6 +412,12 @@
         font-size: 14px;
         line-height: 14px;
         max-height: 37px;
+
+        transition: 0.3s;
+
+        &:hover {
+          color: $color-green;
+        }
       }
     }
 
@@ -486,5 +504,33 @@
       line-height: 15px;
       font-weight: 400;
     }
+  }
+}
+
+.button-to-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 150px;
+  height: 40px;
+  width: 40px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background: $color-green;
+  cursor: pointer;
+  padding: 12px 14px;
+  border-radius: 3px;
+  transition: 0.3s;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  line-height: 1em;
+
+  &:hover {
+    background: #5a6e1d;
   }
 }

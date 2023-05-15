@@ -111,6 +111,14 @@
 
         a {
           margin-right: 30px;
+
+          img {
+            transition: 0.3s;
+          }
+
+          img:hover {
+            transform: scale(1.2);
+          }
         }
 
         a:last-of-type {

@@ -256,7 +256,7 @@ table {
 }
 
 .button-gray:hover {
-  background-color: #f0f0f0;
+  background-color: #779020;
   color: #16171d;
   transition: 0.4s;
 }
@@ -275,7 +275,7 @@ table {
 }
 
 .button-transparent:hover {
-  background: transparent;
+  background: #779020;
   color: #16171d;
   transition: 0.4s;
   border: none;
@@ -380,6 +380,10 @@ table {
   line-height: 16px;
   color: #000;
   font-weight: 400;
+  transition: 0.3s;
+}
+.advertising-blocks .text .text-top .text-top-right .text-top-title:hover {
+  color: #8ba529;
 }
 .advertising-blocks .text .text-paragraph {
   margin-top: 20px;
@@ -462,6 +466,10 @@ table {
   line-height: 16px;
   font-weight: 400;
   color: #000;
+  transition: 0.3s;
+}
+.advertising-blocks-mobile__text_title:hover {
+  color: #8ba529;
 }
 .advertising-blocks-mobile__bottom {
   margin-top: 20px;
@@ -512,6 +520,10 @@ table {
   font-size: 14px;
   line-height: 14px;
   max-height: 37px;
+  transition: 0.3s;
+}
+.advertising-blocks-mobile-two .advertising-blocks-mobile__text_title:hover {
+  color: #8ba529;
 }
 .advertising-blocks-mobile-two .advertising-blocks-mobile__bottom {
   margin-top: 10px;
@@ -582,6 +594,33 @@ table {
   font-size: 13px;
   line-height: 15px;
   font-weight: 400;
+}
+
+.button-to-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 150px;
+  height: 40px;
+  width: 40px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background: #8ba529;
+  cursor: pointer;
+  padding: 12px 14px;
+  border-radius: 3px;
+  transition: 0.3s;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  line-height: 1em;
+}
+.button-to-top:hover {
+  background: #5a6e1d;
 }
 
 .header {
@@ -685,8 +724,12 @@ table {
 .header .header-container .header-content__right_links {
   margin-left: 30px;
 }
-.header .header-container .header-content__right_links img {
+.header .header-container .header-content__right_links a img {
   margin-left: 20px;
+  transition: 0.3s;
+}
+.header .header-container .header-content__right_links a img:hover {
+  transform: scale(1.4);
 }
 
 .navigation {
@@ -1107,6 +1150,10 @@ table {
   line-height: 16px;
   color: #000;
   font-weight: 400;
+  transition: 0.3s;
+}
+.blog-entries .blog-block .text .text-top .text-top-right .text-top-title:hover {
+  color: #8ba529;
 }
 .blog-entries .blog-block .text .text-paragraph {
   margin-top: 20px;
@@ -1348,6 +1395,10 @@ table {
   line-height: 16px;
   color: #000;
   font-weight: 400;
+  transition: 0.3s;
+}
+.blog-entries__wrapper-bottom .text .text-bottom .text-top-right .text-top-title:hover {
+  color: #8ba529;
 }
 .blog-entries__wrapper-bottom .text .text-paragraph {
   margin-top: 20px;
@@ -1501,6 +1552,11 @@ table {
   color: #000;
   font-weight: 400;
   max-width: 350px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.nearest-courses .nearest-courses-content__box_block .text .middle-text .paragraph:hover {
+  color: #8ba529;
 }
 @media screen and (max-width: 1100px) {
   .nearest-courses .nearest-courses-content__box_block .text .middle-text .paragraph {
@@ -1617,6 +1673,12 @@ table {
 }
 .subscription .subscription-content__box_links a {
   margin-left: 30px;
+}
+.subscription .subscription-content__box_links a img {
+  transition: 0.3s;
+}
+.subscription .subscription-content__box_links a img:hover {
+  transform: scale(1.2);
 }
 .subscription .subscription-content__box_links a:first-of-type {
   margin: 0;
@@ -1929,6 +1991,10 @@ table {
   line-height: 16px;
   color: #000;
   font-weight: 400;
+  transition: 0.3s;
+}
+.last-records .block .text .text-top .text-top-right .text-top-title:hover {
+  color: #8ba529;
 }
 .last-records .block .text .text-paragraph {
   margin-top: 20px;
@@ -2024,6 +2090,10 @@ table {
   line-height: 16px;
   color: #000;
   font-weight: 400;
+  transition: 0.3s;
+}
+.last-records .block-big .text .text-bottom .text-top-right .text-top-title:hover {
+  color: #8ba529;
 }
 .last-records .block-big .text .text-paragraph {
   margin-top: 20px;
@@ -2795,7 +2865,8 @@ table {
   border: 1px solid #ffffff;
 }
 .form-wrapper__form_bottom .button:hover {
-  background: transparent;
+  background: #fff;
+  color: #000;
   transition: 0.4s;
   border: none;
 }
@@ -2814,6 +2885,10 @@ table {
 }
 .form-wrapper__form_bottom .links a img {
   width: 36px;
+  transition: 0.3s;
+}
+.form-wrapper__form_bottom .links a img:hover {
+  transform: scale(1.2);
 }
 
 .help {
@@ -3318,6 +3393,12 @@ table {
 }
 .footer .footer-content__right_links a {
   margin-right: 30px;
+}
+.footer .footer-content__right_links a img {
+  transition: 0.3s;
+}
+.footer .footer-content__right_links a img:hover {
+  transform: scale(1.2);
 }
 .footer .footer-content__right_links a:last-of-type {
   margin: 0;

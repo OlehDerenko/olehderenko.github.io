@@ -73,6 +73,12 @@
             line-height: 16px;
             color: #000;
             font-weight: 400;
+
+            transition: 0.3s;
+
+            &:hover {
+              color: $color-green;
+            }
           }
         }
       }
@@ -182,6 +188,12 @@
             line-height: 16px;
             color: #000;
             font-weight: 400;
+
+            transition: 0.3s;
+
+            &:hover {
+              color: $color-green;
+            }
           }
         }
       }

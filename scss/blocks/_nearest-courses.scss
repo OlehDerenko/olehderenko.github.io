@@ -91,6 +91,12 @@
               color: #000;
               font-weight: 400;
               max-width: 350px;
+              cursor: pointer;
+              transition: 0.3s;
+
+              &:hover {
+                color: $color-green;
+              }
 
               @media screen and (max-width: $media-1100) {
                 font-size: 16px;
