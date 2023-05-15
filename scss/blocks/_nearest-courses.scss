@@ -116,6 +116,16 @@
           }
 
           .right {
+            a {
+              img {
+                transition: 0.3s;
+
+                &:hover {
+                  transform: scale(1.2);
+                }
+              }
+            }
+
             @media screen and (max-width: $media-1100) {
               display: none;
             }
