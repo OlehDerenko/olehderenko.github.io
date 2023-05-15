@@ -11,6 +11,12 @@
       margin: 0;
       padding-bottom: 30px;
     }
+
+    .text-top-left {
+      @media screen and (max-width: $media-1100) {
+        display: none;
+      }
+    }
   }
 
   .title-black {

@@ -63,6 +63,13 @@
           font-weight: 700;
           text-transform: uppercase;
           margin-right: 30px;
+          transition: 0.3s;
+          padding-bottom: 10px;
+
+          &:hover {
+            color: $color-green;
+            border-bottom: 1px solid $color-green;
+          }
         }
 
         &_item:last-of-type {
