@@ -29,17 +29,9 @@
       border: none;
     }
 
-    &:hover {
-      img {
-        transition: 0.3s;
-        &:hover {
-          transform: scale(1.1);
-        }
-      }
-    }
-
     img {
       width: 100%;
+      transition: 0.3s;
     }
 
     .advertising {
@@ -143,7 +135,7 @@
 
         span {
           color: #adadad;
-          font-size: 12px;
+          font-size: 14px;
           line-height: 14px;
           font-weight: 400;
         }
@@ -200,6 +192,22 @@
         }
       }
     }
+
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+
+      .text {
+        .text-top {
+          .text-top-right {
+            .text-top-title {
+              color: $color-green;
+            }
+          }
+        }
+      }
+    }
   }
 
   &__wrapper-top {
@@ -243,6 +251,7 @@
       position: relative;
       transition: 0.3s;
       cursor: pointer;
+      transition: 0.3s;
 
       &:hover {
         transform: scale(1.1);
@@ -314,7 +323,7 @@
           justify-content: space-between;
 
           span {
-            font-size: 12px;
+            font-size: 14px;
             line-height: 14px;
             color: #adadad;
             font-weight: 400;
@@ -345,6 +354,16 @@
           transition: 0.3s;
           &:hover {
             transform: scale(1.1);
+          }
+        }
+
+        .text {
+          .text-bottom {
+            .text-top-right {
+              .text-top-title {
+                color: $color-green;
+              }
+            }
           }
         }
       }
@@ -440,7 +459,7 @@
 
         span {
           color: #adadad;
-          font-size: 12px;
+          font-size: 14px;
           line-height: 14px;
           font-weight: 400;
         }

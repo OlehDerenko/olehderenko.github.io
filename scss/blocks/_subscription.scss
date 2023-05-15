@@ -46,6 +46,10 @@
           padding: 26px 13px 26px 15px;
           outline: none;
           width: 100%;
+          color: #000000;
+          font-size: 18px;
+          line-height: 22px;
+          font-weight: 400;
 
           @media screen and (max-width: $media-1100) {
             padding: 21px 13px 21px 15px;
@@ -54,8 +58,8 @@
 
         input::placeholder {
           color: #000000;
-          font-size: 14px;
-          line-height: 17px;
+          font-size: 18px;
+          line-height: 22px;
           font-weight: 400;
         }
 

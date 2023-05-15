@@ -120,7 +120,7 @@
 
         span {
           color: #adadad;
-          font-size: 12px;
+          font-size: 14px;
           line-height: 14px;
           font-weight: 400;
         }
@@ -239,7 +239,7 @@
 
         span {
           color: #adadad;
-          font-size: 12px;
+          font-size: 14px;
           line-height: 14px;
           font-weight: 400;
         }
@@ -474,7 +474,7 @@
 
         span {
           color: #adadad;
-          font-size: 12px;
+          font-size: 14px;
           line-height: 14px;
           font-weight: 400;
         }
@@ -552,8 +552,12 @@
       display: none;
     }
 
+    .block {
+      margin-top: -10px;
+    }
+
     .block-big {
-      margin-top: 46px;
+      margin-top: 37px;
     }
   }
 }

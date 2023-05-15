@@ -35,14 +35,20 @@
 
       &_block {
         max-width: 540px;
+        transition: 0.3s;
 
         @media screen and (max-width: $media-1100) {
           max-width: 100%;
           margin-top: 30px;
         }
 
-        img {
+        .main-img {
+          transition: 0.3s;
           width: 100%;
+
+          &:hover {
+            transform: scale(1.05);
+          }
         }
 
         .text {
@@ -94,15 +100,15 @@
               cursor: pointer;
               transition: 0.3s;
 
-              &:hover {
-                color: $color-green;
-              }
-
               @media screen and (max-width: $media-1100) {
                 font-size: 16px;
                 line-height: 16px;
                 margin-left: 10px;
                 display: none;
+              }
+
+              &:hover {
+                color: $color-green;
               }
             }
 
@@ -116,16 +122,12 @@
           }
 
           .right {
-            a {
-              img {
-                transition: 0.3s;
-
-                &:hover {
-                  transform: scale(1.2);
-                }
+            .img {
+              transition: 0.3s;
+              &:hover {
+                transform: scale(1.2);
               }
             }
-
             @media screen and (max-width: $media-1100) {
               display: none;
             }

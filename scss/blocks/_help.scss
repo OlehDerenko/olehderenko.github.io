@@ -6,10 +6,32 @@
   }
 
   .advertising-blocks {
+    transition: 0.3s;
+
     @media screen and (max-width: $media-1100) {
       border: none;
       margin: 0;
       padding-bottom: 30px;
+    }
+
+    img {
+      transition: 0.3s;
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+
+      .text {
+        .text-top {
+          .text-top-right {
+            .text-top-title {
+              color: $color-green;
+            }
+          }
+        }
+      }
     }
   }
 
@@ -62,6 +84,7 @@
           position: relative;
           margin-top: 30px;
           cursor: pointer;
+          transition: 0.3s;
 
           .advertising {
             background: #f56476;
@@ -74,6 +97,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            z-index: 1;
 
             span {
               font-size: 13px;
@@ -142,17 +166,39 @@
 
               span {
                 color: #adadad;
-                font-size: 12px;
+                font-size: 14px;
                 line-height: 14px;
                 font-weight: 400;
               }
             }
           }
+
+          img {
+            transition: 0.3s;
+          }
+
+          &:hover {
+            img {
+              transform: scale(1.05);
+            }
+
+            .text {
+              .text-bottom {
+                .text-top-right {
+                  .text-top-title {
+                    color: $color-green;
+                  }
+                }
+              }
+            }
+          }
         }
+
         .right-block {
           margin: -50px 0 0 30px;
           max-width: 255px;
           padding-bottom: 30px;
+          transition: 0.3s;
 
           .text-bottom {
             margin-top: 20px;
@@ -169,6 +215,7 @@
                 line-height: 16px;
                 color: #000;
                 font-weight: 400;
+                transition: 0.3s;
               }
             }
           }
@@ -196,9 +243,19 @@
 
             span {
               color: #adadad;
-              font-size: 12px;
+              font-size: 14px;
               line-height: 14px;
               font-weight: 400;
+            }
+          }
+
+          &:hover {
+            .text-bottom {
+              .text-top-right {
+                .text-top-title {
+                  color: $color-green;
+                }
+              }
             }
           }
         }

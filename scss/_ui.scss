@@ -193,15 +193,7 @@
   border-bottom: 1px solid #d1d1d1;
   padding-bottom: 40px;
   position: relative;
-
-  &:hover {
-    img {
-      transition: 0.3s;
-      &:hover {
-        transform: scale(1.1);
-      }
-    }
-  }
+  display: block;
 
   @media screen and (max-width: $media-1100) {
     margin-bottom: 30px;
@@ -240,15 +232,6 @@
     top: 0;
     right: 0;
     max-height: 24px;
-  }
-
-  a {
-    img {
-      transition: 0.3s;
-      &:hover {
-        transform: scale(1.1);
-      }
-    }
   }
 
   .text {
@@ -317,9 +300,25 @@
 
       span {
         color: #adadad;
-        font-size: 12px;
+        font-size: 14px;
         line-height: 14px;
         font-weight: 400;
+      }
+    }
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+
+    .text {
+      .text-top {
+        .text-top-right {
+          .text-top-title {
+            color: $color-green;
+          }
+        }
       }
     }
   }
@@ -330,6 +329,7 @@
   border-top: 1px solid #d1d1d1;
   padding: 15px 0 30px;
   position: relative;
+  display: block;
 
   @media screen and (max-width: $media-1100) {
     max-width: 100%;
@@ -366,18 +366,14 @@
 
   &__text {
     margin-top: 20px;
+    display: block;
 
     &_title {
       font-size: 16px;
       line-height: 16px;
       font-weight: 400;
       color: #000;
-
       transition: 0.3s;
-
-      &:hover {
-        color: $color-green;
-      }
     }
   }
 
@@ -392,6 +388,18 @@
       font-size: 13px;
       line-height: 15px;
       font-weight: 400;
+    }
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+
+    .advertising-blocks-mobile__text {
+      .advertising-blocks-mobile__text_title {
+        color: $color-green;
+      }
     }
   }
 }
@@ -456,6 +464,7 @@
 .advertising-blocks-three {
   background: #f0f0f0;
   margin-bottom: 30px;
+  display: block;
 
   .top-flex {
     display: flex;

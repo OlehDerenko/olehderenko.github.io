@@ -53,6 +53,7 @@
     &_item {
       max-width: 255px;
       position: relative;
+      transition: 0.3s;
 
       .translator {
         background: #fff;
@@ -91,6 +92,7 @@
 
       .item-text {
         margin-top: 20px;
+        display: block;
 
         .text-top-title {
           display: block;
@@ -128,9 +130,25 @@
 
           span {
             color: #adadad;
-            font-size: 12px;
+            font-size: 14px;
             line-height: 14px;
             font-weight: 400;
+          }
+        }
+      }
+
+      img {
+        transition: 0.3s;
+      }
+
+      &:hover {
+        img {
+          transform: scale(1.1);
+        }
+
+        .item-text {
+          .text-top-title {
+            color: $color-green;
           }
         }
       }
@@ -175,6 +193,13 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        span {
+          color: #adadad;
+          font-size: 13px;
+          line-height: 15px;
+          font-weight: 400;
+        }
       }
     }
 
