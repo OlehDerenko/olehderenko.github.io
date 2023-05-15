@@ -28,6 +28,10 @@
     padding-bottom: 40px;
     position: relative;
 
+    img {
+      transition: 0.3s;
+    }
+
     .advertising {
       background: #f56476;
       padding: 8px 12px;
@@ -58,17 +62,10 @@
       max-height: 24px;
     }
 
-    a {
-      img {
-        transition: 0.3s;
-        &:hover {
-          transform: scale(1.1);
-        }
-      }
-    }
-
     .text {
       margin-top: 20px;
+      display: block;
+
       .text-top {
         display: flex;
         align-items: flex-start;
@@ -85,10 +82,6 @@
             font-weight: 400;
 
             transition: 0.3s;
-
-            &:hover {
-              color: $color-green;
-            }
           }
         }
       }
@@ -133,6 +126,22 @@
         }
       }
     }
+
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+
+      .text {
+        .text-top {
+          .text-top-right {
+            .text-top-title {
+              color: $color-green;
+            }
+          }
+        }
+      }
+    }
   }
 
   .advertising-blocks {
@@ -144,6 +153,7 @@
     border-bottom: 1px solid #d1d1d1;
     padding-bottom: 20px;
     display: flex;
+    cursor: pointer;
 
     .left {
       position: relative;
@@ -179,19 +189,11 @@
       }
     }
 
-    a {
-      img {
-        transition: 0.3s;
-        &:hover {
-          transform: scale(1.1);
-        }
-      }
-    }
-
     .text {
       margin-left: 30px;
       max-width: 255px;
       padding-bottom: 30px;
+      display: block;
 
       .text-bottom {
         margin-top: 20px;
@@ -210,10 +212,6 @@
             font-weight: 400;
 
             transition: 0.3s;
-
-            &:hover {
-              color: $color-green;
-            }
           }
         }
       }
@@ -244,6 +242,26 @@
           font-size: 12px;
           line-height: 14px;
           font-weight: 400;
+        }
+      }
+    }
+
+    img {
+      transition: 0.3s;
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+
+      .text {
+        .text-bottom {
+          .text-top-right {
+            .text-top-title {
+              color: $color-green;
+            }
+          }
         }
       }
     }
@@ -487,6 +505,7 @@
 
   .block-two {
     padding-bottom: 72px;
+    cursor: pointer;
 
     .block-top {
       background: #f0f0f0;

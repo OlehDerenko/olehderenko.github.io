@@ -170,6 +170,10 @@
   outline: none;
   width: 350px;
   box-sizing: border-box;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #000000;
 
   &::placeholder {
     font-size: 18px;
@@ -189,6 +193,15 @@
   border-bottom: 1px solid #d1d1d1;
   padding-bottom: 40px;
   position: relative;
+
+  &:hover {
+    img {
+      transition: 0.3s;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
 
   @media screen and (max-width: $media-1100) {
     margin-bottom: 30px;
@@ -240,6 +253,8 @@
 
   .text {
     margin-top: 20px;
+    display: block;
+
     .text-top {
       display: flex;
       align-items: flex-start;
