@@ -131,10 +131,11 @@ table {
   border-spacing: 0;
 }
 
-@media screen and (max-width: 768px) {
-  body.active {
-    overflow-y: hidden;
-  }
+body.active {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .container {
