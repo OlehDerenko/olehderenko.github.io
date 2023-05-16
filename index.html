@@ -15,15 +15,134 @@
     <link rel="icon" type="image/x-icon" href="./img/favicon.png" />
   </head>
   <body>
+    <div class="burger-menu">
+      <div class="header">
+        <div class="header-container">
+          <div class="header-content">
+            <div class="header-content__left">
+              <span class="text">Грибна інформаційна Агенція</span>
+            </div>
+            <div class="header-content__right">
+              <span class="text">Написати нам</span>
+              <div class="header-content__right_links">
+                <a href="#"> <img src="./img/facebook.svg" alt="" /></a>
+                <a href="#"> <img src="./img/telegram.svg" alt="" /></a>
+                <a href="#"> <img src="./img/whatsapp.svg" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navigation">
+        <div class="navigation-container">
+          <div class="navigation-content">
+            <div class="navigation-content__logo">
+              <a href="#">UMDIS</a>
+            </div>
+
+            <nav class="navigation-content__nav">
+              <a class="navigation-content__nav_item" href="#">блог</a>
+              <a class="navigation-content__nav_item" href="#">Консультації</a>
+              <a class="navigation-content__nav_item" href="#">Виставка</a>
+              <a class="navigation-content__nav_item" href="#">про нас</a>
+              <a class="navigation-content__nav_item" href="#">реклама</a>
+              <a class="navigation-content__nav_item" href="#">Курси</a>
+              <a class="navigation-content__nav_item" href="#">Книга</a>
+            </nav>
+
+            <div class="navigation-content__search">
+              <input type="text" placeholder="Пошук по сайту" />
+              <button class="button-input">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="11" cy="11" r="6" stroke="black" />
+                  <path
+                    d="M20 20L17 17"
+                    stroke="black"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </button>
+            </div>
+
+            <div class="language">
+              <span class="language__item language__item_active"
+                ><svg
+                  class="flag"
+                  width="12"
+                  height="10"
+                  viewBox="0 0 12 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="12" height="5" fill="#2D4BEA" />
+                  <rect y="5" width="12" height="5" fill="#F3DF24" />
+                </svg>
+
+                UA
+                <svg
+                  class="arrow"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.8079 14.7695L8.09346 10.3121C7.65924 9.79109 8.02976 9 8.70803 9L15.292 9C15.9702 9 16.3408 9.79108 15.9065 10.3121L12.1921 14.7695C12.0921 14.8895 11.9079 14.8895 11.8079 14.7695Z"
+                    fill="black"
+                  />
+                </svg>
+              </span>
+              <ul class="language__items">
+                <li class="language__item">
+                  <a href="#">
+                    <svg
+                      class="flag"
+                      width="12"
+                      height="10"
+                      viewBox="0 0 12 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <rect width="12" height="5" fill="#2D4BEA" />
+                      <rect y="5" width="12" height="5" fill="#F3DF24" />
+                    </svg>
+                    <span> RU</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a class="nav__item" href="#">блог</a>
+        <a class="nav__item" href="#">Консультації</a>
+        <a class="nav__item" href="#">Виставка</a>
+        <a class="nav__item" href="#">про нас</a>
+        <a class="nav__item" href="#">реклама</a>
+        <a class="nav__item" href="#">Курси</a>
+        <a class="nav__item" href="#">Книга</a>
+      </nav>
+    </div>
+
+    <div class="burger">
+      <span class="burger__line burger__line_top"></span>
+      <span class="burger__line burger__line_middle"></span>
+      <span class="burger__line burger__line_bottom"></span>
+      <p><i class="arrow down"></i></p>
+    </div>
+
     <header class="header">
       <div class="header-container">
         <div class="header-content">
-          <div class="burger">
-            <span class="burger__line burger__line_top"></span>
-            <span class="burger__line burger__line_middle"></span>
-            <span class="burger__line burger__line_bottom"></span>
-          </div>
-
           <div class="header-content__left">
             <span class="text">Грибна інформаційна Агенція</span>
           </div>
@@ -122,6 +241,7 @@
         </div>
       </div>
     </div>
+
     <div class="container">
       <div class="partners">
         <div class="swiper partners-swiper">
@@ -3909,6 +4029,8 @@
     </button>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/blocks/burger.js"></script>
+    <script src="./js/blocks/to-top.js"></script>
     <script src="./js/blocks/select.js"></script>
     <script src="./js/blocks/partners-carousel.js"></script>
     <script src="./js/blocks/courses-carousel.js"></script>
