@@ -266,8 +266,10 @@ body.active {
 
           transition: 0.3s;
 
-          &:hover {
-            color: $color-green;
+          @media screen and (min-width: $media-1100) {
+            &:hover {
+              color: $color-green;
+            }
           }
 
           @media screen and (max-width: $media-1100) {
@@ -318,16 +320,18 @@ body.active {
     }
   }
 
-  &:hover {
-    img {
-      transform: scale(1.1);
-    }
+  @media screen and (min-width: $media-1100) {
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
 
-    .text {
-      .text-top {
-        .text-top-right {
-          .text-top-title {
-            color: $color-green;
+      .text {
+        .text-top {
+          .text-top-right {
+            .text-top-title {
+              color: $color-green;
+            }
           }
         }
       }
@@ -402,14 +406,16 @@ body.active {
     }
   }
 
-  &:hover {
-    img {
-      transform: scale(1.1);
-    }
+  @media screen and (min-width: $media-1100) {
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
 
-    .advertising-blocks-mobile__text {
-      .advertising-blocks-mobile__text_title {
-        color: $color-green;
+      .advertising-blocks-mobile__text {
+        .advertising-blocks-mobile__text_title {
+          color: $color-green;
+        }
       }
     }
   }

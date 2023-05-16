@@ -193,16 +193,18 @@
       }
     }
 
-    &:hover {
-      img {
-        transform: scale(1.1);
-      }
+    @media screen and (min-width: $media-1100) {
+      &:hover {
+        img {
+          transform: scale(1.1);
+        }
 
-      .text {
-        .text-top {
-          .text-top-right {
-            .text-top-title {
-              color: $color-green;
+        .text {
+          .text-top {
+            .text-top-right {
+              .text-top-title {
+                color: $color-green;
+              }
             }
           }
         }

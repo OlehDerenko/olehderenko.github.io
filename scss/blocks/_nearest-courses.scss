@@ -46,8 +46,10 @@
           transition: 0.3s;
           width: 100%;
 
-          &:hover {
-            transform: scale(1.05);
+          @media screen and (min-width: $media-1100) {
+            &:hover {
+              transform: scale(1.05);
+            }
           }
         }
 
@@ -107,8 +109,10 @@
                 display: none;
               }
 
-              &:hover {
-                color: $color-green;
+              @media screen and (min-width: $media-1100) {
+                &:hover {
+                  color: $color-green;
+                }
               }
             }
 
