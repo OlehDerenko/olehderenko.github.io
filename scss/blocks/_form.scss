@@ -1,0 +1,122 @@
+.form-wrapper {
+  background: $color-green;
+  margin-top: 45px;
+  padding: 60px 0;
+
+  @media screen and (max-width: $media-1100) {
+    margin: 0;
+    padding: 60px 0 30px;
+  }
+
+  &__title {
+    .title-white {
+      max-width: 350px;
+
+      @media screen and (max-width: $media-1100) {
+        max-width: 210px;
+      }
+    }
+  }
+
+  &__form {
+    margin-top: 60px;
+
+    @media screen and (max-width: $media-1100) {
+      margin-top: 30px;
+    }
+
+    .input {
+      @media screen and (max-width: $media-1100) {
+        margin-top: 15px;
+      }
+    }
+
+    &_top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media screen and (max-width: $media-1100) {
+        flex-direction: column;
+      }
+    }
+
+    &_middle {
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media screen and (max-width: $media-1100) {
+        flex-direction: column;
+        margin-top: 0;
+      }
+
+      .company {
+        width: 730px;
+
+        @media screen and (max-width: $media-1100) {
+          width: 100%;
+        }
+      }
+
+      .input-mobile {
+        display: none;
+
+        @media screen and (max-width: $media-1100) {
+          display: block;
+        }
+      }
+    }
+
+    &_bottom {
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+
+      @media screen and (max-width: $media-1100) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .button {
+        border: 1px solid #ffffff;
+        transition: 0.5s;
+
+        &::after {
+          border: 1px solid #ffffff;
+        }
+
+        &:hover {
+          background: #fff;
+          color: #000;
+          transition: 0.4s;
+          border: none;
+        }
+      }
+
+      .links {
+        @media screen and (max-width: $media-1100) {
+          margin: 30px 0 0;
+        }
+
+        a {
+          margin-left: 30px;
+
+          @media screen and (max-width: $media-1100) {
+            margin: 0 30px 0 0;
+          }
+
+          img {
+            width: 36px;
+            transition: 0.3s;
+          }
+
+          img:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+  }
+}
