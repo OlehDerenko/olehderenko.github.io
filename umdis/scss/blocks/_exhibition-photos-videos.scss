@@ -1,0 +1,57 @@
+.exhibition-photos-videos {
+  margin-top: 120px;
+
+  .content {
+    .title-black {
+      max-width: 415px;
+    }
+
+    &__videos {
+      margin-top: 60px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+
+      &_item {
+        position: relative;
+        width: 540px;
+
+        .play {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          transition: 0.3s;
+
+          &:hover {
+            transform: translate(-50%, -50%) scale(1.1);
+          }
+        }
+
+        .text {
+          position: absolute;
+          left: 40px;
+          bottom: 40px;
+          font-size: 18px;
+          line-height: 18px;
+          font-weight: 400;
+          color: #fff;
+          max-width: 404px;
+        }
+      }
+    }
+
+    &__photos {
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 30px;
+
+      &_item {
+        img {
+          width: 350px;
+        }
+      }
+    }
+  }
+}

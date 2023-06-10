@@ -1,0 +1,53 @@
+.exhibition-page-reviews {
+  background: #f6f6f6;
+  margin-top: 60px;
+  padding: 60px 0;
+
+  .title-black {
+    max-width: 110px;
+  }
+
+  &__items {
+    margin-top: 60px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    &_item {
+      width: 255px;
+
+      .name {
+        color: #000000;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 400;
+      }
+
+      .info {
+        display: block;
+        font-size: 16px;
+        color: #ababab;
+        line-height: 20px;
+        margin-top: 20px;
+      }
+
+      .link {
+        position: relative;
+        display: block;
+        margin-top: 30px;
+
+        .play {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          transition: 0.3s;
+
+          &:hover {
+            transform: translate(-50%, -50%) scale(1.1);
+          }
+        }
+      }
+    }
+  }
+}

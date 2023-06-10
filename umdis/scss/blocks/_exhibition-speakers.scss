@@ -1,0 +1,60 @@
+.exhibition-speakers {
+  margin-top: 60px;
+  padding: 60px 0;
+  background: #f6f6f6;
+
+  .content {
+    .title-black {
+      max-width: 250px;
+    }
+
+    &__items {
+      margin-top: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &_item {
+        width: 350px;
+
+        span {
+          display: block;
+        }
+
+        .name {
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 24px;
+          color: #000000;
+          margin-top: 30px;
+        }
+
+        .info {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 18px;
+          color: #646464;
+          margin-top: 5px;
+          border-bottom: 1px solid #d1d1d1;
+          padding-bottom: 30px;
+        }
+
+        .topic {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 18px;
+          color: #646464;
+          margin-top: 30px;
+        }
+
+        .topic-info {
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 24px;
+          color: #000000;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

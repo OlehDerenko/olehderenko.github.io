@@ -1,0 +1,25 @@
+.whatsapp-block {
+  background: $color-green;
+  padding: 60px 0;
+
+  .content {
+    text-align: center;
+
+    .title-white {
+      max-width: 1039px;
+    }
+
+    .contact-whatsapp {
+      background: #ffffff;
+      border-radius: 5px;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 700;
+      color: $color-green;
+      margin-top: 40px;
+      padding: 20px 46px;
+      display: inline-block;
+      text-transform: uppercase;
+    }
+  }
+}

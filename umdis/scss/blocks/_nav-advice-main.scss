@@ -1,0 +1,115 @@
+.nav-advice-main {
+  margin-top: 25px;
+
+  .title-black {
+    max-width: 260px;
+  }
+
+  .main-block {
+    margin-top: 95px;
+    background: #f6f6f6;
+    padding: 60px 70px 67px 95px;
+    display: flex;
+    justify-content: space-between;
+
+    &__left {
+      max-width: 541px;
+
+      span {
+        color: #adadad;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+      }
+
+      .name {
+        font-size: 40px;
+        line-height: 40px;
+        font-weight: 700;
+        color: #000;
+        border-bottom: 1px solid #8ba529;
+        padding-bottom: 20px;
+        max-width: 250px;
+        margin-top: 30px;
+      }
+
+      .paragraph {
+        color: #000;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+        margin-top: 20px;
+      }
+
+      .list-name {
+        margin-top: 40px;
+        display: block;
+        color: #000;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+      }
+
+      .items {
+        margin-top: 30px;
+        .item {
+          margin-left: 20px;
+          color: #000;
+          font-size: 16px;
+          line-height: 20px;
+          font-weight: 400;
+          position: relative;
+          display: flex;
+          align-items: center;
+
+          &::after {
+            content: "";
+            width: 5px;
+            height: 5px;
+            background: #000;
+            border-radius: 50%;
+            display: block;
+            position: absolute;
+            left: -12px;
+          }
+        }
+      }
+
+      .bottom-img {
+        margin-top: 70px;
+        display: flex;
+        align-items: center;
+
+        img {
+          margin-right: 30px;
+        }
+      }
+    }
+
+    &__right {
+      max-width: 357px;
+
+      .img {
+        display: block;
+        margin-top: -126px;
+      }
+
+      .paragraph {
+        color: #000;
+        font-size: 18px;
+        line-height: 21px;
+        font-weight: 400;
+        margin-top: 35px;
+      }
+
+      .author {
+        color: #adadad;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+        display: block;
+        margin-top: 30px;
+      }
+    }
+  }
+}
