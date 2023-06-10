@@ -1630,7 +1630,7 @@ body.active {
 @media screen and (max-width: 1100px) {
   .courses .courses-swiper-slide {
     padding: 45px 20px 45px;
-    background-image: url(../../img/courses-img/mobile.png);
+    background-image: url(./../img/courses-img/mobile.png);
     object-fit: cover;
   }
 }
@@ -1921,7 +1921,7 @@ body.active {
   margin-left: 30px;
 }
 .blog-entries__wrapper-middle .blog-block-img {
-  background-image: url(../../img/blog-enrties/blog-entries-xl.png);
+  background-image: url(./../img/blog-enrties/blog-entries-xl.png);
   background-size: 100% 100%;
   margin-left: 30px;
   width: 540px;
