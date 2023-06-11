@@ -1,0 +1,144 @@
+.awards {
+  margin-top: 125px;
+  text-align: center;
+  position: relative;
+
+  @media screen and (max-width: $media-phone) {
+    margin-top: 55px;
+  }
+
+  .linear-gradient-one {
+    background: linear-gradient(
+      274.4deg,
+      rgba(59, 130, 246, 0.1) 2.39%,
+      rgba(59, 130, 246, 0) 100.85%
+    );
+    border-radius: 40px;
+    transform: rotate(-22.42deg);
+    position: absolute;
+    display: block;
+    width: 610px;
+    height: 580px;
+    bottom: -300px;
+    left: -310px;
+    z-index: -1;
+
+    @media screen and (max-width: $media-phone) {
+      transform: rotate(-21.13deg);
+      bottom: 25%;
+      left: -500px;
+    }
+  }
+
+  &__content {
+    .title {
+      line-height: 50px;
+
+      @media screen and (max-width: $media-phone) {
+        line-height: 30px;
+      }
+    }
+
+    .item {
+      border-radius: 20px;
+      padding: 0 23px 16px;
+      max-width: 342px;
+      text-align: center;
+      transition: 0.3s;
+
+      @media screen and (max-width: $media-phone) {
+        margin-top: 25px;
+      }
+
+      &:hover {
+        background: #ffffff;
+        box-shadow: 0px 8px 24px rgba(129, 135, 189, 0.25);
+      }
+
+      .item-top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img:last-of-type {
+          margin-left: -90px;
+        }
+      }
+
+      h6 {
+        font-size: 20px;
+        line-height: 36px;
+        font-weight: 700;
+        color: #000000;
+
+        @media screen and (max-width: $media-phone) {
+          font-size: 16px;
+        }
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 400;
+        color: #000000;
+
+        @media screen and (max-width: $media-phone) {
+          font-size: 14px;
+          line-height: 26px;
+        }
+
+        b {
+          font-weight: 500;
+        }
+      }
+    }
+
+    &_main-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-evenly;
+      margin-top: 30px;
+
+      @media screen and (max-width: $media-phone) {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+      }
+    }
+
+    &_main-bottom {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-top: 50px;
+      flex-wrap: wrap;
+
+      @media screen and (max-width: $media-phone) {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+      }
+
+      .item {
+        &__flex {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 15px;
+
+          img {
+            margin-right: 33px;
+          }
+
+          img:last-of-type {
+            margin: 0;
+          }
+        }
+
+        p {
+          max-width: 296px;
+        }
+      }
+    }
+  }
+}

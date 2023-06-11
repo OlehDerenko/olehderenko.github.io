@@ -1,0 +1,120 @@
+.safety {
+  background: rgba(239, 243, 250, 0.6);
+  margin-top: 100px;
+
+  @media screen and (max-width: $media-phone) {
+    margin-top: 55px;
+  }
+
+  &__content {
+    padding: 60px 0;
+
+    @media screen and (max-width: $media-phone) {
+      padding: 40px 0;
+    }
+
+    .title {
+      text-align: center;
+      line-height: 55px;
+
+      @media screen and (max-width: $media-phone) {
+        line-height: 30px;
+      }
+    }
+
+    &_wrapper {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      @media screen and (max-width: $media-phone) {
+        flex-direction: column;
+      }
+
+      .main {
+        margin-top: 30px;
+        width: 468px;
+
+        @media screen and (max-width: $media-phone) {
+          width: 100%;
+          margin-top: 25px;
+        }
+
+        .item {
+          .time {
+            background: #009af8;
+            border-radius: 10px;
+            line-height: 26px;
+            font-size: 14px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+          }
+
+          .item-wrapper {
+            margin-top: 65px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+
+            .item-block {
+              text-align: center;
+
+              img {
+                width: 60px;
+                height: 60px;
+              }
+
+              h6 {
+                max-width: 210px;
+                margin: 14px auto 10px;
+                font-size: 14px;
+                color: #000000;
+                line-height: 26px;
+                font-weight: 500;
+              }
+
+              p {
+                font-size: 14px;
+                color: $color-blue;
+                line-height: 26px;
+                font-weight: 700;
+                padding-top: 5px;
+                border-top: 1px solid $color-blue;
+                max-width: 154px;
+                margin: 0 auto;
+              }
+            }
+
+            .block-two {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              height: 194px;
+              flex-direction: column;
+
+              h6 {
+                margin-top: -10px;
+              }
+            }
+          }
+        }
+      }
+
+      .middle {
+        width: 272px;
+
+        @media screen and (max-width: $media-phone) {
+          width: 100%;
+        }
+
+        .item-wrapper {
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

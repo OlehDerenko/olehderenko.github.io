@@ -1,0 +1,212 @@
+.about-us {
+  margin-top: 125px;
+  position: relative;
+
+  @media screen and (max-width: $media-phone) {
+    margin-top: 55px;
+  }
+
+  .linear-gradient-one {
+    background: linear-gradient(
+      183.89deg,
+      rgba(59, 130, 246, 0.06) 8.63%,
+      rgba(59, 130, 246, 0) 95.32%
+    );
+    border-radius: 40px;
+    transform: rotate(-36.85deg);
+    position: absolute;
+    display: block;
+    width: 500px;
+    height: 500px;
+    top: -150px;
+    right: -250px;
+    z-index: -1;
+
+    @media screen and (max-width: $media-phone) {
+      top: -205px;
+      right: -420px;
+    }
+  }
+
+  .linear-gradient-two {
+    background: linear-gradient(
+      274.11deg,
+      rgba(59, 130, 246, 0.1) 1.91%,
+      rgba(59, 130, 246, 0) 100.85%
+    );
+    border-radius: 40px;
+    transform: rotate(-134.44deg);
+    position: absolute;
+    display: block;
+    width: 500px;
+    height: 500px;
+    top: -7px;
+    right: -250px;
+    z-index: -1;
+
+    @media screen and (max-width: $media-phone) {
+      top: -65px;
+      right: -430px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: flex-start;
+
+    @media screen and (max-width: $media-phone) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &_text {
+      .title {
+        line-height: 44px;
+      }
+
+      .paragraph {
+        font-size: 16px;
+        color: #383838;
+        line-height: 40px;
+        max-width: 607px;
+        margin-top: 30px;
+
+        @media screen and (max-width: $media-phone) {
+          font-size: 14px;
+          line-height: 26px;
+          max-width: 370px;
+          margin-top: 8px;
+        }
+
+        br {
+          @media screen and (max-width: $media-phone) {
+            display: none;
+          }
+        }
+      }
+
+      .advantages-wrapper {
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media screen and (max-width: $media-phone) {
+          margin-top: 30px;
+        }
+
+        @media screen and (max-width: 412px) {
+          align-items: flex-start;
+        }
+
+        .item {
+          color: #444fb4;
+          border-right: 1px solid #444fb4;
+          padding-right: 50px;
+
+          @media screen and (max-width: $media-phone) {
+            padding-right: 14px;
+          }
+
+          @media screen and (max-width: 412px) {
+            padding: 0 15px;
+          }
+
+          .numeric {
+            font-size: 36px;
+            line-height: 40px;
+            font-weight: 700px;
+            margin-top: 9px;
+
+            @media screen and (max-width: $media-phone) {
+              font-size: 22px;
+              margin-top: 0;
+            }
+          }
+
+          .text {
+            font-size: 16px;
+            line-height: 40px;
+            font-weight: 500;
+
+            @media screen and (max-width: $media-phone) {
+              font-size: 14px;
+              line-height: 16px;
+            }
+          }
+        }
+
+        .item:last-of-type {
+          border: none;
+          padding: 0;
+
+          @media screen and (max-width: 412px) {
+            padding: 0 15px;
+          }
+        }
+      }
+    }
+
+    &_img {
+      margin-left: 109px;
+      display: flex;
+
+      @media screen and (max-width: $media-phone) {
+        margin: 30px 0 0;
+      }
+
+      .big-img {
+        width: 245px;
+
+        @media screen and (max-width: $media-phone) {
+          width: 176px;
+        }
+
+        @media screen and (max-width: 412px) {
+          width: 150px;
+        }
+      }
+
+      .small-img {
+        width: 205px;
+
+        @media screen and (max-width: $media-phone) {
+          width: 147px;
+        }
+
+        @media screen and (max-width: 412px) {
+          width: 130px;
+        }
+      }
+
+      .top {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+
+        img {
+          margin-bottom: 25px;
+
+          @media screen and (max-width: $media-phone) {
+            margin-bottom: 17px;
+          }
+        }
+      }
+
+      .bottom {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin: 50px 0 0 25px;
+
+        @media screen and (max-width: $media-phone) {
+          margin: 30px 0 0 17px;
+        }
+
+        img {
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+}

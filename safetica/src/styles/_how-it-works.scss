@@ -1,0 +1,295 @@
+.how-it-works {
+  margin-top: 125px;
+  position: relative;
+
+  @media screen and (max-width: $media-phone) {
+    margin-top: 65px;
+  }
+
+  .linear-gradient-one {
+    background: linear-gradient(
+      274.11deg,
+      rgba(59, 130, 246, 0.08) 2.4%,
+      rgba(59, 130, 246, 0) 101.34%
+    );
+    border-radius: 257px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    position: absolute;
+    display: block;
+    width: 358px;
+    height: 358px;
+    top: -200px;
+    right: -120px;
+    z-index: -1;
+
+    @media screen and (max-width: $media-phone) {
+      top: 95px;
+      right: -250px;
+    }
+  }
+
+  .linear-gradient-two {
+    background: linear-gradient(
+      274.11deg,
+      rgba(59, 130, 246, 0.1) 2.4%,
+      rgba(59, 130, 246, 0) 101.34%
+    );
+    border-radius: 257px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    position: absolute;
+    display: block;
+    width: 480px;
+    height: 480px;
+    top: -100px;
+    right: -90px;
+    z-index: -2;
+
+    @media screen and (max-width: $media-phone) {
+      top: 90px;
+      right: -140px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: $media-phone) {
+      flex-direction: column;
+    }
+
+    &_text {
+      .title {
+        line-height: 50px;
+        max-width: 541px;
+
+        @media screen and (max-width: $media-phone) {
+          line-height: 30px;
+        }
+      }
+
+      .paragraph {
+        max-width: 548px;
+        line-height: 40px;
+        font-size: 16px;
+        color: $color-gray;
+        font-weight: 400;
+        margin-top: 30px;
+
+        @media screen and (max-width: $media-phone) {
+          font-size: 14px;
+          line-height: 26px;
+          max-width: 374px;
+          margin-top: 13px;
+        }
+      }
+    }
+
+    &_instruction {
+      @media screen and (max-width: $media-phone) {
+        margin-top: 35px;
+      }
+
+      .item {
+        text-align: center;
+        background: #ffffff;
+        box-shadow: 0px 8px 24px rgba(129, 135, 189, 0.25);
+        border-radius: 20px;
+        width: 303px;
+        height: 193px;
+        padding: 10px 0 25px;
+
+        @media screen and (max-width: $media-phone) {
+          width: 175px;
+          height: 137px;
+        }
+
+        @media screen and (max-width: 412px) {
+          width: 90%;
+        }
+
+        .big-icon {
+          width: 176px;
+
+          @media screen and (max-width: $media-phone) {
+            width: 100px;
+          }
+        }
+
+        h6 {
+          margin: 12px auto 0;
+          font-size: 16px;
+          line-height: 30px;
+          color: #000000;
+          font-weight: 400;
+          max-width: 200px;
+
+          @media screen and (max-width: $media-phone) {
+            font-size: 12px;
+            line-height: 20px;
+            margin: 7px auto 0;
+            max-width: 140px;
+          }
+        }
+
+        .cards {
+          img {
+            width: 46px;
+
+            @media screen and (max-width: $media-phone) {
+              width: 26px;
+            }
+          }
+        }
+      }
+
+      .item:last-of-type {
+        margin-left: 34px;
+
+        @media screen and (max-width: $media-phone) {
+          margin-left: 20px;
+        }
+      }
+
+      .wrapper-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+
+        @media screen and (max-width: $media-phone) {
+          justify-content: center;
+        }
+
+        .arrows {
+          position: absolute;
+          left: 50%;
+          transform: translate(-50%);
+
+          img {
+            width: 45px;
+
+            @media screen and (max-width: $media-phone) {
+              width: 27px;
+            }
+          }
+        }
+      }
+
+      .wrapper-bottom {
+        margin-top: 80px;
+        position: relative;
+
+        @media screen and (max-width: $media-phone) {
+          margin-top: 20px;
+        }
+
+        .navigation-block {
+          position: absolute;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          right: 45px;
+          top: -57px;
+          z-index: 1;
+
+          @media screen and (max-width: $media-phone) {
+            top: -22px;
+            right: 25px;
+          }
+
+          &__item {
+            margin-right: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            @media screen and (max-width: $media-phone) {
+              margin-right: 13px;
+            }
+
+            svg {
+              @media screen and (max-width: $media-phone) {
+                width: 10px;
+                height: 17px;
+              }
+            }
+
+            span {
+              border: 1px solid #444fb4;
+              border-radius: 50%;
+              width: 24px;
+              height: 24px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-top: 14px;
+
+              @media screen and (max-width: $media-phone) {
+                width: 14px;
+                height: 14px;
+                margin-top: 8px;
+              }
+
+              svg {
+                @media screen and (max-width: $media-phone) {
+                  width: 8px;
+                  height: 8px;
+                }
+              }
+            }
+          }
+
+          &__item:last-of-type {
+            margin: 0;
+          }
+        }
+
+        .item-two {
+          background: #ffffff;
+          box-shadow: 0px 8px 24px rgba(129, 135, 189, 0.25);
+          border-radius: 20px;
+          padding: 27px 20px 10px 60px;
+
+          @media screen and (max-width: $media-phone) {
+            padding: 27px 18px 20px 20px;
+          }
+
+          .top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            span {
+              svg {
+                width: 54px;
+                height: 54px;
+
+                @media screen and (max-width: $media-phone) {
+                  width: 31px;
+                  height: 31px;
+                }
+              }
+            }
+          }
+
+          h6 {
+            margin-top: 7px;
+            text-align: center;
+            font-size: 16px;
+            line-height: 30px;
+            color: #000000;
+            font-weight: 400;
+
+            @media screen and (max-width: $media-phone) {
+              font-size: 14px;
+              margin-top: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

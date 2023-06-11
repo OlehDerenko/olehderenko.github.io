@@ -1,0 +1,211 @@
+.products {
+  background: rgba(239, 243, 250, 0.6);
+  padding: 50px 0 30px;
+  margin-top: 125px;
+
+  @media screen and (max-width: $media-phone) {
+    margin-top: 100px;
+  }
+
+  &__content {
+    text-align: center;
+
+    .title {
+      text-align: center;
+      line-height: 50px;
+
+      @media screen and (max-width: $media-phone) {
+        line-height: 30px;
+      }
+    }
+
+    &_main {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 30px;
+
+      @media screen and (max-width: $media-phone) {
+        flex-direction: column;
+      }
+
+      .block {
+        padding: 36px 34px 35px 53px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        transition: 0.5s;
+        width: 373px;
+        height: 424px;
+
+        @media screen and (max-width: $media-phone) {
+          padding: 38px 45px;
+          height: 392px;
+        }
+
+        @media screen and (max-width: 412px) {
+          width: 95%;
+        }
+
+        &:hover {
+          background: $color-blue;
+          box-shadow: 0px 30px 60px rgba(25, 55, 102, 0.25);
+
+          span {
+            background: rgba(255, 255, 255, 0.08);
+
+            svg {
+              path {
+                fill: #fff;
+              }
+            }
+          }
+
+          h6 {
+            color: #fff;
+          }
+
+          p {
+            color: #fff;
+          }
+
+          .btn {
+            color: #fff;
+            border-color: #fff;
+
+            b {
+              color: #fff;
+            }
+          }
+
+          .modal {
+            color: #fff;
+          }
+        }
+
+        span {
+          background: rgba(68, 79, 180, 0.08);
+          border-radius: 6px;
+          padding: 14px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 70px;
+        }
+
+        h6 {
+          font-size: 20px;
+          line-height: 44px;
+          font-weight: 700;
+          color: $color-gray;
+          margin-top: 20px;
+
+          @media screen and (max-width: $media-phone) {
+            font-size: 16px;
+          }
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 30px;
+          font-weight: 400;
+          color: #383838cc;
+          max-width: 373px;
+          margin: 0 auto 40px;
+          text-align: center;
+
+          @media screen and (max-width: $media-phone) {
+            font-size: 14px;
+            margin: 0 auto 20px;
+          }
+        }
+
+        .btn {
+          border: 1px solid $color-gray;
+          border-radius: 10px;
+          font-size: 16px;
+          line-height: 44px;
+          font-weight: 400;
+          color: $color-gray;
+          width: 286px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 10px;
+
+          @media screen and (max-width: $media-phone) {
+            font-size: 14px;
+          }
+
+          b {
+            color: $color-gray;
+            font-weight: 600;
+            margin-left: 3px;
+          }
+        }
+
+        .modal {
+          font-size: 16px;
+          line-height: 30px;
+          font-weight: 400;
+          color: #383838cc;
+          text-decoration-line: underline;
+          margin-top: 10px;
+
+          @media screen and (max-width: $media-phone) {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .additionally {
+      width: 100%;
+      margin-top: 30px;
+      background: #009af8;
+      border-radius: 10px;
+      font-size: 16px;
+      line-height: 26px;
+      color: #fff;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 0;
+
+      b {
+        font-size: 40px;
+        font-weight: 400;
+        margin-right: 5px;
+      }
+    }
+
+    .more {
+      color: #000000;
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 700;
+      margin: 30px 0 12px;
+
+      @media screen and (max-width: $media-phone) {
+        font-size: 14px;
+        line-height: 26px;
+        margin: 23px 0 15px;
+      }
+    }
+
+    .download {
+      background: $color-blue;
+      border-radius: 20px;
+      color: #fff;
+      font-size: 14px;
+      line-height: 44px;
+      font-weight: 700;
+      width: 299px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
