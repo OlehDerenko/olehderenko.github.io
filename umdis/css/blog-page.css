@@ -1838,6 +1838,12 @@ body.active {
     max-width: 100%;
   }
 }
+.blog-page-main__content .paragraph-black a {
+  font-size: 18px;
+  line-height: 21px;
+  color: #000;
+  font-weight: 700;
+}
 
 .whatsapp-block {
   background: #8ba529;

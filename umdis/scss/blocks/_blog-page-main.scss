@@ -103,6 +103,13 @@
       @media screen and (max-width: $media-1100) {
         max-width: 100%;
       }
+
+      a {
+        font-size: 18px;
+        line-height: 21px;
+        color: #000;
+        font-weight: 700;
+      }
     }
   }
 }
