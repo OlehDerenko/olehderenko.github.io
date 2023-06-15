@@ -1,9 +1,25 @@
 .nav-blog-last-entries {
   margin-top: 120px;
 
+  @media screen and (max-width: $media-1100) {
+    margin-top: 60px;
+  }
+
   .content {
     .title-black {
       max-width: 302px;
+
+      @media screen and (max-width: $media-1100) {
+        max-width: 190px;
+      }
+    }
+
+    .advertising-blocks-mobile {
+      display: none;
+
+      @media screen and (max-width: $media-1100) {
+        display: block;
+      }
     }
   }
 }

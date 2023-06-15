@@ -3,6 +3,10 @@
 
   .title-black {
     max-width: 260px;
+
+    @media screen and (max-width: $media-768) {
+      max-width: 160px;
+    }
   }
 
   .main-block {
@@ -12,8 +16,21 @@
     display: flex;
     justify-content: space-between;
 
+    @media screen and (max-width: $media-1100) {
+      flex-direction: column;
+      margin-top: 30px;
+    }
+
+    @media screen and (max-width: $media-768) {
+      padding: 20px;
+    }
+
     &__left {
       max-width: 541px;
+
+      @media screen and (max-width: $media-1100) {
+        max-width: 100%;
+      }
 
       span {
         color: #adadad;
@@ -31,6 +48,11 @@
         padding-bottom: 20px;
         max-width: 250px;
         margin-top: 30px;
+
+        @media screen and (max-width: $media-500) {
+          font-size: 24px;
+          line-height: 24px;
+        }
       }
 
       .paragraph {
@@ -39,6 +61,10 @@
         line-height: 20px;
         font-weight: 400;
         margin-top: 20px;
+
+        @media screen and (max-width: $media-500) {
+          margin-top: 10px;
+        }
       }
 
       .list-name {
@@ -48,10 +74,19 @@
         font-size: 16px;
         line-height: 20px;
         font-weight: 400;
+
+        @media screen and (max-width: $media-500) {
+          margin-top: 20px;
+        }
       }
 
       .items {
         margin-top: 30px;
+
+        @media screen and (max-width: $media-500) {
+          margin-top: 20px;
+        }
+
         .item {
           margin-left: 20px;
           color: #000;
@@ -61,6 +96,10 @@
           position: relative;
           display: flex;
           align-items: center;
+
+          @media screen and (max-width: 400px) {
+            font-size: 14px;
+          }
 
           &::after {
             content: "";
@@ -80,8 +119,18 @@
         display: flex;
         align-items: center;
 
+        @media screen and (max-width: $media-768) {
+          flex-direction: column;
+          margin-top: 40px;
+          align-items: center;
+        }
+
         img {
           margin-right: 30px;
+
+          @media screen and (max-width: $media-768) {
+            margin: 20px 0 0;
+          }
         }
       }
     }
@@ -89,9 +138,24 @@
     &__right {
       max-width: 357px;
 
+      @media screen and (max-width: $media-1100) {
+        max-width: 100%;
+        text-align: center;
+      }
+
       .img {
         display: block;
         margin-top: -126px;
+
+        @media screen and (max-width: $media-1100) {
+          margin-top: 30px;
+        }
+
+        img {
+          @media screen and (max-width: $media-500) {
+            width: 100%;
+          }
+        }
       }
 
       .paragraph {

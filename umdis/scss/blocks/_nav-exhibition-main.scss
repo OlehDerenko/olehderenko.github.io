@@ -4,6 +4,10 @@
   .title-black {
     max-width: 185px;
     margin: 25px 0;
+
+    @media screen and (max-width: $media-768) {
+      max-width: 120px;
+    }
   }
 
   img {

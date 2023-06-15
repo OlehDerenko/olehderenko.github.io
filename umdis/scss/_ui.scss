@@ -970,10 +970,20 @@ body.active {
 .form-two {
   margin-top: 60px;
 
+  @media screen and (max-width: $media-1100) {
+    margin-top: 30px;
+  }
+
   .title-black {
     font-size: 28px;
     line-height: 28px;
     max-width: 1057px;
+
+    @media screen and (max-width: $media-768) {
+      font-size: 24px;
+      line-height: 24px;
+      max-width: 100%;
+    }
   }
 
   &__content {
@@ -982,8 +992,19 @@ body.active {
     margin-top: 60px;
     justify-content: space-between;
 
+    @media screen and (max-width: $media-1100) {
+      margin-top: 30px;
+      flex-direction: column;
+      align-items: center;
+    }
+
     &_form {
       width: 730px;
+
+      @media screen and (max-width: $media-768) {
+        width: 100%;
+      }
+
       .input-wrapper {
         display: flex;
         flex-direction: column;
@@ -991,6 +1012,11 @@ body.active {
         font-size: 16px;
         line-height: 20px;
         font-weight: 400;
+
+        @media screen and (max-width: $media-768) {
+          width: 100%;
+          margin-bottom: 20px;
+        }
 
         .input {
           border: 1px solid #000000;
@@ -1002,6 +1028,11 @@ body.active {
           font-size: 16px;
           line-height: 20px;
           font-weight: 400;
+
+          @media screen and (max-width: $media-768) {
+            width: 100%;
+            padding: 10px;
+          }
         }
 
         textarea {
@@ -1023,6 +1054,11 @@ body.active {
         align-items: center;
         margin-bottom: 30px;
         justify-content: space-between;
+
+        @media screen and (max-width: $media-768) {
+          flex-direction: column;
+          margin-bottom: 0;
+        }
       }
 
       .button {
@@ -1037,6 +1073,11 @@ body.active {
       background: #f6f6f6;
       padding: 48px 68px;
       margin-top: 30px;
+
+      @media screen and (max-width: $media-768) {
+        padding: 20px;
+        width: 100%;
+      }
 
       .item {
         margin-top: 10px;
@@ -1063,6 +1104,11 @@ body.active {
   margin-top: 60px;
   padding: 60px 0;
 
+  @media screen and (max-width: $media-1100) {
+    margin-top: 30px;
+    padding: 30px 0;
+  }
+
   a {
     background: #ffffff;
     border-radius: 5px;
@@ -1086,8 +1132,16 @@ body.active {
   display: block;
   transition: 0.3s;
 
+  @media screen and (max-width: $media-1100) {
+    width: 100%;
+  }
+
   img {
     transition: 0.3s;
+
+    @media screen and (max-width: $media-1100) {
+      width: 100%;
+    }
   }
 
   .advertising {
@@ -1109,6 +1163,11 @@ body.active {
       line-height: 22px;
       font-weight: 700;
       display: block;
+
+      @media screen and (max-width: $media-768) {
+        font-size: 13px;
+        line-height: 15px;
+      }
     }
   }
 
@@ -1118,12 +1177,25 @@ body.active {
     left: 50%;
     transform: translateX(-50%);
 
+    @media screen and (max-width: $media-1100) {
+      position: static;
+      margin-top: 20px;
+      display: block;
+      left: auto;
+      bottom: auto;
+      transform: translateX(0);
+    }
+
     .text-top {
       display: flex;
       align-items: center;
 
       .text-top-right {
         margin-left: 30px;
+
+        @media screen and (max-width: $media-1100) {
+          margin-left: 15px;
+        }
 
         .text-top-title {
           display: block;
@@ -1133,6 +1205,12 @@ body.active {
           font-weight: 400;
           max-width: 495px;
           transition: 0.3s;
+
+          @media screen and (max-width: $media-1100) {
+            color: #000;
+            font-size: 18px;
+            line-height: 20px;
+          }
         }
       }
     }
@@ -1151,6 +1229,12 @@ body.active {
       height: 50px;
       overflow: hidden;
       width: 724px;
+
+      @media screen and (max-width: $media-1100) {
+        color: #000;
+        width: 100%;
+        margin-top: 15px;
+      }
     }
 
     .text-bottom {
@@ -1164,6 +1248,11 @@ body.active {
         font-size: 16px;
         line-height: 20px;
         font-weight: 400;
+
+        @media screen and (max-width: $media-1100) {
+          font-size: 13px;
+          line-height: 15px;
+        }
       }
     }
   }
@@ -1175,6 +1264,17 @@ body.active {
   justify-content: space-between;
   margin-top: 25px;
 
+  @media screen and (max-width: $media-1100) {
+    flex-direction: column;
+  }
+
+  img {
+    @media screen and (max-width: $media-1100) {
+      width: 100%;
+      display: block;
+    }
+  }
+
   .advertising-block-four {
     width: 350px;
     position: relative;
@@ -1183,6 +1283,7 @@ body.active {
     @media screen and (max-width: $media-1100) {
       margin-bottom: 30px;
       max-width: 100%;
+      display: none;
     }
 
     img {
@@ -1302,4 +1403,9 @@ body.active {
 .last-entries-banner-img {
   margin: 60px 0;
   display: block;
+
+  @media screen and (max-width: $media-1100) {
+    width: 100%;
+    margin: 30px 0;
+  }
 }

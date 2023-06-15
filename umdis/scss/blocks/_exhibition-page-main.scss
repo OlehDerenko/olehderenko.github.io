@@ -2,6 +2,12 @@
   margin-top: 25px;
 
   .content {
+    .title-black {
+      @media screen and (max-width: $media-1100) {
+        max-width: 240px;
+      }
+    }
+
     .share {
       display: flex;
       align-items: center;
@@ -47,15 +53,29 @@
       align-items: flex-start;
       justify-content: space-between;
 
+      @media screen and (max-width: $media-1100) {
+        flex-direction: column;
+        align-items: center;
+      }
+
       &_item-img {
         max-width: 540px;
         img {
           display: block;
+
+          @media screen and (max-width: $media-500) {
+            width: 100%;
+          }
         }
       }
 
       &_item-text {
         max-width: 540px;
+
+        @media screen and (max-width: $media-1100) {
+          max-width: 100%;
+          margin-top: 20px;
+        }
 
         .info {
           span {
@@ -70,11 +90,20 @@
             line-height: 29px;
             color: #000000;
             font-weight: 700;
+
+            @media screen and (max-width: $media-1100) {
+              font-size: 20px;
+              line-height: 25px;
+            }
           }
         }
 
         .info:last-of-type {
           margin-top: 40px;
+
+          @media screen and (max-width: $media-1100) {
+            margin-top: 10px;
+          }
         }
 
         .paragraph {
@@ -85,6 +114,11 @@
           margin-top: 30px;
           padding-top: 30px;
           border-top: 1px solid #d1d1d1;
+
+          @media screen and (max-width: $media-768) {
+            margin-top: 10px;
+            padding-top: 10px;
+          }
         }
       }
     }

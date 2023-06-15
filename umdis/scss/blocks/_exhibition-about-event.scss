@@ -1,8 +1,16 @@
 .exhibition-about-event {
   margin-top: 85px;
 
+  @media screen and (max-width: $media-1100) {
+    margin-top: 30px;
+  }
+
   .title-black {
     max-width: 310px;
+
+    @media screen and (max-width: $media-1100) {
+      max-width: 200px;
+    }
   }
 
   .main-img {
@@ -18,6 +26,10 @@
     font-weight: 400;
     max-width: 1049px;
     margin-top: 25px;
+
+    @media screen and (max-width: $media-1100) {
+      margin-top: 15px;
+    }
   }
 
   .paragraph-black {

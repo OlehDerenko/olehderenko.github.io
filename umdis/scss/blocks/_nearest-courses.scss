@@ -59,6 +59,10 @@
           align-items: center;
           justify-content: space-between;
 
+          @media screen and (max-width: $media-1100) {
+            justify-content: flex-start;
+          }
+
           .date {
             background: #f1f6d1;
             border-radius: 2px;

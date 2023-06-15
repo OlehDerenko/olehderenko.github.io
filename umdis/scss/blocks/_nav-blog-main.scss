@@ -4,6 +4,18 @@
   .content {
     .title-black {
       max-width: 80px;
+
+      @media screen and (max-width: $media-1100) {
+        max-width: 60px;
+      }
+    }
+
+    .advertising-blocks-mobile {
+      display: none;
+
+      @media screen and (max-width: $media-1100) {
+        display: block;
+      }
     }
   }
 }
