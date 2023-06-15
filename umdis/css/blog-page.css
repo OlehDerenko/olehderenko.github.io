@@ -1952,8 +1952,8 @@ body.active {
 }
 
 .courses .courses-swiper-slide {
-  background-image: url(./../img/courses-img/desktop.png);
-  background-size: 100% 100%;
+  background-image: url(./../img/courses-img/desktop.webp);
+  background-size: cover;
   background-repeat: no-repeat;
   padding: 60px 0 60px 95px;
   width: 100%;
@@ -1961,7 +1961,7 @@ body.active {
 @media screen and (max-width: 1100px) {
   .courses .courses-swiper-slide {
     padding: 45px 20px 45px;
-    background-image: url(./../img/courses-img/mobile.png);
+    background-image: url(./../img/courses-img/mobile.webp);
     object-fit: cover;
   }
 }
@@ -2229,6 +2229,7 @@ body.active {
 @media screen and (max-width: 1100px) {
   .blog-entries__wrapper-top {
     flex-direction: column;
+    align-items: center;
     margin-top: 30px;
   }
 }
@@ -2457,7 +2458,7 @@ body.active {
   justify-content: center;
   display: none;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 500px) {
   .blog-entries .advertising-box-mobile {
     display: block;
   }

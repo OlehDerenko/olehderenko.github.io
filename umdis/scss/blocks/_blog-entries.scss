@@ -224,6 +224,7 @@
 
     @media screen and (max-width: $media-1100) {
       flex-direction: column;
+      align-items: center;
       margin-top: 30px;
     }
 
@@ -494,7 +495,7 @@
     justify-content: center;
     display: none;
 
-    @media screen and (max-width: $media-1100) {
+    @media screen and (max-width: $media-500) {
       display: block;
     }
 
