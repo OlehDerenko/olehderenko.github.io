@@ -8,3 +8,13 @@ languages.forEach((element, i) => {
     lists[i].classList.toggle("language__items_active");
   });
 });
+
+const sort = document.querySelectorAll(".sort");
+const sortActive = document.querySelectorAll(".sort .sort__item_active");
+const sortLists = document.querySelectorAll(".sort .sort__items");
+
+sort.forEach((element, i) => {
+  element.addEventListener("click", () => {
+    sortLists[i].classList.toggle("sort__items_active");
+  });
+});

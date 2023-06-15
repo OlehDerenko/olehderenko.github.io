@@ -977,7 +977,7 @@ body.active {
   .title-black {
     font-size: 28px;
     line-height: 28px;
-    max-width: 1057px;
+    max-width: 672px;
 
     @media screen and (max-width: $media-768) {
       font-size: 24px;
@@ -1407,5 +1407,75 @@ body.active {
   @media screen and (max-width: $media-1100) {
     width: 100%;
     margin: 30px 0;
+  }
+}
+
+.public-about-block {
+  width: 539px;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 40px;
+
+  @media screen and (max-width: $media-1100) {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  @media screen and (max-width: $media-500) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item-content {
+    margin-left: 30px;
+
+    @media screen and (max-width: $media-500) {
+      margin: 30px 0 0;
+      text-align: center;
+    }
+
+    .item-title {
+      font-size: 24px;
+      line-height: 24px;
+      color: #000000;
+      font-weight: 400;
+    }
+
+    .item-subtitle {
+      display: block;
+      font-size: 18px;
+      line-height: 18px;
+      color: #646464;
+      font-weight: 400;
+      margin-top: 5px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #d1d1d1;
+    }
+
+    .item-info {
+      margin-top: 10px;
+      color: #000000;
+      font-size: 18px;
+      line-height: 18px;
+      font-weight: 400;
+    }
+
+    .info-socials {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+
+      @media screen and (max-width: $media-500) {
+        justify-content: center;
+      }
+
+      .info-socials-item {
+        margin-right: 30px;
+      }
+
+      .info-socials-item:last-of-type {
+        margin: 0;
+      }
+    }
   }
 }
