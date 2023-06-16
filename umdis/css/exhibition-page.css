@@ -2311,6 +2311,9 @@ body.active {
     margin-bottom: 30px;
   }
 }
+.exhibition-speakers .content__items_item img {
+  width: 100%;
+}
 .exhibition-speakers .content__items_item span {
   display: block;
 }
