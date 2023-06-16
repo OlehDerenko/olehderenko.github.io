@@ -1495,6 +1495,12 @@ body.active {
 .public-about-block .item-content .info-socials .info-socials-item {
   margin-right: 30px;
 }
+.public-about-block .item-content .info-socials .info-socials-item img {
+  transition: 0.3s;
+}
+.public-about-block .item-content .info-socials .info-socials-item img:hover {
+  transform: scale(1.2);
+}
 .public-about-block .item-content .info-socials .info-socials-item:last-of-type {
   margin: 0;
 }
@@ -2037,6 +2043,12 @@ body.active {
 }
 .exhibition-page-main .content .share .share-icon .icon {
   margin-left: 7px;
+}
+.exhibition-page-main .content .share .share-icon .icon img {
+  transition: 0.3s;
+}
+.exhibition-page-main .content .share .share-icon .icon img:hover {
+  transform: scale(1.2);
 }
 .exhibition-page-main .content__wrapper {
   margin-top: 25px;

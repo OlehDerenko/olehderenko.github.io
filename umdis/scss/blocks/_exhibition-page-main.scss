@@ -43,6 +43,14 @@
 
         .icon {
           margin-left: 7px;
+
+          img {
+            transition: 0.3s;
+
+            &:hover {
+              transform: scale(1.2);
+            }
+          }
         }
       }
     }

@@ -1471,6 +1471,14 @@ body.active {
 
       .info-socials-item {
         margin-right: 30px;
+
+        img {
+          transition: 0.3s;
+
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
       }
 
       .info-socials-item:last-of-type {

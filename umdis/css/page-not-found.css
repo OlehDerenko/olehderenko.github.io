@@ -1495,6 +1495,12 @@ body.active {
 .public-about-block .item-content .info-socials .info-socials-item {
   margin-right: 30px;
 }
+.public-about-block .item-content .info-socials .info-socials-item img {
+  transition: 0.3s;
+}
+.public-about-block .item-content .info-socials .info-socials-item img:hover {
+  transform: scale(1.2);
+}
 .public-about-block .item-content .info-socials .info-socials-item:last-of-type {
   margin: 0;
 }
@@ -1879,12 +1885,12 @@ body.active {
     margin: 30px 0 0;
   }
 }
-.page-not-found-main .content-wrapper__number svg {
+.page-not-found-main .content-wrapper__number .icon {
   width: 386px;
   height: 171px;
 }
 @media screen and (max-width: 768px) {
-  .page-not-found-main .content-wrapper__number svg {
+  .page-not-found-main .content-wrapper__number .icon {
     width: 285px;
     height: 130px;
   }
