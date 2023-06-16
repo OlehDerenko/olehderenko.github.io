@@ -1944,10 +1944,14 @@ body.active {
 }
 .exhibition-page-reviews .title-black {
   max-width: 110px;
+  font-size: 28px;
+  line-height: 28px;
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 500px) {
   .exhibition-page-reviews .title-black {
     max-width: 100px;
+    font-size: 24px;
+    line-height: 24px;
   }
 }
 .exhibition-page-reviews__items {
@@ -1975,6 +1979,7 @@ body.active {
 @media screen and (max-width: 768px) {
   .exhibition-page-reviews__items_item {
     width: 100%;
+    margin-top: 30px;
   }
 }
 .exhibition-page-reviews__items_item .name {
@@ -1990,10 +1995,20 @@ body.active {
   line-height: 20px;
   margin-top: 20px;
 }
+@media screen and (max-width: 768px) {
+  .exhibition-page-reviews__items_item .info {
+    margin-top: 10px;
+  }
+}
 .exhibition-page-reviews__items_item .link {
   position: relative;
   display: block;
   margin-top: 30px;
+}
+@media screen and (max-width: 768px) {
+  .exhibition-page-reviews__items_item .link {
+    margin-top: 15px;
+  }
 }
 .exhibition-page-reviews__items_item .link .play {
   position: absolute;

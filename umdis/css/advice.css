@@ -2007,7 +2007,7 @@ body.active {
   font-size: 28px;
   line-height: 28px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
   .advice-reviews .title-black {
     font-size: 24px;
     line-height: 24px;
@@ -2038,6 +2038,7 @@ body.active {
 @media screen and (max-width: 768px) {
   .advice-reviews__items_item {
     width: 100%;
+    margin-top: 30px;
   }
 }
 .advice-reviews__items_item .name {
@@ -2053,10 +2054,20 @@ body.active {
   line-height: 20px;
   margin-top: 20px;
 }
+@media screen and (max-width: 768px) {
+  .advice-reviews__items_item .info {
+    margin-top: 10px;
+  }
+}
 .advice-reviews__items_item .link {
   position: relative;
   display: block;
   margin-top: 30px;
+}
+@media screen and (max-width: 768px) {
+  .advice-reviews__items_item .link {
+    margin-top: 15px;
+  }
 }
 .advice-reviews__items_item .link .play {
   position: absolute;

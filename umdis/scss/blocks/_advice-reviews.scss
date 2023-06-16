@@ -10,7 +10,7 @@
     font-size: 28px;
     line-height: 28px;
 
-    @media screen and (max-width: $media-768) {
+    @media screen and (max-width: $media-500) {
       font-size: 24px;
       line-height: 24px;
       max-width: 100%;
@@ -38,6 +38,7 @@
 
       @media screen and (max-width: $media-768) {
         width: 100%;
+        margin-top: 30px;
       }
 
       .name {
@@ -53,12 +54,20 @@
         color: #ababab;
         line-height: 20px;
         margin-top: 20px;
+
+        @media screen and (max-width: $media-768) {
+          margin-top: 10px;
+        }
       }
 
       .link {
         position: relative;
         display: block;
         margin-top: 30px;
+
+        @media screen and (max-width: $media-768) {
+          margin-top: 15px;
+        }
 
         .play {
           position: absolute;
