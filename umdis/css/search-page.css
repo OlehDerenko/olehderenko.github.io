@@ -1680,6 +1680,10 @@ body.active {
   padding: 17px 0 17px 15px;
   outline: none;
   width: 100%;
+  color: #000000;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
 }
 .navigation .navigation-container .navigation-content__search input::placeholder {
   color: #000000;
@@ -1856,6 +1860,10 @@ body.active {
   padding: 17px 0 17px 15px;
   outline: none;
   width: 100%;
+  color: #000000;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
 }
 .search-page-main .search input::placeholder {
   color: #000000;
