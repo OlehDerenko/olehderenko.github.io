@@ -1,0 +1,148 @@
+.nearest-courses {
+  background: $color-gray;
+  margin-top: 60px;
+
+  @media screen and (max-width: $media-1100) {
+    background: #fff;
+    margin-top: 0;
+  }
+
+  .nearest-courses-content {
+    padding: 60px 0;
+
+    @media screen and (max-width: $media-1100) {
+      padding: 56px 0 30px;
+    }
+
+    .title-black {
+      max-width: 340px;
+
+      @media screen and (max-width: $media-1100) {
+        max-width: 203px;
+      }
+    }
+
+    &__box {
+      margin-top: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @media screen and (max-width: $media-1100) {
+        flex-direction: column;
+        margin-top: 0;
+      }
+
+      &_block {
+        max-width: 540px;
+        transition: 0.3s;
+
+        @media screen and (max-width: $media-1100) {
+          max-width: 100%;
+          margin-top: 30px;
+        }
+
+        .main-img {
+          transition: 0.3s;
+          width: 100%;
+
+          @media screen and (min-width: $media-1100) {
+            &:hover {
+              transform: scale(1.05);
+            }
+          }
+        }
+
+        .text {
+          margin-top: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          @media screen and (max-width: $media-1100) {
+            justify-content: flex-start;
+          }
+
+          .date {
+            background: #f1f6d1;
+            border-radius: 2px;
+            padding: 13px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: #000;
+
+            .number {
+              font-size: 32px;
+              line-height: 32px;
+              font-weight: 700;
+
+              @media screen and (max-width: $media-1100) {
+                font-size: 24px;
+                line-height: 24px;
+              }
+            }
+
+            .month {
+              font-size: 14px;
+              line-height: 14px;
+              font-weight: 400;
+
+              @media screen and (max-width: $media-1100) {
+                font-size: 13px;
+                line-height: 13px;
+              }
+            }
+          }
+
+          .middle-text {
+            .paragraph {
+              font-size: 24px;
+              line-height: 24px;
+              color: #000;
+              font-weight: 400;
+              max-width: 350px;
+              cursor: pointer;
+              transition: 0.3s;
+              display: block;
+
+              @media screen and (max-width: $media-1100) {
+                font-size: 16px;
+                line-height: 16px;
+                margin-left: 10px;
+                display: none;
+              }
+
+              @media screen and (min-width: $media-1100) {
+                &:hover {
+                  color: $color-green;
+                }
+              }
+            }
+
+            .paragraph-mobile {
+              display: none;
+
+              @media screen and (max-width: $media-1100) {
+                display: block;
+              }
+            }
+          }
+
+          .right {
+            .img {
+              transition: 0.3s;
+              &:hover {
+                transform: scale(1.2);
+              }
+            }
+            @media screen and (max-width: $media-1100) {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

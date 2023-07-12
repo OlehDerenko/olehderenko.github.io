@@ -1,0 +1,80 @@
+.exhibition-sponsors {
+  margin-top: 120px;
+
+  @media screen and (max-width: $media-1100) {
+    margin-top: 60px;
+  }
+
+  .content {
+    .title-black {
+      max-width: 200px;
+
+      @media screen and (max-width: $media-1100) {
+        max-width: 130px;
+      }
+    }
+
+    &__items {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 60px;
+
+      @media screen and (max-width: $media-1100) {
+        flex-wrap: wrap;
+        margin-top: 30px;
+      }
+
+      &_item {
+        max-width: 255px;
+        display: block;
+        position: relative;
+        border-bottom: 1px solid #d1d1d1;
+        padding-bottom: 20px;
+
+        @media screen and (max-width: $media-1100) {
+          max-width: 45%;
+          margin-top: 30px;
+        }
+
+        @media screen and (max-width: $media-768) {
+          max-width: 100%;
+        }
+
+        .advertising {
+          position: absolute;
+          left: 0;
+          top: 0;
+          background: #8ba529;
+          padding: 8px 12px;
+          font-size: 13px;
+          line-height: 16px;
+          color: #fff;
+          font-weight: 400;
+        }
+
+        img {
+          width: 100%;
+        }
+
+        .heading {
+          font-size: 16px;
+          line-height: 16px;
+          color: #000;
+          font-weight: 400;
+          display: block;
+          margin-top: 20px;
+        }
+
+        .paragraph {
+          font-size: 14px;
+          line-height: 17px;
+          color: #646464;
+          font-weight: 400;
+          display: block;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

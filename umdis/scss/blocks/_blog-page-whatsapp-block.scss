@@ -1,0 +1,38 @@
+.blog-page-whatsapp-block {
+  background: $color-green;
+  padding: 60px 0;
+
+  @media screen and (max-width: $media-1100) {
+    padding: 30px 0;
+  }
+
+  .content {
+    text-align: center;
+
+    .title-white {
+      max-width: 1039px;
+
+      @media screen and (max-width: $media-1100) {
+        max-width: 100%;
+      }
+    }
+
+    .contact-whatsapp {
+      background: #ffffff;
+      border-radius: 5px;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 700;
+      color: $color-green;
+      margin-top: 40px;
+      padding: 20px 46px;
+      display: inline-block;
+      text-transform: uppercase;
+
+      @media screen and (max-width: $media-1100) {
+        margin-top: 20px;
+        padding: 20px 46px;
+      }
+    }
+  }
+}

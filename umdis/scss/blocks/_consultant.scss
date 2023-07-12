@@ -1,0 +1,96 @@
+.consultant {
+  background: #f6f6f6;
+  position: relative;
+  margin: 60px 0 100px;
+
+  @media screen and (max-width: $media-1100) {
+    margin: 200px 0 0;
+    padding: 0 20px;
+  }
+
+  .consultant-content {
+    padding: 60px 70px 60px 95px;
+
+    @media screen and (max-width: $media-1100) {
+      padding: 130px 0 40px;
+    }
+
+    .title {
+      color: #adadad;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 400;
+    }
+
+    .title-black {
+      max-width: 253px;
+      margin-top: 30px;
+      border-color: #8ba529;
+
+      @media screen and (max-width: $media-1100) {
+        margin-top: 20px;
+        max-width: 148px;
+      }
+    }
+
+    .paragraph {
+      font-size: 18px;
+      line-height: 21px;
+      color: #000000;
+      font-weight: 400;
+      max-width: 444px;
+      margin-top: 30px;
+    }
+
+    .author {
+      margin: 30px 0;
+      color: #adadad;
+      font-size: 16px;
+      line-height: 20px;
+      display: block;
+
+      @media screen and (max-width: $media-1100) {
+        margin-top: 20px;
+      }
+    }
+
+    .button {
+      svg {
+        margin-right: 15px;
+
+        @media screen and (max-width: $media-1100) {
+          width: 35px;
+        }
+      }
+
+      @media screen and (max-width: $media-1100) {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: start;
+        max-height: 56px;
+      }
+    }
+  }
+
+  .img {
+    position: absolute;
+    right: 70px;
+    top: -45px;
+
+    @media screen and (max-width: $media-1100) {
+      top: -155px;
+      right: 50%;
+      transform: translate(50%);
+    }
+
+    img {
+      width: 100%;
+
+      @media screen and (max-width: $media-1100) {
+        width: 179px;
+      }
+    }
+  }
+}

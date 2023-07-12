@@ -1,0 +1,29 @@
+.nav-blog-entries {
+  margin-top: 120px;
+
+  @media screen and (max-width: $media-1100) {
+    margin-top: 60px;
+  }
+
+  .content {
+    .content-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .button {
+      @media screen and (max-width: $media-1100) {
+        display: none;
+      }
+    }
+
+    .advertising-blocks-mobile {
+      display: none;
+
+      @media screen and (max-width: $media-1100) {
+        display: block;
+      }
+    }
+  }
+}

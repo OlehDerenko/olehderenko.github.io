@@ -1,0 +1,70 @@
+.public-main {
+  .title-black {
+    max-width: 175px;
+    margin: 25px 0;
+
+    @media screen and (max-width: $media-1100) {
+      max-width: 115px;
+      margin: 25px 0 0;
+    }
+  }
+
+  &__item {
+    margin-bottom: 120px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @media screen and (max-width: $media-1100) {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    @media screen and (max-width: $media-768) {
+      margin-bottom: 20px;
+    }
+
+    &_img {
+      @media screen and (max-width: $media-1100) {
+        margin-top: 30px;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &_content {
+      margin-top: -5px;
+
+      @media screen and (max-width: $media-1100) {
+        margin-top: 30px;
+        width: 100%;
+      }
+
+      .title {
+        font-size: 24px;
+        line-height: 29px;
+        font-weight: 700;
+        color: #000000;
+        padding-bottom: 20px;
+        margin-bottom: 25px;
+        border-bottom: 1px solid #d1d1d1;
+      }
+
+      .paragraph {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #000000;
+        max-width: 540px;
+        margin-top: 5px;
+
+        @media screen and (max-width: $media-1100) {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,95 @@
+.exhibitions {
+  background: $color-gray;
+  padding: 60px 0;
+
+  @media screen and (max-width: $media-1100) {
+    padding: 30px 0;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .button {
+      @media screen and (max-width: $media-1100) {
+        display: none;
+      }
+    }
+  }
+
+  &__main {
+    margin-top: 60px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @media screen and (max-width: $media-1100) {
+      flex-direction: column;
+      margin-top: 30px;
+    }
+
+    &_img {
+      img {
+        width: 100%;
+      }
+    }
+
+    &_content {
+      margin-left: 30px;
+
+      @media screen and (max-width: $media-1100) {
+        margin: 20px 0 0;
+      }
+
+      .title {
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #000;
+        max-width: 350px;
+        max-height: 63px;
+
+        @media screen and (max-width: $media-1100) {
+          max-height: 100%;
+          font-size: 16px;
+          line-height: 16px;
+        }
+      }
+
+      .paragraph {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #646464;
+        margin-top: 30px;
+        max-width: 531px;
+        max-height: 94px;
+
+        @media screen and (max-width: $media-1100) {
+          margin: 20px 0 0;
+          max-height: 100%;
+        }
+      }
+
+      .button {
+        margin-top: 30px;
+        max-height: 38px;
+        font-size: 13px;
+        line-height: 15px;
+
+        @media screen and (max-width: $media-1100) {
+          margin: 20px 0 0;
+        }
+      }
+    }
+  }
+
+  .button-green-border {
+    display: none;
+
+    @media screen and (max-width: $media-1100) {
+      display: block;
+    }
+  }
+}
