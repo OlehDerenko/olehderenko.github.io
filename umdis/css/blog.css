@@ -131,6 +131,11 @@ table {
   border-spacing: 0;
 }
 
+button,
+input {
+  font-family: "Calibri";
+}
+
 @font-face {
   font-family: "Calibri";
   src: url("../fonts/calibri.ttf") format("woff2");
@@ -456,6 +461,7 @@ body.active {
 @media screen and (max-width: 1100px) {
   .advertising-blocks-mobile {
     max-width: 100%;
+    border: none;
   }
 }
 .advertising-blocks-mobile__top {
@@ -1058,7 +1064,7 @@ body.active {
 .form-two__content_form .input-wrapper {
   display: flex;
   flex-direction: column;
-  color: #ababab;
+  color: #000000;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -1075,7 +1081,7 @@ body.active {
   height: 48px;
   margin-top: 15px;
   border-radius: 0;
-  color: #ababab;
+  color: #000000;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -1089,7 +1095,7 @@ body.active {
 .form-two__content_form .input-wrapper textarea {
   margin-top: 15px;
   max-width: 100%;
-  color: #ababab;
+  color: #000000;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -1675,6 +1681,10 @@ body.active {
   padding: 17px 0 17px 15px;
   outline: none;
   width: 100%;
+  color: #000000;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
 }
 .navigation .navigation-container .navigation-content__search input::placeholder {
   color: #000000;

@@ -341,6 +341,7 @@ body.active {
 
   @media screen and (max-width: $media-1100) {
     max-width: 100%;
+    border: none;
   }
 
   &__top {
@@ -1010,7 +1011,7 @@ body.active {
       .input-wrapper {
         display: flex;
         flex-direction: column;
-        color: #ababab;
+        color: #000000;
         font-size: 16px;
         line-height: 20px;
         font-weight: 400;
@@ -1026,7 +1027,7 @@ body.active {
           height: 48px;
           margin-top: 15px;
           border-radius: 0;
-          color: #ababab;
+          color: #000000;
           font-size: 16px;
           line-height: 20px;
           font-weight: 400;
@@ -1040,7 +1041,7 @@ body.active {
         textarea {
           margin-top: 15px;
           max-width: 100%;
-          color: #ababab;
+          color: #000000;
           font-size: 16px;
           line-height: 20px;
           font-weight: 400;
