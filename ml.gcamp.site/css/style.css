@@ -476,7 +476,7 @@ td {
 }
 
 @media screen and (max-width: 976px) {
-  .block3 .title {
+  .block-3-main .title {
     padding-top: 70px;
   }
 }
