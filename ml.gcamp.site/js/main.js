@@ -98,36 +98,6 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          arrows: true,
-        },
-      },
-    ],
-  });
-  $(".slider").slick({
-    infinite: true,
-    autoplay: true,
-    adaptiveHeight: true,
-    dots: false,
-    arrows: true,
-    fade: false,
-    speed: 900,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    prevArrow:
-      '<span data-role="none" class="slick-prev animate" aria-label="Previous" tabindex="0" role="button"></span>',
-    nextArrow:
-      '<span data-role="none" class="slick-next animate" aria-label="Next" tabindex="0" role="button"></span>',
-    responsive: [
-      {
-        breakpoint: 976,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 659,
-        settings: {
-          slidesToShow: 1,
         },
       },
     ],
@@ -268,3 +238,24 @@ function gettovid(obj) {
     }
   };
 }
+
+const scrollTopGlobalButton = document.querySelector(".button-to-top");
+
+window.addEventListener("scroll", () => {
+  const TOP = 195;
+  if (
+    document.body.scrollTop > TOP ||
+    document.documentElement.scrollTop > TOP
+  ) {
+    scrollTopGlobalButton.style.display = "flex";
+  } else {
+    scrollTopGlobalButton.style.display = "none";
+  }
+});
+
+scrollTopGlobalButton.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});

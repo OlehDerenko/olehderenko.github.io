@@ -369,34 +369,7 @@ h2.title > span {
   text-transform: uppercase;
 }
 /* Arrows */
-.slick-prev,
-.slick-next {
-  font-size: 0;
-  line-height: 0;
-  position: absolute;
-  top: 71px;
-  display: block;
-  width: 32px;
-  height: 32px;
-  padding: 0;
-  cursor: pointer;
-  color: transparent;
-  border: none;
-  outline: none;
-  background: url(../img/arrows.png) no-repeat 0 0;
-  z-index: 3;
-}
-.slick-prev {
-  left: 17px;
-}
-.slick-next {
-  right: 17px;
-  -moz-transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
+
 /* Dots */
 .slick-dotted.slick-slider {
   margin-bottom: 30px;

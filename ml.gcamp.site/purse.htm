@@ -75,11 +75,11 @@
         <ul class="feature b">
           <li>
             <img src="img/purse/2.jpg" alt="" />
-            <p>Комфортний гаманець в який все поміститься</p>
+            <b>Комфортний гаманець в який все поміститься</b>
           </li>
           <li>
             <img src="img/purse/3.jpg" alt="" />
-            <p>Завдяки картхолдеру, всі картки будуть під рукою</p>
+            <b>Завдяки картхолдеру, всі картки будуть під рукою</b>
           </li>
           <li>
             <img src="img/purse/4.jpg" alt="" />
@@ -94,22 +94,20 @@
       </div>
     </section>
 
-    <section class="block7">
+    <section class="block7 block7-reviews">
       <div class="wrap">
-        <h2 class="title up">Відгуки про наші <span>рюкзаки</span></h2>
+        <h2 class="title up">Наші <span>відгуки</span></h2>
         <div class="reviews">
           <div>
             <div class="rev clearfix">
-              <img src="img/ot3.jpg" alt="" />
               <div class="revtext">
                 <div>
-                  <h4>Микола Єфімов, 38 років</h4>
+                  <h4>Діана Амброз</h4>
                   <p>
-                    Багато знайомих мають такі рюкзаки. Хтось купував для
-                    роботи, риболовлі, полювання або для походів, а я вирішив
-                    собі купити замість міського рюкзака на кожен день. Після
-                    замовлення менеджер зв'язався дуже швидко і відправили в той
-                    же день. Рюкзак прийшов відмінної якості!
+                    Чудова сумка, брала на подарунок чоловіку. Сподобалась.
+                    Якісно зроблено, фурнітура, замки, ремінь, все зроблено
+                    якісно. За швидку доставку окремо дякую!) Однозначно
+                    рекомендую!!!!
                   </p>
                 </div>
               </div>
@@ -117,31 +115,22 @@
           </div>
           <div>
             <div class="rev clearfix">
-              <img src="img/ot2.jpg" alt="" />
               <div class="revtext">
                 <div>
-                  <h4>Сергій Борисенко, 40 років</h4>
-                  <p>
-                    Рюкзак відмінної якості! Виручає кожен день. Матеріал
-                    щільний і міцний і всередині багато місця під все необхідне.
-                    Дуже зручний у використанні. Спасибі за оперативну відправку
-                    і подарунок!
-                  </p>
+                  <h4>Інна Данченко</h4>
+                  <p>Чоловік дуже задоволений даною моделлю.</p>
                 </div>
               </div>
             </div>
           </div>
           <div>
             <div class="rev clearfix">
-              <img src="img/ot1.jpg" alt="" />
               <div class="revtext">
                 <div>
-                  <h4>Іван Некрасов, 35 років</h4>
+                  <h4>Тарас Мельник</h4>
                   <p>
-                    Дуже привабила ціна і вирішив купити, так, як свій старий
-                    рюкзак вже викинув. Приємно здивувало якість рюкзака: він не
-                    тільки міцний, але і відштовхує воду, що для мене важливо!
-                    Недоліків поки не знайшов. Дуже радий покупці.
+                    Сумка як у описі. Якість топ. Мені дуже сподобалася. Дуже
+                    зручна у використанні.
                   </p>
                 </div>
               </div>
@@ -216,7 +205,7 @@
             </div>
             <form
               class="top_form main-order-form m1-form telegram-form"
-              id="top_order_form"
+              id="bottom_order_form"
               action="/send.php"
               method="post"
               onsubmit="return false;"
@@ -266,20 +255,16 @@
                     >Додати до замовлення:</span
                   >
                 </p>
-                <input
-                  type="checkbox"
-                  name="connect[]"
-                  value="Бейсболка 249грн"
-                />
-                Бейсболка
-                <input type="checkbox" name="connect[]" value="Ремінь 399грн" />
-                Ремінь Cobra
-                <input
-                  type="checkbox"
-                  name="connect[]"
-                  value="Фляга тактична 450грн"
-                />
-                Фляга 1л.<br />
+                <div class="inputs-wrapers">
+                  <div class="input-wrap">
+                    <input type="checkbox" name="connect[]" value="Сумка" />
+                    Сумка
+                  </div>
+                  <div class="input-wrap">
+                    <input type="checkbox" name="connect[]" value="Клатч" />
+                    Клатч
+                  </div>
+                </div>
               </div>
               <button type="submit" class="button-m btn" id="top_form_btn">
                 Замовити
@@ -562,7 +547,13 @@
         <button class="button-m" id="modal_form_btn">Замовити</button>
       </form>
     </div>
-    <!-- The Modal -->
+    <button
+      class="button-to-top"
+      id="global-scroll-top-button"
+      title="Go to top"
+    >
+      <img src="./img/buttop-top.png" alt="" />
+    </button>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script
