@@ -475,6 +475,35 @@ td {
   height: auto;
 }
 
+@media screen and (max-width: 976px) {
+  .block3 .title {
+    padding-top: 70px;
+  }
+}
+
+.block3-top {
+  position: relative;
+}
+
+.block3-top .button-back {
+  position: absolute;
+  text-decoration: none;
+  left: 0;
+  top: 0;
+  background: #e5953c;
+  cursor: pointer;
+  padding: 12px 14px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  color: #ffff;
+}
+
+.button-back img {
+  transform: rotate(270deg);
+  margin-right: 10px;
+}
+
 .block3 .wrap,
 .block4 .wrap,
 .block5 .wrap,
