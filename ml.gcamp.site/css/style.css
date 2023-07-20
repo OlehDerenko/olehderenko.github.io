@@ -161,6 +161,53 @@ td {
   align-items: center;
 }
 
+.block1 .checkbox-label {
+  position: relative;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-label:last-of-type {
+  margin-left: 15px;
+}
+
+.checkbox-label .text {
+  margin-left: 15px;
+  display: block;
+}
+
+.checkbox-custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 4px;
+}
+
+.checkbox-custom svg {
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.checkbox-label input[type="checkbox"]:checked ~ .checkbox-custom {
+  background-color: #547131;
+}
+
+.checkbox-label input[type="checkbox"]:checked ~ .checkbox-custom svg {
+  opacity: 1;
+}
+
+.checkbox-label input[type="checkbox"] ~ .checkbox-custom {
+  background-color: #fff;
+  border: 1px solid #547131;
+}
+
 .block1 .input-wrap {
   display: flex;
   align-items: center;
@@ -551,6 +598,22 @@ td {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 976px) {
+  .charbox-desktop {
+    display: none;
+  }
+}
+
+.charbox-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 976px) {
+  .charbox-mobile {
+    display: block;
+  }
+}
+
 @media screen and (max-width: 659px) {
   .charbox {
     flex-direction: column;
@@ -729,7 +792,8 @@ td {
 }
 
 .preim p {
-  padding: 11px 18px 0;
+  font-weight: 700;
+  padding-top: 10px;
 }
 
 /*block6*/

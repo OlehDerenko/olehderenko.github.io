@@ -374,6 +374,11 @@ h2.title > span {
 .slick-dotted.slick-slider {
   margin-bottom: 30px;
 }
+
+.block7-reviews-page .slick-dots {
+  display: none;
+}
+
 .slick-dots {
   position: absolute;
   bottom: -25px;

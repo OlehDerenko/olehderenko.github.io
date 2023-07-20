@@ -64,7 +64,7 @@
           </a>
         </div>
         <h2 class="title">Особливості сумки</h2>
-        <div class="clearfix charbox purse-main-block">
+        <div class="clearfix charbox purse-main-block charbox-desktop">
           <ul class="char-left">
             <li>Підвищена зносостійкість</li>
             <li>Висока міцність матеріалу</li>
@@ -79,17 +79,30 @@
             <li>Металева фурнітура</li>
           </ul>
         </div>
+        <div class="clearfix charbox purse-main-block charbox-mobile">
+          <img src="img/bag/1.jpg" alt="" class="cos purse-img-main" />
+          <ul class="char-right">
+            <li>Підвищена зносостійкість</li>
+            <li>Висока міцність матеріалу</li>
+            <li>Регульований ремінь</li>
+            <li>Матеріал - еко шкіра</li>
+            <li>Розміри: 25 х 20 х 8см</li>
+            <li>Металева фурнітура</li>
+          </ul>
+        </div>
         <ul class="feature b">
           <li>
             <img src="img/bag/3.jpg" alt="" />
 
-            <b>
-              Матеріал верху: найновіша еко-шкіра підвищеного рівня
+            <p>
+              <b> Матеріал верху:</b> найновіша еко-шкіра підвищеного рівня
               зносостійкості <br />
-              Підкладка. Матеріал оксфорд середньої щільності, міцний, стійкий
-              до подряпин, легко чиститься, нитки з нього не вилазять. <br />
-              Шлейки. Плечовий ремінь з текстилем, надійно прошитий на планку.
-            </b>
+              <b> Підкладка.</b> Матеріал оксфорд середньої щільності, міцний,
+              стійкий до подряпин, легко чиститься, нитки з нього не вилазять.
+              <br />
+              <b> Шлейки.</b> Плечовий ремінь з текстилем, надійно прошитий на
+              планку.
+            </p>
           </li>
 
           <li>
@@ -104,7 +117,7 @@
       </div>
     </section>
 
-    <section class="block7 block7-reviews">
+    <section class="block7 block7-reviews block7-reviews-page">
       <div class="wrap">
         <h2 class="title up">Наші <span>відгуки</span></h2>
         <div class="reviews">
@@ -112,35 +125,10 @@
             <div class="rev clearfix">
               <div class="revtext">
                 <div>
-                  <h4>Діана Амброз</h4>
+                  <h4>Назар Капусняк</h4>
                   <p>
-                    Чудова сумка, брала на подарунок чоловіку. Сподобалась.
-                    Якісно зроблено, фурнітура, замки, ремінь, все зроблено
-                    якісно. За швидку доставку окремо дякую!) Однозначно
-                    рекомендую!!!!
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="rev clearfix">
-              <div class="revtext">
-                <div>
-                  <h4>Інна Данченко</h4>
-                  <p>Чоловік дуже задоволений даною моделлю.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class="rev clearfix">
-              <div class="revtext">
-                <div>
-                  <h4>Тарас Мельник</h4>
-                  <p>
-                    Сумка як у описі. Якість топ. Мені дуже сподобалася. Дуже
-                    зручна у використанні.
+                    Покупкою задоволений, якість хороша, відповідає опису,
+                    рекомендую до покупки!
                   </p>
                 </div>
               </div>
@@ -265,14 +253,42 @@
                   >
                 </p>
                 <div class="inputs-wrapers">
-                  <div class="input-wrap">
+                  <label class="checkbox-label">
                     <input type="checkbox" name="connect[]" value="Гаманець" />
-                    Гаманець
-                  </div>
-                  <div class="input-wrap">
+                    <span class="checkbox-custom"
+                      ><svg
+                        width="10"
+                        height="9"
+                        viewBox="0 0 10 9"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.5 5.375L1.5 3.375L0 4.875L3.5 8.375L10 1.875L8.5 0.375L3.5 5.375Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </span>
+                    <span class="text"> Гаманець</span>
+                  </label>
+                  <label class="checkbox-label">
                     <input type="checkbox" name="connect[]" value="Клатч" />
-                    Клатч
-                  </div>
+                    <span class="checkbox-custom"
+                      ><svg
+                        width="10"
+                        height="9"
+                        viewBox="0 0 10 9"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.5 5.375L1.5 3.375L0 4.875L3.5 8.375L10 1.875L8.5 0.375L3.5 5.375Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </span>
+                    <span class="text"> Клатч</span>
+                  </label>
                 </div>
               </div>
               <button type="submit" class="button-m btn" id="top_form_btn">
