@@ -2,7 +2,9 @@
 try {
     $name = $_POST['name'];
     $phone = $_POST['phone'];
-    $address = $_POST['address'];
+    $city = $_POST['city'];
+    $warehouse = $_POST['warehouse'];
+    $connect = $_POST['connect'];
     $page = $_POST['page'];
 
     //Server settings
@@ -10,7 +12,7 @@ try {
 
     $data = [
         'chat_id' => '-1001529796245',
-        'text' => 'Новая заявка с сайта' . PHP_EOL . 'Имя: ' . '' . $name . PHP_EOL  . 'Телефон: ' . ' ' . $phone . PHP_EOL . 'Адрес: ' . $address . PHP_EOL . 'Сторінка: ' . $page,
+        'text' => 'Новая заявка с сайта' . PHP_EOL . 'Імя: ' . '' . $name . PHP_EOL  . 'Телефон: ' . ' ' . $phone . PHP_EOL . 'Місто: ' . $city . PHP_EOL . 'Відділення: ' . $warehouse . PHP_EOL . 'Додати до замовлення: ' . $connect . PHP_EOL . 'Сторінка: ' . $page,
     ];
 
     $response = file_get_contents("https://api.telegram.org/bot$apiToken/sendMessage?" . http_build_query($data) );

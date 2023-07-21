@@ -1125,11 +1125,10 @@ td {
   .price {
     width: 290px;
     margin: 185px 0 0 10px;
-
     position: relative;
     bottom: auto;
     top: 30px;
-    right: 0;
+    left: 0;
   }
 
   .blockbt .price {

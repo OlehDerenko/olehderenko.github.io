@@ -8,7 +8,7 @@
       crossorigin="anonymous"
     ></script>
     <meta name="viewport" content="width=device-width" />
-    <title>Розпродаж тактичних рюкзаків</title>
+    <title>Чоловічий клатч чорний</title>
     <meta name="description" content="Розпродаж тактичних рюкзаків" />
     <link rel="shortcut icon" href="./favicon.ico" />
     <link rel="stylesheet" href="css/reset.css" />
@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="css/settingsua.css" />
     <link rel="stylesheet" href="css/slick.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <!-- Meta Pixel Code -->
+    <link rel="stylesheet" href="css/npselect.css" />
+
     <script>
       !(function (f, b, e, v, n, t, s) {
         if (f.fbq) return;
@@ -51,7 +52,6 @@
         style="display: none"
         src="tr?id=795152714978582&ev=PageView&noscript=1"
     /></noscript>
-    <!-- End Meta Pixel Code -->
   </head>
 
   <body oncopy="return false">
@@ -108,7 +108,7 @@
             <b>Зручно ноосити в руці за допомогою ремінця</b>
           </li>
         </ul>
-        <a href="#bottom_order_form" class="button-m">Замовити</a>
+        <a href="#bottom_clutch_form" class="button-m">Замовити</a>
       </div>
     </section>
 
@@ -198,7 +198,7 @@
             </div>
             <form
               class="top_form main-order-form m1-form telegram-form"
-              id="bottom_order_form"
+              id="bottom_clutch_form"
               action="/send.php"
               method="post"
               onsubmit="return false;"
@@ -217,25 +217,16 @@
                 maxlength="13"
                 minlength="10"
                 placeholder="+380XXXXXXXXX"
-                pattern="^((\+?3)?8)?((0\(\d{2}\)?)|(\(\d{2}\))|(0\d{2}))\d{7}$"
                 title="+380XXXXXXXXX"
                 required=""
               />
-              <!--<input class="field" type="tel" name="phone" placeholder="+380XXXXXXXXX" title="Ваш номер телефону" required>-->
-              <!--<input type="checkbox" name="connect[]" value="Зв'язок тільки у Viber/Telegram!"> Зв'язок тільки у Viber/Telegram</input>-->
-              <input
-                class="field"
-                name="address"
-                type="text"
-                placeholder="Місто та відділення Нової Пошти"
-                required=""
-              />
-              <input type="hidden" id="token" name="token" />
-              <input type="hidden" id="tm1" name="tm" />
+
+              <div id="city5" style="position: relative; z-index: 3"></div>
+              <div id="warehouse5" style="margin: 10px 0 10px"></div>
               <input
                 class="field"
                 name="page"
-                value="men's clutch black"
+                value="Чоловічий клатч чорний"
                 type="hidden"
                 placeholder=""
                 required=""
@@ -292,7 +283,6 @@
             </form>
             <div class="stock">
               <img src="img/att.png" alt="" />К-сть товарів по акції обмежена
-              <!-- <span>18 шт.</span> -->
             </div>
           </div>
         </div>
@@ -309,264 +299,6 @@
         </p>
       </div>
     </footer>
-    <div class="formbox-modal">
-      <form
-        class="top_form main-order-form m1-form"
-        id="modal_order_form"
-        action="/send.php"
-        method="post"
-        onsubmit="return false;"
-      >
-        <span id="closeform" class="close">&times;</span>
-        <h3>Заповніть всі поля форми для замовлення</h3>
-        <input
-          class="field"
-          name="name"
-          type="text"
-          placeholder="Введіть ваше ім'я"
-          required=""
-        />
-        <input
-          class="field"
-          type="tel"
-          name="phone"
-          maxlength="13"
-          minlength="10"
-          placeholder="+380XXXXXXXXX"
-          pattern="^((\+?3)?8)?((0\(\d{2}\)?)|(\(\d{2}\))|(0\d{2}))\d{7}$"
-          title="+380XXXXXXXXX"
-          required=""
-        />
-        <!--<input class="field" type="tel" name="phone" placeholder="+380XXXXXXXXX" title="Ваш номер телефону" required>-->
-        <!--<input type="checkbox" name="connect[]" value="Зв'язок тільки у Viber/Telegram!"> Зв'язок тільки у Viber/Telegram</input>-->
-        <input
-          class="field"
-          name="address"
-          type="text"
-          placeholder="Місто та відділення Нової Пошти"
-          required=""
-        />
-        <input type="hidden" id="token3" name="token" />
-        <input type="hidden" id="tm3" name="tm" />
-        <select
-          style="display: none"
-          id="tov1_select"
-          name="comment"
-          required=""
-          disabled="true"
-        >
-          <option name="connect[]" value=" Тактичні окуляри OAKLEY(499грн)">
-            Тактичні окуляри OAKLEY(499грн)
-          </option>
-        </select>
-        <select
-          style="display: none"
-          id="tov2_select"
-          name="comment"
-          required=""
-          disabled="true"
-        >
-          <option name="connect[]" value="<Бейсболка Колір???">
-            Виберіть колір
-          </option>
-          <option name="connect[]" value="Бейсболка олива(249грн)">
-            Бейсболка олива (249грн)
-          </option>
-          <option name="connect[]" value="Бейсболка чорна(249грн)">
-            Бейсболка чорна (249грн)
-          </option>
-          <option name="connect[]" value="Бейсболка піксель(249грн)">
-            Бейсболка піксель (249грн)
-          </option>
-        </select>
-        <select
-          style="display: none"
-          id="tov3_select"
-          name="comment"
-          required=""
-          disabled="true"
-        >
-          <option name="connect[]" value="Каремат тактичний">
-            Тактичний каремат(599грн)
-          </option>
-        </select>
-        <select
-          style="display: none"
-          id="tov4_select"
-          name="comment"
-          required=""
-          disabled="true"
-        >
-          <option
-            name="connect[]"
-            value="Сумка аптечки із системою Molle(450грн)"
-          >
-            Сумка аптечки із системою Molle(450грн)
-          </option>
-        </select>
-        <select
-          style="display: none"
-          id="tov5_select"
-          name="comment"
-          required=""
-          disabled="true"
-        >
-          <option name="connect[]" value="Розвантажувальний ремінь М2 560грн">
-            Розвантажувальний ремінь(560грн)
-          </option>
-        </select>
-        <select
-          style="display: none"
-          id="tov6_select"
-          name="comment"
-          required=""
-          disabled="true"
-        >
-          <option name="connect[]" value="Фляга алюмінієва тактична 1л(450грн)">
-            Фляга алюмінієва 1л(450грн)
-          </option>
-        </select>
-        <select
-          style="display: none"
-          id="tov7_select"
-          name="comment"
-          required=""
-          disabled="true"
-        >
-          <option name="connect[]" value="Кружка з карабіном сталева(199грн)">
-            Кружка з карабіном сталева(199грн)
-          </option>
-        </select>
-        <select
-          style="display: none"
-          id="tov8_select"
-          name="comment"
-          required=""
-          disabled="true"
-        >
-          <option name="connect[]" value="Питна система об'єм???">
-            Виберіть об'єм
-          </option>
-          <option name="connect[]" value="Питна система (гідратор) 2л(299грн)">
-            Питна система (гідратор) 2л(299грн)
-          </option>
-          <option name="connect[]" value="Питна система (гідратор) 3л(350грн)">
-            Питна система (гідратор) 3л(350грн)
-          </option>
-        </select>
-        <select
-          style="display: none"
-          id="tov9_select"
-          name="comment"
-          required=""
-          disabled="true"
-        >
-          <option name="connect[]" value="Тактична панама Олива(299грн)">
-            Тактична панама Олива(299грн)
-          </option>
-        </select>
-        <div class="form__item">
-          <p>
-            <span style="color: #547131; font-weight: bold"
-              >Додати до замовлення:</span
-            >
-          </p>
-          <input
-            type="checkbox"
-            name="connect[]"
-            value="Наколінники+Наколінники 499грн"
-          />
-          Наколінники + налокітники (499грн)<br />
-          <div id="tov1_checkbox">
-            <input
-              type="checkbox"
-              name="connect[]"
-              value="Тактичні окуляри OAKLEY 499грн"
-            />
-            Тактичні окуляри OAKLEY(499грн)<br />
-          </div>
-          <div id="tov2_checkbox">
-            <input type="checkbox" name="connect[]" value="Бейсболка 249грн" />
-            Бейсболка(249грн)
-          </div>
-          <div id="tov4_checkbox">
-            <input
-              type="checkbox"
-              name="connect[]"
-              value="Сумка аптечки 450грн"
-            />
-            Сумка аптечки(450грн)<br />
-          </div>
-          <div id="tov3_checkbox">
-            <input
-              type="checkbox"
-              name="connect[]"
-              value="Тактичний каремат 599грн"
-            />
-            Каремат тактичний(599грн)<br />
-          </div>
-          <div id="tov5_checkbox">
-            <input
-              type="checkbox"
-              name="connect[]"
-              value="Розвантажувальний ремінь М2 560грн"
-            />
-            Розвантажувальний ремінь(560грн)<br />
-          </div>
-          <div id="tov6_checkbox">
-            <input
-              type="checkbox"
-              name="connect[]"
-              value="Фляга алюмінієва 1л(450грн)"
-            />
-            Фляга алюмінієва 1л(450грн)<br />
-          </div>
-          <div id="tov7_checkbox">
-            <input
-              type="checkbox"
-              name="connect[]"
-              value="Кружка з карабіном сталева(199грн)"
-            />
-            Кружка з карабіном(199грн)<br />
-          </div>
-          <div id="tov8_checkbox">
-            <input
-              type="checkbox"
-              name="connect[]"
-              value="Питна система (гідратор) - скільки літрів???"
-            />
-            Питна система (гідратор)<br />
-          </div>
-          <div id="tov9_checkbox">
-            <input
-              type="checkbox"
-              name="connect[]"
-              value="Тактична панама Олива(299грн)"
-            />
-            Тактична панама Олива(299грн)<br />
-          </div>
-          <!--<input type="checkbox" name="connect[]" value="Бейсболка 120грн"> Тактична бейсболка(120грн)<br></input>-->
-          <div>
-            <p>
-              Рукавиці:
-              <input
-                type="checkbox"
-                name="connect[]"
-                value="Рукавиці безпалі 375грн"
-              />
-              Безпалі(375грн)
-              <input
-                type="checkbox"
-                name="connect[]"
-                value="Рукавиці повнопалі 399грн"
-              />
-              Повнопалі(399грн)<br />
-            </p>
-          </div>
-        </div>
-        <button class="button-m" id="modal_form_btn">Замовити</button>
-      </form>
-    </div>
     <button
       class="button-to-top"
       id="global-scroll-top-button"
@@ -580,6 +312,15 @@
       src="recaptcha/api.js?render=6Le6ki4eAAAAAFEEaIdCm0Ooe9u0elLAdLh-c3R6"
       defer=""
     ></script>
+    <script src="js/npselect.js"></script>
+    <script src="js/form.js"></script>
+    <script>
+      createSelects(
+        { selector: "#warehouse5" },
+        { selector: "#city5" },
+        { selector: "#bottom_clutch_form" }
+      );
+    </script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
     <script>
@@ -588,6 +329,5 @@
         select.selectedIndex = val;
       }
     </script>
-    <!-- endzeit_____ -->
   </body>
 </html>
