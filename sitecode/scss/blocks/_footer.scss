@@ -1,0 +1,211 @@
+.footer {
+  background: $color-black;
+  margin-top: 165px;
+
+  @media screen and (max-width: $media-mobile) {
+    margin-top: 100px;
+  }
+
+  .footer-wrapper-top {
+    padding: 66px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @media screen and (max-width: $media-mobile) {
+      flex-direction: column;
+      padding: 46px 0 38px;
+    }
+
+    .block-title {
+      font-size: 20px;
+      line-height: 36px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 20px;
+
+      @media screen and (max-width: $media-mobile) {
+        margin-bottom: 10px;
+        font-size: 18px;
+        line-height: 32px;
+      }
+    }
+
+    .block-one {
+      max-width: 258px;
+
+      @media screen and (max-width: $media-mobile) {
+        max-width: 100%;
+        text-align: center;
+      }
+
+      .paragraph {
+        font-size: 16px;
+        line-height: 29px;
+        color: #ffffff;
+        font-weight: 400;
+        margin-top: 35px;
+
+        @media screen and (max-width: $media-mobile) {
+          margin-top: 25px;
+        }
+      }
+    }
+
+    .block-two,
+    .block-three {
+      width: 255px;
+
+      .item {
+        margin-bottom: 13px;
+
+        @media screen and (max-width: $media-mobile) {
+          margin-bottom: 5px;
+        }
+
+        .name {
+          font-size: 16px;
+          line-height: 29px;
+          font-weight: 600;
+          color: #ffffffb2;
+
+          @media screen and (max-width: $media-mobile) {
+            font-size: 14px;
+            line-height: 25px;
+          }
+        }
+
+        .date {
+          font-size: 14px;
+          line-height: 25px;
+          font-weight: 400;
+          color: #ffffff80;
+
+          @media screen and (max-width: $media-mobile) {
+            font-size: 12px;
+            line-height: 21px;
+          }
+        }
+      }
+
+      .item:last-of-type {
+        margin: 0;
+      }
+    }
+
+    .block-two {
+      @media screen and (max-width: $media-mobile) {
+        margin-top: 30px;
+      }
+    }
+
+    .block-three {
+      @media screen and (max-width: $media-mobile) {
+        margin-top: 20px;
+      }
+    }
+
+    .block-four {
+      @media screen and (max-width: $media-mobile) {
+        margin-top: 20px;
+      }
+
+      .block-title {
+        @media screen and (max-width: $media-mobile) {
+          margin-bottom: 20px;
+        }
+      }
+
+      .items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px 24px;
+
+        @media screen and (max-width: $media-mobile) {
+          grid-template-columns: repeat(4, 1fr);
+        }
+
+        .item-mobile {
+          display: none;
+
+          @media screen and (max-width: $media-mobile) {
+            display: block;
+          }
+        }
+
+        .item {
+          img {
+            @media screen and (max-width: $media-mobile) {
+              width: 75px;
+              height: 75px;
+            }
+
+            @media screen and (max-width: 400px) {
+              width: 70px;
+              height: 70px;
+            }
+
+            @media screen and (max-width: 389px) {
+              width: 65px;
+              height: 65px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .border {
+    height: 1px;
+    width: 100%;
+    background: #ffffff33;
+    display: block;
+  }
+
+  .footer-wrapper-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
+    position: relative;
+
+    @media screen and (max-width: $media-mobile) {
+      padding: 28px 0 80px;
+    }
+
+    .item {
+      color: #ffffff;
+      font-size: 18px;
+      line-height: 32px;
+      font-weight: 400;
+
+      @media screen and (max-width: $media-mobile) {
+        font-size: 14px;
+        line-height: 25px;
+      }
+    }
+
+    .middle-part {
+      @media screen and (max-width: $media-mobile) {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 65px;
+      }
+    }
+
+    .right-part {
+      .item {
+        margin-left: 24px;
+
+        @media screen and (max-width: $media-mobile) {
+          margin-left: 15px;
+        }
+      }
+
+      .item:first-of-type {
+        margin: 0;
+      }
+    }
+  }
+}

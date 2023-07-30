@@ -1,0 +1,124 @@
+.terms-of-work {
+  margin-top: 267px;
+  position: relative;
+
+  .title {
+    text-align: center;
+  }
+
+  .terms-of-work-wrapper {
+    .side-bar-img {
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      top: -200px;
+    }
+
+    .tabs {
+      display: flex;
+      justify-content: space-between;
+
+      .tabs-content {
+        width: 70%;
+        margin-top: 75px;
+        margin-left: 200px;
+
+        .wrap-one {
+          .wrap-one-items {
+            margin-top: 95px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .item {
+              border: 2px solid #efefef;
+              width: 310px;
+              position: relative;
+              text-align: center;
+              padding: 60px 30px 58px;
+              border-radius: 20px;
+
+              .icon {
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%);
+                top: -50px;
+              }
+
+              .name {
+                font-size: 20px;
+                line-height: 36px;
+                font-weight: 600;
+                color: $color-black;
+                margin: 40px auto 20px;
+              }
+
+              .paragraph {
+                font-size: 18px;
+                line-height: 30px;
+                font-weight: 400;
+                color: $color-black;
+              }
+            }
+          }
+        }
+
+        .wrap-two {
+          .wrap-two-items {
+            margin-top: 35px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 52px 78px;
+
+            .item {
+              border: 2px solid #efefef;
+              border-radius: 20px;
+              padding: 43px 24px 0;
+              text-align: center;
+
+              .name {
+                font-size: 24px;
+                line-height: 36px;
+                font-weight: 600;
+                color: $color-black;
+              }
+
+              .starting {
+                font-size: 18px;
+                line-height: 29px;
+                font-weight: 400;
+                color: $color-black;
+                margin-top: 5px;
+                display: block;
+              }
+
+              .bg-price {
+                position: relative;
+                display: block;
+                margin: 0 auto;
+
+                img {
+                  display: block;
+                  display: block;
+                  margin: 0 auto;
+                }
+
+                .price {
+                  position: absolute;
+                  left: 50%;
+                  top: 40%;
+                  transform: translate(-50%);
+                  display: block;
+                  color: $color-blue;
+                  font-size: 40px;
+                  line-height: 60px;
+                  font-weight: 600;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

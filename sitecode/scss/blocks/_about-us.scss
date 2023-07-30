@@ -1,0 +1,120 @@
+.about-us {
+  padding: 205px 0;
+  position: relative;
+  overflow: hidden;
+
+  .title {
+    text-align: center;
+  }
+
+  .side-bar-img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+  .bg-desktop {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    z-index: -1;
+  }
+
+  .about-us-wrapper {
+    .tabs {
+      display: flex;
+      justify-content: space-between;
+
+      .tabs-items {
+        margin: 236px 0 0 150px;
+        width: 40%;
+      }
+
+      .tabs-content {
+        width: 60%;
+
+        .tabs-content-item {
+          .wrap-one {
+            position: relative;
+            margin: 200px 0 0 50px;
+            min-height: 500px;
+
+            .border-one {
+              position: absolute;
+              left: 50%;
+              transform: translateX(-50%);
+              top: 0;
+            }
+
+            .border-two {
+              position: absolute;
+              left: 50%;
+              transform: translateX(-50%) rotate(-5deg);
+              top: 50px;
+            }
+
+            .item {
+              position: absolute;
+              text-align: center;
+
+              .name {
+                margin-top: 10px;
+                font-size: 22px;
+                line-height: 40px;
+                font-weight: 600;
+              }
+            }
+
+            .item-one {
+              top: 0;
+              left: 50px;
+            }
+
+            .item-two {
+              top: 0;
+              right: 50px;
+            }
+
+            .item-three {
+              bottom: 50px;
+              left: 50%;
+              transform: translateX(-50%);
+            }
+          }
+
+          .wrap-two {
+            .wrap-two-item {
+              text-align: center;
+
+              .name {
+                font-size: 22px;
+                line-height: 40px;
+                font-weight: 600;
+                color: $color-black;
+                margin-top: 10px;
+              }
+
+              .position {
+                font-size: 16px;
+                line-height: 29px;
+                font-weight: 400;
+                color: $color-blue;
+                display: block;
+              }
+
+              .paragraph {
+                font-size: 18px;
+                line-height: 29px;
+                font-weight: 400;
+                color: $color-black;
+                margin-top: 10px;
+                max-width: 236px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
