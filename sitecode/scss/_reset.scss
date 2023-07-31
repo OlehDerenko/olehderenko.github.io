@@ -113,11 +113,14 @@ html,
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
 }
 
 body.active {
   @media screen and (max-width: 768px) {
-    overflow-y: hidden;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
   }
 }
 
@@ -153,6 +156,5 @@ table {
   @media screen and (max-width: 1229px) {
     width: 100%;
     padding: 0 20px;
-    overflow-x: hidden;
   }
 }

@@ -1,7 +1,11 @@
 .expertise {
-  margin-top: 200px;
+  margin-top: 170px;
   position: relative;
   overflow: hidden;
+
+  @media screen and (max-width: $media-tablet) {
+    margin-top: 100px;
+  }
 
   .expertise-wrapper {
     .title,
@@ -23,7 +27,7 @@
       flex-direction: column;
       align-items: flex-start;
 
-      @media screen and (max-width: $media-mobile) {
+      @media screen and (max-width: $media-tablet) {
         display: flex;
         align-items: center;
         flex-direction: row;
@@ -37,7 +41,7 @@
         margin-top: 29px;
         border-radius: 4px;
 
-        @media screen and (max-width: $media-mobile) {
+        @media screen and (max-width: $media-tablet) {
           display: none;
         }
       }
@@ -61,15 +65,26 @@
       align-items: flex-start;
       justify-content: space-between;
 
-      @media screen and (max-width: $media-mobile) {
+      @media screen and (max-width: $media-tablet) {
         flex-direction: column;
         margin-top: 60px;
+        align-items: center;
+      }
+
+      @media screen and (max-width: $media-mobile) {
+        align-items: flex-start;
       }
 
       .items {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 60px 155px;
+
+        @media screen and (max-width: $media-tablet) {
+          margin-top: 45px;
+          gap: 60px 125px;
+          text-align: center;
+        }
 
         @media screen and (max-width: $media-mobile) {
           gap: 15px;
@@ -82,6 +97,14 @@
           @media screen and (max-width: $media-mobile) {
             width: 116px;
             text-align: center;
+          }
+
+          @media screen and (max-width: 410px) {
+            width: 107px;
+          }
+
+          @media screen and (max-width: 390px) {
+            width: 102px;
           }
 
           .icon {
@@ -112,9 +135,14 @@
       align-items: flex-start;
       justify-content: space-between;
 
-      @media screen and (max-width: $media-mobile) {
+      @media screen and (max-width: $media-tablet) {
         flex-direction: column-reverse;
         margin-top: 100px;
+        align-items: center;
+      }
+
+      @media screen and (max-width: $media-mobile) {
+        align-items: flex-start;
       }
 
       .bg-desktop {
@@ -123,7 +151,7 @@
         left: 0;
         z-index: -1;
 
-        @media screen and (max-width: $media-mobile) {
+        @media screen and (max-width: $media-tablet) {
           display: none;
         }
       }
@@ -131,11 +159,12 @@
       .bg-mobile {
         position: absolute;
         left: 0;
-        top: 600px;
+        top: 590px;
         display: none;
         z-index: -1;
 
-        @media screen and (max-width: $media-mobile) {
+        @media screen and (max-width: 500px) {
+          top: 560px;
           display: block;
         }
       }
@@ -145,7 +174,7 @@
         flex-direction: column;
         align-items: flex-end;
 
-        @media screen and (max-width: $media-mobile) {
+        @media screen and (max-width: $media-tablet) {
           display: flex;
           align-items: center;
           flex-direction: row;
@@ -157,20 +186,28 @@
         grid-template-columns: repeat(6, 1fr);
         gap: 28px 66px;
 
-        @media screen and (max-width: $media-mobile) {
+        @media screen and (max-width: $media-tablet) {
           margin-top: 43px;
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
-          align-items: center;
-          // grid-template-columns: repeat(3, 1fr);
-          // gap: 39px 60px;
+          gap: 28px;
+          width: 100%;
+        }
+
+        @media screen and (max-width: $media-mobile) {
+          grid-template-columns: repeat(3, 1fr);
           gap: 28px;
         }
 
         .item {
           text-align: center;
           width: 77px;
+
+          @media screen and (max-width: $media-tablet) {
+            margin: 0 auto;
+          }
+
+          @media screen and (max-width: $media-mobile) {
+            margin: 0;
+          }
 
           .name {
             font-size: 20px;
@@ -193,22 +230,40 @@
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
+      position: relative;
 
-      @media screen and (max-width: $media-mobile) {
-        flex-direction: column;
-        margin-top: 75px;
-      }
-
-      .bg-desktop {
+      &::after {
+        content: url(../../img/expertise/services/bg-desktop.png);
         position: absolute;
-        left: -15px;
-        bottom: 370px;
+        left: -355px;
+        top: -160px;
         z-index: -1;
 
-        @media screen and (max-width: $media-mobile) {
+        @media screen and (max-width: $media-tablet) {
           display: none;
         }
       }
+
+      @media screen and (max-width: $media-tablet) {
+        flex-direction: column;
+        margin-top: 75px;
+        align-items: center;
+      }
+
+      @media screen and (max-width: $media-mobile) {
+        align-items: flex-start;
+      }
+
+      // .bg-desktop {
+      //   position: absolute;
+      //   left: -15px;
+      //   bottom: 370px;
+      //   z-index: -1;
+
+      //   @media screen and (max-width: $media-tablet) {
+      //     display: none;
+      //   }
+      // }
 
       .bg-mobile {
         position: absolute;
@@ -217,7 +272,7 @@
         z-index: -1;
         display: none;
 
-        @media screen and (max-width: $media-mobile) {
+        @media screen and (max-width: 500px) {
           display: block;
         }
       }
@@ -227,19 +282,34 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 78px 36px;
 
+        @media screen and (max-width: $media-tablet) {
+          margin-top: 43px;
+        }
+
         @media screen and (max-width: $media-mobile) {
           grid-template-columns: repeat(2, 1fr);
-          margin-top: 75px;
           gap: 40px 23px;
-          margin-top: 43px;
+          margin-top: 25px;
         }
 
         .item {
           width: 255px;
 
+          @media screen and (max-width: $media-tablet) {
+            margin: 0 auto;
+            text-align: center;
+          }
+
           @media screen and (max-width: $media-mobile) {
             width: 180px;
+            margin: 0;
+            text-align: start;
           }
+
+          @media screen and (max-width: 410px) {
+            width: 160px;
+          }
+
           .name {
             margin: 24px 0;
 

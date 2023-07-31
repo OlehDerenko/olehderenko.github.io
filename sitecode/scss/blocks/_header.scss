@@ -2,7 +2,7 @@
   margin: 50px 0 0;
   position: relative;
 
-  @media screen and (max-width: $media-mobile) {
+  @media screen and (max-width: $media-tablet) {
     margin: 20px 0 0;
   }
 
@@ -54,7 +54,7 @@
         .language {
           position: relative;
           z-index: 2;
-          border: 1px solid #efefef;
+
           border-radius: 6px;
 
           &__items {
@@ -75,8 +75,9 @@
             opacity: 1;
             height: auto;
             padding: 7px 11px 9px;
-            background-color: transparent;
-            border-radius: 10px;
+            background-color: #fff;
+            border: 1px solid #efefef;
+            border-radius: 6px;
             cursor: pointer;
             font-size: 14px;
             line-height: 17px;
@@ -107,12 +108,51 @@
   .header-main {
     padding: 320px 0 240px;
 
+    @media screen and (max-width: 1600px) {
+      padding: 250px 0 180px;
+    }
+
+    @media screen and (max-width: 1420px) {
+      padding: 200px 0 130px;
+    }
+
     @media screen and (max-width: $media-tablet) {
-      display: none;
+      padding: 200px 0 0;
     }
 
     .info {
       width: 594px;
+
+      @media screen and (max-width: $media-tablet) {
+        width: 100%;
+        position: relative;
+        margin-top: 500px;
+        text-align: center;
+      }
+
+      @media screen and (max-width: $media-mobile) {
+        margin-top: 550px;
+      }
+
+      @media screen and (max-width: 700px) {
+        margin-top: 450px;
+      }
+
+      @media screen and (max-width: 600px) {
+        margin-top: 400px;
+      }
+
+      @media screen and (max-width: 500px) {
+        margin-top: 300px;
+      }
+
+      @media screen and (max-width: 450px) {
+        margin-top: 270px;
+      }
+
+      @media screen and (max-width: 390px) {
+        margin-top: 250px;
+      }
 
       .subtitle {
         margin-top: 60px;
@@ -128,6 +168,28 @@
         position: absolute;
         right: 0;
         top: 50px;
+        width: 975px;
+
+        @media screen and (max-width: 1800px) {
+          width: 875px;
+          top: 100px;
+        }
+
+        @media screen and (max-width: 1600px) {
+          width: 775px;
+        }
+
+        @media screen and (max-width: 1420px) {
+          width: 675px;
+        }
+
+        @media screen and (max-width: $media-tablet) {
+          top: 90px;
+        }
+
+        @media screen and (max-width: $media-mobile) {
+          width: 100%;
+        }
       }
     }
   }

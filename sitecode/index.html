@@ -13,11 +13,15 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css"
+    />
     <link rel="stylesheet" href="./css/index.min.css" />
     <title>Code</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="header-container-top">
         <div class="header-wrapper">
           <div class="logo">
@@ -25,10 +29,10 @@
           </div>
           <div class="menu">
             <nav class="nav">
-              <a href="#" class="item">Expertise</a>
-              <a href="#" class="item">Terms of Work</a>
-              <a href="#" class="item">About Us</a>
-              <a href="#" class="item">Contacts</a>
+              <a href="#expertise" class="item">Expertise</a>
+              <a href="#terms-of-work" class="item">Terms of Work</a>
+              <a href="#about-us" class="item">About Us</a>
+              <a href="#contact-us" class="item">Contacts</a>
             </nav>
             <div class="language">
               <span class="language__item language__item_active">
@@ -87,7 +91,7 @@
       </div>
     </header>
 
-    <section class="expertise">
+    <section class="expertise" id="expertise">
       <div class="container">
         <div class="expertise-wrapper">
           <h2 class="title">Expertise</h2>
@@ -107,7 +111,11 @@
             <div class="items">
               <div class="item">
                 <span class="icon"
-                  ><img src="./img/expertise/industries/1.svg" alt="" />
+                  ><img
+                    src="./img/expertise/industries/1.svg"
+                    alt=""
+                    loading="lazy"
+                  />
                 </span>
                 <p class="name">
                   Сharity <br />
@@ -248,9 +256,9 @@
             </div>
           </div>
           <div class="services-wrapper">
-            <span class="bg-desktop"
+            <!-- <span class="bg-desktop"
               ><img src="./img/expertise/services/bg-desktop.png" alt=""
-            /></span>
+            /></span> -->
             <span class="bg-mobile">
               <img src="./img/expertise/services/bg-mobile.png" alt=""
             /></span>
@@ -337,12 +345,15 @@
       </div>
     </section>
 
-    <section class="terms-of-work">
+    <section class="terms-of-work" id="terms-of-work">
       <div class="container">
         <h6 class="title">Terms of Work</h6>
         <div class="terms-of-work-wrapper">
-          <span class="side-bar-img"
+          <!-- <span class="side-bar-img"
             ><img src="./img/terms-of-work/side-bar.png" alt=""
+          /></span> -->
+          <span class="side-bar-mobile"
+            ><img src="./img/terms-of-work/side-bar-mobile.svg" alt=""
           /></span>
           <div class="tabs">
             <div class="tabs-items">
@@ -418,6 +429,7 @@
                           class="img"
                           src="/img/terms-of-work/wrap-two/bg-price.svg"
                           alt=""
+                          loading="lazy"
                         />
                         <span class="price"> $ 30</span></span
                       >
@@ -433,6 +445,7 @@
                           class="img"
                           src="/img/terms-of-work/wrap-two/bg-price.svg"
                           alt=""
+                          loading="lazy"
                         />
                         <span class="price"> $ 45</span></span
                       >
@@ -448,6 +461,7 @@
                           class="img"
                           src="/img/terms-of-work/wrap-two/bg-price.svg"
                           alt=""
+                          loading="lazy"
                         />
                         <span class="price"> $ 55</span></span
                       >
@@ -463,8 +477,9 @@
                           class="img"
                           src="/img/terms-of-work/wrap-two/bg-price.svg"
                           alt=""
+                          loading="lazy"
                         />
-                        <span class="price"> $65</span></span
+                        <span class="price">$ 65</span></span
                       >
                     </div>
                   </div>
@@ -477,6 +492,44 @@
                     Aenean euismod bibendum laoreet. Proin gravida dolor sit
                     amet lacus accumsan et viverra justo commodo.
                   </p>
+
+                  <div class="main-block">
+                    <img src="./img/terms-of-work/wrap-three/main.svg" alt="" />
+                    <span class="text-one">Product <br />Owner</span>
+                    <span class="text-two">Team </span>
+                    <span class="text-three"
+                      >Scrum <br />
+                      Manager</span
+                    >
+                    <span class="text-four"
+                      >Sprint Preview <br />
+                      + <br />
+                      Sprint <br />
+                      Retrospective</span
+                    >
+                    <span class="text-middle"
+                      >Sprint <br />
+                      1-4 Weeks</span
+                    >
+                    <span class="text-hours"> 24 H </span>
+                    <span class="text-bottom text-bottom-one"
+                      >Product <br />
+                      Backlog</span
+                    >
+                    <span class="text-bottom text-bottom-two"
+                      >Spreent <br />
+                      Planning Meeting</span
+                    >
+                    <span class="text-bottom text-bottom-three"
+                      >Sprint
+                      <br />
+                      Backlog</span
+                    >
+                    <span class="text-bottom text-bottom-four"
+                      >Finisched <br />
+                      Work</span
+                    >
+                  </div>
                 </div>
               </div>
               <div class="tabs-content-item">
@@ -486,6 +539,80 @@
                     Aenean euismod bibendum laoreet. Proin gravida dolor sit
                     amet lacus accumsan et viverra justo commodo.
                   </p>
+
+                  <div class="blocks-box-top">
+                    <div class="left-part">
+                      <span class="heading-blue">PM Tools</span>
+                      <div class="middle-content">
+                        <div class="icon">
+                          <img
+                            src="./img/terms-of-work/wrap-four/1.svg"
+                            alt=""
+                          />
+                          <span
+                            >Daily <br />
+                            Standarts</span
+                          >
+                        </div>
+                        <div class="right-blocks">
+                          <span class="block"
+                            >Retrospective <br />
+                            Meetings</span
+                          >
+                          <span class="block"
+                            >Sprints <br />
+                            Planning</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div class="right-part">
+                      <span class="heading"
+                        >Best practices for successful <br />
+                        callaboration</span
+                      >
+                      <ul class="items">
+                        <li class="item">
+                          Sufficient response time - 1-2 business days
+                        </li>
+                        <li class="item">
+                          Exchange of 3 emails leads to a live call
+                        </li>
+                        <li class="item">
+                          Define clear roles: in case of missing meeting
+                          delegating decisions to other member
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="blocks-box-bottom">
+                    <div class="left-part">
+                      <span class="heading-blue">Sprint Backlog</span>
+                      <div class="items">
+                        <span class="item"></span>
+                        <span class="item"></span>
+                        <span class="item"></span>
+                        <span class="item"></span>
+                      </div>
+                    </div>
+                    <div class="right-part">
+                      <a href="#" class="item"
+                        ><img
+                          src="./img/terms-of-work/wrap-four/icon1.svg"
+                          alt=""
+                      /></a>
+                      <a href="#" class="item"
+                        ><img
+                          src="./img/terms-of-work/wrap-four/icon2.svg"
+                          alt=""
+                      /></a>
+                      <a href="#" class="item"
+                        ><img
+                          src="./img/terms-of-work/wrap-four/icon3.svg"
+                          alt=""
+                      /></a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -496,42 +623,39 @@
 
     <section class="about-us">
       <div class="container">
-        <h6 class="title">About Us</h6>
+        <h6 class="title" id="about-us">About Us</h6>
         <div class="about-us-wrapper">
-          <span class="side-bar-img"
-            ><img src="./img/about-us/side-bar.svg" alt=""
+          <span class="side-bar-mobile"
+            ><img src="./img/about-us/side-bar-mobile.svg" alt=""
           /></span>
+
+          <span class="bg-left">
+            <img src="./img/about-us/bg-left.png" alt="" />
+          </span>
 
           <span class="bg-desktop">
             <img src="./img/about-us/bg.png" alt="" />
+          </span>
+
+          <span class="bg-mobile">
+            <img src="./img/about-us/bg-mobile.png" alt="" />
           </span>
           <div class="tabs">
             <div class="tabs-content">
               <div class="tabs-content-item active">
                 <div class="wrap wrap-one">
-                  <span class="border-one">
-                    <img src="./img/about-us/wrap-one/border1.png" alt="" />
-                  </span>
-                  <span class="border-two">
-                    <img src="./img/about-us/wrap-one/border2.png" alt="" />
-                  </span>
-                  <div class="item item-one">
-                    <span class="icon">
-                      <img src="./img/about-us/wrap-one/1.svg" alt="" />
-                    </span>
-                    <h6 class="name">We Think</h6>
-                  </div>
-                  <div class="item item-two">
-                    <span class="icon">
-                      <img src="./img/about-us/wrap-one/2.svg" alt="" />
-                    </span>
-                    <h6 class="name">We Design</h6>
-                  </div>
-                  <div class="item item-three">
-                    <span class="icon">
-                      <img src="./img/about-us/wrap-one/3.svg" alt="" />
-                    </span>
-                    <h6 class="name">We Do</h6>
+                  <div class="main-img">
+                    <img src="./img/about-us/wrap-one/main.svg" alt="" />
+
+                    <div class="item item-one">
+                      <h6 class="name">We Think</h6>
+                    </div>
+                    <div class="item item-two">
+                      <h6 class="name">We Design</h6>
+                    </div>
+                    <div class="item item-three">
+                      <h6 class="name">We Do</h6>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -540,7 +664,11 @@
                   <div class="swiper-wrapper">
                     <div class="swiper-slide wrap-two-item">
                       <span class="icon">
-                        <img src="./img/about-us/wrap-two/1.svg" alt="" />
+                        <img
+                          src="./img/about-us/wrap-two/1.svg"
+                          alt=""
+                          loading="lazy"
+                        />
                       </span>
                       <h6 class="name">Mathias Horn</h6>
                       <span class="position">Manager</span>
@@ -551,7 +679,11 @@
                     </div>
                     <div class="swiper-slide wrap-two-item">
                       <span class="icon">
-                        <img src="./img/about-us/wrap-two/2.svg" alt="" />
+                        <img
+                          src="./img/about-us/wrap-two/2.svg"
+                          alt=""
+                          loading="lazy"
+                        />
                       </span>
                       <h6 class="name">Mathias Horn</h6>
                       <span class="position">Manager</span>
@@ -562,7 +694,11 @@
                     </div>
                     <div class="swiper-slide wrap-two-item">
                       <span class="icon">
-                        <img src="./img/about-us/wrap-two/3.svg" alt="" />
+                        <img
+                          src="./img/about-us/wrap-two/3.svg"
+                          alt=""
+                          loading="lazy"
+                        />
                       </span>
                       <h6 class="name">Mathias Horn</h6>
                       <span class="position">Manager</span>
@@ -573,7 +709,11 @@
                     </div>
                     <div class="swiper-slide wrap-two-item">
                       <span class="icon">
-                        <img src="./img/about-us/wrap-two/1.svg" alt="" />
+                        <img
+                          src="./img/about-us/wrap-two/1.svg"
+                          alt=""
+                          loading="lazy"
+                        />
                       </span>
                       <h6 class="name">Mathias Horn</h6>
                       <span class="position">Manager</span>
@@ -584,7 +724,11 @@
                     </div>
                     <div class="swiper-slide wrap-two-item">
                       <span class="icon">
-                        <img src="./img/about-us/wrap-two/1.svg" alt="" />
+                        <img
+                          src="./img/about-us/wrap-two/1.svg"
+                          alt=""
+                          loading="lazy"
+                        />
                       </span>
                       <h6 class="name">Mathias Horn</h6>
                       <span class="position">Manager</span>
@@ -598,8 +742,158 @@
                   <div class="swiper-pagination"></div>
                 </div>
               </div>
-              <div class="tabs-content-item">3</div>
-              <div class="tabs-content-item">4</div>
+              <div class="tabs-content-item">
+                <div class="wrap wrap-three faq">
+                  <div class="accordion ac">
+                    <div class="accordion-top ac-header ac-trigger">
+                      <span> Vacancy 1 </span>
+                      <span class="close">
+                        <span class="first"></span>
+                        <span class="second"></span>
+                      </span>
+                    </div>
+                    <div class="accordion-body ac-panel">
+                      <div class="accordion-body-content ac-text">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Aenean euismod bibendum laoreet. Proin gravida
+                          dolor sit amet lacus accumsan et viverra justo
+                          commodo. Proin sodales pulvinar tempor. Cum sociis
+                          natoque penatibus et magnis dis parturient montes,
+                          nascetur ridiculus mus. Nam fermentum, nulla luctus
+                          pharetra vulputate, felis tellus mollis orci, sed
+                          rhoncus sapien nunc eget.
+                        </p>
+                        <a href="#" class="btn-apply">Apply</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion ac">
+                    <div class="accordion-top ac-header ac-trigger">
+                      <span> Vacancy 2 </span>
+                      <span class="close">
+                        <span class="first"></span>
+                        <span class="second"></span>
+                      </span>
+                    </div>
+                    <div class="accordion-body ac-panel">
+                      <div class="accordion-body-content ac-text">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Aenean euismod bibendum laoreet. Proin gravida
+                          dolor sit amet lacus accumsan et viverra justo
+                          commodo. Proin sodales pulvinar tempor. Cum sociis
+                          natoque penatibus et magnis dis parturient montes,
+                          nascetur ridiculus mus. Nam fermentum, nulla luctus
+                          pharetra vulputate, felis tellus mollis orci, sed
+                          rhoncus sapien nunc eget.
+                        </p>
+                        <a href="#" class="btn-apply">Apply</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion ac">
+                    <div class="accordion-top ac-header ac-trigger">
+                      <span> Vacancy 3 </span>
+                      <span class="close">
+                        <span class="first"></span>
+                        <span class="second"></span>
+                      </span>
+                    </div>
+                    <div class="accordion-body ac-panel">
+                      <div class="accordion-body-content ac-text">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Aenean euismod bibendum laoreet. Proin gravida
+                          dolor sit amet lacus accumsan et viverra justo
+                          commodo. Proin sodales pulvinar tempor. Cum sociis
+                          natoque penatibus et magnis dis parturient montes,
+                          nascetur ridiculus mus. Nam fermentum, nulla luctus
+                          pharetra vulputate, felis tellus mollis orci, sed
+                          rhoncus sapien nunc eget.
+                        </p>
+                        <a href="#" class="btn-apply">Apply</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion ac">
+                    <div class="accordion-top ac-header ac-trigger">
+                      <span> Vacancy 4 </span>
+                      <span class="close">
+                        <span class="first"></span>
+                        <span class="second"></span>
+                      </span>
+                    </div>
+                    <div class="accordion-body ac-panel">
+                      <div class="accordion-body-content ac-text">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing
+                          elit. Aenean euismod bibendum laoreet. Proin gravida
+                          dolor sit amet lacus accumsan et viverra justo
+                          commodo. Proin sodales pulvinar tempor. Cum sociis
+                          natoque penatibus et magnis dis parturient montes,
+                          nascetur ridiculus mus. Nam fermentum, nulla luctus
+                          pharetra vulputate, felis tellus mollis orci, sed
+                          rhoncus sapien nunc eget.
+                        </p>
+                        <a href="#" class="btn-apply">Apply</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs-content-item">
+                <div class="wrap wrap-four wrap-four-swiper swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide wrap-four-item">
+                      <p class="paragraph">
+                        Factors influencing user experience have been classified
+                        into three main categories: user's state and previous
+                        experience, system properties, and the usage context.
+                      </p>
+                      <div class="badge">
+                        <h6 class="name">Chris Paliatus</h6>
+                        <span class="position">Founder</span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide wrap-four-item">
+                      <p class="paragraph">
+                        Factors influencing user experience have been classified
+                        into three main categories: user's state and previous
+                        experience, system properties, and the usage context.
+                      </p>
+                      <div class="badge">
+                        <h6 class="name">Chris Paliatus</h6>
+                        <span class="position">Founder</span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide wrap-four-item">
+                      <p class="paragraph">
+                        Factors influencing user experience have been classified
+                        into three main categories: user's state and previous
+                        experience, system properties, and the usage context.
+                      </p>
+                      <div class="badge">
+                        <h6 class="name">Chris Paliatus</h6>
+                        <span class="position">Founder</span>
+                      </div>
+                    </div>
+                    <div class="swiper-slide wrap-four-item">
+                      <p class="paragraph">
+                        Factors influencing user experience have been classified
+                        into three main categories: user's state and previous
+                        experience, system properties, and the usage context.
+                      </p>
+                      <div class="badge">
+                        <h6 class="name">Chris Paliatus</h6>
+                        <span class="position">Founder</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
             </div>
 
             <div class="tabs-items">
@@ -625,12 +919,10 @@
       </div>
     </section>
 
-    <section class="contact-us">
+    <section class="contact-us" id="contact-us">
       <div class="container">
         <h6 class="title">Contact Us</h6>
-        <span class="bg-left">
-          <img src="./img/about-us/bg-left.png" alt="" />
-        </span>
+
         <div class="contact-us-box">
           <div class="info">
             <h6 class="title-info">Get in touch</h6>
@@ -677,33 +969,33 @@
           </div>
           <div class="block-two">
             <h6 class="block-title">Recent Post</h6>
-            <div class="item">
+            <a href="#" class="item">
               <span class="name">Hugging pugs is super trendy</span> <br />
               <span class="date">February 14, 2023</span>
-            </div>
-            <div class="item">
+            </a>
+            <a href="#" class="item">
               <span class="name">Spinning vinyl is oh so cool</span> <br />
               <span class="date">February 14, 2023</span>
-            </div>
-            <div class="item">
+            </a>
+            <a href="#" class="item">
               <span class="name">Superior theme design by pros</span> <br />
               <span class="date">February 14, 2023</span>
-            </div>
+            </a>
           </div>
           <div class="block-three">
             <h6 class="block-title">Latest Updates</h6>
-            <div class="item">
+            <a href="#" class="item">
               <span class="name">Hugging pugs is super trendy</span> <br />
               <span class="date">February 14, 2023</span>
-            </div>
-            <div class="item">
+            </a>
+            <a href="#" class="item">
               <span class="name">Spinning vinyl is oh so cool</span> <br />
               <span class="date">February 14, 2023</span>
-            </div>
-            <div class="item">
+            </a>
+            <a href="#" class="item">
               <span class="name">Superior theme design by pros</span> <br />
               <span class="date">February 14, 2023</span>
-            </div>
+            </a>
           </div>
           <div class="block-four">
             <h6 class="block-title">Instagram</h6>
@@ -744,7 +1036,7 @@
             <span class="item">© QCode 2023</span>
           </div>
           <div class="middle-part">
-            <a href="/" class="item button-to-top"
+            <a href="#header" class="item button-to-top"
               ><img src="./img/footer/arrow-big-top.svg" alt=""
             /></a>
           </div>
@@ -765,10 +1057,10 @@
 
     <div class="mobile-menu">
       <nav class="nav-mobile-menu">
-        <a href="#" class="item">Expertise</a>
-        <a href="#" class="item">Terms of Work</a>
-        <a href="#" class="item">About Us</a>
-        <a href="#" class="item">Contacts</a>
+        <a href="#expertise" class="item">Expertise</a>
+        <a href="#terms-of-work" class="item">Terms of Work</a>
+        <a href="#about-us" class="item">About Us</a>
+        <a href="#contact-us" class="item">Contacts</a>
       </nav>
       <div class="language language-mobile-menu">
         <span class="language__item language__item_active">
@@ -801,6 +1093,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>

@@ -12,29 +12,45 @@ languages.forEach((element, i) => {
 const body = document.querySelector("body");
 const burger = document.querySelector(".burger");
 const mobileMenu = document.querySelector(".mobile-menu");
-const links = document.querySelectorAll(".mobile-menu nav a");
+const links = Array.from(document.querySelectorAll("a")).filter((link) =>
+  link.getAttribute("href").startsWith("#")
+);
 
-const toggleNavigation = () => {
-  mobileMenu.classList.toggle("open");
-  body.classList.toggle("active");
-  burger.classList.toggle("is-active");
+const navigation = {
+  open() {
+    mobileMenu.classList.add("open");
+    body.classList.add("active");
+    burger.classList.add("is-active");
+  },
+  close() {
+    mobileMenu.classList.remove("open");
+    body.classList.remove("active");
+    burger.classList.remove("is-active");
+  },
+  isOpen() {
+    return mobileMenu.classList.contains("open");
+  },
 };
 
 burger.addEventListener("click", (e) => {
   e.preventDefault();
 
-  toggleNavigation();
+  if (navigation.isOpen()) {
+    navigation.close();
+  } else {
+    navigation.open();
+  }
 });
 
 links.forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
     const target = document.querySelector(link.getAttribute("href"));
+
+    navigation.close();
     target.scrollIntoView({
       behavior: "smooth",
     });
-
-    toggleNavigation();
   });
 });
 
@@ -77,10 +93,10 @@ new Swiper(".wrap-two-swiper", {
 
   breakpoints: {
     320: {
-      slidesPerView: 1,
-      spaceBetween: 30,
+      slidesPerView: 1.8,
+      spaceBetween: 0,
     },
-    1100: {
+    600: {
       slidesPerView: 3,
       spaceBetween: 30,
     },
@@ -92,3 +108,27 @@ new Swiper(".wrap-two-swiper", {
     clickable: true,
   },
 });
+
+new Swiper(".wrap-four-swiper", {
+  direction: "horizontal",
+  slidesPerView: 1,
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1.4,
+      spaceBetween: 20,
+    },
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+  },
+
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+    clickable: true,
+  },
+});
+
+new Accordion(".faq");
