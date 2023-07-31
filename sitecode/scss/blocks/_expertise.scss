@@ -233,7 +233,7 @@
       position: relative;
 
       &::after {
-        content: url(../../img/expertise/services/bg-desktop.png);
+        content: url(./../img/expertise/services/bg-desktop.png);
         position: absolute;
         left: -355px;
         top: -160px;
@@ -248,6 +248,7 @@
         flex-direction: column;
         margin-top: 75px;
         align-items: center;
+        position: static;
       }
 
       @media screen and (max-width: $media-mobile) {

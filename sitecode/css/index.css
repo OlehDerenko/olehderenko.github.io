@@ -873,7 +873,7 @@ table {
   position: relative;
 }
 .expertise .expertise-wrapper .services-wrapper::after {
-  content: url(../../img/expertise/services/bg-desktop.png);
+  content: url(./../img/expertise/services/bg-desktop.png);
   position: absolute;
   left: -355px;
   top: -160px;
@@ -889,6 +889,7 @@ table {
     flex-direction: column;
     margin-top: 75px;
     align-items: center;
+    position: static;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1023,7 +1024,7 @@ table {
   }
 }
 .terms-of-work .terms-of-work-wrapper .tabs .tabs-items::after {
-  content: url(../../img/terms-of-work/side-bar.png);
+  content: url(./../img/terms-of-work/side-bar.png);
   position: absolute;
   left: -350px;
   top: -430px;
@@ -1654,7 +1655,7 @@ table {
   }
 }
 .about-us .about-us-wrapper .tabs .tabs-items::after {
-  content: url(../../img/about-us/side-bar.svg);
+  content: url(./../img/about-us/side-bar.svg);
   position: absolute;
   right: -350px;
   top: -530px;
