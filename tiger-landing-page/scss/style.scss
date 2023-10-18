@@ -208,6 +208,9 @@ table {
     }
 
     &_info {
+      @media screen and (max-width: 675px) {
+        padding-bottom: 40px;
+      }
       .partners {
         display: flex;
         align-items: center;
