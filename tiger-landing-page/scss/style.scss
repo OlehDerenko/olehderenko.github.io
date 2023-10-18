@@ -106,8 +106,6 @@ section {
 body {
   line-height: 1;
   font-family: "Muller";
-
-  height: 100vh;
 }
 
 ol,
@@ -341,7 +339,10 @@ table {
         }
 
         .paragraph:last-of-type {
-          color: #f96e09;
+          background-image: linear-gradient(to right, #f96e09, #fbe613);
+          -webkit-background-clip: text;
+          background-clip: text;
+          color: transparent;
         }
       }
 
@@ -395,8 +396,8 @@ table {
         .item {
           font-size: 39px;
           line-height: 47px;
-          color: #fff;
-          border-bottom: 1px solid #fff;
+          color: #a7726e;
+          border-bottom: 1px solid #a7726e;
 
           @media screen and (max-width: 1600px) {
             font-size: 29px;
