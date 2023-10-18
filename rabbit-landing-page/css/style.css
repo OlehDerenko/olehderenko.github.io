@@ -164,6 +164,7 @@ table {
   background-image: url(../img/back.png);
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 @media screen and (max-width: 1100px) {
   .main {
@@ -175,11 +176,6 @@ table {
   align-items: flex-start;
   justify-content: space-between;
   padding: 200px 0 50px;
-}
-@media screen and (max-width: 1600px) {
-  .main__wrapper {
-    justify-content: space-around;
-  }
 }
 @media screen and (max-width: 1100px) {
   .main__wrapper {
@@ -349,7 +345,7 @@ table {
   }
 }
 .main__wrapper_info .text .paragraph:last-of-type {
-  background-image: linear-gradient(to right, #f96e09, #fbe613);
+  background-image: linear-gradient(to right, #fc6e74, #ffe951);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -407,8 +403,8 @@ table {
 .main__wrapper_info .policy-cookies .item {
   font-size: 39px;
   line-height: 47px;
-  color: #a7726e;
-  border-bottom: 1px solid #a7726e;
+  color: #686a6e;
+  border-bottom: 1px solid #686a6e;
 }
 @media screen and (max-width: 1600px) {
   .main__wrapper_info .policy-cookies .item {
@@ -443,13 +439,19 @@ table {
   }
 }
 .main__wrapper_icon .main-img {
-  width: 600px;
-  height: 800px;
+  position: absolute;
+  right: 100px;
+  bottom: 0;
+  width: 865px;
 }
 @media screen and (max-width: 1600px) {
   .main__wrapper_icon .main-img {
-    width: 500px;
-    height: 700px;
+    right: 0;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .main__wrapper_icon .main-img {
+    width: 665px;
   }
 }
 @media screen and (max-width: 1100px) {
