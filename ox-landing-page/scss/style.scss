@@ -24,6 +24,7 @@ $media-phone: 768px;
 html,
 body {
   margin: 0;
+  font-family: "Muller";
 
   @media screen and (max-width: $media-tablet) {
     height: 100vh;

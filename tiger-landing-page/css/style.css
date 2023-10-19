@@ -19,6 +19,7 @@
 html,
 body {
   margin: 0;
+  font-family: "Muller";
 }
 @media screen and (max-width: 1100px) {
   html,
@@ -231,7 +232,8 @@ body {
   font-size: 39px;
   line-height: 47px;
   color: #a7726e;
-  border-bottom: 1px solid #a7726e;
+  border-bottom: 2px solid #a7726e;
+  text-decoration: none;
 }
 @media screen and (max-width: 1600px) {
   .cta-container .policy-cookies-mobile .item {
@@ -245,12 +247,9 @@ body {
     line-height: 24px;
   }
 }
-.cta-container .policy-cookies-mobile .policy {
-  padding-right: 100px;
-}
 @media screen and (max-width: 1100px) {
   .cta-container .policy-cookies-mobile .policy {
-    padding-right: 40px;
+    margin-right: 40px;
   }
 }
 .cta-container .items {
