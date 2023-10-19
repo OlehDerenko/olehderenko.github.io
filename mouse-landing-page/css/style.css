@@ -144,6 +144,12 @@ body {
     line-height: 70px;
   }
 }
+@media screen and (max-width: 1400px) {
+  .wrap .cta-container-desktop .text .subtitle {
+    font-size: 40px;
+    line-height: 50px;
+  }
+}
 @media screen and (max-width: 1100px) {
   .wrap .cta-container-desktop .text .subtitle {
     font-size: 90px;
@@ -159,7 +165,7 @@ body {
   }
 }
 .wrap .cta-container-desktop .text .subtitle:last-of-type {
-  background-image: linear-gradient(to right, #f96e09, #fbe613);
+  background-image: linear-gradient(to right, #fa8986, #f8c277);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -177,8 +183,8 @@ body {
 .wrap .cta-container-desktop .policy-cookies .item {
   font-size: 39px;
   line-height: 47px;
-  color: #a7726e;
-  border-bottom: 2px solid #a7726e;
+  color: #716d68;
+  border-bottom: 2px solid #716d68;
   text-decoration: none;
 }
 @media screen and (max-width: 1600px) {
@@ -192,7 +198,7 @@ body {
 }
 .wrap .avatar-container-desktop {
   position: absolute;
-  right: 10%;
+  right: 0;
   bottom: 5%;
 }
 @media screen and (max-width: 1480px) {
@@ -202,11 +208,11 @@ body {
   }
 }
 .wrap .avatar-container-desktop img {
-  width: 609px;
+  width: 864px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   .wrap .avatar-container-desktop img {
-    width: 500px;
+    width: 664px;
   }
 }
 
@@ -230,8 +236,9 @@ body {
 .cta-container .policy-cookies-mobile .item {
   font-size: 39px;
   line-height: 47px;
-  color: #a7726e;
-  border-bottom: 1px solid #a7726e;
+  color: #716d68;
+  border-bottom: 2px solid #716d68;
+  text-decoration: none;
 }
 @media screen and (max-width: 1600px) {
   .cta-container .policy-cookies-mobile .item {
@@ -245,12 +252,9 @@ body {
     line-height: 24px;
   }
 }
-.cta-container .policy-cookies-mobile .policy {
-  padding-right: 100px;
-}
 @media screen and (max-width: 1100px) {
   .cta-container .policy-cookies-mobile .policy {
-    padding-right: 40px;
+    margin-right: 40px;
   }
 }
 .cta-container .items {
@@ -339,7 +343,7 @@ body {
   }
 }
 .cta-container .subtitle:last-of-type {
-  background-image: linear-gradient(to right, #f96e09, #fbe613);
+  background-image: linear-gradient(to right, #fa8986, #f8c277);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
