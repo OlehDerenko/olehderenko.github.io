@@ -119,10 +119,15 @@ body {
       margin-top: 55px;
 
       .title {
-        font-size: 38px;
-        line-height: 48px;
-        color: #fff;
-        font-weight: 500;
+        // font-size: 38px;
+        // line-height: 48px;
+        // color: #fff;
+        // font-weight: 500;
+        // display: inline-block;
+
+        img {
+          width: 200px;
+        }
 
         @media screen and (max-width: 1600px) {
           font-size: 28px;
@@ -209,10 +214,10 @@ body {
     }
 
     img {
-      width: 609px;
+      width: 709px;
 
-      @media screen and (max-width: 1200px) {
-        width: 500px;
+      @media screen and (max-width: 1325px) {
+        width: 609px;
       }
     }
   }
@@ -272,6 +277,8 @@ body {
     }
 
     .item-one {
+      margin-top: -10px;
+
       img {
         width: 184px;
         height: 78px;
@@ -316,11 +323,19 @@ body {
 
   .text {
     position: absolute;
-    bottom: 25%;
+    bottom: 20%;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
     width: 100%;
+
+    @media screen and (max-width: 399px) {
+      bottom: 25%;
+    }
+
+    @media screen and (max-width: 389px) {
+      bottom: 22%;
+    }
 
     .title,
     .subtitle {
@@ -334,6 +349,10 @@ body {
       line-height: 24px;
       color: #fff;
       font-weight: 500;
+    }
+
+    img {
+      width: 100px;
     }
   }
 
@@ -350,6 +369,10 @@ body {
   .subtitle:first-of-type {
     @media screen and (max-width: $media-tablet) {
       padding-top: 15px;
+    }
+
+    @media screen and (max-width: 399px) {
+      padding-top: 0;
     }
   }
 
