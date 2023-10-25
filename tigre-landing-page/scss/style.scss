@@ -368,10 +368,6 @@ body {
 
   .subtitle:first-of-type {
     @media screen and (max-width: $media-tablet) {
-      padding-top: 15px;
-    }
-
-    @media screen and (max-width: 399px) {
       padding-top: 0;
     }
   }
