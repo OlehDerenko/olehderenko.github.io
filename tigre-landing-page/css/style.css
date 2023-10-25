@@ -26,7 +26,7 @@ body {
   html,
   body {
     height: 100vh;
-    overflow: hidden;
+    overflow: visible;
   }
 }
 
@@ -383,7 +383,7 @@ body {
 .avatar-container img {
   object-fit: fill;
   width: 100%;
-  height: 110%;
+  height: 100%;
   position: relative;
   top: 0%;
 }/*# sourceMappingURL=style.css.map */
