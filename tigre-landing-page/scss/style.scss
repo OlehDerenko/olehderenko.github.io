@@ -403,9 +403,11 @@ body {
 
   img {
     object-fit: fill;
-    width: 100%;
+    width: 80%;
     height: 110%;
     position: relative;
-    top: 0%;
+    top: -10%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
