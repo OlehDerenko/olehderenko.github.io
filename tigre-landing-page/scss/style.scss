@@ -26,10 +26,7 @@ body {
   margin: 0;
   font-family: "Muller";
   overflow: hidden;
-
-  @media screen and (max-width: $media-tablet) {
-    height: 100vh;
-  }
+  height: 100vh;
 }
 
 body {
@@ -317,7 +314,7 @@ body {
 
   .text {
     position: absolute;
-    bottom: 35%;
+    bottom: 45%;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -388,7 +385,7 @@ body {
     padding: 20px 30px;
     position: absolute;
     left: 50%;
-    bottom: 10%;
+    bottom: 15%;
     transform: translateX(-50%);
   }
 }
