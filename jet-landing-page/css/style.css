@@ -380,10 +380,10 @@ body {
 }
 .avatar-container img {
   object-fit: fill;
-  width: 80%;
+  width: 95%;
   height: 100%;
   position: relative;
   top: -10%;
-  left: 50%;
+  left: 43%;
   transform: translateX(-50%);
 }/*# sourceMappingURL=style.css.map */
