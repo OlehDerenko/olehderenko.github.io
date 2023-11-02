@@ -308,7 +308,7 @@ body {
 }
 @media screen and (max-height: 800px) {
   .button {
-    top: 6vh;
+    top: 3vh;
   }
 }
 
@@ -329,7 +329,7 @@ body {
 }
 @media screen and (max-height: 800px) {
   .avatar-container .policy-cookies-mobile {
-    top: 40vh;
+    top: 30vh;
   }
 }
 .avatar-container .policy-cookies-mobile .item {
