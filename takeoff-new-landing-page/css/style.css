@@ -31,7 +31,6 @@ body {
 .main-img {
   position: absolute;
   width: 100%;
-  height: 80%;
   z-index: -1;
   top: 20%;
 }
@@ -298,8 +297,18 @@ body {
     padding: 20px 30px;
     position: absolute;
     left: 50%;
-    bottom: 40%;
+    top: 0vh;
     transform: translateX(-50%);
+  }
+}
+@media screen and (max-height: 1000px) {
+  .button {
+    top: 0vh;
+  }
+}
+@media screen and (max-height: 800px) {
+  .button {
+    top: 6vh;
   }
 }
 
@@ -314,9 +323,14 @@ body {
   display: flex;
   align-items: center;
   position: absolute;
-  bottom: 10%;
+  top: 30vh;
   left: 50%;
   transform: translateX(-50%);
+}
+@media screen and (max-height: 800px) {
+  .avatar-container .policy-cookies-mobile {
+    top: 40vh;
+  }
 }
 .avatar-container .policy-cookies-mobile .item {
   font-size: 39px;

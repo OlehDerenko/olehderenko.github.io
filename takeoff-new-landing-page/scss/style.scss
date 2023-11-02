@@ -40,7 +40,6 @@ body {
 .main-img {
   position: absolute;
   width: 100%;
-  height: 80%;
   z-index: -1;
   top: 20%;
 
@@ -321,9 +320,25 @@ body {
     padding: 20px 30px;
     position: absolute;
     left: 50%;
-    bottom: 40%;
+    top: 0vh;
     transform: translateX(-50%);
   }
+
+  @media screen and (max-height: 1000px) {
+    top: 0vh;
+  }
+
+  @media screen and (max-height: 800px) {
+    top: 6vh;
+  }
+
+  // @media screen and (max-width: 440px) {
+  //   bottom: 60%;
+  // }
+
+  // @media screen and (max-width: 400px) {
+  //   bottom: 65%;
+  // }
 }
 
 .avatar-container {
@@ -337,9 +352,13 @@ body {
     display: flex;
     align-items: center;
     position: absolute;
-    bottom: 10%;
+    top: 30vh;
     left: 50%;
     transform: translateX(-50%);
+
+    @media screen and (max-height: 800px) {
+      top: 40vh;
+    }
 
     .item {
       font-size: 39px;
