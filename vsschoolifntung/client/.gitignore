@@ -3,8 +3,7 @@
 # Ignore node_modules directory
 node_modules/
 
-# Optional: Ignore build output and other generated files
-# build/
-# dist/
-# node_modules/
-# .env
+
+# Additional files or directories to ignore
+build
+
