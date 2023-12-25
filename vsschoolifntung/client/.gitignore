@@ -1,9 +1,0 @@
-# .gitignore (в папці client)
-
-# Ignore node_modules directory
-node_modules/
-
-
-# Additional files or directories to ignore
-build
-
