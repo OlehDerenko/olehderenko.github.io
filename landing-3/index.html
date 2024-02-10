@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <section class="main">
+        <div class="main-info">
+          <h6 class="title">Magic in your hands!</h6>
+          <div class="item">
+            <div class="icon">
+              <img src="https://i.ibb.co/6wn9S6J/icon-small.png" alt="" />
+            </div>
+            <div class="text">
+              <h6 class="text-title">Versatility Without Compromise</h6>
+              <p class="text-subtitle">
+                Three-speed control and three interchangeable heads ensure
+                optimal cleaning for various surfaces, from kitchen to bathroom.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="icon">
+              <img src="https://i.ibb.co/6wn9S6J/icon-small.png" alt="" />
+            </div>
+            <div class="text">
+              <h6 class="text-title">Versatility Without Compromise</h6>
+              <p class="text-subtitle">
+                Three-speed control and three interchangeable heads ensure
+                optimal cleaning for various surfaces, from kitchen to bathroom.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="icon">
+              <img src="https://i.ibb.co/6wn9S6J/icon-small.png" alt="" />
+            </div>
+            <div class="text">
+              <h6 class="text-title">Versatility Without Compromise</h6>
+              <p class="text-subtitle">
+                Three-speed control and three interchangeable heads ensure
+                optimal cleaning for various surfaces, from kitchen to bathroom.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="main-gallery">
+          <iframe
+            class="iframe-video"
+            src="https://www.youtube.com/embed/Ysd0V3H1Se0?si=2kUMgz35xnIKodap"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+    </div>
+  </body>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Mulish", sans-serif;
+    }
+
+    .main-container {
+      width: 1200px;
+      margin: 0 auto;
+    }
+    @media screen and (max-width: 1200px) {
+      .main-container {
+        padding: 0 30px;
+        width: 100%;
+      }
+    }
+    @media screen and (max-width: 999px) {
+      .main-container {
+        padding: 0 20px;
+      }
+    }
+
+    .main {
+      margin: 100px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    @media screen and (max-width: 1200px) {
+      .main {
+        margin: 50px 0;
+      }
+    }
+    @media screen and (max-width: 999px) {
+      .main {
+        flex-direction: column;
+      }
+    }
+    .main .main-info {
+      max-width: 585px;
+    }
+    @media screen and (max-width: 1200px) {
+      .main .main-info {
+        max-width: 100%;
+      }
+    }
+    @media screen and (max-width: 999px) {
+      .main .main-info {
+        text-align: center;
+      }
+    }
+    .main .main-info .title {
+      font-size: 33px;
+      color: #242424;
+      margin: 0 0 50px;
+      font-weight: 700;
+    }
+    @media screen and (max-width: 1200px) {
+      .main .main-info .title {
+        font-size: 29px;
+      }
+    }
+    .main .main-info .item {
+      display: flex;
+      align-items: flex-start;
+      margin: 0 0 50px;
+    }
+    @media screen and (max-width: 999px) {
+      .main .main-info .item {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    .main .main-info .item .icon {
+      margin-right: 20px;
+    }
+    @media screen and (max-width: 999px) {
+      .main .main-info .item .icon {
+        margin: 0 0 15px;
+      }
+    }
+    .main .main-info .item .icon img {
+      width: 40px;
+      height: 40px;
+    }
+    .main .main-info .item .text .text-title {
+      margin: 0;
+      font-size: 16px;
+      color: #242424;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 700;
+    }
+    @media screen and (max-width: 999px) {
+      .main .main-info .item .text .text-title {
+        font-size: 14px;
+      }
+    }
+    .main .main-info .item .text .text-subtitle {
+      margin: 10px 0 0;
+      font-size: 16px;
+      color: #575757;
+      font-weight: 500;
+    }
+    @media screen and (max-width: 999px) {
+      .main .main-info .item .text .text-subtitle {
+        font-size: 14px;
+      }
+    }
+    .main .main-gallery {
+      max-width: 540px;
+    }
+    @media screen and (max-width: 1200px) {
+      .main .main-gallery {
+        min-width: 100%;
+        height: 300px;
+      }
+    }
+    .main .main-gallery .iframe-video {
+      width: 560px;
+      height: 300px;
+    }
+    @media screen and (max-width: 1200px) {
+      .main .main-gallery .iframe-video {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  </style>
+</html>
